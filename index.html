@@ -409,7 +409,9 @@ document.querySelectorAll(".frame img").forEach(i=>i.onclick=()=>{document.getEl
 document.getElementById("lb").onclick=e=>e.currentTarget.classList.remove("show");
 
 /* ---- Respaldo: descargar y cargar ---- */
-const backupText=()=>JSON.stringify({app:"calendario-medieval",version:2,exportado:new Date().toISOString(),eventos:store},null,2);
+const tvLinks=()=>{try{const a=JSON.parse(localStorage.getItem("medieval-tv")||"[]");return Array.isArray(a)?a:[]}catch(e){return []}};
+const okTv=t=>t&&typeof t.n=="string"&&typeof t.u=="string"&&typeof t.src=="string"&&/^https:\/\/www\.youtube(-nocookie)?\.com\/embed\//.test(t.src);
+const backupText=()=>JSON.stringify({app:"calendario-medieval",version:3,exportado:new Date().toISOString(),eventos:store,tv_enlaces:tvLinks()},null,2);
 async function exportBackup(){
   const txt=backupText(),name="respaldo-calendario-medieval-"+new Date().toISOString().slice(0,10)+".json";
   try{
@@ -433,12 +435,16 @@ function importText(txt){
       if(!ev||typeof ev!=="object"||Array.isArray(ev))throw 0;
       const clean=normStore(ev);let n=0;
       for(const k in clean)n+=clean[k].length;
-      if(confirm("Se encontraron "+n+" eventos.\n\nAceptar = COMBINAR con los actuales\nCancelar = más opciones")){
+      const tvIn=Array.isArray(d.tv_enlaces)?d.tv_enlaces.filter(okTv).map(t=>({n:t.n.slice(0,60),u:t.u.slice(0,500),src:t.src})):null;
+      const mergeTv=()=>{if(!tvIn)return;const cur=tvLinks().filter(okTv);tvIn.forEach(t=>{if(!cur.some(y=>y.src==t.src))cur.push(t)});try{localStorage.setItem("medieval-tv",JSON.stringify(cur))}catch(e){}};
+      const replaceTv=()=>{if(!tvIn)return;try{localStorage.setItem("medieval-tv",JSON.stringify(tvIn))}catch(e){}};
+      if(confirm("Se encontraron "+n+" eventos"+(tvIn?" y "+tvIn.length+" enlaces de TV":"")+".\n\nAceptar = COMBINAR con los actuales\nCancelar = más opciones")){
+        mergeTv();
         for(const k in clean){const cur=store[k]=store[k]||[];clean[k].forEach(t=>{if(!cur.some(y=>y.t==t.t))cur.push(t)});cur.sort((a,b)=>a.p-b.p)}
       }else if(confirm("¿REEMPLAZAR todos tus eventos actuales por los del archivo?\nAceptar = reemplazar · Cancelar = no hacer nada")){
-        store=clean;
+        store=clean;replaceTv();
       }else return;
-      save();render();alert("Respaldo cargado correctamente.");
+      save();render();if(window.__tvReload)window.__tvReload();alert("Respaldo cargado correctamente.");
     }catch(e){alert("El archivo o texto no es un respaldo válido.")}
   }
 }
@@ -1003,6 +1009,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     custom.forEach((c,i)=>add(c.n,"Enlace guardado",[c.src],c.u,i));
   }
   const close=()=>{stop();$("tv").classList.remove("show")};
+  window.__tvReload=()=>{try{const a=JSON.parse(localStorage.getItem("medieval-tv")||"[]");custom=Array.isArray(a)?a:[]}catch(e){custom=[]}draw()};
   $("tvb").onclick=()=>{draw();$("tv").classList.add("show")};
   $("tvfs").onclick=()=>{if(player.classList.contains("on")&&player.requestFullscreen)player.requestFullscreen().catch(()=>{})};
   $("tvclose").onclick=close;$("tvstop").onclick=()=>{stop();st.textContent="Detenido."};
