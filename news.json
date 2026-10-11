@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-11T14:53:02+00:00",
+  "actualizado": "2026-10-11T20:12:41+00:00",
   "items": [
     {
       "titulo": "Mike Huckabee Should Resign",
@@ -39,17 +39,17 @@
   ],
   "politica": [
     {
-      "titulo": "Trump announces immediate ‘energy ceasefire’ between Russia and Ukraine",
-      "resumen": "President Donald Trump on Sunday announced an immediate “energy ceasefire” between Russia and Ukraine, a day after ripping Ukrainian President Volodymyr Zelensky for targeting Russian energy infrastructure during the…",
+      "titulo": "Polls come under scrutiny as Democrats take the lead in midterm elections",
+      "resumen": "With less than a month to go before the midterm elections, Democrats are doing so well that many political observers are beginning to wonder if there is something wrong with the polls. It’s not just that President…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/white-house/4762515/trump-energy-ceasefire-russia-ukraine-war/",
+      "url": "https://www.washingtonexaminer.com/premium/4759323/polls-scrutiny-democrats-lead-midterm-elections/",
       "fecha": "2026-10-11"
     },
     {
-      "titulo": "California Public Housing Measure Could Be Used to Confiscate Church Property, Experts Say",
-      "resumen": "THE WASHINGTON STAND—A state law in California ostensibly meant to make it easier for religious institutions and nonprofit colleges to rezone their property for building low-income housing for the homeless is now being…",
+      "titulo": "New Poll: 43% of Likely Young Voters View Islamic Sharia Law Positively",
+      "resumen": "THE CENTER SQUARE—Nearly half of likely young voters, 43%, view Islamic Sharia law positively, according to a new poll. The demographic of likely voters between the ages of 18 and 24 hold a different view than the…",
       "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/10/11/california-public-housing-measure-could-be-used-to-confiscate-church-property-experts-say/",
+      "url": "https://www.dailysignal.com/2026/10/11/new-poll-43-of-likely-young-voters-view-islamic-sharia-law-positively/",
       "fecha": "2026-10-11"
     },
     {
@@ -76,52 +76,60 @@
   ],
   "diarias": [
     {
-      "titulo": "Trump announces 'energy ceasefire' between Russia and Ukraine",
-      "resumen": "US President Donald Trump says both sides have agreed to stop targeting oil refineries, power plants and other energy infrastructure immediately.",
+      "titulo": "Saudi health minister visits survivors of deadly Riyadh airport attack",
+      "resumen": "Saudi Arabia’s health minister Fahad Aljalajel has paid a visit to survivors of Saturday’s deadly attack.",
+      "fuente": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/saudi-health-minister-visits-survivors-of-deadly-riyadh-airport-attack?traffic_source=rss",
+      "fecha": "2026-10-11",
+      "cat": "⚔️ Guerra"
+    },
+    {
+      "titulo": "Air strikes kill dozens of gold miners on Sudan-Egypt border",
+      "resumen": "A Sudan-based rights group said 72 people were killed in a remote, disputed area known for illegal gold mining.",
       "fuente": "DW",
-      "url": "https://www.dw.com/en/trump-announces-energy-ceasefire-between-russia-and-ukraine/a-79634509?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/air-strikes-kill-dozens-of-gold-miners-on-sudan-egypt-border/a-79634889?maca=en-rss-en-all-1573-rdf",
       "fecha": "2026-10-11",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Ukraine strikes Yandex data centre in third attack on Russian tech giant",
-      "resumen": "It is the third time this week that Ukraine has targeted Russian tech giant Yandex, forcing the company to suspend its operations.",
-      "fuente": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo?at_medium=RSS&at_campaign=rss",
-      "fecha": "2026-10-11",
-      "cat": "⚔️ Guerra"
-    },
-    {
-      "titulo": "Nunca somos demasiado pequeños para el Rosario",
-      "resumen": "Octubre es el mes del Rosario y, de manera inevitable, es también un mes que nos hace pensar en la infancia. Porque los tres pastorcitos de Fátima eran eso: niños. Lucía tenía 10 años, Francisco 9 y Jacinta, la pequeña…",
+      "titulo": "Ángelus: «El bien no siempre se comprende», reconoce León XIV",
+      "resumen": "El bien puede, en ocasiones, ser «malinterpretado y rechazado», reconoció León XIV durante el Ángelus que presidió el 11 de octubre de 2026 en la plaza de San Pedro. No obstante, el Papa exhortó a los fieles a no…",
       "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/10/11/nunca-somos-demasiado-pequenos-para-el-rosario/",
+      "url": "https://es.aleteia.org/2026/10/11/angelus-el-bien-no-siempre-se-comprende-reconoce-leon-xiv/",
       "fecha": "2026-10-11",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "El Papa agradece las oraciones de la Hermandad del Señor de los Milagros",
-      "resumen": "Los devotos peruanos del Señor de los Milagros peregrinaron con la venerada imagen hasta la Plaza de San Pedro: “Agradezco sus oraciones por la visita pastoral que realizaré a Perú”. Leer todo &nbsp;",
+      "titulo": "Los fieles en la plaza de San Pedro, cercanos al Papa: “rezamos por ti”",
+      "resumen": "Al conocer la noticia de la intervención quirúrgica en el pulmón a la que León XIV deberá someterse en los próximos días, los peregrinos reaccionan con la emoción y la empatía que reservan a un miembro de la familia…",
       "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/papa/news/2026-10/el-papa-agradece-las-oraciones-hermandad-senor-milgaros-peru.html",
+      "url": "https://www.vaticannews.va/es/iglesia/news/2026-10/los-fieles-en-la-plaza-de-san-pedro-cercanos-al-papa-rezamos.html",
       "fecha": "2026-10-11",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Trump announces energy ceasefire between Russia and Ukraine",
-      "resumen": "President Trump on Sunday announced that an energy ceasefire deal has been reached between Russia and Ukraine, days after his administration announced a deal to acquire diesel from Russia while lifting sanctions…",
+      "titulo": "Backlash grows against Russia diesel deal as Trump claims Ukraine energy ceasefire",
+      "resumen": "President Trump's deal with Russia to permit the country's diesel into the U.S. and global marketplace saw growing backlash on Sunday, before the president announced an energy ceasefire between Ukraine and Russia. The…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/homenews/administration/6141275-trump-russia-ukraine-energy-ceasefire/",
+      "url": "https://thehill.com/policy/energy-environment/6141263-bipartisan-backlash-russian-fuel/",
       "fecha": "2026-10-11",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Russia, Ukraine reach energy cease-fire ‘effective immediately,’ Trump announces",
-      "resumen": "President Trump announced Sunday that Russia and Ukraine have reached an energy cease-fire days after he roiled Kyiv by unveiling a diesel purchasing deal with Moscow.",
+      "titulo": "Nithya Raman’s LAPD shake-up could put ousted progressive DA George Gascón in charge of cops",
+      "resumen": "The prosecutor Los Angeles voters fired two years ago because of his soft on crime policies could be headed back to the LAPD, this time to run it.",
       "fuente": "NY Post",
-      "url": "https://nypost.com/2026/10/11/us-news/russia-ukraine-reach-energy-cease-fire-effective-immediately-trump-announces/",
+      "url": "https://nypost.com/2026/10/11/us-news/ousted-da-george-gascon-eyed-to-lead-lapd-under-nithya-raman/",
       "fecha": "2026-10-11",
       "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "Vandalismo rural: qué dice el proyecto de ley que obtuvo dictamen de comisión y por qué lo cuestiona la oposición",
+      "resumen": "La iniciativa, presentada por el PRO, obtuvo despacho de dos comisiones y ahora podrá buscar media sanción con apoyo de La Libertad Avanza y bloques aliados. Sectores opositores no prestaron su acuerdo",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/politica/2026/10/11/vandalismo-rural-que-dice-el-proyecto-de-ley-que-obtuvo-dictamen-de-comision-y-por-que-lo-cuestiona-la-oposicion/",
+      "fecha": "2026-10-11",
+      "cat": "🇦🇷 Política argentina"
     },
     {
       "titulo": "¿Cuándo son las elecciones 2027 en la Argentina? Todas las fechas clave",
@@ -132,26 +140,18 @@
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Aliados se buscan",
-      "resumen": "La Casa Rosada depende de los caciques provinciales para suspender las PASO en el Congreso. Qué ofrece darles a cambio. Leer más",
-      "fuente": "Perfil",
-      "url": "https://noticias.perfil.com/noticias/politica/aliados-se-buscan.phtml",
-      "fecha": "2026-10-11",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "Resultados ONPE al 92.919% de las Elecciones Regionales y Municipales 2026: revisa aquí el conteo oficial",
-      "resumen": "Resultados ONPE en vivo - Elecciones Regionales y Municipales 2026 :icon: 09:21 ONPE completa el procesamiento de las actas a nivel nacional La Oficina Nacional de Procesos Electorales (ONPE) concluyó el procesamiento…",
-      "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/elecciones/resultados-onpe-en-vivo-sigue-el-conteo-oficial-de-las-elecciones-regionales-y-municipales-2026-lbposting-noticia/",
+      "titulo": "Ruth Luque sobre reacción de ministro Astudillo: \"Hay un sector militar-policial que no quiere ser cuestionado\"",
+      "resumen": "La senadora de Ahora Nación cuestionó la reacción del ministro del Interior ante las críticas a su gestión y señaló al fujimorismo de promover una lógica autoritaria.",
+      "fuente": "La República",
+      "url": "https://larepublica.pe/politica/2026/10/11/ruth-luque-sobre-reaccion-de-ministro-astudillo-hay-un-sector-militarpolicial-que-no-quiere-ser-cuestionado-hnews-545996",
       "fecha": "2026-10-11",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Rafael Belaunde minimiza altercado en la Comisión de Constitución: \"ha sido un incidente propio del fragor del debate político\"",
-      "resumen": "El ministro de Defensa, Rafael Belaunde, minimizó las discusiones en Congreso y sostuvo que estos cruces son parte del debate político.",
-      "fuente": "La República",
-      "url": "https://larepublica.pe/politica/2026/10/11/rafael-belaunde-minimiza-altercado-en-la-comision-de-constitucion-ha-sido-un-incidente-propio-del-fragor-del-debate-politico-hnews-126544",
+      "titulo": "La visita del Papa León XIV al Perú sigue en pie “sin absolutamente ningún cambio”, afirma ministro Juan Sheput",
+      "resumen": "El titular de Trabajo pidió a los peruanos que oren por el pontífice, quien anunció que se someterá a una operación para extirpar un nódulo pulmonar en fase inicial",
+      "fuente": "Infobae Perú",
+      "url": "https://www.infobae.com/peru/2026/10/11/la-visita-del-papa-leon-xiv-al-peru-sigue-en-pie-sin-absolutamente-ningun-cambio-afirma-ministro-juan-sheput/",
       "fecha": "2026-10-11",
       "cat": "🇵🇪 Política peruana"
     }
