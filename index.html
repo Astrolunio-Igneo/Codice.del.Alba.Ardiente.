@@ -216,8 +216,8 @@ html[data-theme=dark] #themeb{background:linear-gradient(#0c1530,#17294f);box-sh
 #themeb[aria-checked=true] i{transform:translateX(30px)}
 @media(max-width:899px){header{padding-top:52px}}
 /* ---- Noticias TV en vivo ---- */
-#tv .box{overflow:auto}
-#tvp{position:relative;width:min(100%,calc(42vh*16/9));aspect-ratio:16/9;margin:10px auto;background:#000;border:2px solid var(--gold);border-radius:6px;overflow:hidden;display:none}
+#tv .box{overflow:auto;max-width:min(1700px,98vw);padding:20px 26px}
+#tvp{position:relative;width:min(100%,calc(74vh*16/9));aspect-ratio:16/9;margin:10px auto;background:#000;border:2px solid var(--gold);border-radius:6px;overflow:hidden;display:none}
 #tvp.on{display:block}
 #tvp iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 #tvlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;margin:8px 0}
@@ -287,7 +287,7 @@ html[data-theme=dark] #tvst{color:#e8836f}
   <p class="sub">Más canales (en su mayoría en español): <a href="https://www.5900.tv/" target="_blank" rel="noopener" style="color:inherit">5900.tv ↗</a></p>
   <p class="sub" style="margin-top:12px">¿Tienes otro enlace? Pega uno de YouTube (en vivo o video):</p>
   <div class="tvrow"><input id="tvurl" type="text" placeholder="https://www.youtube.com/watch?v=…" autocomplete="off"><button id="tvgo">▶ Ver</button><button id="tvsave">＋ Guardar</button></div>
-  <div style="text-align:right;margin-top:12px"><button id="tvstop">Detener</button> <button id="tvclose">Cerrar</button></div>
+  <div style="text-align:right;margin-top:12px"><button id="tvfs">⛶ Pantalla completa</button> <button id="tvstop">Detener</button> <button id="tvclose">Cerrar</button></div>
 </div></div>
 <div id="lb"><img id="lbi" alt=""></div>
 <div id="bkt"><div class="box">
@@ -906,11 +906,12 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
 /* ---- Noticias TV en vivo (YouTube incrustado, con reintento automático) ---- */
 (()=>{
   const $=id=>document.getElementById(id),yt="https://www.youtube.com/embed/";
-  const vid=i=>yt+i+"?autoplay=1&rel=0",live=c=>yt+"live_stream?channel="+c+"&autoplay=1&rel=0";
+  const nc="https://www.youtube-nocookie.com/embed/";
+  const vid=i=>yt+i+"?autoplay=1&rel=0",live=c=>yt+"live_stream?channel="+c+"&autoplay=1&rel=0",live2=c=>nc+"live_stream?channel="+c+"&autoplay=1&rel=0";
   // Edita esta lista: [nombre, etiqueta, [fuentes a probar en orden], enlace oficial]. Fuentes vacías = solo se abre el sitio.
   const CH=[
     "Estados Unidos",
-    ["LiveNOW from FOX","Eventos en vivo, casi sin comentario",[vid("C96oohpWBGw"),live("UCJg9wBPyKMNA5sRDnvzmkdg")],"https://www.youtube.com/@livenowfox/live"],
+    ["LiveNOW from FOX","Eventos en vivo, casi sin comentario",[vid("C96oohpWBGw"),live("UCJg9wBPyKMNA5sRDnvzmkdg"),live2("UCJg9wBPyKMNA5sRDnvzmkdg")],"https://www.youtube.com/@livenowfox/live"],
     "EE. UU. · se abren en su sitio (no permiten incrustar)",
     ["Fox News Channel","Conservador · requiere cuenta de TV",[],"https://www.foxnews.com/live"],
     ["Newsmax","Conservador · noticias y opinión",[],"https://www.newsmax.com/live/"],
@@ -918,12 +919,12 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     ["NBC News NOW","Cadena general · informativo",[],"https://www.nbcnews.com/now"],
     ["CBS News 24/7","Cadena general · informativo",[],"https://www.cbsnews.com/live/"],
     "Internacional (en inglés)",
-    ["Sky News","Reino Unido · informativo",[live("UCoMdktPbSTixAyNGwb-UYkQ")],"https://news.sky.com/watch-live"],
-    ["Al Jazeera English","Internacional · informativo",[live("UCNye-wNBqNL5ZzHSJj3l8Bg"),vid("gCNeDWCI0vo")],"https://www.aljazeera.com/live"],
-    ["DW News","Alemania · informativo",[live("UCknLrEdhRCp1aegoMqRaCZg"),vid("LuKwFajn37U")],"https://www.dw.com/en/live-tv/channel-english"],
-    ["France 24 English","Francia · informativo",[live("UCQfwfsi5VrQ8yKZ-UWmAEFg"),vid("Ap-UM1O9RBU")],"https://www.france24.com/en/live"],
-    ["Euronews English","Europa · informativo",[live("UCSrZ3UV4jOidv8ppoVuvW9Q")],"https://www.euronews.com/live"],
-    ["Bloomberg TV","Economía y mercados",[live("UCIALMKvObZNtJ6AmdCLP7Lg")],"https://www.bloomberg.com/live/us"]
+    ["Sky News","Reino Unido · informativo",[vid("YDvsBbKfLPA"),live("UCoMdktPbSTixAyNGwb-UYkQ"),live2("UCoMdktPbSTixAyNGwb-UYkQ")],"https://news.sky.com/watch-live"],
+    ["Al Jazeera English","Internacional · informativo",[vid("gCNeDWCI0vo"),live("UCNye-wNBqNL5ZzHSJj3l8Bg"),live2("UCNye-wNBqNL5ZzHSJj3l8Bg")],"https://www.aljazeera.com/live"],
+    ["DW News","Alemania · informativo",[vid("LuKwFajn37U"),live("UCknLrEdhRCp1aegoMqRaCZg"),live2("UCknLrEdhRCp1aegoMqRaCZg")],"https://www.dw.com/en/live-tv/channel-english"],
+    ["France 24 English","Francia · informativo",[vid("Ap-UM1O9RBU"),live("UCQfwfsi5VrQ8yKZ-UWmAEFg"),live2("UCQfwfsi5VrQ8yKZ-UWmAEFg")],"https://www.france24.com/en/live"],
+    ["Euronews English","Europa · informativo",[vid("pykpO5kQJ98"),live("UCSrZ3UV4jOidv8ppoVuvW9Q"),live2("UCSrZ3UV4jOidv8ppoVuvW9Q")],"https://www.euronews.com/live"],
+    ["Bloomberg TV","Economía y mercados",[vid("iEpJwprxDdk"),live("UCIALMKvObZNtJ6AmdCLP7Lg"),live2("UCIALMKvObZNtJ6AmdCLP7Lg")],"https://www.bloomberg.com/live/us"]
   ];
   let custom=[];try{custom=JSON.parse(localStorage.getItem("medieval-tv")||"[]")}catch(e){}
   const save=()=>{try{localStorage.setItem("medieval-tv",JSON.stringify(custom))}catch(e){}};
@@ -959,9 +960,17 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     if(btn)btn.classList.add("on");
     st.textContent="Cargando "+name+"…";
     const api=await loadAPI();if(my!==tok)return;
-    const attempt=i=>{
+    const status=i=>{
+      st.innerHTML="";st.append("Reproduciendo: "+name+" · ");
+      if(sources.length>1){
+        const o=document.createElement("a");o.href="#";o.textContent="↻ probar otra fuente ("+(i+1)+"/"+sources.length+")";o.style.color="inherit";
+        o.onclick=e=>{e.preventDefault();attempt((i+1)%sources.length)};st.appendChild(o);st.append(" · ");
+      }
+      st.appendChild(link("abrir en pestaña nueva ↗",site));
+    };
+    const attempt=(i,auto)=>{
       if(my!==tok)return;
-      if(i>=sources.length){
+      if(auto&&i>=sources.length){
         player.innerHTML="";player.classList.remove("on");
         st.innerHTML="";st.append("No se pudo reproducir "+name+" aquí (YouTube no la deja incrustar ahora). ",link("Ábrela en su sitio ↗",site));return}
       player.innerHTML="";
@@ -970,12 +979,12 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
       f.src=src;f.title=name;f.allowFullscreen=true;
       f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.referrerPolicy="strict-origin-when-cross-origin";
       player.appendChild(f);player.classList.add("on");
-      st.innerHTML="";st.append("Reproduciendo: "+name+" · ",link("abrir en pestaña nueva ↗",site));
+      status(i);
       if(api&&window.YT&&YT.Player){
-        try{new YT.Player(f,{events:{onError:()=>{if(my===tok)attempt(i+1)}}})}catch(e){}
+        try{new YT.Player(f,{events:{onError:()=>{if(my===tok)attempt(i+1,true)}}})}catch(e){}
       }
     };
-    attempt(0);
+    attempt(0,true);
   }
   function draw(){
     list.innerHTML="";
@@ -995,6 +1004,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   }
   const close=()=>{stop();$("tv").classList.remove("show")};
   $("tvb").onclick=()=>{draw();$("tv").classList.add("show")};
+  $("tvfs").onclick=()=>{if(player.classList.contains("on")&&player.requestFullscreen)player.requestFullscreen().catch(()=>{})};
   $("tvclose").onclick=close;$("tvstop").onclick=()=>{stop();st.textContent="Detenido."};
   $("tv").onclick=e=>{if(e.target.id==="tv")close()};
   document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("tv").classList.contains("show"))close()});
