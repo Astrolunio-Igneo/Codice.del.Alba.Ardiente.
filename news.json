@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16T19:31:48+00:00",
+  "actualizado": "2026-10-16T22:47:10+00:00",
   "items": [
     {
       "titulo": "Iran War: Trump Sowed The Wind, And Is Reaping The Whirlwind",
@@ -39,17 +39,24 @@
   ],
   "politica": [
     {
-      "titulo": "BREAKING: Zacharia ‘Transitioning Out’ After Trump Commented on Her Future",
-      "resumen": "Katie Zacharia is “transitioning out” of the White House press secretary position, a White House official confirmed to the Daily Signal. President Donald Trump opened the door to Zacharia leaving the role on Friday. “I…",
+      "titulo": "Religious Liberty on Display in Virginia Elections",
+      "resumen": "Catholics in all 70 parishes of the Diocese of Arlington heard the same letter read from the pulpit last month. Bishop Michael Burbidge asked every priest to urge a “no” vote on the two amendments to the Virginia…",
       "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/10/16/breaking-trump-opens-door-to-press-secretary-leaving/",
+      "url": "https://www.dailysignal.com/2026/10/16/religious-liberty-virginia-elections/",
       "fecha": "2026-10-16"
     },
     {
-      "titulo": "Blanche hopes to replicate success of Memphis crime task force to other cities",
-      "resumen": "Attorney General Todd Blanche celebrated on Friday the work of the joint federal and local operation cracking down on crime in Memphis just over a year ago, hoping to replicate efforts across the country with similar…",
+      "titulo": "Who might be the next White House press secretary after Katie Zacharia’s exit",
+      "resumen": "A pile of candidates is already being tossed around as possible replacements for Katie Zacharia, hours after she was ousted as White House press secretary. The White House announced Zacharia would “transition” out of…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/justice/4768848/blanche-hopes-to-replicate-success-of-memphis-crime-task-force-to-other-cities/",
+      "url": "https://www.washingtonexaminer.com/news/white-house/4769428/who-next-white-house-press-secretary-after-zacharia/",
+      "fecha": "2026-10-16"
+    },
+    {
+      "titulo": "Ohio Court Strikes Down a Scholarship Program That Supports More Than 100,000 Families",
+      "resumen": "The court called school choice a \"misnomer.\" The Ohio Supreme Court may get the last word.",
+      "fuente": "Reason",
+      "url": "https://reason.com/2026/10/16/ohio-court-strikes-down-a-scholarship-program-that-supports-more-than-100000-families/",
       "fecha": "2026-10-16"
     },
     {
@@ -57,13 +64,6 @@
       "resumen": "Today’s vibe resembles the environment prior to Trump’s return to the White House.",
       "fuente": "National Review",
       "url": "https://www.nationalreview.com/2026/10/is-it-the-return-of-woke/",
-      "fecha": "2026-10-16"
-    },
-    {
-      "titulo": "DOGE Worked? Only If You Grade on a Curve.",
-      "resumen": "Cutting the number of federal employees wasn't the disaster that many critics fretted about, but that wasn't the metric for success.",
-      "fuente": "Reason",
-      "url": "https://reason.com/2026/10/16/doge-worked-only-if-you-grade-on-a-curve/",
       "fecha": "2026-10-16"
     },
     {
@@ -76,26 +76,26 @@
   ],
   "diarias": [
     {
-      "titulo": "How Iran messaging highlights cost of war ahead of US midterm elections",
-      "resumen": "Through statements in English, Iranian officials are emphasising gas prices and issues with the US economy.",
+      "titulo": "Yemen’s government says Houthis fired two missiles at Aden airport",
+      "resumen": "Attack comes as Yemeni gov't forces claim advances in Marib and say they 'neutralised' 430 Houthi fighters in 24 hours.",
       "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/10/16/how-iran-messaging-highlights-cost-of-war-ahead-of-us-midterm-elections?traffic_source=rss",
+      "url": "https://www.aljazeera.com/news/2026/10/16/yemens-government-says-houthis-fired-two-missiles-at-aden-airport?traffic_source=rss",
       "fecha": "2026-10-16",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "At summit, EU leaders pledge support for Ukraine's Zelenskyy",
-      "resumen": "President Zelenskyy has received words of encouragement from EU leaders, who pledged support for Ukraine's self-defense against Russia. This comes as winter approaches and the US seems to be withdrawing support.",
+      "titulo": "Ukrainian President Zelenskyy speaks at EU summit amid spat with Donald Trump",
+      "resumen": "EU leaders reaffirmed support for Ukraine at the Brussels summit. But souring relations with the US over Russia and Starlink and a big hole in the budget will make for a difficult winter for Ukraine.",
       "fuente": "DW",
-      "url": "https://www.dw.com/en/at-summit-eu-leaders-pledge-support-for-ukraine-s-zelenskyy/a-79678808?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/ukrainian-president-zelenskyy-speaks-at-eu-summit-amid-spat-with-donald-trump/a-79684340?maca=en-rss-en-all-1573-rdf",
       "fecha": "2026-10-16",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Cómo recuperar tu atención antes de que se te escape",
-      "resumen": "Hay una palabra en el mensaje de León XIV para la Jornada Mundial de las Comunicaciones Sociales de 2027 que merece la pena analizar. «Atención», señala, proviene del latín ad-tendere, «extenderse hacia». No se trata de…",
+      "titulo": "¿Las películas románticas crean expectativas irreales del amor?",
+      "resumen": "Una promesa de amor bajo la lluvia, una cena sorpresa o una reconciliación en la que los protagonistas parecen encontrar siempre las palabras adecuadas. Las películas románticas saben cómo hacernos suspirar y…",
       "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/10/16/como-recuperar-tu-atencion-antes-de-que-se-te-escape/",
+      "url": "https://es.aleteia.org/2026/10/16/las-peliculas-romanticas-crean-expectativas-irreales-del-amor/",
       "fecha": "2026-10-16",
       "cat": "⛪ Iglesia católica"
     },
@@ -108,18 +108,18 @@
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "‘I served with Ilhan Omar’s father in the Somali military — people were scared of him’: ex-officer",
-      "resumen": "Nur played an “important part” in the Somali-Ethiopian war between July 1977 and March 1978, the former army officer claimed.",
-      "fuente": "NY Post",
-      "url": "https://nypost.com/2026/10/16/us-news/i-served-with-ilhan-omars-father-in-the-somali-military-people-were-scared-of-him-ex-officer-claims/",
+      "titulo": "5 days of Katie Zacharia: The rapid fall of Trump's 'lawyer' press secretary",
+      "resumen": "Katie Zacharia won’t be remembered as one of the “all-time greats” in the White House press room, as one of her colleagues predicted this week, but she will go down in the annals of presidential press secretary history…",
+      "fuente": "The Hill",
+      "url": "https://thehill.com/homenews/administration/6155287-katie-zacharia-white-house-exit-five-days/",
       "fecha": "2026-10-16",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Mamdani, New York Democrats call on private parking lot owners to ban ICE officers",
-      "resumen": "New York City Mayor Zohran Mamdani (D) and other Empire State Democratic leaders urged the city's private parking lot owners Friday to ban Immigration and Customs Enforcement (ICE) officers from their properties. “In…",
-      "fuente": "The Hill",
-      "url": "https://thehill.com/homenews/state-watch/6154673-democrats-mamdani-parking-lot-ice-ban/",
+      "titulo": "Trump stands by Susie Wiles as knives come out at White House before midterms",
+      "resumen": "President Trump sought to put to rest two days of speculation that he might replace White House chief of staff Susie Wiles, saying Friday there is \"zero chance\" of her firing and that Wiles is \"going to be here for a…",
+      "fuente": "NY Post",
+      "url": "https://nypost.com/2026/10/16/us-news/trump-stands-by-susie-wiles-as-infighting-consumes-jittery-white-house-ahead-of-midterms/",
       "fecha": "2026-10-16",
       "cat": "🇺🇸 Política de EE. UU."
     },
@@ -132,26 +132,26 @@
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Cómo se vive en Perú la incertidumbre sobre la visita del Papa",
-      "resumen": "José Luis Franco analizó la profunda carga social y política que conlleva la visita papal a América Latina, los problemas estructurales de Perú y la esperanza de un discurso alineado con la doctrina social de la…",
-      "fuente": "Perfil",
-      "url": "https://www.perfil.com/noticias/modo-fontevecchia/como-se-vive-en-peru-la-incertidumbre-sobre-la-visita-del-papa-modof.phtml",
+      "titulo": "La carrera para la secretaría de la ONU al rojo vivo: el candidato argentino continúa con chances, pero tuvo dos vetos de las potencias, igual que sus rivales",
+      "resumen": "La novedad de esta votación es que los miembros permanentes del Consejo, las 5 grandes potencias, comenzaron a mostrar a quién prefieren. Rafael Grossi, jefe de la OIEA, tuvo más apoyos y bajó sus votos en contra. Pero…",
+      "fuente": "Clarín",
+      "url": "https://www.clarin.com/politica/carrera-secretaria-onu-rojo-vivo-candidato-argentino-continua-chances-vetos-potencias-igual-rivales_0_osw4b4g3vO.html",
       "fecha": "2026-10-16",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "La dispersión del voto creció en las últimas elecciones municipales en Lima Metropolitana: ¿Cuántos distritos y qué zonas apoyaron a los alcaldes ganadores?",
-      "resumen": "El voto en Lima Metropolitana se ha fragmentado con el paso de los años. En las últimas elecciones municipales, celebradas en el 2022, Rafael López Aliaga, de Renovación Popular, se convirtió en alcalde de la capital…",
-      "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/ecdata/elecciones-2026-la-dispersion-del-voto-crecio-en-las-ultimas-elecciones-municipales-en-lima-metropolitana-cuantos-distritos-y-que-zonas-apoyaron-a-los-alcaldes-ganadores-rafael-lopez-aliaga-carlos-bruce-francis-allison-onpe-jne-noticia/",
+      "titulo": "ONPE al 100%: así van los resultados en las regiones que completaron el conteo de votos de las Elecciones 2026",
+      "resumen": "Conoce los resultados en las regiones del Perú que ya alcanzaron el 100% del conteo oficial de ONPE. Además, revisa cuáles serían las que disputarían una segunda vuelta electoral.",
+      "fuente": "RPP",
+      "url": "https://rpp.pe/politica/elecciones/resultados-onpe-al-100-asi-quedo-el-conteo-en-regiones-elecciones-2026-noticia-1712996",
       "fecha": "2026-10-16",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "ONPE al 100%: los resultados en 4 distritos de Lima Metropolitana que ya acabaron su conteo oficial",
-      "resumen": "Conoce los resultados en los distritos de Lima Metropolitana que ya alcanzaron el 100% del conteo oficial de las Elecciones Regionales y Municipales.",
-      "fuente": "RPP",
-      "url": "https://rpp.pe/politica/elecciones/resultados-onpe-al-100-en-distritos-de-lima-metropolitana-en-elecciones-2026-noticia-1712989",
+      "titulo": "Viceministra de Minas: “Estamos estableciendo un plazo de 18 meses y no abrimos la puerta a una nueva ampliación”",
+      "resumen": "La viceministra de Minas, Mayra Figueroa, defiende el proyecto de Ley MAPE del gobierno y detalla que el plazo que tendrán los mineros informales para concluir el proceso de formalización será de 18 meses y ya no de dos…",
+      "fuente": "El Comercio",
+      "url": "https://elcomercio.pe/politica/gobierno/entrevista-ley-mape-viceministra-de-minas-estamos-estableciendo-un-plazo-de-18-meses-y-no-abrimos-la-puerta-a-una-nueva-ampliacion-entrevista-noticia/",
       "fecha": "2026-10-16",
       "cat": "🇵🇪 Política peruana"
     }
