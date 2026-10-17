@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-17T15:29:28+00:00",
+  "actualizado": "2026-10-17T18:25:58+00:00",
   "items": [
     {
       "titulo": "The Politics of Denial: When Americans Stop Seeing the Warning Signs",
@@ -39,10 +39,17 @@
   ],
   "politica": [
     {
-      "titulo": "Vance publicly hints at his disagreement with Trump over Iran war",
-      "resumen": "Vice President JD Vance on Friday publicly hinted at breaking with President Donald Trump over the Iran war, signaling a split at the White House as the conflict approaches the eight-month mark. Vance made the comments…",
+      "titulo": "Zelensky says Starshield still restricted in Ukraine as Musk and White House refuse to take responsibility",
+      "resumen": "Ukrainian President Volodymyr Zelensky on Saturday said Starshield systems are still being restricted for use in his country’s war against Russia, warning the breakdown is a “planned operation” to target Kyiv…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/white-house/4769787/vance-public-hint-disagree-trump-iran-war/",
+      "url": "https://www.washingtonexaminer.com/policy/defense/4769878/zelensky-starshield-still-restrict-ukraine/",
+      "fecha": "2026-10-17"
+    },
+    {
+      "titulo": "Socialism Is Surging Across America. Here’s What’s Driving It.",
+      "resumen": "Summary Socialist candidates are running for election this year across the United States, some with the outright endorsement of Democratic Socialists of America and others who prefer to avoid any association with the…",
+      "fuente": "The Daily Signal",
+      "url": "https://www.dailysignal.com/2026/10/17/socialism-spreads-across-america/",
       "fecha": "2026-10-17"
     },
     {
@@ -50,13 +57,6 @@
       "resumen": "10/17/1862: Justice David Davis takes oath. The post Today in Supreme Court History: October 17, 1862 appeared first on Reason Magazine.",
       "fuente": "Reason",
       "url": "https://reason.com/volokh/2026/10/17/today-in-supreme-court-history-october-17-1862-8/",
-      "fecha": "2026-10-17"
-    },
-    {
-      "titulo": "Has Kristen Welker Ever Been Weaker?",
-      "resumen": "Twenty years ago, Democrat politicians had a reason to be queasy over making an appearance on NBC‘s “Meet the Press.” Back then, host Tim Russert asked pointed questions, often relying on research to bring up…",
-      "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/10/17/has-kristen-welker-ever-been-weaker/",
       "fecha": "2026-10-17"
     },
     {
@@ -76,52 +76,60 @@
   ],
   "diarias": [
     {
-      "titulo": "How big is Russia's threat against Germany?",
-      "resumen": "Experts believe that, so far, Germany has been ill-prepared — both militarily and mentally — for Russian provocations. They also warn against the idea that ending support for Ukraine would make Germany safer.",
+      "titulo": "Romanian fighter jets shoot down 2 drones over Black Sea",
+      "resumen": "Romanian Air Force F-16s shot down drones over Romanian territorial waters. Earlier this week, two chemical tankers were hit by drones near Romania's Black Sea coast.",
       "fuente": "DW",
-      "url": "https://www.dw.com/en/how-big-is-russia-s-threat-against-germany/a-79688426?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/romanian-fighter-jets-shoot-down-2-drones-over-black-sea/a-79689156?maca=en-rss-en-all-1573-rdf",
       "fecha": "2026-10-17",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Child, four women among Palestinians injured in West Bank pogroms",
-      "resumen": "Attacks follow a religious edict by a prominent far-right rabbi permitting the seizure of Palestinian olives.",
+      "titulo": "Trump faces bipartisan backlash over Russia sanctions waiver",
+      "resumen": "Republicans and Democrats condemn Trump’s decision to suspend sanctions, saying it undermines support for Ukraine.",
       "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom?traffic_source=rss",
+      "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver?traffic_source=rss",
       "fecha": "2026-10-17",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Pope’s surgeon: No clinical reason to cancel visit to South America",
-      "resumen": "In an interview with Vatican News, Professor Stefano Margaritora, who operated on Pope Leo XIV on October 13, says the surgery was routine, though he experienced “a deep feeling I cannot describe.” The Pope needs about…",
+      "titulo": "Tagle: Recemos por León XIV, \"el misionero que se convirtió en Papa\"",
+      "resumen": "El cardenal pro-prefecto del Dicasterio para la Evangelización y decano del Colegio Cardenalicio preside el rezo del Rosario Misionero en el campus de la Pontificia Universidad Urbaniana, en vísperas del Centenario del…",
+      "fuente": "Vatican News",
+      "url": "https://www.vaticannews.va/es/vaticano/news/2026-10/tagle-rezar-por-leon-vigilia-jornada-mundial-misionera.html",
+      "fecha": "2026-10-17",
+      "cat": "⛪ Iglesia católica"
+    },
+    {
+      "titulo": "Trump suspends Russia sanctions as deadly attacks plunge Ukraine into darkness",
+      "resumen": "Donald Trump suspends recently passed sanctions and tariffs aimed at Russia that were due to take effect in just a few days, prompting criticism from Ukraine and from European allies. Read all &nbsp;",
       "fuente": "Vatican News (EN)",
-      "url": "https://www.vaticannews.va/en/pope/news/2026-10/pope-leo-xiv-interview-surgeon-stefano-margaritora.html",
+      "url": "https://www.vaticannews.va/en/world/news/2026-10/trump-suspends-russia-sanctions.html",
       "fecha": "2026-10-17",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "México y su crisis de salud: entre las cifras oficiales y la realidad de los pacientes",
-      "resumen": "Conseguir una cita con el especialista en casi cualquier hospital supone una espera de varios meses; más todavía si se requiere alguna cirugía. Recorrer farmacias buscando un medicamento que el propio médico del Seguro…",
-      "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/10/17/mexico-y-su-crisis-de-salud-entre-las-cifras-oficiales-y-la-realidad-de-los-pacientes/",
-      "fecha": "2026-10-17",
-      "cat": "⛪ Iglesia católica"
-    },
-    {
-      "titulo": "George Santos: 'I’d jump to serve' as White House press secretary",
-      "resumen": "Former Rep. George Santos (R-Fla.) pitched himself on Friday to fill the vacancy left by White House press secretary Katie Zacharia. “Hey I’m not technically open for a job because I have one already…. butttttttt… I’d…",
-      "fuente": "The Hill",
-      "url": "https://thehill.com/homenews/house/6155846-george-santos-press-secretary/",
-      "fecha": "2026-10-17",
-      "cat": "🇺🇸 Política de EE. UU."
-    },
-    {
-      "titulo": "Trump traveling to Kentucky to rally supporters ahead of midterms",
-      "resumen": "President Trump hits the road again Saturday in just his latest trip to rally supporters in Republican-leaning territory – this time with a trip to Kentucky, where he hopes to shore up a suddenly competitive House race…",
+      "titulo": "Billionaires’ tax getting dry-run in California before socialists, AOC hits DC",
+      "resumen": "A billionaires' tax appearing on the California ballot next month is drawing furious resistance from an unusual alliance that includes lefty Gov. Gavin Newsom, GOPers, Hollywood elites and tech billionaires.",
       "fuente": "NY Post",
-      "url": "https://nypost.com/2026/10/17/us-news/trump-heading-to-kentucky-to-rally-supporters-ahead-of-midterms/",
+      "url": "https://nypost.com/2026/10/17/us-news/billionaires-tax-getting-dry-run-in-california-before-socialists-aoc-hits-dc/",
       "fecha": "2026-10-17",
       "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "Terror groups are handing Venezuela’s critical minerals over to China",
+      "resumen": "The Trump administration must address the corruption of the Venezuelan government and its role in allowing terrorist organizations and cartels to fund themselves by smuggling critical minerals to Chinese buyers.",
+      "fuente": "The Hill",
+      "url": "https://thehill.com/opinion/international/6154927-illicit-mining-funds-violence/",
+      "fecha": "2026-10-17",
+      "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "El PJ pidió por la libertad de Cristina Kirchner y Kicillof dijo: “Cuenten conmigo para derrotar esta pesadilla en las urnas”",
+      "resumen": "En el Día de la Lealtad, el partido equiparó la persecución a Perón con la de la expresidenta; divididos, Máximo Kirchner asistió a un acto en Chaco y el gobernador bonaerense estuvo en La Matanza",
+      "fuente": "La Nación",
+      "url": "https://www.lanacion.com.ar/politica/dia-de-la-lealtad-el-pj-pidio-por-la-libertad-de-cristina-kirchner-y-el-fin-de-su-proscripcion-nid17102026/",
+      "fecha": "2026-10-17",
+      "cat": "🇦🇷 Política argentina"
     },
     {
       "titulo": "Diputada peronista: \"En algún momento el partido va a tener que tomar decisión sobre estos pseudocompañeros\"",
@@ -132,26 +140,18 @@
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "La crisis del mercado laboral detrás de la revolución del monotributo",
-      "resumen": "El Gobierno relativiza las estadísticas sobre la caída del empleo registrado con el argumento de que subió la informalidad y el cuentapropismo; la Secretaría de Trabajo recortó el 70% de su personal y pierde influencia",
-      "fuente": "La Nación",
-      "url": "https://www.lanacion.com.ar/politica/la-crisis-del-mercado-laboral-detras-de-la-revolucion-del-monotributo-nid17102026/",
-      "fecha": "2026-10-17",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "Fuerza Popular busca extender la reducción de IGV para hoteles y restaurantes más allá del 2026",
-      "resumen": "La tasa especial del IGV vence este 2026. Y ya la diputada Rosángella Barbarán ha propuesto que se extienda, sin fin de vencimiento de la vigencia",
+      "titulo": "Bono de S/100 por trabajador irá para 144 mil microempresas: Fecha tentativa y requisitos",
+      "resumen": "Gobierno tomó la medida por el impacto del alza del sueldo mínimo en octubre. Pero no irá para todos y no se extenderá más allá de este mes",
       "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/2026/10/17/fuerza-popular-busca-extender-la-reduccion-de-igv-para-hoteles-y-restaurantes-mas-alla-del-2026/",
+      "url": "https://www.infobae.com/peru/2026/10/17/bono-de-s100-por-trabajador-ira-para-144-mil-microempresas-fecha-tentativa-y-requisitos/",
       "fecha": "2026-10-17",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Renovación Popular se declara en reorganización partidaria: ¿A qué se debe y cuáles son los alcances de la decisión?",
-      "resumen": "La medida deja sin efecto las credenciales de los coordinadores regionales, provinciales y distritales, cuyos desempeños serán evaluados tras las elecciones de 2026.",
+      "titulo": "Alfonso, ¿ahora qué?, una crónica de Fernando Vivas sobre López-Chau, líder de Ahora Nación",
+      "resumen": "El líder de Ahora Nación y portavoz de su bancada de senadores, Alfonso López-Chau, quiere contentar a todos. Su bancada, con fuertes personalidades divergentes, suele votar partida.",
       "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/renovacion-popular-se-declara-en-reorganizacion-partidaria-a-que-se-debe-y-cuales-son-los-alcances-de-la-decision-noticia/",
+      "url": "https://elcomercio.pe/politica/alfonso-ahora-que-una-cronica-de-fernando-vivas-sobre-lopez-chau-lider-de-ahora-nacion-apuesplan-noticia/",
       "fecha": "2026-10-17",
       "cat": "🇵🇪 Política peruana"
     }
