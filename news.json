@@ -1,6 +1,13 @@
 {
-  "actualizado": "2026-10-18T04:22:40+00:00",
+  "actualizado": "2026-10-18T12:35:02+00:00",
   "items": [
+    {
+      "titulo": "Trump's War With Iran Pushed Him To Waive a Century-Old Shipping Law. Commerce Boomed.",
+      "resumen": "The Jones Act requires all goods moved between American ports to be carried on American-built, American-crewed ships.",
+      "fuente": "Reason",
+      "url": "https://reason.com/2026/10/18/a-world-without-the-jones-act/",
+      "fecha": "2026-10-18"
+    },
     {
       "titulo": "Vice President J.D. Vance’s Deceptive ‘Antiwar’ Campaign Speech",
       "resumen": "J.D. Vance is approaching the halfway point of his term as vice president in an administration that has committed the United States to wars in locations from Ukraine to Venezuela to Somalia to Iran and beyond. All the…",
@@ -13,13 +20,6 @@
       "resumen": "The fastest way to misread a war is to believe one leader can simply declare it over. We dig into President Trump’s claim that the Iran war will end “very soon” and test it against the hard constraints that actually…",
       "fuente": "Libertarian Institute",
       "url": "https://libertarianinstitute.org/blog/the-kyle-anzalone-show-bombs-backroom-deals-blowback-trumps-iran-gamble-and-kushners-private-diplomacy/?utm_source=rss&utm_medium=rss&utm_campaign=the-kyle-anzalone-show-bombs-backroom-deals-blowback-trumps-iran-gamble-and-kushners-private-diplomacy",
-      "fecha": "2026-10-16"
-    },
-    {
-      "titulo": "Bitcoin Is a Threat to Government-Controlled Money",
-      "resumen": "Brazilian economist Fernando Ulrich discusses Bitcoin's challenge to state-controlled money, the AI boom's impact on crypto, and Javier Milei's economic reforms.",
-      "fuente": "Reason",
-      "url": "https://reason.com/podcast/2026/10/16/bitcoin-is-a-threat-to-government-controlled-money/",
       "fecha": "2026-10-16"
     },
     {
@@ -39,32 +39,32 @@
   ],
   "politica": [
     {
-      "titulo": "Vance says he’ll ‘have to make a decision’ on 2028 presidential run after midterm elections",
-      "resumen": "Vice President JD Vance addressed widespread speculation he will run for president in the 2028 election cycle during a town hall released on Saturday night. While speaking with Tony Dokoupil of CBS News in Michigan…",
-      "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/campaigns/presidential/4770032/vance-says-decision-2028-presidential-after-midterm/",
+      "titulo": "\"The Supreme Court Should Not Have to Keep Trimming the Same Poison Ivy One Tiny Branch at a Time\"",
+      "resumen": "A nice line from Ninth Circuit Judge Lawrence VanDyke.",
+      "fuente": "Reason",
+      "url": "https://reason.com/volokh/2026/10/18/the-supreme-court-should-not-have-to-keep-trimming-the-same-poison-ivy-one-tiny-branch-at-a-time/",
       "fecha": "2026-10-18"
     },
     {
-      "titulo": "The Real Story Behind Socialism’s Rapid Rise in America",
-      "resumen": "Summary Socialist candidates are running for election this year across the United States, some with the outright endorsement of Democratic Socialists of America and others who prefer to avoid any association with the…",
+      "titulo": "One ad, one price. Congress should say so",
+      "resumen": "Less than three weeks before the midterm elections, the Supreme Court told the Federal Communications Commission to take its time. This week, the justices lifted a court-ordered deadline that would have forced the…",
+      "fuente": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/op-eds/4767361/fcc-political-ad-rates-congress-section-315/",
+      "fecha": "2026-10-18"
+    },
+    {
+      "titulo": "The Perils of Believing the Pollsters Every October",
+      "resumen": "Everyone absorbing the elitist media spin on the midterm elections cannot avoid the swirling symphony of doom for the Republicans. Conventional wisdom suggests a good night for Democrats, and that’s before you look at…",
       "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/10/17/socialism-spreads-across-america/",
-      "fecha": "2026-10-17"
+      "url": "https://www.dailysignal.com/2026/10/18/the-perils-of-believing-the-pollsters-every-october/",
+      "fecha": "2026-10-18"
     },
     {
-      "titulo": "Today in Supreme Court History: October 17, 1862",
-      "resumen": "10/17/1862: Justice David Davis takes oath. The post Today in Supreme Court History: October 17, 1862 appeared first on Reason Magazine.",
-      "fuente": "Reason",
-      "url": "https://reason.com/volokh/2026/10/17/today-in-supreme-court-history-october-17-1862-8/",
-      "fecha": "2026-10-17"
-    },
-    {
-      "titulo": "Congress Must Investigate Trump’s Aid and Comfort to Putin",
-      "resumen": "Republicans and Democrats, together, should regard this week’s developments as the last straw.",
+      "titulo": "Andy Beshear’s Perilous Invocation of Faith",
+      "resumen": "The Kentucky governor uses Scripture to justify political beliefs that belie biblical teachings.",
       "fuente": "National Review",
-      "url": "https://www.nationalreview.com/2026/10/congress-must-investigate-trumps-aid-and-comfort-to-putin/",
-      "fecha": "2026-10-17"
+      "url": "https://www.nationalreview.com/2026/10/andy-beshears-perilous-invocation-of-faith/",
+      "fecha": "2026-10-18"
     },
     {
       "titulo": "La opinión del Instituto Juan de Mariana, de nuevo en The Wall Street Journal: el diario estadounidense consulta al IJM sobre la crisis de vivienda y la política de Sánchez",
@@ -76,83 +76,83 @@
   ],
   "diarias": [
     {
-      "titulo": "Deadly fire breaks out at Canada military base",
-      "resumen": "Defence Minister David McGuinty says there are casualties in what the prime minister called a \"serious incident\".",
+      "titulo": "European diplomats attacked by Israeli settlers in West Bank",
+      "resumen": "The Israeli military condemns the violence but the prime minister's office says it is part of a \"smear\" campaign.",
       "fuente": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
       "fecha": "2026-10-18",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Rubio wants ‘crackdown’ on settler violence after US journalist attack",
-      "resumen": "",
+      "titulo": "There’s a ‘New Middle East’, but not the one Israel planned",
+      "resumen": "Instead of redrawing the region, Israel's wars of expasion pushed the region to work together against it.",
       "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/rubio-wants-crackdown-on-settler-violence-after-us-journalist-attack?traffic_source=rss",
+      "url": "https://www.aljazeera.com/video/pinch-point/2026/10/18/pp-new-middle-east?traffic_source=rss",
       "fecha": "2026-10-18",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "El Papa deja el hospital y su viaje a Sudamérica continúa",
-      "resumen": "El Papa León XIV salió de la Policlínica Gemelli, donde estuvo hospitalizado durante cinco días para someterse a una cirugía pulmonar que reveló la presencia de un tumor canceroso, según informó I.MEDIA el 17 de octubre…",
-      "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/10/17/el-papa-deja-el-hospital-y-su-viaje-a-sudamerica-continua/",
-      "fecha": "2026-10-17",
+      "titulo": "Pope grants plenary indulgence for 100th World Mission Sunday",
+      "resumen": "On World Mission Sunday, Pope Leo XIV prays that the Church might always remain faithful to Jesus’ exhortation to “Go into all the world and proclaim the good news to all creation” Read all &nbsp;",
+      "fuente": "Vatican News (EN)",
+      "url": "https://www.vaticannews.va/en/pope/news/2026-10/pope-leo-plenary-indulgence-100th-world-mission-sunday-angelus.html",
+      "fecha": "2026-10-18",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Tagle: Recemos por León XIV, \"el misionero que se convirtió en Papa\"",
-      "resumen": "El cardenal pro-prefecto del Dicasterio para la Evangelización y decano del Colegio Cardenalicio preside el rezo del Rosario Misionero en el campus de la Pontificia Universidad Urbaniana, en vísperas del Centenario del…",
+      "titulo": "León XIV: gracias a todos los que han rezado por mí, he sentido su apoyo",
+      "resumen": "Al término del rezo del Ángelus, el Pontífice, dado de alta ayer del Policlínico Gemelli tras la extirpación, el martes pasado, del lóbulo inferior del pulmón derecho debido a un adenocarcinoma, agradece las oraciones…",
       "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/vaticano/news/2026-10/tagle-rezar-por-leon-vigilia-jornada-mundial-misionera.html",
-      "fecha": "2026-10-17",
+      "url": "https://www.vaticannews.va/es/papa/news/2026-10/papa-leon-xiv-gracias-a-todos-los-que-han-rezado-por-mi.html",
+      "fecha": "2026-10-18",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Shapiro launches super PAC as presidential speculation mounts",
-      "resumen": "Pennsylvania Gov. Josh Shapiro (D) is launching a new political action committee (PAC), raising speculation that the governor may run for president in 2028. The committee, called New Path PAC, says on its website that…",
+      "titulo": "Vance says in 'some ways' US has 'decisively won' Iran war",
+      "resumen": "Vice President Vance claimed Saturday that in “some ways” the United States has “decisively won” its war against Iran. “I would say in some ways, we have won decisively, but they're — the Iranians, the enemy gets a vote…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/homenews/campaign/6156280-shapiro-launches-super-pac/",
+      "url": "https://thehill.com/homenews/administration/6156378-vance-claims-us-won-iran-war/",
       "fecha": "2026-10-18",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Michigan Democrat confirms sister-in-law's terror watchlist lawsuit days before Obama campaign appearance",
-      "resumen": "Abdul El-Sayed acknowledged his sister-in-law's involvement in a federal terrorist watchlist lawsuit, days before former President Barack Obama campaigns with him.",
-      "fuente": "Fox News",
-      "url": "https://www.foxnews.com/politics/michigan-democrat-confirms-sister-in-law-terror-watchlist-lawsuit-days-before-obama-campaign-appearance",
-      "fecha": "2026-10-17",
+      "titulo": "Greensboro, NC students protest the absence of early voting sites on campus",
+      "resumen": "NPR's Ayesha Rascoe talks to North Carolina A&T student Shia Rozier about disappointment with early voting sites in Greensboro.",
+      "fuente": "NPR",
+      "url": "https://www.npr.org/2026/10/18/nx-s1-6006791/greensboro-nc-students-protest-the-absence-of-early-voting-sites-on-campus",
+      "fecha": "2026-10-18",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "El Gobierno quiere destrabar el Súper RIGI en el Senado y le hizo una contrapropuesta a los aliados",
-      "resumen": "Tres senadores exigieron ampliar el término “precio/calidad” para amortiguar importaciones que se expanden e impactan en el vigente RIGI. El Ministerio de Economía, que comanda Luis Caputo, piensa una opción para…",
-      "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/10/18/el-gobierno-quiere-destrabar-el-super-rigi-en-el-senado-y-le-hizo-una-contrapropuesta-a-los-aliados/",
-      "fecha": "2026-10-18",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "La bazuca de Milei y su alianza de cristal",
-      "resumen": "El Gobierno está a la defensiva ante un sistema político que lo obliga a resignar reformas y negociar todo el tiempo para no caer en una crisis; el dilema entre tranquilizar al mercado y reavivar la ilusión de…",
+      "titulo": "A pesar del optimismo de Diego Santilli, el Gobierno no logra aún los votos en el Senado para eliminar las PASO",
+      "resumen": "El jefe de Gabinete dijo que tenía el respaldo suficiente de los gobernadores, pero al contar los apoyos quedó lejos de los 37 senadores para aprobar la reforma electoral",
       "fuente": "La Nación",
-      "url": "https://www.lanacion.com.ar/politica/la-bazuca-de-milei-y-su-alianza-de-cristal-nid17102026/",
+      "url": "https://www.lanacion.com.ar/politica/a-pesar-del-optimismo-de-diego-santilli-el-gobierno-no-logra-aun-los-votos-en-el-senado-para-nid18102026/",
       "fecha": "2026-10-18",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Universitario vs Deportivo Soan 3-0: resumen de la victoria ‘crema’ por fecha 1 de la Liga Peruana de Vóley 2026-27",
-      "resumen": "El equipo de Francisco Hervás se estrenó con triunfo en la temporada frente a un conjunto de Puente Piedra que fue de menos a más en el partido, pero no le alcanzó para complicar en demasía a las ‘pumas’",
+      "titulo": "La TV Pública vuelve a llamarse Canal 7 por decisión del gobierno de Milei",
+      "resumen": "Al cumplirse 75 años de la primera transmisión de la señal estatal, la administración libertaria cambió su nombre y le dio un nuevo logo. Leer más",
+      "fuente": "Perfil",
+      "url": "https://www.perfil.com/noticias/politica/la-tv-publica-vuelve-a-llamarse-canal-7-por-decision-del-gobierno-de-milei.phtml",
+      "fecha": "2026-10-18",
+      "cat": "🇦🇷 Política argentina"
+    },
+    {
+      "titulo": "Procesión del Señor de los Milagros EN VIVO HOY: segundo recorrido y ubicación de la imagen del Cristo Moreno por las calles del Centro de Lima",
+      "resumen": "El itinerario contempla el paso por los alrededores de las principales instituciones públicas de Lima y un homenaje del Congreso de la República en las inmediaciones de la plaza Bolívar.",
       "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/deportes/2026/10/17/universitario-vs-deportivo-soan-en-vivo-hoy-punto-a-punto-partido-fecha-1-liga-peruana-de-voley-2026-2027-resumen-resultado/",
-      "fecha": "2026-10-17",
+      "url": "https://www.infobae.com/peru/2026/10/18/procesion-del-senor-de-los-milagros-en-vivo-hoy-segundo-recorrido-y-ubicacion-de-la-imagen-del-cristo-moreno-por-las-calles-del-centro-de-lima/",
+      "fecha": "2026-10-18",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Comisión de Constitución aún no convoca a sesión para debatir pedido de facultades",
-      "resumen": "La falta de una convocatoria formal mantiene la discusión del pedido de facultades legislativas del Gobierno de Keiko Fujimori en incertidumbre. Mientras la oposición rechaza el manejo del proceso desde la Comisión de…",
+      "titulo": "Fernando Cerimedo tenía operadores en las elecciones del Perú",
+      "resumen": "Conexiones gauchas. El consultor argentino prefirió mantener un perfil bajo en nuestro país, pero plantó a sus contactos, según su expareja Nadia Beller. Fuerza Popular contrató al argentino Federico Falco, quien…",
       "fuente": "La República",
-      "url": "https://larepublica.pe/politica/2026/10/17/comision-de-constitucion-aun-no-convoca-a-sesion-para-debatir-pedido-de-facultades-hnews-696677",
-      "fecha": "2026-10-17",
+      "url": "https://larepublica.pe/politica/2026/10/18/fernando-cerimedo-tenia-operadores-en-las-elecciones-del-peru-keiko-fujimori-federico-falco-fuerza-popular-hnews-879410",
+      "fecha": "2026-10-18",
       "cat": "🇵🇪 Política peruana"
     }
   ]
