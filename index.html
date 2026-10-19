@@ -133,7 +133,7 @@ body.pmfs{overflow:hidden}
 #clkw .sep{opacity:.55}
 @media(min-width:900px){#clkw{height:40px;padding:0 18px;gap:10px;border-radius:20px;font-size:17px;letter-spacing:1.6px}#clkw .sep{opacity:.7}}
 #pmwx{display:none}
-#pomo.fs #pmwx{display:flex;justify-content:space-between;align-items:flex-end;position:fixed;left:calc(16px + env(safe-area-inset-left,0px));right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:51;pointer-events:none;font-size:clamp(12px,1.9vh,15px);color:#e9c872;opacity:.5;user-select:none}
+#pomo.fs #pmwx{display:flex;justify-content:space-between;align-items:flex-end;position:fixed;left:calc(16px + env(safe-area-inset-left,0px));right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:51;pointer-events:none;font-size:clamp(15px,2.6vh,22px);color:#f2dc96;opacity:.95;user-select:none}
 #pmwx .wxb{pointer-events:auto}
 @media(max-width:380px){#clkw{padding:0 10px;gap:5px;font-size:12px}}
 @media(max-width:700px){h1{letter-spacing:1px;font-size:clamp(24px,7.2vw,34px)}#pomo{margin-left:12px;margin-right:12px}}
@@ -241,6 +241,11 @@ html[data-theme=dark] #themeb{background:linear-gradient(#0c1530,#17294f);box-sh
 #tvurl{flex:1 1 220px;min-width:0;padding:9px 10px;font:inherit;font-size:14px;background:#fbf3dc;color:var(--ink);border:2px solid var(--gold);border-radius:4px}
 html[data-theme=dark] #tvurl{background:#120e09;color:#f1e6c8}
 html[data-theme=dark] #tvst{color:#e8836f}
+#pmwk{font-size:13px;letter-spacing:1px;color:#e9c872;opacity:.9}#pmeye{font-size:13px;letter-spacing:.5px;color:#e9c872;text-align:center;max-width:420px}#pmeye:empty{display:none}#pmor{display:none}
+#pomo.fs #pmwk,#pomo.fs #pmeye{font-size:clamp(14px,2.2vh,19px)}
+#pomo.fs #pmor{display:block;max-width:min(720px,86vw);text-align:center;font-style:italic;font-size:clamp(14px,2.3vh,20px);line-height:1.5;color:#d9c58a;opacity:.9;margin-top:clamp(16px,3.5vh,36px)}
+#pomo.fs .pm-ctl{flex-wrap:wrap;justify-content:center}
+#nightv{position:fixed;inset:0;z-index:9999;pointer-events:none;background:#d6964f;mix-blend-mode:multiply;opacity:0;transition:opacity .3s}html.night #nightv{opacity:.6}
 </style>
 </head>
 <body>
@@ -255,6 +260,7 @@ html[data-theme=dark] #tvst{color:#e8836f}
   </div>
   <div class="bar" style="margin-top:6px">
     <button id="orab">🔮 Oráculo</button>
+    <button id="nightb" title="Modo noche: más oscuro y cálido para la vista">🌙 Noche</button>
     <button id="expb">⬇ Respaldo</button>
     <button id="impb">⬆ Cargar</button>
     <input type="file" id="file" hidden>
@@ -272,13 +278,15 @@ html[data-theme=dark] #tvst{color:#e8836f}
   <figure class="frame"><img id="imk" alt="Caballero medieval cabalgando hacia un castillo al amanecer"><figcaption>Hazlo por la leyenda</figcaption></figure>
   <figure class="frame"><img id="imc" alt="Pintura de la Última Cena"><figcaption>La Última Cena</figcaption></figure>
 </div></section>
+<div id="nightv"></div>
 <div id="oracle"><div class="box">
   <div class="ban" id="oban"></div>
   <h3>🔮 Oráculo del día</h3><p class="sub" id="od"></p>
   <div class="tabs" id="otabs"></div>
   <p class="q" id="oq"></p><div class="src" id="oa"></div>
-  <p class="sub" style="margin-top:14px">Máximas parafraseadas, no citas textuales. «Tráguese ese sapo» es una interpretación libre de las ideas de Brian Tracy.</p>
-  <div style="text-align:right;margin-top:8px"><button id="oclose">Cerrar</button></div>
+  <div id="ofav" style="display:none;max-height:50vh;overflow:auto"></div>
+  <p class="sub" style="margin-top:14px">Máximas parafraseadas, no citas textuales. «Tráguese ese sapo» es una interpretación libre de las ideas de Brian Tracy. En Liberalismo se mezclan ideas de la escuela austriaca y del minarquismo.</p>
+  <div style="text-align:right;margin-top:8px"><button id="ostar">☆ Guardar</button> <button id="oclose">Cerrar</button></div>
 </div></div>
 <div id="news"><div class="box">
   <h3>📜 Pregón del día</h3><p class="sub" id="nd"></p><div class="nc"><a href="https://www.smn.gob.ar/" target="_blank" rel="noopener noreferrer">🌦️ Servicio Meteorológico Nacional</a><p>Pronóstico, alertas y estado del tiempo en Argentina.</p><small>SMN · SMN.GOB.AR</small></div><div class="tabs" id="ntabs"></div><div id="nl"></div>
@@ -323,10 +331,13 @@ html[data-theme=dark] #tvst{color:#e8836f}
   <div class="pm-row">
     <div class="pm-modes"><button data-m="0" class="on">Enfoque</button><button data-m="1">Descanso</button><button data-m="2">Largo</button></div>
     <div id="pmt" aria-live="off">25:00</div>
-    <div class="pm-ctl"><button id="pmgo">▶ Iniciar</button><button id="pmrs" title="Reiniciar">↺</button><button id="pmsk" title="Saltar a la siguiente fase (si estás en Enfoque, cuenta como pomodoro hecho)">⏭ Saltar</button><button id="pmcfg">⚙ Tiempo</button><button id="pmfs" title="Agrandar el Pomodoro y ocultar todo lo demás (Esc para salir)">⛶ Enfocar</button></div>
+    <div class="pm-ctl"><button id="pmgo">▶ Iniciar</button><button id="pmrs" title="Reiniciar">↺</button><button id="pmsk" title="Saltar a la siguiente fase (si estás en Enfoque, cuenta como pomodoro hecho)">⏭ Saltar</button><button id="pmcfg">⚙ Tiempo</button><button id="pmeyeb" title="Descanso visual: 20 segundos mirando algo lejano">👁 20 s</button><button id="pmnight" title="Modo noche: más oscuro y cálido">🌙</button><button id="pmfs" title="Agrandar el Pomodoro y ocultar todo lo demás (Esc para salir)">⛶ Enfocar</button></div>
     <div class="pm-cnt"><button id="pmmin" title="Quitar un pomodoro">−</button><span id="pmc" title="Pomodoros completados hoy">🍅 0</span><button id="pmpls" title="Sumar un pomodoro">+</button></div>
+    <div id="pmwk" title="Pomodoros completados esta semana (lunes a hoy)"></div>
+    <div id="pmeye"></div>
     <label class="pm-vol" title="Volumen de la voz del Pomodoro y de la bienvenida (0 = silencio)">🔊 Voz <input id="pmvol" type="range" min="0" max="100" step="5" value="50"></label>
   </div>
+  <div id="pmor"></div>
   <div id="pmset" hidden>
     <label>Enfoque <input type="number" id="pm0" min="1" max="180"> min</label>
     <label>Descanso <input type="number" id="pm1" min="1" max="60"> min</label>
@@ -473,7 +484,7 @@ document.getElementById("bkrest").onclick=()=>{importText(bka.value);bkt.classLi
 document.getElementById("impb").onclick=()=>document.getElementById("file").click();
 document.getElementById("file").onchange=e=>{const f=e.target.files[0];if(f)importBackup(f);e.target.value=""};
 
-/* ---- Oráculo diario: estoicismo, Epicteto, Tráguese ese sapo ---- */
+/* ---- Oráculo diario: estoicismo, Epicteto, Tráguese ese sapo, Memento mori, Liberalismo ---- */
 const ORA=[
 {n:"Estoicismo",l:[
 ["Lo que se interpone en el camino se vuelve el camino: úsalo para actuar.","Marco Aurelio"],
@@ -525,19 +536,73 @@ const ORA=[
 ["Una sola cosa a la vez, sin interrupciones, hasta acabarla: así se duplica el rendimiento.","Idea de Brian Tracy"],
 ["Ponle fecha y responsable a cada tarea; lo que no tiene plazo no se hace.","Idea de Brian Tracy"],
 ["Piensa en las consecuencias: lo que más impacto tendría merece tu mejor hora.","Idea de Brian Tracy"],
-["Cultiva la urgencia: muévete más rápido, ponte presión amable y conviértelo en un juego.","Idea de Brian Tracy"]]}
+["Cultiva la urgencia: muévete más rápido, ponte presión amable y conviértelo en un juego.","Idea de Brian Tracy"]]},
+{n:"Memento mori",l:[
+["Todo lo que ves es pasajero, y quien lo contempla también. Piénsalo antes de enredarte en lo trivial.","Marco Aurelio"],
+["No recibimos poco tiempo: lo desperdiciamos. La vida alcanza si se sabe usar.","Séneca"],
+["Tradición romana: al general que triunfaba, un esclavo le susurraba que recordara que era mortal.","Tradición romana"],
+["Filosofar es aprender a morir: quien lo ha pensado antes vive con menos miedo.","Cicerón, recogido por Montaigne"],
+["Cuenta tus días para llegar a un corazón sabio: la conciencia del final ordena las prioridades.","Salmo 90"],
+["Ten la muerte presente como algo natural, no como una desgracia: es parte del orden de las cosas.","Epicteto"],
+["Pregúntate si lo que te inquieta hoy importará cuando mires tu vida entera.","Práctica estoica"],
+["Vive cada día como si fuera el último y el de mañana como un regalo.","Horacio, idea de carpe diem"],
+["Nadie sabe cuánto le queda. Di hoy lo que debes decir y haz hoy lo que debes hacer.","Memento mori"],
+["Piensa en los que ya no están: tuvieron planes y agendas como los tuyos. Que eso te despierte, no te hunda.","Marco Aurelio"],
+["Morir bien se aprende viviendo bien: con deberes cumplidos y sin cuentas pendientes.","Séneca"],
+["Sé más ligero con lo que te molesta y más firme con lo que importa: el tiempo es corto.","Memento mori"],
+["Ninguna posesión viaja contigo. Lo que queda es tu carácter y lo que hiciste por otros.","Idea estoica"],
+["El miedo a la muerte suele ser miedo a no haber vivido. Corrige lo segundo.","Idea estoica"],
+["La muerte no es mala porque acabe la vida, sino mala sería una vida sin sentido. Dale uno hoy.","Reflexión estoica"],
+["Mira hacia atrás sin rencor y hacia adelante sin prisa: solo existe el día que tienes en las manos.","Memento mori"]]},
+{n:"Liberalismo",l:[
+["Mira no solo lo que se ve, sino lo que no se ve: el costo de lo que se dejó de hacer por una decisión.","Frédéric Bastiat"],
+["El Estado es la gran ficción donde todos intentan vivir a costa de todos los demás.","Frédéric Bastiat"],
+["La ley debe proteger la vida, la libertad y la propiedad; cuando se usa para saquear, se pervierte.","Frédéric Bastiat"],
+["Una buena política económica mira los efectos a largo plazo y sobre todos los grupos, no solo el beneficio inmediato.","Henry Hazlitt"],
+["Nadie sabe lo suficiente para planificar la economía: el conocimiento está disperso en millones de personas.","Friedrich Hayek"],
+["Los precios son señales que coordinan a gente que nunca se conocerá. Distorsionarlos es apagar la luz.","Friedrich Hayek"],
+["Sin precios de mercado no hay cálculo económico: el socialismo no puede saber qué es rentable ni qué no.","Ludwig von Mises"],
+["La acción humana persigue fines con medios escasos: toda elección tiene un costo de oportunidad.","Ludwig von Mises"],
+["El valor no está en las cosas, sino en lo que cada persona les atribuye. De ahí nace el intercambio.","Carl Menger"],
+["Los individuos tienen derechos que ni el Estado ni otros pueden violar; limitan lo que está permitido hacer.","Robert Nozick"],
+["Un Estado limitado a proteger contra la fuerza, el robo y el fraude es justo; más allá, empieza a violar derechos.","Robert Nozick"],
+["Nadie debería poder cobrar por la fuerza lo que no se ganó con el trabajo propio: la propiedad es el fundamento.","John Locke, idea"],
+["La inflación es un impuesto oculto: transfiere riqueza de quien ahorra a quien emite el dinero.","Escuela Austriaca"],
+["Ahorrar es posponer consumo para invertir: así se alarga la estructura productiva y crece la riqueza.","Eugen von Böhm-Bawerk"],
+["Nadie sabe fabricar un lápiz entero: la cooperación libre y sin director logra lo que ningún plan central.","Leonard Read, I, Pencil"],
+["No existe el almuerzo gratis: lo que el gobierno da, alguien lo pagó antes, o lo pagará después.","Idea de Milton Friedman"],
+["El emprendedor descubre oportunidades que nadie ve; en un mercado libre, esa alerta se premia.","Israel Kirzner"],
+["Cuanto más poder concentra el Estado, más incentivo tienen los poderosos de capturarlo.","Tradición liberal"]]}
 ];
 let osrc=0;
 const dayNum=()=>{const t=new Date();return Math.floor(Date.UTC(t.getFullYear(),t.getMonth(),t.getDate())/864e5)};
+let FAV=[];try{FAV=JSON.parse(localStorage.getItem("medieval-orafav")||"[]")||[]}catch(e){}
+const saveFav=()=>{try{localStorage.setItem("medieval-orafav",JSON.stringify(FAV))}catch(e){}};
+const isFav=it=>FAV.some(f=>f[0]==it[0]);
 function drawOracle(){
-  const n=dayNum(),it=ORA[osrc].l[n%ORA[osrc].l.length],tb=document.getElementById("otabs");
+  const n=dayNum(),isF=osrc==ORA.length,tb=document.getElementById("otabs"),q=document.getElementById("oq"),a=document.getElementById("oa"),fl=document.getElementById("ofav"),st=document.getElementById("ostar");
   document.getElementById("od").textContent=new Date().toLocaleDateString("es",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
   tb.innerHTML="";
   ORA.forEach((o,i)=>{const b=document.createElement("button");b.textContent=o.n;b.className=i==osrc?"on":"";b.onclick=()=>{osrc=i;drawOracle()};tb.appendChild(b)});
-  document.getElementById("oq").textContent="«"+it[0]+"»";
-  document.getElementById("oa").textContent="— "+it[1];
+  const fb=document.createElement("button");fb.textContent="★ Favoritas ("+FAV.length+")";fb.className=isF?"on":"";fb.onclick=()=>{osrc=ORA.length;drawOracle()};tb.appendChild(fb);
+  fl.innerHTML="";fl.style.display=isF?"block":"none";q.style.display=a.style.display=st.style.display=isF?"none":"";
+  if(isF){
+    if(!FAV.length){const p=document.createElement("p");p.className="sub";p.textContent="Aún no guardaste frases. En cualquier pestaña toca ☆ Guardar.";fl.appendChild(p)}
+    FAV.forEach((f,i)=>{const d=document.createElement("div");d.style.cssText="display:flex;gap:10px;align-items:flex-start;margin:0 0 12px";
+      const t=document.createElement("div");t.style.flex="1";const p=document.createElement("p");p.className="q";p.style.margin="0";p.textContent="«"+f[0]+"»";
+      const sr=document.createElement("div");sr.className="src";sr.textContent="— "+f[1];t.append(p,sr);
+      const x=document.createElement("button");x.textContent="✕";x.title="Quitar de favoritas";x.onclick=()=>{FAV.splice(i,1);saveFav();drawOracle()};
+      d.append(t,x);fl.appendChild(d)});
+    return}
+  const it=ORA[osrc].l[n%ORA[osrc].l.length];
+  q.textContent="«"+it[0]+"»";a.textContent="— "+it[1];
+  st.textContent=isFav(it)?"★ Guardada":"☆ Guardar";
+  st.onclick=()=>{if(isFav(it))FAV=FAV.filter(f=>f[0]!=it[0]);else FAV.push(it.slice());saveFav();drawOracle()};
 }
-document.getElementById("orab").onclick=()=>{osrc=dayNum()%3;drawOracle();document.getElementById("oracle").classList.add("show")};
+document.getElementById("orab").onclick=()=>{osrc=dayNum()%ORA.length;drawOracle();document.getElementById("oracle").classList.add("show")};
+(function(){const h=document.documentElement,ids=["nightb","pmnight"];let on=false;try{on=localStorage.getItem("medieval-night")==="1"}catch(e){}
+  const set=v=>{on=v;h.classList.toggle("night",v);ids.forEach(i=>{const b=document.getElementById(i);if(b)b.classList.toggle("on",v)});try{localStorage.setItem("medieval-night",v?"1":"0")}catch(e){}};
+  set(on);ids.forEach(i=>{const b=document.getElementById(i);if(b)b.onclick=()=>set(!on)})})();
 document.getElementById("oclose").onclick=()=>document.getElementById("oracle").classList.remove("show");
 document.getElementById("oracle").onclick=e=>{if(e.target.id=="oracle")e.target.classList.remove("show")};
 
@@ -849,13 +914,25 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     $("pmgo").textContent=P.run?"❚❚ Pausar":"▶ Iniciar";
     document.querySelectorAll(".pm-modes button").forEach(b=>b.className=+b.dataset.m==P.m?"on":"");
     document.title=P.run?fmt(P.left)+" · "+T0:T0;
+    pmExtra();
+  }
+  // Historial por día (para el total de la semana), descanso visual de 20 s y mensaje en descansos
+  const HK="medieval-pomo-hist";let hist={},hlast=-1,eyeEnd=0,eyeId=0;
+  try{hist=JSON.parse(localStorage.getItem(HK)||"{}")||{}}catch(e){}
+  const dkey=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+  function pmExtra(){
+    const now=new Date();
+    if(hlast!==P.n){hlast=P.n;hist[dkey(now)]=P.n;const lim90=dkey(new Date(now.getTime()-90*864e5));Object.keys(hist).forEach(k=>{if(k<lim90)delete hist[k]});try{localStorage.setItem(HK,JSON.stringify(hist))}catch(e){}}
+    let w=0;for(let i=0;i<=(now.getDay()+6)%7;i++){const d=new Date(now);d.setDate(now.getDate()-i);w+=+hist[dkey(d)]||0}
+    $("pmwk").textContent="Semana: "+w+" 🍅";
+    $("pmeye").textContent=eyeEnd?"👁 Mira algo lejano… "+Math.ceil((eyeEnd-Date.now())/1000)+" s":(P.m!=0?"👁 Descanso: mira algo lejano 20 s y parpadea con calma":"");
   }
   function stop(){clearInterval(P.id);P.run=false}
   function setMode(i){stop();P.m=i;P.left=P.cfg[i]*60;$("pmt").classList.remove("end");draw();persist()}
   // Pasa a la siguiente fase; si la que terminó era Enfoque, suma un pomodoro (cada 4.º lleva al descanso largo).
   function advance(){const wasFocus=P.m==0;if(wasFocus)P.n=Math.min(99,P.n+1);const nx=wasFocus?(P.n%4==0?2:1):0;setMode(nx);return [wasFocus,nx]}
   function dlg(wasFocus,nx,pre){$("pmdt").textContent=(pre||"")+(wasFocus?"⚜ ¡Pomodoro completado!":"⚜ Descanso terminado");
-    $("pmdp").textContent="¿Iniciar "+(nx==0?"un nuevo pomodoro":nx==1?"el descanso corto":"el descanso largo")+" de "+P.cfg[nx]+" min?";$("pmd").classList.add("show")}
+    $("pmdp").textContent="¿Iniciar "+(nx==0?"un nuevo pomodoro":nx==1?"el descanso corto":"el descanso largo")+" de "+P.cfg[nx]+" min?"+(wasFocus?" Antes, mira algo lejano 20 s para descansar la vista.":"");$("pmd").classList.add("show")}
   function beep(){
     try{const a=P.ac||(P.ac=new (window.AudioContext||window.webkitAudioContext)());
       [0,.35,.7].forEach(d=>{const o=a.createOscillator(),g=a.createGain();o.type="sine";o.frequency.value=d==.7?880:660;
@@ -878,6 +955,8 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   $("pmdok").onclick=()=>{$("pmd").classList.remove("show");if(!P.run)toggle()};
   $("pmdno").onclick=()=>$("pmd").classList.remove("show");
   $("pmgo").onclick=toggle;
+  $("pmeyeb").onclick=()=>{if(eyeEnd){eyeEnd=0;clearInterval(eyeId);pmExtra();return}
+    eyeEnd=Date.now()+20000;eyeId=setInterval(()=>{if(Date.now()>=eyeEnd){eyeEnd=0;clearInterval(eyeId);beep()}pmExtra()},250);pmExtra()};
   $("pmrs").onclick=()=>setMode(P.m);
   $("pmsk").onclick=()=>{$("pmd").classList.remove("show");advance()};
   $("pmmin").onclick=()=>{P.n=Math.max(0,P.n-1);draw();persist()};
@@ -896,6 +975,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
       if(on&&!document.fullscreenElement&&document.documentElement.requestFullscreen){const r=document.documentElement.requestFullscreen();if(r&&r.catch)r.catch(()=>{})}
       else if(!on&&document.fullscreenElement&&document.exitFullscreen){const r=document.exitFullscreen();if(r&&r.catch)r.catch(()=>{})}
     }catch(e){}
+    if(on){const n=dayNum(),g=ORA[n%ORA.length],it=g.l[n%g.l.length];$("pmor").textContent="«"+it[0]+"» — "+it[1]}
     if(on)window.scrollTo(0,0);else pomo.scrollIntoView({block:"center"});
   }
   $("pmfs").onclick=()=>focusMode(!pomo.classList.contains("fs"));
