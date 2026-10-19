@@ -124,12 +124,17 @@ body.pmfs{overflow:hidden}
 #pomo.fs #pmc{font-size:clamp(15px,2.6vh,22px)}
 #pomo.fs #pmfs{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));left:12px;z-index:51}
 #pomo.fs #pmset{margin-top:20px}
-/* ---- Clima (izquierda) y hora de 24 h (derecha): solo en modo enfoque, discretos ---- */
+/* ---- Clima y hora de 24 h: discretos. Arriba a la derecha (frente al interruptor de modo) y en las esquinas del modo enfoque ---- */
+.wxb,.ckt{font-family:'Cinzel',Georgia,serif;font-weight:400;letter-spacing:1.2px;font-variant-numeric:tabular-nums;white-space:nowrap}
+#clkw .wxb,#pmwx .wxb{background:none;border:0;box-shadow:none;text-shadow:none;padding:0;font-size:inherit;color:inherit;cursor:pointer;border-radius:0}
+#clkw .wxb:hover,#pmwx .wxb:hover{filter:none;opacity:1}
+#clkw .wxb:empty,#clkw .wxb:empty+.sep{display:none}
+#clkw{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:calc(10px + env(safe-area-inset-right,0px));z-index:6;height:32px;box-sizing:border-box;display:flex;align-items:center;gap:7px;padding:0 13px;border-radius:16px;border:1px solid #c9a24a99;background:#0a1228b8;color:#e9c872;font-size:13px;opacity:.82;box-shadow:0 2px 6px #0007;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);user-select:none}
+#clkw .sep{opacity:.55}
 #pmwx{display:none}
-#pomo.fs #pmwx{display:flex;justify-content:space-between;align-items:flex-end;position:fixed;left:calc(16px + env(safe-area-inset-left,0px));right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:51;pointer-events:none;font-family:'Cinzel',Georgia,serif;font-size:clamp(12px,1.9vh,15px);letter-spacing:1.5px;color:#e9c872;opacity:.5;font-variant-numeric:tabular-nums;user-select:none}
-#pmwl{pointer-events:auto;background:none;border:0;box-shadow:none;text-shadow:none;padding:0;font:inherit;letter-spacing:inherit;color:inherit;cursor:pointer;font-weight:400}
-#pmwl:hover{filter:none;opacity:1}
-#pmck{font-weight:400}
+#pomo.fs #pmwx{display:flex;justify-content:space-between;align-items:flex-end;position:fixed;left:calc(16px + env(safe-area-inset-left,0px));right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:51;pointer-events:none;font-size:clamp(12px,1.9vh,15px);color:#e9c872;opacity:.5;user-select:none}
+#pmwx .wxb{pointer-events:auto}
+@media(max-width:380px){#clkw{padding:0 10px;gap:5px;font-size:12px}}
 @media(max-width:700px){h1{letter-spacing:1px;font-size:clamp(24px,7.2vw,34px)}#pomo{margin-left:12px;margin-right:12px}}
 /* ---- Ventanas más amplias en navegador de escritorio ---- */
 @media(min-width:900px){
@@ -240,6 +245,7 @@ html[data-theme=dark] #tvst{color:#e8836f}
 <body>
 <div id="bg"></div>
 <button id="themeb" role="switch" aria-checked="false" aria-label="Modo oscuro" title="Modo oscuro"><i></i></button>
+<div id="clkw" aria-label="Clima y hora"><button class="wxb" type="button"></button><span class="sep">·</span><span class="ckt"></span></div>
 <header>
   <h1>⚜ Calendario Medieval ⚜</h1>
   <div class="bar">
@@ -325,7 +331,7 @@ html[data-theme=dark] #tvst{color:#e8836f}
     <label>Descanso <input type="number" id="pm1" min="1" max="60"> min</label>
     <label>Largo <input type="number" id="pm2" min="1" max="90"> min</label>
   </div>
-  <div id="pmwx"><button id="pmwl" type="button"></button><span id="pmck"></span></div>
+  <div id="pmwx"><button class="wxb" type="button"></button><span class="ckt"></span></div>
 </div>
 <script>
 const MES=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
@@ -881,47 +887,6 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   $("pmcfg").onclick=()=>{const s=$("pmset");s.hidden=!s.hidden};
   // Modo enfoque: el Pomodoro ocupa toda la pantalla (Esc o el botón para salir)
   const pomo=$("pomo");
-  /* Clima (Open-Meteo, gratis y sin clave, con la ubicación del dispositivo) y hora de 24 h. Solo corren con el modo enfoque activo. */
-  const WXK="medieval-clima",WXTTL=30*60*1000,pad2=n=>String(n).padStart(2,"0");
-  const WXC=c=>c==0?["☀️","Despejado"]:c==1?["🌤️","Mayormente despejado"]:c==2?["⛅","Parcialmente nublado"]:c==3?["☁️","Nublado"]:(c==45||c==48)?["🌫️","Niebla"]:(c>=51&&c<=57)?["🌦️","Llovizna"]:(c>=61&&c<=67)?["🌧️","Lluvia"]:(c>=71&&c<=77)?["❄️","Nieve"]:(c>=80&&c<=82)?["🌧️","Chubascos"]:(c==85||c==86)?["🌨️","Chubascos de nieve"]:(c>=95)?["⛈️","Tormenta"]:["🌡️","Clima"];
-  let wxT=null,ckT=null,wxBusy=0;
-  const wxCache=()=>{try{const w=JSON.parse(localStorage.getItem(WXK)||"null");return w&&Number.isFinite(w.t)&&Number.isFinite(w.lat)?w:null}catch(e){return null}};
-  function ckDraw(){const d=new Date(),t=pad2(d.getHours())+":"+pad2(d.getMinutes()),e=$("pmck");if(e.textContent!==t)e.textContent=t}
-  function wxPaint(w){
-    const e=$("pmwl");
-    if(!w){e.textContent="📍 Clima";e.title="Toca para permitir la ubicación y ver el clima";return}
-    const x=WXC(w.c),ic=(w.d===0&&(w.c==0||w.c==1))?"🌙":x[0];
-    e.textContent=ic+" "+Math.round(w.t)+"°";e.title=x[1]+" · toca para actualizar";
-  }
-  async function wxLoad(lat,lon){
-    const r=await fetch("https://api.open-meteo.com/v1/forecast?latitude="+lat.toFixed(3)+"&longitude="+lon.toFixed(3)+"&current=temperature_2m,weather_code,is_day&timezone=auto");
-    if(!r.ok)throw new Error("clima");
-    const c=(await r.json()).current,w={t:c.temperature_2m,c:c.weather_code,d:c.is_day,lat:lat,lon:lon,at:Date.now()};
-    try{localStorage.setItem(WXK,JSON.stringify(w))}catch(e){}
-    wxPaint(w);
-  }
-  function wxUpdate(force){
-    if(wxBusy&&Date.now()-wxBusy<60000)return;
-    const c=wxCache();
-    if(c){wxPaint(c);if(!force&&Date.now()-c.at<WXTTL)return}
-    if(!navigator.geolocation){if(!c)wxPaint(null);return}
-    wxBusy=Date.now();
-    const fin=()=>{wxBusy=0};
-    const fail=()=>{if(c)wxLoad(c.lat,c.lon).catch(()=>{}).then(fin);else{wxPaint(null);fin()}};
-    const ok=p=>wxLoad(p.coords.latitude,p.coords.longitude).catch(()=>{if(!c)wxPaint(null)}).then(fin);
-    // Ubicación precisa; si tarda o no se puede, se reintenta con la aproximada. Si se niega el permiso, se usa la última guardada.
-    navigator.geolocation.getCurrentPosition(ok,e=>{
-      if(e&&e.code===1)return fail();
-      navigator.geolocation.getCurrentPosition(ok,fail,{enableHighAccuracy:false,timeout:15000,maximumAge:30*60*1000});
-    },{enableHighAccuracy:true,timeout:15000,maximumAge:10*60*1000});
-  }
-  function wx(on){
-    clearInterval(ckT);clearInterval(wxT);ckT=wxT=null;
-    if(!on)return;
-    ckDraw();ckT=setInterval(ckDraw,1000);
-    wxUpdate(false);wxT=setInterval(()=>wxUpdate(true),WXTTL);
-  }
-  $("pmwl").onclick=()=>wxUpdate(true);
   function focusMode(on){
     pomo.classList.toggle("fs",on);document.body.classList.toggle("pmfs",on);
     $("pmfs").textContent=on?"✕ Salir":"⛶ Enfocar";
@@ -931,7 +896,6 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
       else if(!on&&document.fullscreenElement&&document.exitFullscreen){const r=document.exitFullscreen();if(r&&r.catch)r.catch(()=>{})}
     }catch(e){}
     if(on)window.scrollTo(0,0);else pomo.scrollIntoView({block:"center"});
-    wx(on);
   }
   $("pmfs").onclick=()=>focusMode(!pomo.classList.contains("fs"));
   document.addEventListener("keydown",e=>{if(e.key==="Escape"&&pomo.classList.contains("fs")&&!$("pmd").classList.contains("show"))focusMode(false)});
@@ -1082,6 +1046,56 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     if(d)h.setAttribute("data-theme","dark");else h.removeAttribute("data-theme");
     try{localStorage.setItem("medieval-theme",d?"dark":"light")}catch(e){}draw()};
   draw();
+})();
+</script>
+<script>
+/* Clima (Open-Meteo, gratis y sin clave) y hora de 24 h. Se muestran arriba a la derecha y en el modo enfoque.
+   El permiso de ubicación se pide solo cuando tocas "📍 Clima"; si ya lo diste antes, el clima carga solo. */
+(function(){
+  const WXK="medieval-clima",TTL=30*60*1000,pad=n=>String(n).padStart(2,"0"),$$=q=>document.querySelectorAll(q);
+  const WXC=c=>c==0?["☀️","Despejado"]:c==1?["🌤️","Mayormente despejado"]:c==2?["⛅","Parcialmente nublado"]:c==3?["☁️","Nublado"]:(c==45||c==48)?["🌫️","Niebla"]:(c>=51&&c<=57)?["🌦️","Llovizna"]:(c>=61&&c<=67)?["🌧️","Lluvia"]:(c>=71&&c<=77)?["❄️","Nieve"]:(c>=80&&c<=82)?["🌧️","Chubascos"]:(c==85||c==86)?["🌨️","Chubascos de nieve"]:(c>=95)?["⛈️","Tormenta"]:["🌡️","Clima"];
+  let busy=0;
+  const cache=()=>{try{const w=JSON.parse(localStorage.getItem(WXK)||"null");return w&&Number.isFinite(w.t)&&Number.isFinite(w.lat)&&Number.isFinite(w.lon)?w:null}catch(e){return null}};
+  function tick(){const d=new Date(),t=pad(d.getHours())+":"+pad(d.getMinutes());$$(".ckt").forEach(e=>{if(e.textContent!==t)e.textContent=t})}
+  function paint(w){
+    let txt,tip;
+    if(!w){txt="📍 Clima";tip="Toca para permitir la ubicación y ver el clima"}
+    else{const x=WXC(w.c);txt=((w.d===0&&(w.c==0||w.c==1))?"🌙":x[0])+" "+Math.round(w.t)+"°";tip=x[1]+" · toca para actualizar"}
+    $$(".wxb").forEach(e=>{e.textContent=txt;e.title=tip});
+  }
+  async function load(lat,lon){
+    const r=await fetch("https://api.open-meteo.com/v1/forecast?latitude="+lat.toFixed(3)+"&longitude="+lon.toFixed(3)+"&current=temperature_2m,weather_code,is_day&timezone=auto");
+    if(!r.ok)throw new Error("clima");
+    const c=(await r.json()).current,w={t:c.temperature_2m,c:c.weather_code,d:c.is_day,lat:lat,lon:lon,at:Date.now()};
+    try{localStorage.setItem(WXK,JSON.stringify(w))}catch(e){}
+    paint(w);
+  }
+  function geo(c){
+    if(busy&&Date.now()-busy<60000)return;
+    busy=Date.now();
+    const fin=()=>{busy=0};
+    const fail=()=>{if(c)load(c.lat,c.lon).catch(()=>{}).then(fin);else{paint(null);fin()}};
+    const ok=p=>load(p.coords.latitude,p.coords.longitude).catch(()=>{if(!c)paint(null)}).then(fin);
+    // Ubicación precisa; si tarda o no se puede, se reintenta con la aproximada. Si se niega el permiso, se usa la última guardada.
+    navigator.geolocation.getCurrentPosition(ok,e=>{
+      if(e&&e.code===1)return fail();
+      navigator.geolocation.getCurrentPosition(ok,fail,{enableHighAccuracy:false,timeout:15000,maximumAge:30*60*1000});
+    },{enableHighAccuracy:true,timeout:15000,maximumAge:10*60*1000});
+  }
+  function update(force,ask){
+    const c=cache();
+    if(c){paint(c);if(!force&&Date.now()-c.at<TTL)return}
+    if(!navigator.geolocation){if(!c)paint(null);return}
+    if(ask)return geo(c);
+    // Sin tocar nada: solo se actualiza sola si el permiso ya estaba concedido (si no, se usan las últimas coordenadas guardadas).
+    const stale=()=>{if(c)load(c.lat,c.lon).catch(()=>{});else paint(null)};
+    if(!navigator.permissions||!navigator.permissions.query)return stale();
+    navigator.permissions.query({name:"geolocation"}).then(s=>{if(s.state==="granted")geo(c);else stale()}).catch(stale);
+  }
+  document.addEventListener("click",e=>{if(e.target.closest&&e.target.closest(".wxb"))update(true,true)});
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden){tick();update(false,false)}});
+  tick();setInterval(tick,1000);
+  update(false,false);setInterval(()=>update(true,false),TTL);
 })();
 </script>
 </body>
