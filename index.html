@@ -245,7 +245,9 @@ html[data-theme=dark] #tvst{color:#e8836f}
 #pomo.fs #pmwk,#pomo.fs #pmeye{font-size:clamp(14px,2.2vh,19px)}
 #pomo.fs #pmor{display:block;max-width:min(720px,86vw);text-align:center;font-style:italic;font-size:clamp(14px,2.3vh,20px);line-height:1.5;color:#d9c58a;opacity:.9;margin-top:clamp(16px,3.5vh,36px)}
 #pomo.fs .pm-ctl{flex-wrap:wrap;justify-content:center}
-#nightv{position:fixed;inset:0;z-index:9999;pointer-events:none;background:#d6964f;mix-blend-mode:multiply;opacity:0;transition:opacity .3s}html.night #nightv{opacity:.6}
+#nightv{display:none;position:fixed;inset:0;z-index:9999;pointer-events:none;background:#d6964f;mix-blend-mode:multiply;opacity:.6}html.night #nightv{display:block}
+.pm-ctl{flex-wrap:wrap;justify-content:center}
+@media(max-width:700px){#pomo.fs{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}#pomo.fs .pm-ctl{gap:6px}#pomo.fs .pm-ctl button{padding:7px 11px}#pomo.fs #pmor{font-size:14px;margin-top:16px}#pomo.fs .pm-row{gap:12px}}
 </style>
 </head>
 <body>
