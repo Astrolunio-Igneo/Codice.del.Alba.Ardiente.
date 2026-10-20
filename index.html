@@ -950,7 +950,7 @@ function plSrc(x){const q="autoplay=1&rel=0&playsinline=1";
 let plCur=null;
 function killPL(){const p=document.getElementById("plp");if(p)p.innerHTML="";plCur=null}
 function playPL(x){stopRadio();const p=document.getElementById("plp");p.innerHTML="";
-  const f=document.createElement("iframe");f.src=plSrc(x);f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.title=x.n;p.appendChild(f);
+  const f=document.createElement("iframe");f.src=plSrc(x);f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.referrerPolicy="strict-origin-when-cross-origin";f.allowFullscreen=true;f.title=x.n;p.appendChild(f);
   plCur=x.t+x.id;radb.classList.add("on");rst.textContent="♪ Playlist: "+x.n+(location.protocol=="file:"?" (si el video no carga, abre la página desde GitHub Pages: YouTube no siempre permite reproducir desde un archivo local)":"");drawRadio()}
 function drawPL(l){
   const row=document.createElement("div");row.className="tvrow";
