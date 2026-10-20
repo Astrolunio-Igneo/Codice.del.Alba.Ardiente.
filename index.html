@@ -256,8 +256,8 @@ html[data-theme=dark] #tzsel{background:transparent;color:#f2dc96}
 @media(min-width:900px){#tzw{height:32px;border-radius:16px;top:calc(10px + env(safe-area-inset-top,0px));left:78px;padding:0 10px 0 2px}#tzsel{width:124px;height:30px;font-size:13px;padding:0 2px 0 6px}#eshr{font-size:15px;padding-left:8px}}
 @media(max-width:600px){#tzw{left:76px;padding:0 9px 0 2px;max-width:calc(100vw - 86px - 140px)}#tzsel{width:96px;font-size:11px;padding:0 2px 0 5px}#eshr{font-size:12px;padding-left:7px}}
 @media(max-width:400px){#tzw{left:72px;max-width:calc(100vw - 80px - 132px)}#tzsel{width:84px;font-size:10px}#eshr{font-size:11px}}
-#todob{position:fixed;right:calc(10px + env(safe-area-inset-right,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:6;height:24px;padding:0 11px;border-radius:12px;border:1px solid #c9a24a88;background:#060b1acc;color:#f2dc96;font-family:'Cinzel',Georgia,serif;font-size:11px;font-weight:500;letter-spacing:1px;box-shadow:none;text-shadow:none;opacity:.7;transition:opacity .2s}
-#todob:hover,#todob:focus-visible{opacity:1;filter:none}
+#todob{position:fixed;right:calc(10px + env(safe-area-inset-right,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:6;height:24px;padding:0 11px;border-radius:12px;border:1px solid #c9a24a88;background:#060b1acc;color:#f2dc96;font-family:'Cinzel',Georgia,serif;font-size:11px;font-weight:500;letter-spacing:1px;box-shadow:none;text-shadow:none;opacity:1;filter:brightness(1.08)}
+#todob:hover,#todob:focus-visible{opacity:1;filter:brightness(1.08)}
 html[data-theme=dark] #todob{background:#060b1acc;color:#f2dc96;box-shadow:none}
 @media(min-width:900px){#todob{height:26px;padding:0 12px;border-radius:13px;font-size:12px;letter-spacing:1.2px}}
 #todo{position:fixed;inset:0;background:#000a;display:none;align-items:center;justify-content:center;z-index:10;padding:16px}#todo.show{display:flex}#todo .box{max-width:560px}
@@ -819,6 +819,34 @@ const RADIO=[
 ["SomaFM · Dark Zone (ambiental oscuro)",["https://ice5.somafm.com/darkzone-128-mp3","https://ice2.somafm.com/darkzone-128-mp3","https://ice1.somafm.com/darkzone-128-mp3","https://ice.somafm.com/darkzone"]],
 ["Hackers Town Radio (comunidad hacker)",["https://radio.hackers.town:8000/"]]]}
 ];
+/* ---- Radio: categorías añadidas (Para estudiar 2 y Noticias en inglés) ---- */
+(()=>{
+  const find=n=>{for(const c of RADIO)for(const e of c.s)if(e[0].indexOf(n)===0)return e;return null};
+  const study2={n:"📚 Para estudiar 2",s:[
+    ["SomaFM · Groove Salad (ambient y downtempo)",["https://ice1.somafm.com/groovesalad-128-mp3","https://ice2.somafm.com/groovesalad-128-mp3","https://ice4.somafm.com/groovesalad-128-mp3","https://ice5.somafm.com/groovesalad-128-mp3"]],
+    ["SomaFM · Drone Zone (ambient profundo)",["https://ice1.somafm.com/dronezone-128-mp3","https://ice2.somafm.com/dronezone-128-mp3","https://ice4.somafm.com/dronezone-128-mp3","https://ice5.somafm.com/dronezone-128-mp3"]],
+    ["SomaFM · Deep Space One (ambient espacial)",["https://ice1.somafm.com/deepspaceone-128-mp3","https://ice2.somafm.com/deepspaceone-128-mp3","https://ice4.somafm.com/deepspaceone-128-mp3","https://ice5.somafm.com/deepspaceone-128-mp3"]],
+    ["SomaFM · Space Station Soma (electrónica suave)",["https://ice1.somafm.com/spacestation-128-mp3","https://ice2.somafm.com/spacestation-128-mp3","https://ice4.somafm.com/spacestation-128-mp3","https://ice5.somafm.com/spacestation-128-mp3"]],
+    ["SomaFM · Lush (vocal suave y sensual)",["https://ice1.somafm.com/lush-128-mp3","https://ice2.somafm.com/lush-128-mp3","https://ice4.somafm.com/lush-128-mp3","https://ice5.somafm.com/lush-128-mp3"]],
+    ["SomaFM · Fluid (hip-hop instrumental)",["https://ice1.somafm.com/fluid-128-mp3","https://ice2.somafm.com/fluid-128-mp3","https://ice4.somafm.com/fluid-128-mp3","https://ice5.somafm.com/fluid-128-mp3"]],
+    ["SomaFM · Illinois Street Lounge (lounge)",["https://ice1.somafm.com/illstreet-128-mp3","https://ice2.somafm.com/illstreet-128-mp3","https://ice4.somafm.com/illstreet-128-mp3","https://ice5.somafm.com/illstreet-128-mp3"]],
+    ["Radio Paradise · Mellow Mix (tranquila)",["https://stream.radioparadise.com/mellow-128","https://stream.radioparadise.com/mellow-128-flac"]],
+    ["Radio Swiss Classic (clásica, sin hablar)",["https://stream.srg-ssr.ch/m/rsc_de/mp3_128","http://stream.srg-ssr.ch/m/rsc_de/mp3_128"]],
+    ["Radio Swiss Jazz",["https://stream.srg-ssr.ch/m/rsj/mp3_128","http://stream.srg-ssr.ch/m/rsj/mp3_128"]],
+    ["BBC Radio 3 (clásica · Reino Unido)",["https://"+BBC+"bbc_radio_three","http://"+BBC+"bbc_radio_three"]],
+    ["Lofi (laut.fm)",["https://stream.laut.fm/lofi","https://lofi.stream.laut.fm/lofi","http://stream.laut.fm/lofi"]],
+    ["FluxFM Chillhop",["https://streams.fluxfm.de/Chillhop/mp3-128/streams.fluxfm.de/","https://streams.fluxfm.de/Chillhop/mp3-320/audio/"]],
+    ["Venice Classic Radio (Italia)",["https://uk2.streamingpulse.com/ssl/vcr1","http://uk2.streamingpulse.com/ssl/vcr1"]],
+    ["Ambient Sleeping Pill",["http://radio.stereoscenic.com/asp-h","https://radio.stereoscenic.com/asp-h"]]
+  ]};
+  const news=["BBC World Service","BBC Radio 4","BBC Radio 5 Live","LBC","RFI English","ABC NewsRadio","RNZ National","RTÉ Radio 1","NPR","WNYC 93.9","WBUR"].map(find).filter(Boolean);
+  news.push(["Times Radio (Reino Unido)",["https://timesradio.wireless.radio/stream","http://timesradio.wireless.radio/stream"]]);
+  const nw={n:"🗞️ Noticias en inglés",s:news};
+  const i=RADIO.findIndex(c=>c.n.indexOf("Para estudiar")>-1);
+  RADIO.splice(i+1,0,study2);
+  const j=RADIO.findIndex(c=>c.n.indexOf("Noticias EE")>-1);
+  RADIO.splice(j+1,0,nw);
+})();
 const rau=new Audio();let rcat=0,rcur=null,rname="",rurls=[],rid=0,rtm=null,rtry=0,rgot=false;
 const rst=document.getElementById("rst"),radb=document.getElementById("radb");
 function drawRadio(){
