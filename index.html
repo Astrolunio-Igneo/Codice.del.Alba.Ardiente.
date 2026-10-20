@@ -226,7 +226,7 @@ html[data-theme=dark] .add input,html[data-theme=dark] #bkta,html[data-theme=dar
 #themeb i{position:absolute;top:2px;left:2px;width:24px;height:24px;border-radius:50%;background:linear-gradient(#fff3c4,#c9a24a);box-shadow:0 1px 3px #000a;transition:transform .2s}
 html[data-theme=dark] #themeb{background:linear-gradient(#0c1530,#17294f);box-shadow:inset 0 2px 4px #000c,0 2px 6px #000a}
 #themeb[aria-checked=true] i{transform:translateX(30px)}
-@media(max-width:899px){header{padding-top:52px}}
+@media(max-width:899px){header{padding-top:62px}}
 /* ---- Noticias TV en vivo ---- */
 #tv .box{overflow:auto;max-width:min(1700px,98vw);padding:20px 26px}
 #tvp{position:relative;width:min(100%,calc(74vh*16/9));aspect-ratio:16/9;margin:10px auto;background:#000;border:2px solid var(--gold);border-radius:6px;overflow:hidden;display:none}
@@ -248,11 +248,35 @@ html[data-theme=dark] #tvst{color:#e8836f}
 #nightv{display:none;position:fixed;inset:0;z-index:9999;pointer-events:none;background:#d6964f;mix-blend-mode:multiply;opacity:.6}html.night #nightv{display:block}
 .pm-ctl{flex-wrap:wrap;justify-content:center}
 @media(max-width:700px){#pomo.fs{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}#pomo.fs .pm-ctl{gap:6px}#pomo.fs .pm-ctl button{padding:7px 11px}#pomo.fs #pmor{font-size:14px;margin-top:16px}#pomo.fs .pm-row{gap:12px}}
+#tzw{position:fixed;top:calc(46px + env(safe-area-inset-top,0px));left:10px;z-index:6;width:104px;display:flex;flex-direction:column;gap:2px;align-items:stretch}
+#eshr{text-align:center;font-family:'Cinzel',Georgia,serif;font-size:11px;letter-spacing:.5px;line-height:1.1;color:#e9c872;opacity:.9;pointer-events:none;user-select:none;white-space:nowrap;text-shadow:0 1px 2px #000}html[data-theme=dark] #eshr{color:#e9c872}
+#tzsel{width:100%;font-family:'Cinzel',Georgia,serif;font-size:10px;padding:1px 2px;height:18px;border:1px solid var(--gold);border-radius:4px;background:var(--paper);color:var(--blue);cursor:pointer;opacity:.9}
+html[data-theme=dark] #tzsel{background:#120e09;color:#e9c872}
+@media(max-width:899px){header{padding-top:84px}}
+#todob{position:fixed;right:calc(10px + env(safe-area-inset-right,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:6;height:24px;padding:0 11px;border-radius:12px;border:1px solid #c9a24a88;background:#060b1acc;color:#f2dc96;font-family:'Cinzel',Georgia,serif;font-size:11px;font-weight:500;letter-spacing:1px;box-shadow:none;text-shadow:none;opacity:.7;transition:opacity .2s}
+#todob:hover,#todob:focus-visible{opacity:1;filter:none}
+html[data-theme=dark] #todob{background:#060b1acc;color:#f2dc96;box-shadow:none}
+@media(min-width:900px){#todob{height:26px;padding:0 12px;border-radius:13px;font-size:12px;letter-spacing:1.2px}}
+#todo{position:fixed;inset:0;background:#000a;display:none;align-items:center;justify-content:center;z-index:10;padding:16px}#todo.show{display:flex}#todo .box{max-width:560px}
+@media(min-width:900px){#todo .box{max-width:680px}}
+.td-nav{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 6px}
+.td-nav input[type=date],#tdadd input{font:inherit;font-size:16px;padding:6px 8px;border:1px solid var(--gold);background:#fbf3dc;color:var(--ink);border-radius:2px}
+#tdadd{display:flex;gap:8px;margin:8px 0 12px}#tdadd input{flex:1;min-width:0}
+#tdadd input,.td-nav input[type=date]{color:#1a1208;background:#fff8e4}#tdadd input::placeholder{color:#6b5a3a;opacity:1}
+html[data-theme=dark] #tdadd input,html[data-theme=dark] .td-nav input[type=date]{background:#120e09;color:#f6ecd2;border-color:var(--gold)}html[data-theme=dark] #tdadd input::placeholder{color:#b8a679}
+html[data-theme=dark] #tdl li span{color:#f6ecd2}html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
+#tdl{list-style:none;margin:0;padding:0;max-height:44vh;overflow:auto}
+#tdl li{display:flex;align-items:center;gap:10px;padding:8px 4px;border-bottom:1px solid #c9a24a55}
+#tdl li input{width:20px;height:20px;accent-color:#c9a24a;flex:none}
+#tdl li span{flex:1;word-break:break-word}#tdl li.done span{text-decoration:line-through;opacity:.5}
+#tdl li button{padding:2px 9px;font-size:13px}
+#tdcnt{font-size:13px;opacity:.75;letter-spacing:1px}
 </style>
 </head>
 <body>
 <div id="bg"></div>
 <button id="themeb" role="switch" aria-checked="false" aria-label="Modo oscuro" title="Modo oscuro"><i></i></button>
+<div id="tzw"><div id="eshr"></div><select id="tzsel" aria-label="Zona horaria" title="Elige tu zona horaria"></select></div>
 <div id="clkw" aria-label="Clima y hora"><button class="wxb" type="button"></button><span class="sep">·</span><span class="ckt"></span></div>
 <header>
   <h1>⚜ Calendario Medieval ⚜</h1>
@@ -280,7 +304,17 @@ html[data-theme=dark] #tvst{color:#e8836f}
   <figure class="frame"><img id="imk" alt="Caballero medieval cabalgando hacia un castillo al amanecer"><figcaption>Hazlo por la leyenda</figcaption></figure>
   <figure class="frame"><img id="imc" alt="Pintura de la Última Cena"><figcaption>La Última Cena</figcaption></figure>
 </div></section>
+<button id="todob" type="button" title="Lista de cosas por hacer del día">To-Do</button>
 <div id="nightv"></div>
+<div id="todo"><div class="box">
+  <h3>To-Do del día</h3>
+  <div class="td-nav"><button id="tdprev" title="Día anterior">◀</button><input type="date" id="tdd"><button id="tdnext" title="Día siguiente">▶</button></div>
+  <div class="td-nav"><button id="tdtoday">Hoy</button><button id="tdtom">Mañana</button></div>
+  <p class="sub" id="tdlab" style="text-align:center"></p>
+  <div id="tdadd"><input id="tdin" type="text" maxlength="140" placeholder="Nueva tarea…" autocomplete="off"><button id="tdgo">Agregar</button></div>
+  <ul id="tdl"></ul>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:8px"><span id="tdcnt"></span><span><button id="tdmv" title="Trae a este día las tareas sin hacer del día anterior">↷ Pendientes de ayer</button> <button id="tdclr" title="Borra las tareas ya hechas de este día">Limpiar hechas</button> <button id="tdclose">Cerrar</button></span></div>
+</div></div>
 <div id="oracle"><div class="box">
   <div class="ban" id="oban"></div>
   <h3>🔮 Oráculo del día</h3><p class="sub" id="od"></p>
@@ -602,6 +636,50 @@ function drawOracle(){
   st.onclick=()=>{if(isFav(it))FAV=FAV.filter(f=>f[0]!=it[0]);else FAV.push(it.slice());saveFav();drawOracle()};
 }
 document.getElementById("orab").onclick=()=>{osrc=dayNum()%ORA.length;drawOracle();document.getElementById("oracle").classList.add("show")};
+(function(){
+  const e=document.getElementById("eshr"),sel=document.getElementById("tzsel"),K="medieval-tz";
+  const Z=[["auto","🌐 Mi zona"],["Europe/Madrid","🇪🇸 Madrid"],["Europe/London","🇬🇧 Londres"],["America/Argentina/Buenos_Aires","🇦🇷 Buenos Aires"],["America/Lima","🇵🇪 Lima"],["America/Bogota","🇨🇴 Bogotá"],["America/Santiago","🇨🇱 Santiago"],["America/Sao_Paulo","🇧🇷 São Paulo"],["America/Mexico_City","🇲🇽 Ciudad de México"],["America/New_York","🇺🇸 Nueva York"],["America/Chicago","🇺🇸 Chicago"],["America/Denver","🇺🇸 Denver"],["America/Los_Angeles","🇺🇸 Los Ángeles"],["Europe/Rome","🇮🇹 Roma"],["Europe/Moscow","🇷🇺 Moscú"],["Asia/Dubai","🇦🇪 Dubái"],["Asia/Tokyo","🇯🇵 Tokio"],["Australia/Sydney","🇦🇺 Sídney"],["UTC","🌐 UTC"]];
+  Z.forEach(z=>{const o=document.createElement("option");o.value=z[0];o.textContent=z[1];sel.appendChild(o)});
+  let tz="Europe/Madrid";try{const v=localStorage.getItem(K);if(v&&Z.some(z=>z[0]===v))tz=v}catch(x){}
+  sel.value=tz;
+  const u=()=>{let t;try{t=new Intl.DateTimeFormat("es-ES",{timeZone:tz==="auto"?undefined:tz,hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date())}catch(x){t="--:--"}e.textContent=t};
+  sel.onchange=()=>{tz=sel.value;try{localStorage.setItem(K,tz)}catch(x){}u()};
+  u();setInterval(u,10000);
+})();
+(function(){
+  const K="medieval-todo",$=i=>document.getElementById(i);let TD={};try{TD=JSON.parse(localStorage.getItem(K)||"{}")||{}}catch(e){}
+  const key=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+  const add=(k,n)=>{const [y,m,d]=k.split("-").map(Number);return key(new Date(y,m-1,d+n))};
+  const save=()=>{try{localStorage.setItem(K,JSON.stringify(TD))}catch(e){}};
+  const lim=key(new Date(Date.now()-120*864e5));Object.keys(TD).forEach(k=>{if(k<lim)delete TD[k]});
+  let cur=key(new Date());
+  const badge=()=>{const n=(TD[key(new Date())]||[]).filter(x=>!x.d).length;$("todob").textContent="To-Do"+(n?" ("+n+")":"")};
+  function lab(){const [y,m,d]=cur.split("-").map(Number),t=key(new Date());return new Date(y,m-1,d).toLocaleDateString("es",{weekday:"long",day:"numeric",month:"long"})+(cur==t?" · hoy":cur==add(t,1)?" · mañana":cur==add(t,-1)?" · ayer":"")}
+  function draw(){
+    $("tdd").value=cur;$("tdlab").textContent=lab();
+    const L=TD[cur]||[],ul=$("tdl");ul.innerHTML="";
+    L.forEach((x,i)=>{const li=document.createElement("li");if(x.d)li.className="done";
+      const c=document.createElement("input");c.type="checkbox";c.checked=!!x.d;c.onchange=()=>{x.d=c.checked?1:0;save();draw()};
+      const sp=document.createElement("span");sp.textContent=x.t;
+      const b=document.createElement("button");b.textContent="✕";b.title="Borrar";b.onclick=()=>{L.splice(i,1);if(!L.length)delete TD[cur];save();draw()};
+      li.append(c,sp,b);ul.appendChild(li)});
+    const hechas=L.filter(x=>x.d).length;
+    $("tdcnt").textContent=L.length?hechas+" de "+L.length+" hechas":"Sin tareas para este día";
+    badge();
+  }
+  const go=k=>{cur=k;draw()};
+  function addT(){const v=$("tdin").value.trim();if(!v)return;(TD[cur]=TD[cur]||[]).push({t:v,d:0});$("tdin").value="";save();draw();$("tdin").focus()}
+  $("tdgo").onclick=addT;$("tdin").onkeydown=e=>{if(e.key==="Enter")addT()};
+  $("tdprev").onclick=()=>go(add(cur,-1));$("tdnext").onclick=()=>go(add(cur,1));
+  $("tdtoday").onclick=()=>go(key(new Date()));$("tdtom").onclick=()=>go(add(key(new Date()),1));
+  $("tdd").onchange=()=>{if(/^\d{4}-\d{2}-\d{2}$/.test($("tdd").value))go($("tdd").value)};
+  $("tdmv").onclick=()=>{const p=add(cur,-1),A=TD[p]||[],mv=A.filter(x=>!x.d),keep=A.filter(x=>x.d);if(!mv.length)return;TD[cur]=(TD[cur]||[]).concat(mv);if(keep.length)TD[p]=keep;else delete TD[p];save();draw()};
+  $("tdclr").onclick=()=>{const L=(TD[cur]||[]).filter(x=>!x.d);if(L.length)TD[cur]=L;else delete TD[cur];save();draw()};
+  $("todob").onclick=()=>{cur=key(new Date());draw();$("todo").classList.add("show")};
+  $("tdclose").onclick=()=>$("todo").classList.remove("show");
+  $("todo").onclick=e=>{if(e.target.id=="todo")e.target.classList.remove("show")};
+  badge();
+})();
 (function(){const h=document.documentElement,ids=["nightb","pmnight"];let on=false;try{on=localStorage.getItem("medieval-night")==="1"}catch(e){}
   const set=v=>{on=v;h.classList.toggle("night",v);ids.forEach(i=>{const b=document.getElementById(i);if(b)b.classList.toggle("on",v)});try{localStorage.setItem("medieval-night",v?"1":"0")}catch(e){}};
   set(on);ids.forEach(i=>{const b=document.getElementById(i);if(b)b.onclick=()=>set(!on)})})();
