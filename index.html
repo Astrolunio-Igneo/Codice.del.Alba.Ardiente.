@@ -943,15 +943,16 @@ function ytParse(raw){let u;try{u=new URL(String(raw).trim())}catch(e){return nu
   else if(h=="youtube.com"||h=="youtube-nocookie.com"){if(u.pathname=="/watch")v=u.searchParams.get("v");else{const m=u.pathname.match(/^\/(embed|shorts|live)\/([\w-]{11})/);if(m)v=m[2]}}
   else return null;
   if(v&&!/^[\w-]{11}$/.test(v))v=null;if(l&&!/^[\w-]{10,60}$/.test(l))l=null;
-  if(l)return{t:"l",id:l,v:v||""};if(v)return{t:"v",id:v,v:""};return null}
+  if(v)return{t:"v",id:v,v:""};if(l)return{t:"l",id:l,v:""};return null}
 function plSrc(x){const q="autoplay=1&rel=0&playsinline=1";
+  if(x.t=="q")return "https://www.youtube.com/embed/"+x.ids[0]+"?"+(x.ids.length>1?"playlist="+x.ids.slice(1).join(",")+"&":"")+q;
   if(x.t=="l")return x.v?"https://www.youtube.com/embed/"+x.v+"?list="+x.id+"&"+q:"https://www.youtube.com/embed/videoseries?list="+x.id+"&"+q;
   return "https://www.youtube.com/embed/"+x.id+"?"+q}
 let plCur=null;
 function killPL(){const p=document.getElementById("plp");if(p)p.innerHTML="";plCur=null}
 function playPL(x){stopRadio();const p=document.getElementById("plp");p.innerHTML="";
   const f=document.createElement("iframe");f.src=plSrc(x);f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.referrerPolicy="strict-origin-when-cross-origin";f.allowFullscreen=true;f.title=x.n;p.appendChild(f);
-  plCur=x.t+x.id;radb.classList.add("on");rst.textContent="♪ Playlist: "+x.n+(location.protocol=="file:"?" (si el video no carga, abre la página desde GitHub Pages: YouTube no siempre permite reproducir desde un archivo local)":"");drawRadio()}
+  plCur=x.t=="q"?"qall":x.t+x.id;radb.classList.add("on");rst.textContent="♪ Playlist: "+x.n+(location.protocol=="file:"?" (si el video no carga, abre la página desde GitHub Pages: YouTube no siempre permite reproducir desde un archivo local)":"");drawRadio()}
 function drawPL(l){
   const row=document.createElement("div");row.className="tvrow";
   const u=document.createElement("input");u.className="plin";u.type="text";u.placeholder="Enlace de YouTube (playlist o video)";u.autocomplete="off";
@@ -965,6 +966,10 @@ function drawPL(l){
   row.append(u,nm,add);l.appendChild(row);l.appendChild(msg);
   const a=plGet();
   if(!a.length){const d=document.createElement("p");d.className="sub";d.style.margin="8px 4px";d.textContent="Aún no tienes enlaces. Pega arriba tu playlist de YouTube, ponle un nombre y toca Agregar. Se guarda en este navegador y también en el respaldo.";l.appendChild(d)}
+  const vids=a.filter(x=>x.t=="v").map(x=>x.id).slice(0,50);
+  if(vids.length>1){const r=document.createElement("div");r.className="plrow";const b=document.createElement("button");const on=plCur=="qall";
+    b.className="st"+(on?" on":"");b.textContent=(on?"❚❚ ":"▶ ")+"Reproducir todos mis temas ("+vids.length+")";
+    b.onclick=()=>{if(on){stopRadio();drawRadio()}else playPL({n:"Todos mis temas",t:"q",id:"all",ids:vids})};r.appendChild(b);l.appendChild(r)}
   a.forEach((x,i)=>{const r=document.createElement("div");r.className="plrow";
     const b=document.createElement("button");b.className="st"+(plCur==x.t+x.id?" on":"");b.textContent=(plCur==x.t+x.id?"❚❚ ":"▶ ")+x.n+(x.t=="l"?" · playlist":"");
     b.onclick=()=>{if(plCur==x.t+x.id){stopRadio();drawRadio()}else playPL(x)};
