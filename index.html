@@ -237,6 +237,11 @@ html[data-theme=dark] #themeb{background:linear-gradient(#0c1530,#17294f);box-sh
 #tvlist button small{display:block;opacity:.8;font-size:11px;margin-top:3px;font-weight:400}
 #tvlist button.on{outline:2px solid var(--gold)}
 #tvst{font-size:14px;min-height:20px;margin:6px 0;color:var(--red)}
+.plin{flex:1 1 200px;min-width:0;padding:9px 10px;font:inherit;font-size:14px;background:#fff8e4;color:#1a1208;border:2px solid var(--gold);border-radius:4px}
+.plin.nm{flex:0 1 150px}
+html[data-theme=dark] .plin{background:#120e09;color:#f6ecd2}
+#plp iframe{width:100%;height:220px;border:0;border-radius:6px;margin:10px 0 2px;background:#000;display:block}
+.plrow{display:flex;gap:6px;align-items:stretch;margin:4px 0}.plrow .st{flex:1;margin:0}.plrow .pld{flex:0 0 auto;width:auto;padding:0 12px}
 .tvrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
 #tvurl{flex:1 1 220px;min-width:0;padding:9px 10px;font:inherit;font-size:14px;background:#fbf3dc;color:var(--ink);border:2px solid var(--gold);border-radius:4px}
 html[data-theme=dark] #tvurl{background:#120e09;color:#f1e6c8}
@@ -335,7 +340,7 @@ html[data-theme=dark] #tdl li span{color:#f6ecd2}html[data-theme=dark] .td-nav i
 <div id="radio"><div class="box">
   <h3>📻 Radio del reino</h3>
   <p class="sub">Emisoras de EE. UU., internacionales, de España y de Argentina, música para estudiar, música dance (eurobeat y eurodance) y emisoras raras, con transmisión abierta. Si una no responde, prueba otra. Abre el archivo en tu navegador o desde GitHub Pages: dentro de visores o vistas previas las emisoras suelen bloquearse.</p>
-  <div class="tabs" id="rtabs"></div><div id="rlist"></div><p id="rst">Elige una emisora.</p>
+  <div class="tabs" id="rtabs"></div><div id="rlist"></div><div id="plp"></div><p id="rst">Elige una emisora.</p>
   <div style="text-align:right;margin-top:12px"><button id="rstop">Detener</button> <button id="rclose">Cerrar</button></div>
 </div></div>
 <div id="tv"><div class="box">
@@ -479,7 +484,7 @@ const rdJ=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k)||"null");return
 const DKEY=/^\d{4}-\d{2}-\d{2}$/;
 const cleanTodo=o=>{const r={};if(!o||typeof o!="object"||Array.isArray(o))return r;for(const k in o){if(!DKEY.test(k)||!Array.isArray(o[k]))continue;const L=o[k].filter(x=>x&&typeof x.t=="string"&&x.t.trim()).slice(0,200).map(x=>({t:x.t.slice(0,300),d:x.d?1:0}));if(L.length)r[k]=L}return r};
 const cleanPomo=o=>{const r={};if(!o||typeof o!="object"||Array.isArray(o))return r;for(const k in o){const n=Math.round(+o[k]);if(DKEY.test(k)&&Number.isFinite(n)&&n>=0&&n<=99)r[k]=n}return r};
-const backupText=()=>JSON.stringify({app:"calendario-medieval",version:4,exportado:new Date().toISOString(),eventos:store,tv_enlaces:tvLinks(),todo:cleanTodo(rdJ("medieval-todo",{})),pomodoro_historial:cleanPomo(rdJ("medieval-pomo-hist",{}))},null,2);
+const backupText=()=>JSON.stringify({app:"calendario-medieval",version:4,exportado:new Date().toISOString(),eventos:store,tv_enlaces:tvLinks(),todo:cleanTodo(rdJ("medieval-todo",{})),pomodoro_historial:cleanPomo(rdJ("medieval-pomo-hist",{})),playlists:plGet()},null,2);
 async function exportBackup(){
   const txt=backupText(),name="respaldo-calendario-medieval-"+new Date().toISOString().slice(0,10)+".json";
   try{
@@ -505,6 +510,7 @@ function importText(txt){
       for(const k in clean)n+=clean[k].length;
       const tvIn=Array.isArray(d.tv_enlaces)?d.tv_enlaces.filter(okTv).map(t=>({n:t.n.slice(0,60),u:t.u.slice(0,500),src:t.src})):null;
       const tdIn=d.todo?cleanTodo(d.todo):null,pmIn=d.pomodoro_historial?cleanPomo(d.pomodoro_historial):null;
+      const plIn=Array.isArray(d.playlists)?plClean(d.playlists):null;
       const nTd=tdIn?Object.values(tdIn).reduce((a,l)=>a+l.length,0):0,nPm=pmIn?Object.keys(pmIn).length:0;
       const wr=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
       const mergeTv=()=>{if(!tvIn)return;const cur=tvLinks().filter(okTv);tvIn.forEach(t=>{if(!cur.some(y=>y.src==t.src))cur.push(t)});wr("medieval-tv",cur)};
@@ -513,12 +519,13 @@ function importText(txt){
         if(nTd){const cur=cleanTodo(rdJ("medieval-todo",{}));for(const k in tdIn){const c=cur[k]=cur[k]||[];tdIn[k].forEach(t=>{if(!c.some(y=>y.t==t.t))c.push(t)})}wr("medieval-todo",cur)}
         if(nPm){const cur=cleanPomo(rdJ("medieval-pomo-hist",{}));for(const k in pmIn)cur[k]=Math.max(cur[k]||0,pmIn[k]);wr("medieval-pomo-hist",cur)}};
       const replaceExtra=()=>{if(tdIn)wr("medieval-todo",tdIn);if(pmIn)wr("medieval-pomo-hist",pmIn)};
-      const extra=(tvIn?" · "+tvIn.length+" enlaces de TV":"")+(nTd?" · "+nTd+" tareas del To-Do":"")+(nPm?" · "+nPm+" días de pomodoros":"");
+      const mergePl=()=>{if(!plIn||!plIn.length)return;const c=plGet();plIn.forEach(x=>{if(!c.some(y=>y.t==x.t&&y.id==x.id))c.push(x)});plSet(c.slice(0,100))};
+      const extra=(tvIn?" · "+tvIn.length+" enlaces de TV":"")+(nTd?" · "+nTd+" tareas del To-Do":"")+(nPm?" · "+nPm+" días de pomodoros":"")+(plIn&&plIn.length?" · "+plIn.length+" playlists":"");
       if(confirm("Se encontraron "+n+" eventos"+extra+".\n\nAceptar = COMBINAR con los actuales\nCancelar = más opciones")){
-        mergeTv();mergeExtra();
+        mergeTv();mergeExtra();mergePl();
         for(const k in clean){const cur=store[k]=store[k]||[];clean[k].forEach(t=>{if(!cur.some(y=>y.t==t.t))cur.push(t)});cur.sort((a,b)=>a.p-b.p)}
       }else if(confirm("¿REEMPLAZAR todo lo actual (eventos, TV, To-Do y pomodoros) por lo del archivo?\nAceptar = reemplazar · Cancelar = no hacer nada")){
-        store=clean;replaceTv();replaceExtra();
+        store=clean;replaceTv();replaceExtra();if(plIn)plSet(plIn);
       }else return;
       save();render();if(window.__tvReload)window.__tvReload();alert("Respaldo cargado correctamente."+((nTd||nPm)?" La página se recargará para mostrar el To-Do y los pomodoros.":""));
       if(nTd||nPm)location.reload();
@@ -865,6 +872,8 @@ const rst=document.getElementById("rst"),radb=document.getElementById("radb");
 function drawRadio(){
   const tb=document.getElementById("rtabs"),l=document.getElementById("rlist");tb.innerHTML="";l.innerHTML="";
   RADIO.forEach((c,i)=>{const b=document.createElement("button");b.textContent=c.n;b.className=i==rcat?"on":"";b.onclick=()=>{rcat=i;drawRadio()};tb.appendChild(b)});
+  {const b=document.createElement("button");b.textContent="🎵 Mi playlist";b.className=rcat>=RADIO.length?"on":"";b.onclick=()=>{rcat=RADIO.length;drawRadio()};tb.appendChild(b)}
+  if(rcat>=RADIO.length){drawPL(l);return}
   RADIO[rcat].s.forEach(([n,u,x])=>{const b=document.createElement("button");b.className="st"+(rcur==u[0]?" on":"");b.textContent=(rcur==u[0]?"❚❚ ":"▶ ")+n;b.onclick=()=>playRadio(n,u,x);l.appendChild(b)});
   if(rextra){const d=document.createElement("div");d.style.cssText="margin:10px 4px;font-size:.85rem;opacity:.9";d.append("¿Se corta? Abrir en: ");
     rextra.forEach(([t,h],k)=>{if(k)d.append(" · ");const a=document.createElement("a");a.href=h;a.target="_blank";a.rel="noopener";a.textContent=t+" ↗";d.appendChild(a)});l.appendChild(d)}
@@ -923,6 +932,46 @@ function attempt(id,i,bust){
       rhls.loadSource(u);rhls.attachMedia(rau);go()}).catch(()=>{if(id==rid)attempt(id,i+1)});
   }else{rau.src=u;go()}
 }
+/* ---- Mi playlist (YouTube dentro de la radio) ---- */
+const PLK="medieval-playlists";
+function plGet(){try{return plClean(JSON.parse(localStorage.getItem(PLK)||"[]"))}catch(e){return []}}
+function plSet(a){try{localStorage.setItem(PLK,JSON.stringify(a))}catch(e){}}
+function plClean(a){return Array.isArray(a)?a.filter(x=>x&&typeof x.n=="string"&&(x.t=="l"||x.t=="v")&&typeof x.id=="string"&&/^[\w-]{10,60}$/.test(x.id)&&(!x.v||/^[\w-]{11}$/.test(x.v))).slice(0,100).map(x=>({n:x.n.slice(0,60),t:x.t,id:x.id,v:x.v||""})):[]}
+function ytParse(raw){let u;try{u=new URL(String(raw).trim())}catch(e){return null}
+  const h=u.hostname.replace(/^(www|m|music)\./,"");let v=null,l=u.searchParams.get("list");
+  if(h=="youtu.be")v=u.pathname.slice(1).split("/")[0];
+  else if(h=="youtube.com"||h=="youtube-nocookie.com"){if(u.pathname=="/watch")v=u.searchParams.get("v");else{const m=u.pathname.match(/^\/(embed|shorts|live)\/([\w-]{11})/);if(m)v=m[2]}}
+  else return null;
+  if(v&&!/^[\w-]{11}$/.test(v))v=null;if(l&&!/^[\w-]{10,60}$/.test(l))l=null;
+  if(l)return{t:"l",id:l,v:v||""};if(v)return{t:"v",id:v,v:""};return null}
+function plSrc(x){const q="autoplay=1&rel=0&playsinline=1";
+  if(x.t=="l")return x.v?"https://www.youtube.com/embed/"+x.v+"?list="+x.id+"&"+q:"https://www.youtube.com/embed/videoseries?list="+x.id+"&"+q;
+  return "https://www.youtube.com/embed/"+x.id+"?"+q}
+let plCur=null;
+function killPL(){const p=document.getElementById("plp");if(p)p.innerHTML="";plCur=null}
+function playPL(x){stopRadio();const p=document.getElementById("plp");p.innerHTML="";
+  const f=document.createElement("iframe");f.src=plSrc(x);f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.title=x.n;p.appendChild(f);
+  plCur=x.t+x.id;radb.classList.add("on");rst.textContent="♪ Playlist: "+x.n+(location.protocol=="file:"?" (si el video no carga, abre la página desde GitHub Pages: YouTube no siempre permite reproducir desde un archivo local)":"");drawRadio()}
+function drawPL(l){
+  const row=document.createElement("div");row.className="tvrow";
+  const u=document.createElement("input");u.className="plin";u.type="text";u.placeholder="Enlace de YouTube (playlist o video)";u.autocomplete="off";
+  const nm=document.createElement("input");nm.className="plin nm";nm.type="text";nm.placeholder="Nombre (opcional)";nm.maxLength=60;nm.autocomplete="off";
+  const add=document.createElement("button");add.textContent="＋ Agregar";
+  const msg=document.createElement("p");msg.className="sub";msg.style.margin="2px 4px";
+  const doAdd=()=>{const r=ytParse(u.value);if(!r){msg.textContent="Ese enlace no parece de YouTube. Pega el de la playlist (con list=…) o el de un video.";return}
+    const a=plGet();if(a.some(y=>y.t==r.t&&y.id==r.id)){msg.textContent="Ese enlace ya está guardado.";return}
+    a.push({n:(nm.value.trim()||(r.t=="l"?"Playlist ":"Video ")+(a.length+1)).slice(0,60),t:r.t,id:r.id,v:r.v});plSet(a);drawRadio()};
+  add.onclick=doAdd;u.onkeydown=nm.onkeydown=e=>{if(e.key=="Enter")doAdd()};
+  row.append(u,nm,add);l.appendChild(row);l.appendChild(msg);
+  const a=plGet();
+  if(!a.length){const d=document.createElement("p");d.className="sub";d.style.margin="8px 4px";d.textContent="Aún no tienes enlaces. Pega arriba tu playlist de YouTube, ponle un nombre y toca Agregar. Se guarda en este navegador y también en el respaldo.";l.appendChild(d)}
+  a.forEach((x,i)=>{const r=document.createElement("div");r.className="plrow";
+    const b=document.createElement("button");b.className="st"+(plCur==x.t+x.id?" on":"");b.textContent=(plCur==x.t+x.id?"❚❚ ":"▶ ")+x.n+(x.t=="l"?" · playlist":"");
+    b.onclick=()=>{if(plCur==x.t+x.id){stopRadio();drawRadio()}else playPL(x)};
+    const d=document.createElement("button");d.className="pld";d.textContent="✕";d.title="Quitar";
+    d.onclick=()=>{if(plCur==x.t+x.id)stopRadio();const z=plGet();z.splice(i,1);plSet(z);drawRadio()};
+    r.append(b,d);l.appendChild(r)})}
+{const _stop=stopRadio,_play=playRadio;stopRadio=function(m){killPL();return _stop.call(this,m)};playRadio=function(){killPL();return _play.apply(this,arguments)}}
 function playRadio(n,urls,x){
   if(rcur==urls[0]){stopRadio();drawRadio();return}
   rid++;rname=n;rurls=urls;rextra=x||null;rcur=urls[0];rtry=0;rcycle=0;rsw=0;drawRadio();attempt(rid,0);
