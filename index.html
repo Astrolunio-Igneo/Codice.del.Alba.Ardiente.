@@ -302,7 +302,7 @@ html[data-theme=dark] #tdl li span{color:#f6ecd2}html[data-theme=dark] .td-nav i
 </header>
 <div class="legend" id="leg"></div>
 <main id="cal"></main>
-<p class="note">Toca un día para añadir o ver eventos y elige su prioridad. Se guardan en este navegador: usa ⬇ Respaldo para descargarlos y ⬆ Cargar para recuperarlos.</p>
+<p class="note">Toca un día para añadir o ver eventos y elige su prioridad. Se guardan en este navegador: usa ⬇ Respaldo para descargarlos (junto con el To-Do, los canales de TV y los pomodoros de la semana) y ⬆ Cargar para recuperarlos.</p>
 <section class="codex"><h2>Códice ilustrado</h2><div class="frames">
   <figure class="frame"><img id="imk" alt="Caballero medieval cabalgando hacia un castillo al amanecer"><figcaption>Hazlo por la leyenda</figcaption></figure>
   <figure class="frame"><img id="imc" alt="Pintura de la Última Cena"><figcaption>La Última Cena</figcaption></figure>
@@ -475,7 +475,11 @@ document.getElementById("lb").onclick=e=>e.currentTarget.classList.remove("show"
 /* ---- Respaldo: descargar y cargar ---- */
 const tvLinks=()=>{try{const a=JSON.parse(localStorage.getItem("medieval-tv")||"[]");return Array.isArray(a)?a:[]}catch(e){return []}};
 const okTv=t=>t&&typeof t.n=="string"&&typeof t.u=="string"&&typeof t.src=="string"&&/^https:\/\/www\.youtube(-nocookie)?\.com\/embed\//.test(t.src);
-const backupText=()=>JSON.stringify({app:"calendario-medieval",version:3,exportado:new Date().toISOString(),eventos:store,tv_enlaces:tvLinks()},null,2);
+const rdJ=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k)||"null");return v&&typeof v=="object"&&!Array.isArray(v)?v:d}catch(e){return d}};
+const DKEY=/^\d{4}-\d{2}-\d{2}$/;
+const cleanTodo=o=>{const r={};if(!o||typeof o!="object"||Array.isArray(o))return r;for(const k in o){if(!DKEY.test(k)||!Array.isArray(o[k]))continue;const L=o[k].filter(x=>x&&typeof x.t=="string"&&x.t.trim()).slice(0,200).map(x=>({t:x.t.slice(0,300),d:x.d?1:0}));if(L.length)r[k]=L}return r};
+const cleanPomo=o=>{const r={};if(!o||typeof o!="object"||Array.isArray(o))return r;for(const k in o){const n=Math.round(+o[k]);if(DKEY.test(k)&&Number.isFinite(n)&&n>=0&&n<=99)r[k]=n}return r};
+const backupText=()=>JSON.stringify({app:"calendario-medieval",version:4,exportado:new Date().toISOString(),eventos:store,tv_enlaces:tvLinks(),todo:cleanTodo(rdJ("medieval-todo",{})),pomodoro_historial:cleanPomo(rdJ("medieval-pomo-hist",{}))},null,2);
 async function exportBackup(){
   const txt=backupText(),name="respaldo-calendario-medieval-"+new Date().toISOString().slice(0,10)+".json";
   try{
@@ -500,15 +504,24 @@ function importText(txt){
       const clean=normStore(ev);let n=0;
       for(const k in clean)n+=clean[k].length;
       const tvIn=Array.isArray(d.tv_enlaces)?d.tv_enlaces.filter(okTv).map(t=>({n:t.n.slice(0,60),u:t.u.slice(0,500),src:t.src})):null;
-      const mergeTv=()=>{if(!tvIn)return;const cur=tvLinks().filter(okTv);tvIn.forEach(t=>{if(!cur.some(y=>y.src==t.src))cur.push(t)});try{localStorage.setItem("medieval-tv",JSON.stringify(cur))}catch(e){}};
-      const replaceTv=()=>{if(!tvIn)return;try{localStorage.setItem("medieval-tv",JSON.stringify(tvIn))}catch(e){}};
-      if(confirm("Se encontraron "+n+" eventos"+(tvIn?" y "+tvIn.length+" enlaces de TV":"")+".\n\nAceptar = COMBINAR con los actuales\nCancelar = más opciones")){
-        mergeTv();
+      const tdIn=d.todo?cleanTodo(d.todo):null,pmIn=d.pomodoro_historial?cleanPomo(d.pomodoro_historial):null;
+      const nTd=tdIn?Object.values(tdIn).reduce((a,l)=>a+l.length,0):0,nPm=pmIn?Object.keys(pmIn).length:0;
+      const wr=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+      const mergeTv=()=>{if(!tvIn)return;const cur=tvLinks().filter(okTv);tvIn.forEach(t=>{if(!cur.some(y=>y.src==t.src))cur.push(t)});wr("medieval-tv",cur)};
+      const replaceTv=()=>{if(!tvIn)return;wr("medieval-tv",tvIn)};
+      const mergeExtra=()=>{
+        if(nTd){const cur=cleanTodo(rdJ("medieval-todo",{}));for(const k in tdIn){const c=cur[k]=cur[k]||[];tdIn[k].forEach(t=>{if(!c.some(y=>y.t==t.t))c.push(t)})}wr("medieval-todo",cur)}
+        if(nPm){const cur=cleanPomo(rdJ("medieval-pomo-hist",{}));for(const k in pmIn)cur[k]=Math.max(cur[k]||0,pmIn[k]);wr("medieval-pomo-hist",cur)}};
+      const replaceExtra=()=>{if(tdIn)wr("medieval-todo",tdIn);if(pmIn)wr("medieval-pomo-hist",pmIn)};
+      const extra=(tvIn?" · "+tvIn.length+" enlaces de TV":"")+(nTd?" · "+nTd+" tareas del To-Do":"")+(nPm?" · "+nPm+" días de pomodoros":"");
+      if(confirm("Se encontraron "+n+" eventos"+extra+".\n\nAceptar = COMBINAR con los actuales\nCancelar = más opciones")){
+        mergeTv();mergeExtra();
         for(const k in clean){const cur=store[k]=store[k]||[];clean[k].forEach(t=>{if(!cur.some(y=>y.t==t.t))cur.push(t)});cur.sort((a,b)=>a.p-b.p)}
-      }else if(confirm("¿REEMPLAZAR todos tus eventos actuales por los del archivo?\nAceptar = reemplazar · Cancelar = no hacer nada")){
-        store=clean;replaceTv();
+      }else if(confirm("¿REEMPLAZAR todo lo actual (eventos, TV, To-Do y pomodoros) por lo del archivo?\nAceptar = reemplazar · Cancelar = no hacer nada")){
+        store=clean;replaceTv();replaceExtra();
       }else return;
-      save();render();if(window.__tvReload)window.__tvReload();alert("Respaldo cargado correctamente.");
+      save();render();if(window.__tvReload)window.__tvReload();alert("Respaldo cargado correctamente."+((nTd||nPm)?" La página se recargará para mostrar el To-Do y los pomodoros.":""));
+      if(nTd||nPm)location.reload();
     }catch(e){alert("El archivo o texto no es un respaldo válido.")}
   }
 }
@@ -1033,7 +1046,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   const dkey=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
   function pmExtra(){
     const now=new Date();
-    if(hlast!==P.n){hlast=P.n;hist[dkey(now)]=P.n;const lim90=dkey(new Date(now.getTime()-90*864e5));Object.keys(hist).forEach(k=>{if(k<lim90)delete hist[k]});try{localStorage.setItem(HK,JSON.stringify(hist))}catch(e){}}
+    if(hlast!==P.n){if(hlast===-1&&(+hist[dkey(now)]||0)>P.n){P.n=Math.min(99,+hist[dkey(now)]);$("pmc").textContent="🍅 "+P.n;persist()}hlast=P.n;hist[dkey(now)]=P.n;const lim90=dkey(new Date(now.getTime()-90*864e5));Object.keys(hist).forEach(k=>{if(k<lim90)delete hist[k]});try{localStorage.setItem(HK,JSON.stringify(hist))}catch(e){}}
     let w=0;for(let i=0;i<=(now.getDay()+6)%7;i++){const d=new Date(now);d.setDate(now.getDate()-i);w+=+hist[dkey(d)]||0}
     $("pmwk").textContent="Semana: "+w+" 🍅";
     $("pmeye").textContent=eyeEnd?"👁 Mira algo lejano… "+Math.ceil((eyeEnd-Date.now())/1000)+" s":(P.m!=0?"👁 Descanso: mira algo lejano 20 s y parpadea con calma":"");
