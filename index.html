@@ -248,11 +248,14 @@ html[data-theme=dark] #tvst{color:#e8836f}
 #nightv{display:none;position:fixed;inset:0;z-index:9999;pointer-events:none;background:#d6964f;mix-blend-mode:multiply;opacity:.6}html.night #nightv{display:block}
 .pm-ctl{flex-wrap:wrap;justify-content:center}
 @media(max-width:700px){#pomo.fs{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}#pomo.fs .pm-ctl{gap:6px}#pomo.fs .pm-ctl button{padding:7px 11px}#pomo.fs #pmor{font-size:14px;margin-top:16px}#pomo.fs .pm-row{gap:12px}}
-#tzw{position:fixed;top:calc(46px + env(safe-area-inset-top,0px));left:10px;z-index:6;width:104px;display:flex;flex-direction:column;gap:2px;align-items:stretch}
-#eshr{text-align:center;font-family:'Cinzel',Georgia,serif;font-size:11px;letter-spacing:.5px;line-height:1.1;color:#e9c872;opacity:.9;pointer-events:none;user-select:none;white-space:nowrap;text-shadow:0 1px 2px #000}html[data-theme=dark] #eshr{color:#e9c872}
-#tzsel{width:100%;font-family:'Cinzel',Georgia,serif;font-size:10px;padding:1px 2px;height:18px;border:1px solid var(--gold);border-radius:4px;background:var(--paper);color:var(--blue);cursor:pointer;opacity:.9}
-html[data-theme=dark] #tzsel{background:#120e09;color:#e9c872}
-@media(max-width:899px){header{padding-top:84px}}
+#tzw{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:82px;z-index:6;height:32px;display:flex;align-items:center;gap:0;padding:0 14px 0 4px;border:1px solid #c9a24acc;border-radius:16px;background:#0a1228ee;box-shadow:0 2px 6px #0007;max-width:calc(100vw - 92px)}
+#tzsel{width:150px;max-width:100%;height:30px;font-family:'Cinzel',Georgia,serif;font-size:14px;font-weight:600;padding:0 4px 0 8px;border:0;border-radius:14px;background:transparent;color:#f2dc96;cursor:pointer;outline-offset:0;min-width:0;box-shadow:none}
+html[data-theme=dark] #tzsel{background:transparent;color:#f2dc96}
+#tzsel option{background:#0a1228;color:#f2dc96}
+#eshr{font-family:'Cinzel',Georgia,serif;font-size:16px;font-weight:700;letter-spacing:1px;line-height:1;color:#f2dc96;pointer-events:none;user-select:none;white-space:nowrap;padding-left:12px;border-left:1px solid #c9a24a88;text-shadow:none}
+@media(min-width:900px){#tzw{height:32px;border-radius:16px;top:calc(10px + env(safe-area-inset-top,0px));left:78px;padding:0 10px 0 2px}#tzsel{width:124px;height:30px;font-size:13px;padding:0 2px 0 6px}#eshr{font-size:15px;padding-left:8px}}
+@media(max-width:600px){#tzw{left:76px;padding:0 9px 0 2px;max-width:calc(100vw - 86px - 140px)}#tzsel{width:96px;font-size:11px;padding:0 2px 0 5px}#eshr{font-size:12px;padding-left:7px}}
+@media(max-width:400px){#tzw{left:72px;max-width:calc(100vw - 80px - 132px)}#tzsel{width:84px;font-size:10px}#eshr{font-size:11px}}
 #todob{position:fixed;right:calc(10px + env(safe-area-inset-right,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:6;height:24px;padding:0 11px;border-radius:12px;border:1px solid #c9a24a88;background:#060b1acc;color:#f2dc96;font-family:'Cinzel',Georgia,serif;font-size:11px;font-weight:500;letter-spacing:1px;box-shadow:none;text-shadow:none;opacity:.7;transition:opacity .2s}
 #todob:hover,#todob:focus-visible{opacity:1;filter:none}
 html[data-theme=dark] #todob{background:#060b1acc;color:#f2dc96;box-shadow:none}
@@ -276,7 +279,7 @@ html[data-theme=dark] #tdl li span{color:#f6ecd2}html[data-theme=dark] .td-nav i
 <body>
 <div id="bg"></div>
 <button id="themeb" role="switch" aria-checked="false" aria-label="Modo oscuro" title="Modo oscuro"><i></i></button>
-<div id="tzw"><div id="eshr"></div><select id="tzsel" aria-label="Zona horaria" title="Elige tu zona horaria"></select></div>
+<div id="tzw"><select id="tzsel" aria-label="Zona horaria" title="Elige tu zona horaria"></select><div id="eshr"></div></div>
 <div id="clkw" aria-label="Clima y hora"><button class="wxb" type="button"></button><span class="sep">·</span><span class="ckt"></span></div>
 <header>
   <h1>⚜ Calendario Medieval ⚜</h1>
