@@ -484,7 +484,7 @@ const rdJ=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k)||"null");return
 const DKEY=/^\d{4}-\d{2}-\d{2}$/;
 const cleanTodo=o=>{const r={};if(!o||typeof o!="object"||Array.isArray(o))return r;for(const k in o){if(!DKEY.test(k)||!Array.isArray(o[k]))continue;const L=o[k].filter(x=>x&&typeof x.t=="string"&&x.t.trim()).slice(0,200).map(x=>({t:x.t.slice(0,300),d:x.d?1:0}));if(L.length)r[k]=L}return r};
 const cleanPomo=o=>{const r={};if(!o||typeof o!="object"||Array.isArray(o))return r;for(const k in o){const n=Math.round(+o[k]);if(DKEY.test(k)&&Number.isFinite(n)&&n>=0&&n<=99)r[k]=n}return r};
-const backupText=()=>JSON.stringify({app:"calendario-medieval",version:4,exportado:new Date().toISOString(),eventos:store,tv_enlaces:tvLinks(),todo:cleanTodo(rdJ("medieval-todo",{})),pomodoro_historial:cleanPomo(rdJ("medieval-pomo-hist",{})),playlists:plGet()},null,2);
+const backupText=()=>JSON.stringify({app:"calendario-medieval",version:4,exportado:new Date().toISOString(),eventos:store,tv_enlaces:tvLinks(),todo:cleanTodo(rdJ("medieval-todo",{})),pomodoro_historial:cleanPomo(rdJ("medieval-pomo-hist",{})),playlists:plGet(0),playlists2:plGet(1)},null,2);
 async function exportBackup(){
   const txt=backupText(),name="respaldo-calendario-medieval-"+new Date().toISOString().slice(0,10)+".json";
   try{
@@ -510,7 +510,7 @@ function importText(txt){
       for(const k in clean)n+=clean[k].length;
       const tvIn=Array.isArray(d.tv_enlaces)?d.tv_enlaces.filter(okTv).map(t=>({n:t.n.slice(0,60),u:t.u.slice(0,500),src:t.src})):null;
       const tdIn=d.todo?cleanTodo(d.todo):null,pmIn=d.pomodoro_historial?cleanPomo(d.pomodoro_historial):null;
-      const plIn=Array.isArray(d.playlists)?plClean(d.playlists):null;
+      const plIn=Array.isArray(d.playlists)?plClean(d.playlists):null,plIn2=Array.isArray(d.playlists2)?plClean(d.playlists2):null;
       const nTd=tdIn?Object.values(tdIn).reduce((a,l)=>a+l.length,0):0,nPm=pmIn?Object.keys(pmIn).length:0;
       const wr=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
       const mergeTv=()=>{if(!tvIn)return;const cur=tvLinks().filter(okTv);tvIn.forEach(t=>{if(!cur.some(y=>y.src==t.src))cur.push(t)});wr("medieval-tv",cur)};
@@ -519,13 +519,13 @@ function importText(txt){
         if(nTd){const cur=cleanTodo(rdJ("medieval-todo",{}));for(const k in tdIn){const c=cur[k]=cur[k]||[];tdIn[k].forEach(t=>{if(!c.some(y=>y.t==t.t))c.push(t)})}wr("medieval-todo",cur)}
         if(nPm){const cur=cleanPomo(rdJ("medieval-pomo-hist",{}));for(const k in pmIn)cur[k]=Math.max(cur[k]||0,pmIn[k]);wr("medieval-pomo-hist",cur)}};
       const replaceExtra=()=>{if(tdIn)wr("medieval-todo",tdIn);if(pmIn)wr("medieval-pomo-hist",pmIn)};
-      const mergePl=()=>{if(!plIn||!plIn.length)return;const c=plGet();plIn.forEach(x=>{if(!c.some(y=>y.t==x.t&&y.id==x.id))c.push(x)});plSet(c.slice(0,100))};
-      const extra=(tvIn?" · "+tvIn.length+" enlaces de TV":"")+(nTd?" · "+nTd+" tareas del To-Do":"")+(nPm?" · "+nPm+" días de pomodoros":"")+(plIn&&plIn.length?" · "+plIn.length+" playlists":"");
+      const mergePl=()=>{[plIn,plIn2].forEach((L,w)=>{if(!L||!L.length)return;const c=plGet(w);L.forEach(x=>{if(!c.some(y=>y.t==x.t&&y.id==x.id))c.push(x)});plSet(c.slice(0,100),w)})};
+      const extra=(tvIn?" · "+tvIn.length+" enlaces de TV":"")+(nTd?" · "+nTd+" tareas del To-Do":"")+(nPm?" · "+nPm+" días de pomodoros":"")+((plIn?plIn.length:0)+(plIn2?plIn2.length:0)?" · "+((plIn?plIn.length:0)+(plIn2?plIn2.length:0))+" enlaces de playlist":"");
       if(confirm("Se encontraron "+n+" eventos"+extra+".\n\nAceptar = COMBINAR con los actuales\nCancelar = más opciones")){
         mergeTv();mergeExtra();mergePl();
         for(const k in clean){const cur=store[k]=store[k]||[];clean[k].forEach(t=>{if(!cur.some(y=>y.t==t.t))cur.push(t)});cur.sort((a,b)=>a.p-b.p)}
       }else if(confirm("¿REEMPLAZAR todo lo actual (eventos, TV, To-Do y pomodoros) por lo del archivo?\nAceptar = reemplazar · Cancelar = no hacer nada")){
-        store=clean;replaceTv();replaceExtra();if(plIn)plSet(plIn);
+        store=clean;replaceTv();replaceExtra();if(plIn)plSet(plIn,0);if(plIn2)plSet(plIn2,1);
       }else return;
       save();render();if(window.__tvReload)window.__tvReload();alert("Respaldo cargado correctamente."+((nTd||nPm)?" La página se recargará para mostrar el To-Do y los pomodoros.":""));
       if(nTd||nPm)location.reload();
@@ -872,8 +872,8 @@ const rst=document.getElementById("rst"),radb=document.getElementById("radb");
 function drawRadio(){
   const tb=document.getElementById("rtabs"),l=document.getElementById("rlist");tb.innerHTML="";l.innerHTML="";
   RADIO.forEach((c,i)=>{const b=document.createElement("button");b.textContent=c.n;b.className=i==rcat?"on":"";b.onclick=()=>{rcat=i;drawRadio()};tb.appendChild(b)});
-  {const b=document.createElement("button");b.textContent="🎵 Mi playlist";b.className=rcat>=RADIO.length?"on":"";b.onclick=()=>{rcat=RADIO.length;drawRadio()};tb.appendChild(b)}
-  if(rcat>=RADIO.length){drawPL(l);return}
+  ["🎵 Mi playlist","🌅 Mi playlist 2"].forEach((t,k)=>{const b=document.createElement("button");b.textContent=t;b.className=rcat==RADIO.length+k?"on":"";b.onclick=()=>{rcat=RADIO.length+k;drawRadio()};tb.appendChild(b)});
+  if(rcat>=RADIO.length){drawPL(l,rcat-RADIO.length);return}
   RADIO[rcat].s.forEach(([n,u,x])=>{const b=document.createElement("button");b.className="st"+(rcur==u[0]?" on":"");b.textContent=(rcur==u[0]?"❚❚ ":"▶ ")+n;b.onclick=()=>playRadio(n,u,x);l.appendChild(b)});
   if(rextra){const d=document.createElement("div");d.style.cssText="margin:10px 4px;font-size:.85rem;opacity:.9";d.append("¿Se corta? Abrir en: ");
     rextra.forEach(([t,h],k)=>{if(k)d.append(" · ");const a=document.createElement("a");a.href=h;a.target="_blank";a.rel="noopener";a.textContent=t+" ↗";d.appendChild(a)});l.appendChild(d)}
@@ -933,9 +933,9 @@ function attempt(id,i,bust){
   }else{rau.src=u;go()}
 }
 /* ---- Mi playlist (YouTube dentro de la radio) ---- */
-const PLK="medieval-playlists";
-function plGet(){try{return plClean(JSON.parse(localStorage.getItem(PLK)||"[]"))}catch(e){return []}}
-function plSet(a){try{localStorage.setItem(PLK,JSON.stringify(a))}catch(e){}}
+const PLK=["medieval-playlists","medieval-playlists2"];
+function plGet(w){try{return plClean(JSON.parse(localStorage.getItem(PLK[w||0])||"[]"))}catch(e){return []}}
+function plSet(a,w){try{localStorage.setItem(PLK[w||0],JSON.stringify(a))}catch(e){}}
 function plClean(a){return Array.isArray(a)?a.filter(x=>x&&typeof x.n=="string"&&(x.t=="l"||x.t=="v")&&typeof x.id=="string"&&/^[\w-]{10,60}$/.test(x.id)&&(!x.v||/^[\w-]{11}$/.test(x.v))).slice(0,100).map(x=>({n:x.n.slice(0,60),t:x.t,id:x.id,v:x.v||""})):[]}
 function ytParse(raw){let u;try{u=new URL(String(raw).trim())}catch(e){return null}
   const h=u.hostname.replace(/^(www|m|music)\./,"");let v=null,l=u.searchParams.get("list");
@@ -952,29 +952,29 @@ let plCur=null;
 function killPL(){const p=document.getElementById("plp");if(p)p.innerHTML="";plCur=null}
 function playPL(x){stopRadio();const p=document.getElementById("plp");p.innerHTML="";
   const f=document.createElement("iframe");f.src=plSrc(x);f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.referrerPolicy="strict-origin-when-cross-origin";f.allowFullscreen=true;f.title=x.n;p.appendChild(f);
-  plCur=x.t=="q"?"qall":x.t+x.id;radb.classList.add("on");rst.textContent="♪ Playlist: "+x.n+(location.protocol=="file:"?" (si el video no carga, abre la página desde GitHub Pages: YouTube no siempre permite reproducir desde un archivo local)":"");drawRadio()}
-function drawPL(l){
+  plCur=x.t=="q"?"qall"+(x.w||0):x.t+x.id;radb.classList.add("on");rst.textContent="♪ Playlist: "+x.n+(location.protocol=="file:"?" (si el video no carga, abre la página desde GitHub Pages: YouTube no siempre permite reproducir desde un archivo local)":"");drawRadio()}
+function drawPL(l,w){w=w||0;
   const row=document.createElement("div");row.className="tvrow";
   const u=document.createElement("input");u.className="plin";u.type="text";u.placeholder="Enlace de YouTube (playlist o video)";u.autocomplete="off";
   const nm=document.createElement("input");nm.className="plin nm";nm.type="text";nm.placeholder="Nombre (opcional)";nm.maxLength=60;nm.autocomplete="off";
   const add=document.createElement("button");add.textContent="＋ Agregar";
   const msg=document.createElement("p");msg.className="sub";msg.style.margin="2px 4px";
   const doAdd=()=>{const r=ytParse(u.value);if(!r){msg.textContent="Ese enlace no parece de YouTube. Pega el de la playlist (con list=…) o el de un video.";return}
-    const a=plGet();if(a.some(y=>y.t==r.t&&y.id==r.id)){msg.textContent="Ese enlace ya está guardado.";return}
-    a.push({n:(nm.value.trim()||(r.t=="l"?"Playlist ":"Video ")+(a.length+1)).slice(0,60),t:r.t,id:r.id,v:r.v});plSet(a);drawRadio()};
+    const a=plGet(w);if(a.some(y=>y.t==r.t&&y.id==r.id)){msg.textContent="Ese enlace ya está guardado.";return}
+    a.push({n:(nm.value.trim()||(r.t=="l"?"Playlist ":"Video ")+(a.length+1)).slice(0,60),t:r.t,id:r.id,v:r.v});plSet(a,w);drawRadio()};
   add.onclick=doAdd;u.onkeydown=nm.onkeydown=e=>{if(e.key=="Enter")doAdd()};
   row.append(u,nm,add);l.appendChild(row);l.appendChild(msg);
-  const a=plGet();
-  if(!a.length){const d=document.createElement("p");d.className="sub";d.style.margin="8px 4px";d.textContent="Aún no tienes enlaces. Pega arriba tu playlist de YouTube, ponle un nombre y toca Agregar. Se guarda en este navegador y también en el respaldo.";l.appendChild(d)}
+  const a=plGet(w);
+  if(!a.length){const d=document.createElement("p");d.className="sub";d.style.margin="8px 4px";d.textContent=(w?"Esta es tu segunda lista: ideal para música movida con la que empezar el día. ":"")+"Aún no tienes enlaces. Pega arriba tu playlist de YouTube, ponle un nombre y toca Agregar. Se guarda en este navegador y también en el respaldo.";l.appendChild(d)}
   const vids=a.filter(x=>x.t=="v").map(x=>x.id).slice(0,50);
-  if(vids.length>1){const r=document.createElement("div");r.className="plrow";const b=document.createElement("button");const on=plCur=="qall";
+  if(vids.length>1){const r=document.createElement("div");r.className="plrow";const b=document.createElement("button");const on=plCur=="qall"+w;
     b.className="st"+(on?" on":"");b.textContent=(on?"❚❚ ":"▶ ")+"Reproducir todos mis temas ("+vids.length+")";
-    b.onclick=()=>{if(on){stopRadio();drawRadio()}else playPL({n:"Todos mis temas",t:"q",id:"all",ids:vids})};r.appendChild(b);l.appendChild(r)}
+    b.onclick=()=>{if(on){stopRadio();drawRadio()}else playPL({n:w?"Todos mis temas (lista 2)":"Todos mis temas",t:"q",id:"all",ids:vids,w:w})};r.appendChild(b);l.appendChild(r)}
   a.forEach((x,i)=>{const r=document.createElement("div");r.className="plrow";
     const b=document.createElement("button");b.className="st"+(plCur==x.t+x.id?" on":"");b.textContent=(plCur==x.t+x.id?"❚❚ ":"▶ ")+x.n+(x.t=="l"?" · playlist":"");
     b.onclick=()=>{if(plCur==x.t+x.id){stopRadio();drawRadio()}else playPL(x)};
     const d=document.createElement("button");d.className="pld";d.textContent="✕";d.title="Quitar";
-    d.onclick=()=>{if(plCur==x.t+x.id)stopRadio();const z=plGet();z.splice(i,1);plSet(z);drawRadio()};
+    d.onclick=()=>{if(plCur==x.t+x.id)stopRadio();const z=plGet(w);z.splice(i,1);plSet(z,w);drawRadio()};
     r.append(b,d);l.appendChild(r)})}
 {const _stop=stopRadio,_play=playRadio;stopRadio=function(m){killPL();return _stop.call(this,m)};playRadio=function(){killPL();return _play.apply(this,arguments)}}
 function playRadio(n,urls,x){
