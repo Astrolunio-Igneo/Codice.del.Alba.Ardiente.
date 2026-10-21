@@ -246,6 +246,24 @@ html[data-theme=dark] .plin{background:#120e09;color:#f6ecd2}
 #tvurl{flex:1 1 220px;min-width:0;padding:9px 10px;font:inherit;font-size:14px;background:#fbf3dc;color:var(--ink);border:2px solid var(--gold);border-radius:4px}
 html[data-theme=dark] #tvurl{background:#120e09;color:#f1e6c8}
 html[data-theme=dark] #tvst{color:#e8836f}
+#pmhab{margin:12px auto 0;max-width:640px;padding-top:10px;border-top:1px solid #c9a24a66;display:flex;flex-direction:column;gap:8px;align-items:stretch;font-size:14px;color:#f6ecd2}
+#pmtrig{text-align:center;font-size:15px;line-height:2;letter-spacing:.3px}
+#pmtrig input,#pmcli{font:inherit;font-size:15px;padding:3px 8px;border:0;border-bottom:2px solid var(--gold);background:#120e09;color:#f6ecd2;border-radius:3px 3px 0 0;text-align:center;min-width:0}
+#pmtg{width:min(210px,44vw)}#pmwh{width:min(160px,36vw)}
+#pmtrig input::placeholder,#pmcli::placeholder{color:#b8a679;opacity:1}
+#pmgoal{display:flex;align-items:center;gap:10px}
+#pmgb{flex:1;height:10px;border:1px solid var(--gold);border-radius:6px;background:#0006;overflow:hidden}
+#pmgf{display:block;height:100%;width:0;background:linear-gradient(90deg,#8d1427,#d0455a 55%,#c9a24a);transition:width .4s}
+#pmgt{font-size:13px;letter-spacing:.5px;color:#e9c872;min-width:0}
+#pmstr{font-size:13px;letter-spacing:.4px;color:#e9c872;text-align:center;line-height:1.4}
+#pmcl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;padding:8px;border:1px dashed #c9a24a99;border-radius:4px;background:#0a122866}
+#pmcl[hidden]{display:none}#pmcl label{display:flex;align-items:center;gap:8px;flex:1 1 300px;font-size:14px}#pmcli{flex:1;text-align:left}
+#pmcl button{padding:5px 12px;font-size:13px}
+#pmlog{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3px;font-size:13px;color:#d9c58a}
+#pmlog:empty{display:none}#pmlog li{display:flex;gap:8px;align-items:baseline}#pmlog li b{font-weight:400;opacity:.7;letter-spacing:1px;flex:none}#pmlog li span{flex:1;word-break:break-word}
+#pmlog li button{padding:0 6px;font-size:11px;line-height:16px;min-height:0;opacity:.55}#pmlog li button:hover{opacity:1}
+#pomo.fs #pmhab{max-width:min(560px,90vw);border-top:0;margin-top:clamp(12px,2.5vh,26px)}
+#pomo.fs #pmtrig,#pomo.fs #pmlog{display:none}
 #pmwk{font-size:13px;letter-spacing:1px;color:#e9c872;opacity:.9}#pmeye{font-size:13px;letter-spacing:.5px;color:#e9c872;text-align:center;max-width:420px}#pmeye:empty{display:none}#pmor{display:none}
 #pomo.fs #pmwk,#pomo.fs #pmeye{font-size:clamp(14px,2.2vh,19px)}
 #pomo.fs #pmor{display:block;max-width:min(720px,86vw);text-align:center;font-style:italic;font-size:clamp(14px,2.3vh,20px);line-height:1.5;color:#d9c58a;opacity:.9;margin-top:clamp(16px,3.5vh,36px)}
@@ -296,6 +314,54 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
 #tdprog{height:9px;margin:12px 0 4px;border:1px solid var(--gold);border-radius:5px;background:#0003;overflow:hidden}
 #tdprogf{display:block;height:100%;width:0;background:linear-gradient(90deg,#8d1427,#d0455a 50%,#c9a24a);transition:width .3s}
 #tdcnt{font-size:14px;opacity:.85;letter-spacing:1px}
+
+/* ---- Estudio activo: intención de implementación + recuerdo activo (recuadro bajo el Pomodoro) ---- */
+#ea{max-width:980px;margin:0 auto 36px;padding:18px 16px 16px;background:linear-gradient(#101c3a,#0a1228);color:#f6ecd2;border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-6px;border-radius:2px;box-shadow:0 0 0 3px #101c3acc,0 10px 24px #000a;font-family:'Cormorant Garamond','IM Fell English',Georgia,serif;font-size:17px;line-height:1.4}
+#ea h2{margin:0 0 6px;text-align:center;font-family:'UnifrakturCook',serif;font-weight:400;font-size:26px;color:#e9c872}
+.ea-lead{margin:0 auto 16px;max-width:64ch;text-align:center;color:#d9c58a;font-size:16px}
+.ea-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px;align-items:start}
+.ea-card{display:flex;flex-direction:column;gap:10px;padding:12px 14px 14px;border:1px solid #c9a24a55;border-radius:3px;background:#0a122899}
+.ea-card h3,.ea-card h4{margin:0;font-family:'Cinzel',Georgia,serif;font-weight:700;color:#e9c872;letter-spacing:.3px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.ea-card h3{font-size:15px}
+.ea-card h4{font-size:13px;margin-top:4px;padding-top:10px;border-top:1px solid #c9a24a44}
+#pipro,#ea-n{font-weight:500;font-size:12px;opacity:.9}
+.ea-f{display:flex;flex-direction:column;gap:4px}
+.ea-f>span,.pi-row>span{color:#e9c872;font-size:14px}
+#ea input,#ea textarea{font:inherit;font-size:16px;padding:5px 8px;border:0;border-bottom:2px solid var(--gold);background:#120e09;color:#f6ecd2;border-radius:3px 3px 0 0;min-width:0}
+#ea textarea{border:1px solid #c9a24a66;border-bottom:2px solid var(--gold);padding:8px 10px;resize:vertical;line-height:1.45;width:100%}
+#ea input::placeholder,#ea textarea::placeholder{color:#b8a679;opacity:1}
+.pi-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pi-row>span{flex:0 0 130px}.pi-row input{flex:1 1 200px}
+.pi-sent{line-height:2.1}.pi-sent input{width:min(170px,40vw);text-align:center}
+#pilist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+#pilist li{display:flex;gap:6px;align-items:center;padding:3px 6px;border-left:3px solid transparent;border-radius:2px}
+#pilist li.now{border-left-color:var(--gold);background:#c9a24a1c}
+#pilist li.ok input{text-decoration:line-through;opacity:.6}
+#pilist li input{flex:1}
+#ea button{padding:3px 10px;font-size:12px;min-height:0;text-transform:none}
+#pilist .pic{width:28px;padding:3px 0}
+#pilist .pic[aria-pressed=true]{background:var(--red);color:#f6ecd2}
+.pix{opacity:.6}.pix:hover{opacity:1}
+.pi-add{display:flex;gap:6px}.pi-add input{flex:1}
+.pi-foot,.ea-act{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+#pivotos{font-size:14px;color:#e9c872}
+#ea-due,#ea-regl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+#ea-due li{display:flex;gap:6px;align-items:center;padding:6px 8px;border-left:3px solid var(--gold);background:#c9a24a14;border-radius:2px}
+#ea-due .ea-tx{flex:1;min-width:0;display:flex;flex-direction:column}
+#ea-due .ea-tx span{word-break:break-word}
+#ea-due small,#ea-next{font-size:13px;color:#d9c58a}
+#ea-due li.ea-empty{border-left-color:transparent;background:none;color:#d9c58a;font-style:italic;padding-left:0}
+#ea-next{margin:0}#ea-next:empty{display:none}
+#ea-reg summary{cursor:pointer;font-size:14px;color:#e9c872}
+#ea-regl{margin-top:8px;font-size:14px;color:#d9c58a}
+#ea-regl li{display:flex;gap:8px;align-items:baseline}#ea-regl li b{font-weight:400;opacity:.7;flex:none}#ea-regl li span{flex:1;word-break:break-word}
+#ea summary:focus-visible,#ea input:focus-visible,#ea textarea:focus-visible,#ea button:focus-visible{outline:2px solid #e9c872;outline-offset:2px}
+@media(max-width:700px){#ea{margin-left:12px;margin-right:12px}}
+#pisum{display:none;text-align:center;color:#e9c872;line-height:1.45}
+#pomo.fs #pisum{display:block;font-size:clamp(15px,2.4vh,21px);max-width:min(640px,90vw);margin:0 auto}
+#pisum:empty{display:none!important}
+#pitoast{position:fixed;left:50%;bottom:calc(70px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;max-width:min(560px,92vw);padding:12px 18px;background:#0a1228f2;color:#f6ecd2;border:1px solid #c9a24a;border-radius:4px;box-shadow:0 6px 20px #000a;font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;line-height:1.4;text-align:center;display:none;pointer-events:none}
+#pitoast.on{display:block}
 </style>
 </head>
 <body>
@@ -397,6 +463,14 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
     <div id="pmeye"></div>
     <label class="pm-vol" title="Volumen de la voz del Pomodoro y de la bienvenida (0 = silencio)">🔊 Voz <input id="pmvol" type="range" min="0" max="100" step="5" value="50"></label>
   </div>
+  <div id="pmhab">
+    <div id="pmtrig">Después de <input id="pmtg" maxlength="40" placeholder="tomar mate o café" autocomplete="off" aria-label="Disparador"> estudio <input id="pmwh" maxlength="40" placeholder="mi materia" autocomplete="off" aria-label="Qué estudio"> durante un pomodoro.</div>
+    <div id="pmgoal"><div id="pmgb"><i id="pmgf"></i></div><span id="pmgt"></span></div>
+    <div id="pmstr"></div>
+    <div id="pisum"></div>
+    <div id="pmcl" hidden><label>¿Qué avanzaste? <input id="pmcli" maxlength="140" placeholder="Una línea: qué hiciste o aprendiste" autocomplete="off"></label><span><button id="pmcls" type="button">Guardar</button> <button id="pmclo" type="button">Omitir</button></span></div>
+    <ul id="pmlog"></ul>
+  </div>
   <div id="pmor"></div>
   <div id="pmset" hidden>
     <label>Enfoque <input type="number" id="pm0" min="1" max="180"> min</label>
@@ -405,6 +479,36 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
   </div>
   <div id="pmwx"><button class="wxb" type="button"></button><span class="ckt"></span></div>
 </div>
+<section id="ea" aria-label="Estudio activo">
+  <h2>⚜ Estudio activo ⚜</h2>
+  <p class="ea-lead">En cada pomodoro, estudia y dedica los últimos 5 minutos a recordar de memoria. Lo que no te salga vuelve a repasarse mañana, a los 3, a los 7 y a los 14 días.</p>
+  <div class="ea-grid">
+    <div class="ea-card">
+      <h3>Intención de implementación <span id="pipro"></span></h3>
+      <label class="pi-row"><span>🎯 Objetivo</span><input id="pi-obj" maxlength="140" placeholder="Aprobar Análisis Matemático este cuatrimestre" autocomplete="off"></label>
+      <label class="pi-row"><span>✅ Meta de hoy</span><input id="pi-tarea" maxlength="140" placeholder="Resolver 5 ejercicios de límites" autocomplete="off"></label>
+      <div class="pi-sent">Cuando <input id="pi-cuando" maxlength="60" placeholder="termine el mate" autocomplete="off" aria-label="Cuándo"> en <input id="pi-donde" maxlength="60" placeholder="mi escritorio" autocomplete="off" aria-label="Dónde"> haré mi meta de hoy.</div>
+      <h4>Camino: pasos pequeños hacia la meta</h4>
+      <ol id="pilist"></ol>
+      <div class="pi-add"><input id="piadd" maxlength="120" placeholder="Siguiente paso (Enter para añadir)" autocomplete="off" aria-label="Nuevo paso"><button id="piaddb" type="button">Añadir</button></div>
+      <h4>Motivadores</h4>
+      <label class="pi-row"><span>🪪 Soy alguien que</span><input id="pi-id" maxlength="100" placeholder="estudia aunque no tenga ganas" autocomplete="off"></label>
+      <label class="pi-row"><span>🎁 Mi premio</span><input id="pi-premio" maxlength="100" placeholder="un café y 5 min de música" autocomplete="off"></label>
+      <div class="pi-foot"><button id="pi2m" type="button" title="Regla de los 2 minutos: empieza solo 2 minutos; después decides">⏱ Solo 2 minutos</button><span id="pivotos"></span></div>
+    </div>
+    <div class="ea-card">
+      <h3>Recuerdo activo</h3>
+      <label class="ea-f"><span>Tema</span><input id="ea-tema" maxlength="100" placeholder="Límites laterales" autocomplete="off"></label>
+      <label class="ea-f"><span>Explícalo de memoria, con palabras simples</span><textarea id="ea-rec-t" rows="4" maxlength="2000" placeholder="Sin mirar apuntes: ¿qué recuerdas y cómo se lo explicarías a alguien?"></textarea></label>
+      <label class="ea-f"><span>Lo que no me salió (una idea por línea)</span><textarea id="ea-gap" rows="3" maxlength="1000" placeholder="Cada línea se programa para repasar"></textarea></label>
+      <div class="ea-act"><button id="ea-save" class="on" type="button">Guardar y programar repasos</button></div>
+      <h4>Para repasar hoy <b id="ea-n"></b></h4>
+      <ul id="ea-due"></ul>
+      <p id="ea-next"></p>
+      <details id="ea-reg"><summary id="ea-regs">Registro de recuerdos</summary><ul id="ea-regl"></ul></details>
+    </div>
+  </div>
+</section>
 <script>
 const MES=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 const DOW=["L","M","M","J","V","S","D"];
@@ -500,7 +604,7 @@ const rdJ=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k)||"null");return
 const DKEY=/^\d{4}-\d{2}-\d{2}$/;
 const cleanTodo=o=>{const r={};if(!o||typeof o!="object"||Array.isArray(o))return r;for(const k in o){if(!DKEY.test(k)||!Array.isArray(o[k]))continue;const L=o[k].filter(x=>x&&typeof x.t=="string"&&x.t.trim()).slice(0,200).map(x=>({t:x.t.slice(0,300),d:x.d?1:0}));if(L.length)r[k]=L}return r};
 const cleanPomo=o=>{const r={};if(!o||typeof o!="object"||Array.isArray(o))return r;for(const k in o){const n=Math.round(+o[k]);if(DKEY.test(k)&&Number.isFinite(n)&&n>=0&&n<=99)r[k]=n}return r};
-const backupText=()=>JSON.stringify({app:"calendario-medieval",version:4,exportado:new Date().toISOString(),eventos:store,tv_enlaces:tvLinks(),todo:cleanTodo(rdJ("medieval-todo",{})),pomodoro_historial:cleanPomo(rdJ("medieval-pomo-hist",{})),playlists:plGet(0),playlists2:plGet(1)},null,2);
+const backupText=()=>JSON.stringify({app:"calendario-medieval",version:4,exportado:new Date().toISOString(),eventos:store,tv_enlaces:tvLinks(),todo:cleanTodo(rdJ("medieval-todo",{})),pomodoro_historial:cleanPomo(rdJ("medieval-pomo-hist",{})),estudio_activo:rdJ("medieval-intencion",{}),playlists:plGet(0),playlists2:plGet(1)},null,2);
 async function exportBackup(){
   const txt=backupText(),name="respaldo-calendario-medieval-"+new Date().toISOString().slice(0,10)+".json";
   try{
@@ -529,22 +633,24 @@ function importText(txt){
       const plIn=Array.isArray(d.playlists)?plClean(d.playlists):null,plIn2=Array.isArray(d.playlists2)?plClean(d.playlists2):null;
       const nTd=tdIn?Object.values(tdIn).reduce((a,l)=>a+l.length,0):0,nPm=pmIn?Object.keys(pmIn).length:0;
       const wr=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+      const eaIn=(d.estudio_activo&&typeof d.estudio_activo==="object"&&!Array.isArray(d.estudio_activo)&&JSON.stringify(d.estudio_activo).length<200000)?d.estudio_activo:null;
       const mergeTv=()=>{if(!tvIn)return;const cur=tvLinks().filter(okTv);tvIn.forEach(t=>{if(!cur.some(y=>y.src==t.src))cur.push(t)});wr("medieval-tv",cur)};
       const replaceTv=()=>{if(!tvIn)return;wr("medieval-tv",tvIn)};
       const mergeExtra=()=>{
         if(nTd){const cur=cleanTodo(rdJ("medieval-todo",{}));for(const k in tdIn){const c=cur[k]=cur[k]||[];tdIn[k].forEach(t=>{if(!c.some(y=>y.t==t.t))c.push(t)})}wr("medieval-todo",cur)}
-        if(nPm){const cur=cleanPomo(rdJ("medieval-pomo-hist",{}));for(const k in pmIn)cur[k]=Math.max(cur[k]||0,pmIn[k]);wr("medieval-pomo-hist",cur)}};
-      const replaceExtra=()=>{if(tdIn)wr("medieval-todo",tdIn);if(pmIn)wr("medieval-pomo-hist",pmIn)};
+        if(nPm){const cur=cleanPomo(rdJ("medieval-pomo-hist",{}));for(const k in pmIn)cur[k]=Math.max(cur[k]||0,pmIn[k]);wr("medieval-pomo-hist",cur)}
+        if(eaIn){const cur=rdJ("medieval-intencion",{});["obj","tarea","cuando","donde","id","premio"].forEach(k=>{if(!cur[k]&&typeof eaIn[k]==="string")cur[k]=eaIn[k]});cur.votos=Math.max(+cur.votos||0,+eaIn.votos||0);["pasos","rep","reg"].forEach(k=>{const a=Array.isArray(cur[k])?cur[k]:[],kf=x=>k==="reg"?x.t+"|"+x.d+"|"+x.r:x.t;(Array.isArray(eaIn[k])?eaIn[k]:[]).forEach(x=>{if(x&&typeof x.t==="string"&&!a.some(y=>y&&kf(y)==kf(x)))a.push(x)});cur[k]=a});wr("medieval-intencion",cur)}};
+      const replaceExtra=()=>{if(tdIn)wr("medieval-todo",tdIn);if(pmIn)wr("medieval-pomo-hist",pmIn);if(eaIn)wr("medieval-intencion",eaIn)};
       const mergePl=()=>{[plIn,plIn2].forEach((L,w)=>{if(!L||!L.length)return;const c=plGet(w);L.forEach(x=>{if(!c.some(y=>y.t==x.t&&y.id==x.id))c.push(x)});plSet(c.slice(0,100),w)})};
-      const extra=(tvIn?" · "+tvIn.length+" enlaces de TV":"")+(nTd?" · "+nTd+" tareas del To-Do":"")+(nPm?" · "+nPm+" días de pomodoros":"")+((plIn?plIn.length:0)+(plIn2?plIn2.length:0)?" · "+((plIn?plIn.length:0)+(plIn2?plIn2.length:0))+" enlaces de playlist":"");
+      const extra=(eaIn?" · objetivo, camino y repasos":"")+(tvIn?" · "+tvIn.length+" enlaces de TV":"")+(nTd?" · "+nTd+" tareas del To-Do":"")+(nPm?" · "+nPm+" días de pomodoros":"")+((plIn?plIn.length:0)+(plIn2?plIn2.length:0)?" · "+((plIn?plIn.length:0)+(plIn2?plIn2.length:0))+" enlaces de playlist":"");
       if(confirm("Se encontraron "+n+" eventos"+extra+".\n\nAceptar = COMBINAR con los actuales\nCancelar = más opciones")){
         mergeTv();mergeExtra();mergePl();
         for(const k in clean){const cur=store[k]=store[k]||[];clean[k].forEach(t=>{if(!cur.some(y=>y.t==t.t))cur.push(t)});cur.sort((a,b)=>a.p-b.p)}
       }else if(confirm("¿REEMPLAZAR todo lo actual (eventos, TV, To-Do y pomodoros) por lo del archivo?\nAceptar = reemplazar · Cancelar = no hacer nada")){
         store=clean;replaceTv();replaceExtra();if(plIn)plSet(plIn,0);if(plIn2)plSet(plIn2,1);
       }else return;
-      save();render();if(window.__tvReload)window.__tvReload();alert("Respaldo cargado correctamente."+((nTd||nPm)?" La página se recargará para mostrar el To-Do y los pomodoros.":""));
-      if(nTd||nPm)location.reload();
+      save();render();if(window.__tvReload)window.__tvReload();alert("Respaldo cargado correctamente."+((nTd||nPm||eaIn)?" La página se recargará para mostrar el To-Do y los pomodoros.":""));
+      if(nTd||nPm||eaIn)location.reload();
     }catch(e){alert("El archivo o texto no es un respaldo válido.")}
   }
 }
@@ -1377,6 +1483,132 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   document.addEventListener("visibilitychange",()=>{if(!document.hidden){tick();update(false,false)}});
   tick();setInterval(tick,1000);
   update(false,false);setInterval(()=>update(true,false),TTL);
+})();
+</script>
+<script>
+/* ---- Estudio activo: intención de implementación, motivadores y recuerdo activo con repaso espaciado ---- */
+(()=>{
+  const $=id=>document.getElementById(id),K="medieval-intencion",INT=[1,3,7,14],DK=/^\d{4}-\d{2}-\d{2}$/;
+  const pad=n=>String(n).padStart(2,"0"),key=d=>d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate()),dk=()=>key(new Date());
+  const plus=n=>{const d=new Date();d.setDate(d.getDate()+n);return key(d)};
+  const parse=s=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s);return m?new Date(+m[1],+m[2]-1,+m[3]):new Date()};
+  const diff=s=>Math.round((parse(s)-parse(dk()))/864e5),str=(v,n)=>String(v==null?"":v).slice(0,n);
+  const S={obj:"",tarea:"",cuando:"",donde:"",id:"",premio:"",votos:0,pasos:[],rep:[],reg:[]};
+  try{const c=JSON.parse(localStorage.getItem(K)||"null");
+    if(c&&typeof c==="object"&&!Array.isArray(c)){
+      ["obj","tarea","cuando","donde","id","premio"].forEach(k=>{if(typeof c[k]==="string")S[k]=c[k].slice(0,140)});
+      S.votos=Math.max(0,Math.min(99999,Math.round(+c.votos)||0));
+      if(Array.isArray(c.pasos))S.pasos=c.pasos.slice(0,12).map(p=>({t:str(p&&p.t,120),d:str(p&&p.d,10)})).filter(p=>p.t);
+      if(Array.isArray(c.rep))S.rep=c.rep.slice(0,200).map(x=>({t:str(x&&x.t,160),n:Math.max(0,Math.min(3,Math.round(+(x&&x.n))||0)),due:DK.test(x&&x.due)?x.due:plus(1)})).filter(x=>x.t);
+      if(Array.isArray(c.reg))S.reg=c.reg.slice(0,30).map(x=>({t:str(x&&x.t,100),d:DK.test(x&&x.d)?x.d:dk(),r:str(x&&x.r,2000),g:str(x&&x.g,1000)})).filter(x=>x.t||x.r||x.g);
+    }}catch(e){}
+  const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+  const btn=(txt,fn)=>{const b=document.createElement("button");b.type="button";b.textContent=txt;b.onclick=fn;return b};
+  // Aviso breve y discreto
+  const toast=$("pitoast")||document.body.appendChild(Object.assign(document.createElement("div"),{id:"pitoast"}));
+  toast.setAttribute("role","status");let tt=0;
+  const say=(m,ms)=>{toast.textContent=m;toast.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove("on"),ms||7000)};
+  const nextStep=()=>{const t=dk();return S.pasos.find(p=>p.d!==t)};
+  function paint(){
+    const t=dk(),tot=S.pasos.length,hec=S.pasos.filter(p=>p.d===t).length,sig=nextStep(),meta=S.tarea||S.obj;
+    $("pipro").textContent=tot?hec+"/"+tot+" pasos hoy":"";
+    $("pisum").textContent=(meta?"Meta de hoy: "+meta:"")+(sig?(meta?" · ":"")+"Ahora: "+sig.t:"");
+    $("pivotos").textContent=S.votos?"🗳 "+S.votos+(S.votos==1?" voto":" votos")+" por tu identidad":"";
+  }
+  // Camino: pasos editables
+  const L=$("pilist");
+  function render(){
+    L.innerHTML="";const t=dk(),now=S.pasos.findIndex(p=>p.d!==t);
+    S.pasos.forEach((p,i)=>{
+      const li=document.createElement("li"),done=p.d===t;
+      if(done)li.className="ok";else if(i===now)li.className="now";
+      const c=btn(done?"✓":"○",()=>{p.d=done?"":t;save();render()});c.className="pic";
+      c.setAttribute("aria-pressed",done);c.title=done?"Hecho hoy (toca para desmarcar)":"Marcar como hecho hoy";
+      const inp=document.createElement("input");inp.value=p.t;inp.maxLength=120;inp.autocomplete="off";inp.setAttribute("aria-label","Paso "+(i+1));
+      inp.oninput=()=>{if(inp.value.trim()){p.t=inp.value;save();paint()}};
+      inp.onchange=()=>{if(!inp.value.trim()){S.pasos.splice(i,1);save();render()}};
+      const up=btn("↑",()=>{const a=S.pasos;[a[i-1],a[i]]=[a[i],a[i-1]];save();render()});up.title="Subir";up.disabled=i===0;
+      const x=btn("✕",()=>{S.pasos.splice(i,1);save();render()});x.className="pix";x.title="Quitar paso";
+      li.append(c,inp,up,x);L.appendChild(li);
+    });
+    paint();
+  }
+  function addStep(){const v=$("piadd").value.trim();if(!v||S.pasos.length>=12)return;S.pasos.push({t:v.slice(0,120),d:""});$("piadd").value="";save();render();$("piadd").focus()}
+  $("piaddb").onclick=addStep;
+  $("piadd").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();addStep()}};
+  [["pi-obj","obj"],["pi-tarea","tarea"],["pi-cuando","cuando"],["pi-donde","donde"],["pi-id","id"],["pi-premio","premio"]].forEach(([id,k])=>{
+    const el=$(id);el.value=S[k];el.oninput=()=>{S[k]=el.value;save();paint()};
+  });
+  // Repaso espaciado: 1, 3, 7 y 14 días
+  function renderRep(){
+    const t=dk(),U=$("ea-due");U.innerHTML="";
+    const due=S.rep.filter(x=>x.due<=t).sort((a,b)=>a.due<b.due?-1:1),fut=S.rep.filter(x=>x.due>t).sort((a,b)=>a.due<b.due?-1:1);
+    $("ea-n").textContent=due.length?"("+due.length+")":"";
+    if(!due.length){const li=document.createElement("li");li.className="ea-empty";li.textContent=S.rep.length?"Nada para repasar hoy.":"Aún no hay temas. Lo que no te salga al recordar aparecerá aquí.";U.appendChild(li)}
+    due.forEach(x=>{
+      const li=document.createElement("li"),box=document.createElement("div"),sp=document.createElement("span"),sm=document.createElement("small"),late=-diff(x.due);
+      box.className="ea-tx";sp.textContent=x.t;sm.textContent=(late>0?"hace "+late+" d · ":"")+"repaso "+(x.n+1)+" de "+INT.length;box.append(sp,sm);
+      const ok=btn("Lo recordé",()=>{x.n++;if(x.n>=INT.length)S.rep.splice(S.rep.indexOf(x),1);else x.due=plus(INT[x.n]);save();renderRep()});
+      const no=btn("Falló",()=>{x.n=0;x.due=plus(1);save();renderRep()});
+      const rm=btn("✕",()=>{S.rep.splice(S.rep.indexOf(x),1);save();renderRep()});rm.className="pix";rm.title="Quitar";
+      li.append(box,ok,no,rm);U.appendChild(li);
+    });
+    $("ea-next").textContent=fut.length?"Próximos: "+fut.length+" · el siguiente "+(diff(fut[0].due)==1?"mañana":"en "+diff(fut[0].due)+" días"):"";
+    // Registro de recuerdos (últimos 30)
+    const R=$("ea-regl");R.innerHTML="";$("ea-regs").textContent="Registro de recuerdos"+(S.reg.length?" ("+S.reg.length+")":"");
+    S.reg.forEach(e=>{
+      const li=document.createElement("li"),b=document.createElement("b"),sp=document.createElement("span");
+      b.textContent=e.d.slice(5).replace("-","/");sp.textContent=(e.t?e.t+": ":"")+(e.r||e.g).slice(0,140);
+      const x=btn("✕",()=>{S.reg.splice(S.reg.indexOf(e),1);save();renderRep()});x.className="pix";x.title="Quitar";
+      li.append(b,sp,x);R.appendChild(li);
+    });
+  }
+  $("ea-save").onclick=()=>{
+    const t=$("ea-tema").value.trim(),r=$("ea-rec-t").value.trim(),g=$("ea-gap").value.trim();
+    if(!t&&!r&&!g){say("Escribe qué recuerdas o qué no te salió.",4000);return}
+    const lines=g.split(/\n+/).map(s=>s.trim()).filter(Boolean).slice(0,10);
+    lines.forEach(l=>{const txt=((t?t+": ":"")+l).slice(0,160);if(!S.rep.some(x=>x.t===txt))S.rep.push({t:txt,n:0,due:plus(1)})});
+    S.rep=S.rep.slice(0,200);
+    S.reg.unshift({t:t.slice(0,100),d:dk(),r:r.slice(0,2000),g:g.slice(0,1000)});S.reg=S.reg.slice(0,30);
+    save();$("ea-rec-t").value="";$("ea-gap").value="";renderRep();
+    say(lines.length?"Guardado. "+lines.length+(lines.length==1?" idea":" ideas")+" para repasar mañana.":"Guardado.",6000);
+  };
+  // Regla de los 2 minutos
+  let t2=0,skip=false;
+  const go=$("pmgo"),running=()=>go.textContent.indexOf("Pausar")>-1;
+  $("pi2m").onclick=()=>{
+    if(running()){say("Ya estás en marcha. Solo sigue.",4000);return}
+    const m0=document.querySelector('.pm-modes button[data-m="0"]');if(m0&&!m0.classList.contains("on"))m0.click();
+    skip=true;go.click();skip=false;
+    const s=nextStep();
+    say("Solo 2 minutos."+(s?" Empieza por: "+s.t:S.tarea?" Empieza por: "+S.tarea:""),8000);
+    clearTimeout(t2);t2=setTimeout(()=>{if(running())say("Ya pasaron 2 minutos: lo difícil era empezar. Sigue un poco más.",9000)},120000);
+  };
+  // Disparador al iniciar un pomodoro de enfoque
+  go.addEventListener("click",()=>{
+    if(skip||!running())return;
+    const on=document.querySelector(".pm-modes button.on");if(!on||on.dataset.m!=="0")return;
+    const s=nextStep(),meta=S.tarea||S.obj;
+    if(meta||s)say((S.cuando||S.donde?"Cuando "+(S.cuando||"…")+(S.donde?" en "+S.donde:"")+": ":"")+(meta?meta:"")+(s?(meta?" · ":"")+"Paso: "+s.t:""),7000);
+  });
+  // Al completar un pomodoro: voto de identidad, premio y recordatorio de recuerdo activo
+  const pmc=$("pmc"),num=()=>parseInt((pmc.textContent||"").replace(/\D/g,""),10)||0;let last=num();
+  new MutationObserver(()=>{const n=num();
+    if(n>last){S.votos++;save();paint();if(!$("ea-tema").value&&S.tarea)$("ea-tema").value=S.tarea.slice(0,100);
+      say("🗳 "+(S.id?"Otro voto: soy alguien que "+S.id+".":"Pomodoro completado.")+(S.premio?" Ahora te toca: "+S.premio+".":"")+" Anota de memoria lo que recuerdas, abajo.",10000)}
+    last=n}).observe(pmc,{childList:true,characterData:true,subtree:true});
+  // Aviso a 5 minutos del final del enfoque: dejar de estudiar y recordar
+  const pmt=$("pmt");let warned=false;
+  const secs=()=>{const m=/^(\d+):(\d{2})$/.exec((pmt.textContent||"").trim());return m?+m[1]*60+ +m[2]:-1};
+  new MutationObserver(()=>{
+    const s=secs(),on=document.querySelector(".pm-modes button.on");
+    if(s>300||s<0){warned=false;return}
+    if(warned||s===0||!running()||!on||on.dataset.m!=="0"||(+$("pm0").value||25)*60<=300)return;
+    warned=true;say("Quedan 5 minutos: cierra todo y escribe de memoria lo que recuerdas, en papel o en el recuadro de abajo.",10000);
+  }).observe(pmt,{childList:true,characterData:true,subtree:true});
+  // Los pasos y repasos se actualizan al volver a la pestaña (cambio de día)
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden){render();renderRep()}});
+  render();renderRep();
 })();
 </script>
 </body>
