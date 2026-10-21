@@ -1,6 +1,13 @@
 {
-  "actualizado": "2026-10-21T13:43:07+00:00",
+  "actualizado": "2026-10-21T20:05:52+00:00",
   "items": [
+    {
+      "titulo": "Nuclear Power Now Has Bipartisan Support",
+      "resumen": "Majorities of both major parties now recognize its potential as a more clean and stable energy source.",
+      "fuente": "Reason",
+      "url": "https://reason.com/2026/10/21/nuclear-power-now-has-bipartisan-support/",
+      "fecha": "2026-10-21"
+    },
     {
       "titulo": "The ‘War of Grand Design’ Transforms to More Narrowly Bolster US Hegemony",
       "resumen": "The paradigm shifts. The networked supra-national stratum that long has pursued its global “grand design” through manufacturing public consent for wars of imposed compliance has, at last, run up against the limits to…",
@@ -23,13 +30,6 @@
       "fecha": "2026-10-21"
     },
     {
-      "titulo": "Trump's 50% Tariffs on Canadian Goods Illegally Rely on a Superseded Statute, a Lawsuit Argues",
-      "resumen": "The import taxes fit a pattern of dubious legal rationales for the president's protectionist policies.",
-      "fuente": "Reason",
-      "url": "https://reason.com/2026/10/20/trumps-50-tariffs-on-canadian-goods-illegally-rely-on-a-superseded-statute-a-lawsuit-argues/",
-      "fecha": "2026-10-20"
-    },
-    {
       "titulo": "Higher Oil Prices Are Likely To Stay",
       "resumen": "Last months the Trump administration was loudly claiming that Iran had lost control of the Strait of Hormuz. Some ‘experts’ even claimed that the flow of oil was back at a pre-war level. Both of those claims were not…",
       "fuente": "Ron Paul Institute",
@@ -39,31 +39,31 @@
   ],
   "politica": [
     {
-      "titulo": "UK greenlights previously banned North Sea gas project sought by Trump",
-      "resumen": "The United Kingdom is allowing a proposed gas drilling project in the North Sea to move forward, a major reversal in the country’s climate change policy, which previously banned new fossil fuel drilling in the region…",
-      "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/policy/energy-and-environment/4772959/uk-north-sea-jackdaw-gas-project/",
-      "fecha": "2026-10-21"
-    },
-    {
-      "titulo": "An Immigration Ruling With Teeth—If It Holds Up",
-      "resumen": "Sometimes a consequential immigration decision turns not on a new act of Congress or a ruling by the Supreme Court, but on whether an agency finally gives existing statutory language its full effect. That is the promise…",
-      "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/10/21/an-immigration-ruling-with-teeth-if-it-holds-up/",
-      "fecha": "2026-10-21"
-    },
-    {
-      "titulo": "Grassroots Revolt Targets Unpopular Property Taxes",
-      "resumen": "Annual tax bills make many homeowners feel more like eternal renters.",
+      "titulo": "Prosecution for Threatening to Cut President's Face Off and Feed It to Stray Dogs Can Go to Jury",
+      "resumen": "U.S. v. Santiago, decided Monday by Judge Chad Meredith (E.D. Ky.), involves this Instagram post: Santiago is being prosecuted for… The post Prosecution for Threatening to Cut President's Face Off and Feed It to Stray…",
       "fuente": "Reason",
-      "url": "https://reason.com/2026/10/21/grassroots-revolt-targets-unpopular-property-taxes/",
+      "url": "https://reason.com/volokh/2026/10/21/prosecution-for-threatening-to-cut-presidents-face-off-and-feed-it-to-stray-dogs-can-go-to-jury/",
       "fecha": "2026-10-21"
     },
     {
-      "titulo": "Trump Shouldn’t Throw Ukraine to the Wolves",
-      "resumen": "He should remember — or relearn — that Russia is the aggressor and that it is a willing pillar of an anti-American axis.",
+      "titulo": "Talarico’s Radical Record Is Suddenly Getting a Moderate Makeover",
+      "resumen": "Summary When Democrat state Rep. James Talarico tells you who he is, you should believe him. Or maybe not. Talarico is one of the most radical leftists in Texas politics, but from his recent campaign stunts, you’d never…",
+      "fuente": "The Daily Signal",
+      "url": "https://www.dailysignal.com/2026/10/21/talaricos-radical-record-makeover/",
+      "fecha": "2026-10-21"
+    },
+    {
+      "titulo": "The Trump administration’s evolving Starshield deflection",
+      "resumen": "President Donald Trump and other senior U.S. officials have given a range of explanations, some of which appeared contradictory, for Ukraine’s SpaceX-related connectivity disruptions earlier this week. The collection of…",
+      "fuente": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/policy/defense/4774121/trump-administration-evolving-starshield-denial-musk-spacex-zelensky-counter-drone-impact/",
+      "fecha": "2026-10-21"
+    },
+    {
+      "titulo": "Vivek Ramaswamy Reminds Voters Why They Never Liked Him",
+      "resumen": "A staggering act of bad taste.",
       "fuente": "National Review",
-      "url": "https://www.nationalreview.com/2026/10/trump-shouldnt-throw-ukraine-to-the-wolves/",
+      "url": "https://www.nationalreview.com/2026/10/vivek-ramaswamy-reminds-voters-why-they-never-liked-him/",
       "fecha": "2026-10-21"
     },
     {
@@ -76,55 +76,63 @@
   ],
   "diarias": [
     {
-      "titulo": "US citizen Stephen Hubbard freed by Russia as Trump envoy meets Putin",
-      "resumen": "The 74-year-old former teacher, who was captured, has been released without any \"swap\" required, Trump says.",
-      "fuente": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6m24l9v3745o?at_medium=RSS&at_campaign=rss",
+      "titulo": "Trump, Putin and Xi at one table, without Ukraine. What Moscow wants from the proposal and why Beijing might agree.",
+      "resumen": "Moscow is pushing for a summit with Donald Trump and Xi Jinping to discuss ending the war in Ukraine, without Kyiv or the EU. What does Russia hope to gain, and why might China be willing to take part?",
+      "fuente": "DW",
+      "url": "https://www.dw.com/en/trump-putin-and-xi-at-one-table-without-ukraine-what-moscow-wants-from-the-proposal-and-why-beijing-might-agree/a-79726190?maca=en-rss-en-all-1573-rdf",
       "fecha": "2026-10-21",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "‘They try to break us’: Pro-Palestine activists in Czech custody",
-      "resumen": "As a group is accused of an attack on a weapons factory, activists allege growing crackdown on the solidarity movement.",
+      "titulo": "Tunisia jails opposition politician for four years over social media posts",
+      "resumen": "Olfa ⁠Hamdi, a US-Tunisian national, was convicted of 'plotting' and 'inciting' military to disobey orders.",
       "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/10/21/they-try-to-break-us-pro-palestine-activists-in-czech-custody?traffic_source=rss",
+      "url": "https://www.aljazeera.com/news/2026/10/21/tunisia-jails-opposition-politician-for-four-years-over-social-media-posts?traffic_source=rss",
       "fecha": "2026-10-21",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Catholic Sisters gather in Chicago to strengthen communities and “Dream Big”",
-      "resumen": "Over 100 Catholic sisters and lay people gather in Chicago with Vatican representatives to strengthen Church ministries through collaboration and storytelling in service of human dignity and the common good. Read all…",
-      "fuente": "Vatican News (EN)",
-      "url": "https://www.vaticannews.va/en/vatican-city/news/2026-10/sisters-project-catholic-convening-chicago-hilton-foundation.html",
-      "fecha": "2026-10-21",
-      "cat": "⛪ Iglesia católica"
-    },
-    {
-      "titulo": "Nigeria, hermanas del Santo Rosario: lugar de espiritualidad y crecimiento",
-      "resumen": "Además de su compromiso con la educación, la asistencia sanitaria y los servicios pastorales y sociales, las Hermanas Misioneras de Nuestra Señora del Santo Rosario (MSHR), activas en la región meridional de Nigeria…",
+      "titulo": "Exámenes histológicos del Papa: no es necesario ningún tratamiento adicional",
+      "resumen": "Los doctores Carbone y Margaritora comunican los resultados de los exámenes histológicos y del análisis del material extraído durante la intervención al Pontífice el 13 de octubre: se confirma que se trataba de un…",
       "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/iglesia/news/2026-10/sister-project-africa-nigeria-iglesia-monjas.html",
+      "url": "https://www.vaticannews.va/es/papa/news/2026-10/papa-leon-comunicacion-medicos-examenes-histologicos-21-oct-2026.html",
       "fecha": "2026-10-21",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Mamdani-backed congressional candidate says he was detained by Israeli military",
-      "resumen": "Brad Lander says he was detained by the Israeli military while harvesting olives with Rabbis for Peace volunteers in the West Bank on Wednesday.",
-      "fuente": "Fox News",
-      "url": "https://www.foxnews.com/politics/mamdani-backed-congressional-candidate-detained-israeli-military",
+      "titulo": "Pope Leo XIV's doctors confirm 'no further treatment is necessary'",
+      "resumen": "Pope Leo XIV’s doctors confirm that the tumor removed on October 13 was a lung adenocarcinoma and that the disease was localized, noting that \"no further treatment is necessary.\" Read all &nbsp;",
+      "fuente": "Vatican News (EN)",
+      "url": "https://www.vaticannews.va/en/pope/news/2026-10/pope-leo-xiv-doctors-confirm-no-further-treatment-necessary.html",
       "fecha": "2026-10-21",
-      "cat": "🇺🇸 Política de EE. UU."
+      "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Want AI agents to stop going rogue? Make executives personally liable.",
-      "resumen": "Imagine if Sam and Dario and Elon and Mark, along with their boards of directors, bore individual liability for the damage their companies may inflict on society.",
+      "titulo": "Gas, groceries, electricity: Where prices stand as midterms approach",
+      "resumen": "September’s uptick in inflation dealt Americans with higher prices just before the midterm elections, as Democrats seek to wrestle back control of Congress from the GOP by highlighting affordability concerns. Annual…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/opinion/technology/6160739-ai-executives-strict-liability/",
+      "url": "https://thehill.com/business/6163770-september-inflation-uptick-prices-midterms/",
       "fecha": "2026-10-21",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Javier Milei y sus medidas, en vivo: el Presidente cuestionó las encuestas: “¿Podés vivir 10 días sin co",
+      "titulo": "Top 2 Democrats on Intel say they're preparing for Trump to claim foreign meddling",
+      "resumen": "The top Democrats on the House and Senate intelligence committees said they are working under the presumption that the president will seek to justify election interference by alleging fraud.",
+      "fuente": "NPR",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6011170/democrats-election-interference-preparations-president-trump",
+      "fecha": "2026-10-21",
+      "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "Diputados: La Libertad Avanza tuvo que restituir Ley de Tierras y los extranjeros volverán a tener límites",
+      "resumen": "El oficialismo debió ceder para conseguir la aprobación del proyecto de Inviolabilidad de la Propiedad Privada. Por los cambios, el proyecto volverá al senado. La sesión especial continúa con el debate de Endeudamiento…",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/politica/2026/10/21/diputados-en-vivo-ultimas-noticias-del-debate-sobre-discapacidad-endeudamiento-familiar-y-propiedad-privada/",
+      "fecha": "2026-10-21",
+      "cat": "🇦🇷 Política argentina"
+    },
+    {
+      "titulo": "Javier Milei y sus medidas, en vivo: el Presidente cuestionó las encuestas: “¿Podés vivir 10 días sin comer y sin beber?",
       "resumen": "El minuto a minuto de las decisiones del Presidente, las reacciones de la oposición y las declaraciones de los funcionarios",
       "fuente": "La Nación",
       "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-presidente-llamo-a-lula-zurdo-ladron-dias-antes-del-balotaje-nid21102026/",
@@ -132,26 +140,18 @@
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Javier Milei quiso ver al rey de España, pero la Casa Real se lo negó: los motivos",
-      "resumen": "El Presidente sostuvo que el encuentro con Felipe VI se frustró por \"distintas circunstancias\", pero desde el Palacio de la Zarzuela plantearon un incumplimiento de las prácticas habituales para una visita oficial. Cómo…",
-      "fuente": "Clarín",
-      "url": "https://www.clarin.com/politica/javier-milei-quiso-ver-rey-espana-casa-real-nego-motivos_0_Mqq0zXoQHN.html",
-      "fecha": "2026-10-21",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "Pleno del Senado EN VIVO: hoy se debate el pedido de facultades solicitado por el Ejecutivo",
-      "resumen": "El debate está programado para las 10.00 a. m. La Junta de Portavoces del Senado acordó que el tiempo del debate será de dos horas y media, el cual será distribuido proporcionalmente entre los seis grupos…",
-      "fuente": "La República",
-      "url": "https://larepublica.pe/politica/2026/10/21/pleno-del-senado-en-vivo-hoy-se-debate-el-pedido-de-facultades-solicitado-por-el-ejecutivo-hnews-391560",
+      "titulo": "El Perú y Ecuador, una paz que da frutos",
+      "resumen": "Este martes recibí en Lima al presidente de Ecuador, Daniel Noboa, para el Encuentro Presidencial y XVII Gabinete Binacional, el primero de mi gobierno. Desde el 2007, este mecanismo es mucho más que una cita…",
+      "fuente": "El Comercio",
+      "url": "https://elcomercio.pe/opinion/columnistas/el-peru-y-ecuador-una-paz-que-da-frutos-por-keiko-sofia-fujimori-higuchi-noticia/",
       "fecha": "2026-10-21",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "EN VIVO: Pleno del Senado debate hoy dictamen que otorga facultades legislativas al Gobierno",
-      "resumen": "El pleno del Senado de la República debate este miércoles, desde las 10 de la mañana, el dictamen de la Comisión de Constitución que delegada facultades especiales al Gobierno para legislar en 27 materias referidas a la…",
-      "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/en-vivo-pleno-del-senado-dictamen-sobre-delegacion-de-facultades-legislativas-al-gobierno-sobre-seguridad-ciudadana-y-fenomeno-el-nino-detalles-votacion-incidentes-apuesplan-noticia/",
+      "titulo": "Cinco votos de Obras y Buen Gobierno permitieron aprobar el pedido de facultades",
+      "resumen": "Los senadores Flores y Gavidia de Buen Gobierno votaron a favor, mientras que el resto de su bancada se abstuvo. En OBRAS, los senadores Astucuri, Barragán y Gago votaron a favor, mientras que Ticona lo hizo en…",
+      "fuente": "La República",
+      "url": "https://larepublica.pe/politica/2026/10/21/cinco-votos-de-obras-y-buen-gobierno-permitieron-aprobar-el-pedido-de-facultades-hnews-1389045",
       "fecha": "2026-10-21",
       "cat": "🇵🇪 Política peruana"
     }
