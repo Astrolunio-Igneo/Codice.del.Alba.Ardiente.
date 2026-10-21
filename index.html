@@ -261,24 +261,39 @@ html[data-theme=dark] #tzsel{background:transparent;color:#f2dc96}
 @media(min-width:900px){#tzw{height:32px;border-radius:16px;top:calc(10px + env(safe-area-inset-top,0px));left:78px;padding:0 10px 0 2px}#tzsel{width:124px;height:30px;font-size:13px;padding:0 2px 0 6px}#eshr{font-size:15px;padding-left:8px}}
 @media(max-width:600px){#tzw{left:76px;padding:0 9px 0 2px;max-width:calc(100vw - 86px - 140px)}#tzsel{width:96px;font-size:11px;padding:0 2px 0 5px}#eshr{font-size:12px;padding-left:7px}}
 @media(max-width:400px){#tzw{left:72px;max-width:calc(100vw - 80px - 132px)}#tzsel{width:84px;font-size:10px}#eshr{font-size:11px}}
-#todob{position:fixed;right:calc(10px + env(safe-area-inset-right,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:6;height:24px;padding:0 11px;border-radius:12px;border:1px solid #c9a24a88;background:#060b1acc;color:#f2dc96;font-family:'Cinzel',Georgia,serif;font-size:11px;font-weight:500;letter-spacing:1px;box-shadow:none;text-shadow:none;opacity:1;filter:brightness(1.08)}
-#todob:hover,#todob:focus-visible{opacity:1;filter:brightness(1.08)}
-html[data-theme=dark] #todob{background:#060b1acc;color:#f2dc96;box-shadow:none}
-@media(min-width:900px){#todob{height:26px;padding:0 12px;border-radius:13px;font-size:12px;letter-spacing:1.2px}}
-#todo{position:fixed;inset:0;background:#000a;display:none;align-items:center;justify-content:center;z-index:10;padding:16px}#todo.show{display:flex}#todo .box{max-width:560px}
-@media(min-width:900px){#todo .box{max-width:680px}}
 .td-nav{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 6px}
-.td-nav input[type=date],#tdadd input{font:inherit;font-size:16px;padding:6px 8px;border:1px solid var(--gold);background:#fbf3dc;color:var(--ink);border-radius:2px}
-#tdadd{display:flex;gap:8px;margin:8px 0 12px}#tdadd input{flex:1;min-width:0}
-#tdadd input,.td-nav input[type=date]{color:#1a1208;background:#fff8e4}#tdadd input::placeholder{color:#6b5a3a;opacity:1}
-html[data-theme=dark] #tdadd input,html[data-theme=dark] .td-nav input[type=date]{background:#120e09;color:#f6ecd2;border-color:var(--gold)}html[data-theme=dark] #tdadd input::placeholder{color:#b8a679}
-html[data-theme=dark] #tdl li span{color:#f6ecd2}html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
-#tdl{list-style:none;margin:0;padding:0;max-height:44vh;overflow:auto}
-#tdl li{display:flex;align-items:center;gap:10px;padding:8px 4px;border-bottom:1px solid #c9a24a55}
-#tdl li input{width:20px;height:20px;accent-color:#c9a24a;flex:none}
-#tdl li span{flex:1;word-break:break-word}#tdl li.done span{text-decoration:line-through;opacity:.5}
-#tdl li button{padding:2px 9px;font-size:13px}
-#tdcnt{font-size:13px;opacity:.75;letter-spacing:1px}
+.td-nav input[type=date],#tdadd input{font:inherit;font-size:16px;padding:7px 9px;border:1px solid var(--gold);background:#fff8e4;color:#1a1208;border-radius:3px}
+#tdadd input::placeholder{color:#6b5a3a;opacity:1}
+html[data-theme=dark] #tdadd input,html[data-theme=dark] .td-nav input[type=date]{background:#120e09;color:#f6ecd2;border-color:var(--gold)}
+html[data-theme=dark] #tdadd input::placeholder{color:#b8a679}
+html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
+#tdadd{display:flex;gap:8px;margin:10px 0 12px}#tdadd input{flex:1;min-width:0}
+.tdt{text-align:center;margin:0 0 2px;font-size:22px;letter-spacing:2px;font-variant:small-caps;font-weight:700}
+.tdt:before,.tdt:after{content:"⚔";font-size:15px;margin:0 10px;opacity:.7}
+#tdlab{font-size:17px;letter-spacing:1px;font-variant:small-caps;margin:2px 0 4px}
+/* tablón de contratos: tablero de madera con pergaminos clavados */
+#tdl{list-style:none;margin:0;padding:16px 14px 14px;max-height:46vh;overflow:auto;display:grid;grid-template-columns:1fr;gap:16px 14px;border-radius:4px;border:3px solid #4a2f14;
+ background:repeating-linear-gradient(90deg,#00000014 0 2px,transparent 2px 9px),linear-gradient(180deg,#6b4624,#54351a 55%,#472d15);
+ box-shadow:inset 0 0 0 2px #c9a24a66,inset 0 4px 14px #0009,0 2px 6px #0005}
+@media(min-width:700px){#tdl{grid-template-columns:1fr 1fr}}
+#tdl li{position:relative;display:flex;align-items:center;gap:10px;padding:14px 34px 14px 46px;min-height:58px;border-radius:2px;color:#2a1d10;
+ background:linear-gradient(135deg,#f6e8c0,#ead29a);box-shadow:0 3px 7px #0007,inset 0 0 14px #b8892b44;transition:transform .15s}
+#tdl li:nth-child(odd){transform:rotate(-.6deg)}#tdl li:nth-child(even){transform:rotate(.5deg)}#tdl li:hover{transform:rotate(0) scale(1.01)}
+#tdl li:before{content:"";position:absolute;top:-7px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e9a37f,#8d2a1a 60%,#4e130a);box-shadow:0 2px 3px #0008}
+#tdl li input{appearance:none;-webkit-appearance:none;position:absolute;left:12px;top:50%;margin:-13px 0 0;width:26px;height:26px;border-radius:50%;border:2px dashed #7a1626;background:transparent;cursor:pointer;flex:none}
+#tdl li input:hover{background:#7a162622}
+#tdl li input:checked{border-style:solid;border-color:#5c0f1c;background:radial-gradient(circle at 35% 30%,#d0455a,#8d1427 60%,#5a0b19);box-shadow:inset 0 0 0 4px #00000022,0 1px 3px #0006}
+#tdl li span,html[data-theme=dark] #tdl li span{flex:1;word-break:break-word;font-size:18px;line-height:1.25;color:#2a1d10}
+#tdl li button{position:absolute;top:4px;right:4px;padding:0 6px;font-size:12px;line-height:18px;min-height:0;opacity:.55}#tdl li button:hover{opacity:1}
+#tdl li.done{filter:saturate(.6) brightness(.95)}
+#tdl li.done span{text-decoration:line-through;opacity:.5}
+#tdl li.done:after{content:"Cumplido";position:absolute;right:30px;top:50%;margin-top:-12px;padding:1px 8px;border:2px solid #7a1626;border-radius:3px;color:#7a1626;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;transform:rotate(-9deg);opacity:.8;background:#f6e8c033}
+@media(max-width:699px){#tdl li.done{padding-bottom:26px}#tdl li.done:after{top:auto;bottom:4px;right:34px;margin-top:0;font-size:11px;padding:0 6px;letter-spacing:1.5px;transform:rotate(-4deg)}}
+#tdl li.empty{grid-column:1/-1;background:none;box-shadow:none;transform:none;justify-content:center;text-align:center;padding:18px 10px;color:#e6d3a0;font-style:italic}
+#tdl li.empty:before{display:none}#tdl li.empty span,html[data-theme=dark] #tdl li.empty span{color:#e6d3a0;font-size:17px}
+#tdprog{height:9px;margin:12px 0 4px;border:1px solid var(--gold);border-radius:5px;background:#0003;overflow:hidden}
+#tdprogf{display:block;height:100%;width:0;background:linear-gradient(90deg,#8d1427,#d0455a 50%,#c9a24a);transition:width .3s}
+#tdcnt{font-size:14px;opacity:.85;letter-spacing:1px}
 </style>
 </head>
 <body>
@@ -312,17 +327,7 @@ html[data-theme=dark] #tdl li span{color:#f6ecd2}html[data-theme=dark] .td-nav i
   <figure class="frame"><img id="imk" alt="Caballero medieval cabalgando hacia un castillo al amanecer"><figcaption>Hazlo por la leyenda</figcaption></figure>
   <figure class="frame"><img id="imc" alt="Pintura de la Última Cena"><figcaption>La Última Cena</figcaption></figure>
 </div></section>
-<button id="todob" type="button" title="Lista de cosas por hacer del día">To-Do</button>
 <div id="nightv"></div>
-<div id="todo"><div class="box">
-  <h3>To-Do del día</h3>
-  <div class="td-nav"><button id="tdprev" title="Día anterior">◀</button><input type="date" id="tdd"><button id="tdnext" title="Día siguiente">▶</button></div>
-  <div class="td-nav"><button id="tdtoday">Hoy</button><button id="tdtom">Mañana</button></div>
-  <p class="sub" id="tdlab" style="text-align:center"></p>
-  <div id="tdadd"><input id="tdin" type="text" maxlength="140" placeholder="Nueva tarea…" autocomplete="off"><button id="tdgo">Agregar</button></div>
-  <ul id="tdl"></ul>
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:8px"><span id="tdcnt"></span><span><button id="tdmv" title="Trae a este día las tareas sin hacer del día anterior">↷ Pendientes de ayer</button> <button id="tdclr" title="Borra las tareas ya hechas de este día">Limpiar hechas</button> <button id="tdclose">Cerrar</button></span></div>
-</div></div>
 <div id="oracle"><div class="box">
   <div class="ban" id="oban"></div>
   <h3>🔮 Oráculo del día</h3><p class="sub" id="od"></p>
@@ -333,8 +338,16 @@ html[data-theme=dark] #tdl li span{color:#f6ecd2}html[data-theme=dark] .td-nav i
   <div style="text-align:right;margin-top:8px"><button id="ostar">☆ Guardar</button> <button id="oclose">Cerrar</button></div>
 </div></div>
 <div id="news"><div class="box">
-  <h3>📜 Pregón del día</h3><p class="sub" id="nd"></p><div class="nc"><a href="https://www.smn.gob.ar/" target="_blank" rel="noopener noreferrer">🌦️ Servicio Meteorológico Nacional</a><p>Pronóstico, alertas y estado del tiempo en Argentina.</p><small>SMN · SMN.GOB.AR</small></div><div class="tabs" id="ntabs"></div><div id="nl"></div>
-  <p class="sub">Cada día: 5 noticias de geopolítica (4 en inglés y 1 en español, de medios liberales clásicos y austriacos), 5 de política (liberal clásica y derecha) y 10 de actualidad: guerra, Iglesia católica y política de EE. UU., Argentina y Perú. Son medios con línea editorial propia, no cobertura neutral: contrasta con otras fuentes.</p>
+  <h3>📜 Pregón del día</h3><p class="sub" id="nd"></p><div class="nc"><a href="https://www.smn.gob.ar/" target="_blank" rel="noopener noreferrer">🌦️ Servicio Meteorológico Nacional</a><p>Pronóstico, alertas y estado del tiempo en Argentina.</p><small>SMN · SMN.GOB.AR</small></div><div class="tabs" id="ntabs"></div><div id="nl"></div><div id="ntodo" style="display:none">
+  <h4 class="tdt">Contratos del día</h4><p class="sub" style="margin:0 0 8px;text-align:center">Tus tareas del día, aparte de los eventos del calendario.</p>
+  <div class="td-nav"><button id="tdprev" title="Día anterior">◀</button><input type="date" id="tdd"><button id="tdnext" title="Día siguiente">▶</button></div>
+  <div class="td-nav"><button id="tdtoday">Hoy</button><button id="tdtom">Mañana</button></div>
+  <p class="sub" id="tdlab" style="text-align:center"></p>
+  <div id="tdadd"><input id="tdin" type="text" maxlength="140" placeholder="Nuevo contrato del día…" autocomplete="off"><button id="tdgo">Anotar</button></div>
+  <ul id="tdl"></ul><div id="tdprog"><i id="tdprogf"></i></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:8px"><span id="tdcnt"></span><span><button id="tdmv" title="Trae a este día las tareas sin hacer del día anterior">↷ Pendientes de ayer</button> <button id="tdclr" title="Borra los contratos ya cumplidos de este día">Archivar cumplidos</button></span></div>
+</div>
+  <p class="sub" id="nhelp">Cada día: 5 noticias de geopolítica (4 en inglés y 1 en español, de medios liberales clásicos y austriacos), 5 de política (liberal clásica y derecha) y 10 de actualidad: guerra, Iglesia católica y política de EE. UU., Argentina y Perú. Son medios con línea editorial propia, no cobertura neutral: contrasta con otras fuentes.</p>
   <div style="text-align:right"><button id="nclose">Cerrar</button></div>
 </div></div>
 <div id="radio"><div class="box">
@@ -676,7 +689,7 @@ document.getElementById("orab").onclick=()=>{osrc=dayNum()%ORA.length;drawOracle
   const save=()=>{try{localStorage.setItem(K,JSON.stringify(TD))}catch(e){}};
   const lim=key(new Date(Date.now()-120*864e5));Object.keys(TD).forEach(k=>{if(k<lim)delete TD[k]});
   let cur=key(new Date());
-  const badge=()=>{const n=(TD[key(new Date())]||[]).filter(x=>!x.d).length;$("todob").textContent="To-Do"+(n?" ("+n+")":"")};
+  const badge=()=>{const n=(TD[key(new Date())]||[]).filter(x=>!x.d).length;window.__tdN=n;if(window.__tdBadgeUpd)window.__tdBadgeUpd()};
   function lab(){const [y,m,d]=cur.split("-").map(Number),t=key(new Date());return new Date(y,m-1,d).toLocaleDateString("es",{weekday:"long",day:"numeric",month:"long"})+(cur==t?" · hoy":cur==add(t,1)?" · mañana":cur==add(t,-1)?" · ayer":"")}
   function draw(){
     $("tdd").value=cur;$("tdlab").textContent=lab();
@@ -686,8 +699,10 @@ document.getElementById("orab").onclick=()=>{osrc=dayNum()%ORA.length;drawOracle
       const sp=document.createElement("span");sp.textContent=x.t;
       const b=document.createElement("button");b.textContent="✕";b.title="Borrar";b.onclick=()=>{L.splice(i,1);if(!L.length)delete TD[cur];save();draw()};
       li.append(c,sp,b);ul.appendChild(li)});
+    if(!L.length){const li=document.createElement("li");li.className="empty";const sp=document.createElement("span");sp.textContent="El tablón está vacío. Anota el primer contrato del día.";li.appendChild(sp);ul.appendChild(li)}
     const hechas=L.filter(x=>x.d).length;
-    $("tdcnt").textContent=L.length?hechas+" de "+L.length+" hechas":"Sin tareas para este día";
+    $("tdprogf").style.width=(L.length?Math.round(hechas*100/L.length):0)+"%";
+    $("tdcnt").textContent=L.length?hechas+" de "+L.length+" contratos cumplidos":"Sin contratos para este día";
     badge();
   }
   const go=k=>{cur=k;draw()};
@@ -698,9 +713,7 @@ document.getElementById("orab").onclick=()=>{osrc=dayNum()%ORA.length;drawOracle
   $("tdd").onchange=()=>{if(/^\d{4}-\d{2}-\d{2}$/.test($("tdd").value))go($("tdd").value)};
   $("tdmv").onclick=()=>{const p=add(cur,-1),A=TD[p]||[],mv=A.filter(x=>!x.d),keep=A.filter(x=>x.d);if(!mv.length)return;TD[cur]=(TD[cur]||[]).concat(mv);if(keep.length)TD[p]=keep;else delete TD[p];save();draw()};
   $("tdclr").onclick=()=>{const L=(TD[cur]||[]).filter(x=>!x.d);if(L.length)TD[cur]=L;else delete TD[cur];save();draw()};
-  $("todob").onclick=()=>{cur=key(new Date());draw();$("todo").classList.add("show")};
-  $("tdclose").onclick=()=>$("todo").classList.remove("show");
-  $("todo").onclick=e=>{if(e.target.id=="todo")e.target.classList.remove("show")};
+  window.__tdOpen=()=>{cur=key(new Date());draw()};
   badge();
 })();
 (function(){const h=document.documentElement,ids=["nightb","pmnight"];let on=false;try{on=localStorage.getItem("medieval-night")==="1"}catch(e){}
@@ -991,6 +1004,7 @@ document.getElementById("radio").onclick=e=>{if(e.target.id=="radio")e.target.cl
 /* ---- Tablón de noticias (lee news.json, que se renueva a diario) ---- */
 const NSEC=[["items","🌍 Geopolítica"],["politica","⚖️ Política"],["diarias","🗞️ Diarias"],["newsletter","📬 Newsletter"]];
 let NJ=null,NS="items";
+window.__tdBadgeUpd=()=>{const b=document.querySelector("#ntabs [data-td]");if(b)b.textContent="To-Do"+(window.__tdN?" ("+window.__tdN+")":"")};
 function showNews(){
   const l=document.getElementById("nl"),tb=document.getElementById("ntabs");
   tb.innerHTML="";l.innerHTML="";
@@ -998,6 +1012,10 @@ function showNews(){
     const b=document.createElement("button");b.textContent=t+" ("+(NJ[k]||[]).length+")";
     b.className=k==NS?"on":"";b.onclick=()=>{NS=k;showNews()};tb.appendChild(b);
   });
+  {const b=document.createElement("button");b.dataset.td="1";b.className=NS=="todo"?"on":"";b.onclick=()=>{NS="todo";if(window.__tdOpen)window.__tdOpen();showNews()};tb.appendChild(b);window.__tdBadgeUpd()}
+  const isTd=NS=="todo";
+  document.getElementById("ntodo").style.display=isTd?"block":"none";l.style.display=isTd?"none":"";document.getElementById("nhelp").style.display=isTd?"none":"";
+  if(isTd)return;
   const it=(NJ[NS]||[]).filter(x=>/^https?:\/\//.test(x.url));
   if(!it.length){l.textContent=NS=="newsletter"?"Aún no hay newsletters. Sube un PDF a la carpeta newsletters del repositorio.":"Esta sección se llena con la próxima actualización automática.";return}
   let last="";
@@ -1035,9 +1053,9 @@ async function loadNews(){
     }catch(e){}
     if(NJ.actualizado)d.textContent="Actualizado: "+new Date(NJ.actualizado).toLocaleString("es",{dateStyle:"long",timeStyle:"short"});
     showNews();
-  }catch(e){l.textContent="No se pudo cargar el tablón. Ábrelo desde GitHub Pages: abierto como archivo local el navegador bloquea la lectura."}
+  }catch(e){NJ=NJ||{};showNews();if(NS!="todo")l.textContent="No se pudo cargar el tablón. Ábrelo desde GitHub Pages: abierto como archivo local el navegador bloquea la lectura."}
 }
-document.getElementById("newb").onclick=()=>{loadNews();document.getElementById("news").classList.add("show")};
+document.getElementById("newb").onclick=()=>{if(NS=="todo"&&window.__tdOpen)window.__tdOpen();loadNews();document.getElementById("news").classList.add("show")};
 document.getElementById("nclose").onclick=()=>document.getElementById("news").classList.remove("show");
 document.getElementById("news").onclick=e=>{if(e.target.id=="news")e.target.classList.remove("show")};
 
