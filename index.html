@@ -467,6 +467,13 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
 #pomo.fs #pmgb-preview{display:block!important;visibility:visible!important;width:100%!important;height:14px!important;min-height:14px!important;box-sizing:border-box!important;overflow:hidden!important;border:1px solid #8fcfbd88!important;border-radius:999px!important;background:#ffffff20!important}
 #pomo.fs #pmgf-preview{display:block!important;height:100%!important;min-height:100%!important;width:0%;border-radius:999px!important;background:linear-gradient(90deg,#62d6b1,#b2f7c8)!important;box-shadow:0 0 14px #75d6bb88!important;transition:width .35s ease!important}
 @media(max-width:600px){#pomo.fs #pmgoal-preview{width:100%!important;padding:10px!important;margin-top:8px!important}#pomo.fs .pm-goal-preview-head{font-size:12px!important}#pomo.fs #pmgb-preview{height:13px!important;min-height:13px!important}}
+
+/* Barra minimalista visible en la vista normal, pegada al borde inferior del recuadro Pomodoro. */
+#pmgoal-normal{display:block;width:100%;height:12px;box-sizing:border-box;margin:18px 0 0;overflow:hidden;border:1px solid #8fcfbd70;border-radius:999px;background:#ffffff18;box-shadow:inset 0 2px 4px #0004;flex:0 0 100%;}
+#pmgf-normal{display:block;width:0;height:100%;border-radius:999px;background:linear-gradient(90deg,#62d6b1,#9ae6b4);box-shadow:0 0 12px #75d6bb66;transition:width .35s ease;}
+#pomo.fs #pmgoal-normal{display:none!important}
+@media(max-width:600px){#pmgoal-normal{height:11px;margin-top:14px}}
+
 </style>
 
 </head>
@@ -571,6 +578,7 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
       <div class="pm-goal-preview-head"><strong>🎯 META DIARIA</strong><span id="pmgt-preview">0 / 8</span></div>
       <div id="pmgb-preview" role="progressbar" aria-label="Progreso diario" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf-preview"></i></div>
     </div>
+    <div id="pmgoal-normal" aria-label="Progreso diario de pomodoros" role="progressbar" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf-normal"></i></div>
   </div>
   <div id="pmhab">
     <div id="pmtrig">Después de <input id="pmtg" maxlength="40" placeholder="tomar mate o café" autocomplete="off" aria-label="Disparador"> estudio <input id="pmwh" maxlength="40" placeholder="mi materia" autocomplete="off" aria-label="Qué estudio"> durante un pomodoro.</div>
@@ -1740,7 +1748,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
 <script>
 /* Meta diaria editable: admite objetivos de 1 a 999 y conserva la elección en este navegador. */
 (()=> {
- const $=id=>document.getElementById(id), input=$("pmgoaln"), fill=$("pmgf"), label=$("pmgt"), bar=$("pmgb"), hint=$("pmgoalhint"), count=$("pmc"), previewFill=$("pmgf-preview"), previewLabel=$("pmgt-preview"), previewBar=$("pmgb-preview");
+ const $=id=>document.getElementById(id), input=$("pmgoaln"), fill=$("pmgf"), label=$("pmgt"), bar=$("pmgb"), hint=$("pmgoalhint"), count=$("pmc"), previewFill=$("pmgf-preview"), previewLabel=$("pmgt-preview"), previewBar=$("pmgb-preview"), normalFill=$("pmgf-normal"), normalBar=$("pmgoal-normal");
  if(!input||!fill||!label||!bar||!count)return;
  const key="medieval-pomo-goal";
  const parseGoal=()=>{const n=Number.parseInt(input.value,10);return Number.isFinite(n)&&n>=1?Math.min(999,n):8};
@@ -1752,7 +1760,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
    const match=(count.textContent||"").match(/\d+/),done=match?Math.max(0,parseInt(match[0],10)):0;
    const pct=Math.min(100,done/goal*100);
    fill.style.width=pct+"%";label.textContent=done+" / "+goal;
-   if(previewFill)previewFill.style.width=pct+"%";if(previewLabel)previewLabel.textContent=done+" / "+goal;
+   if(previewFill)previewFill.style.width=pct+"%";if(previewLabel)previewLabel.textContent=done+" / "+goal;if(normalFill)normalFill.style.width=pct+"%";if(normalBar){normalBar.setAttribute("aria-valuemax",String(goal));normalBar.setAttribute("aria-valuenow",String(Math.min(done,goal)));}
    bar.setAttribute("aria-valuemax",String(goal));bar.setAttribute("aria-valuenow",String(Math.min(done,goal)));if(previewBar){previewBar.setAttribute("aria-valuemax",String(goal));previewBar.setAttribute("aria-valuenow",String(Math.min(done,goal)));}
    hint.textContent=done>=goal?"¡Objetivo cumplido! Excelente trabajo de hoy.":"Te faltan "+(goal-done)+" pomodoro"+(goal-done===1?"":"s")+" para alcanzar tu objetivo.";
    if(saveGoal||finalize){try{localStorage.setItem(key,String(goal))}catch(e){}}
@@ -1782,6 +1790,16 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
  input.addEventListener("input",()=>update(false,false));
 })();
 </script>
+
+
+<style id="pomodoro-focus-thin-progress-final">
+/* En modo Enfocar: progreso discreto, horizontal y debajo del reloj; sin tarjeta ni encabezado. */
+#pomo.fs #pmgoal-preview{display:none!important;}
+#pomo.fs #pmgoal-normal{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;order:3!important;flex:0 1 auto!important;width:min(360px,78vw)!important;max-width:78vw!important;height:6px!important;min-height:6px!important;margin:clamp(8px,1.8vh,16px) auto 0!important;padding:0!important;border:0!important;border-radius:999px!important;background:#ffffff20!important;box-shadow:inset 0 1px 2px #0005!important;overflow:hidden!important;}
+#pomo.fs #pmgf-normal{display:block!important;height:100%!important;min-height:100%!important;border:0!important;border-radius:999px!important;background:linear-gradient(90deg,#62d6b1,#b2f7c8)!important;box-shadow:0 0 8px #75d6bb66!important;transition:width .35s ease!important;}
+#pomo.fs #pmcnt{order:4;}
+@media(max-width:600px){#pomo.fs #pmgoal-normal{width:min(280px,72vw)!important;height:5px!important;min-height:5px!important;margin-top:8px!important;}}
+</style>
 
 </body>
 </html>
