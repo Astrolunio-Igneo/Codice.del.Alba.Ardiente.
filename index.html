@@ -543,7 +543,7 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
 </div></div>
 <div id="tv"><div class="box">
   <h3>📺 Noticias en vivo</h3>
-  <p class="sub">Transmisiones de noticias de EE. UU. dentro de la misma página. Si una no carga o dice «no disponible», prueba otra o ábrela en pestaña nueva. Los canales marcados «se abren en su sitio» no permiten incrustar: al tocarlos se abre su transmisión oficial en una pestaña nueva.</p>
+  <p class="sub">Transmisiones de noticias y cámaras en vivo de ciudades. Las ciudades se abren en YouTube con la búsqueda ya filtrada por «en vivo»; guarda tus cámaras favoritas pegando su enlace abajo. Noticias de EE. UU. dentro de la misma página. Si una no carga o dice «no disponible», prueba otra o ábrela en pestaña nueva. Los canales marcados «se abren en su sitio» no permiten incrustar: al tocarlos se abre su transmisión oficial en una pestaña nueva.</p>
   <div id="tvp"></div>
   <p id="tvst">Elige un canal.</p>
   <div id="tvlist"></div>
@@ -581,6 +581,43 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
       <div class="pm-goal-preview-head"><strong>🎯 META DIARIA</strong><span id="pmgt-preview">0 / 8</span></div>
       <div id="pmgb-preview" role="progressbar" aria-label="Progreso diario" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf-preview"></i></div>
     </div>
+    <div id="pmtrw" aria-hidden="true"><div id="pmtren"><i class="pf"></i><i class="pf"></i><i class="pf"></i><i class="pf"></i><i class="pf"></i><svg viewBox="0 0 100 44" aria-hidden="true">
+        <defs>
+          <linearGradient id="trgB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a6a7a"/><stop offset=".35" stop-color="#383844"/><stop offset="1" stop-color="#16161d"/></linearGradient>
+          <linearGradient id="trgT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5e3126"/><stop offset="1" stop-color="#26130f"/></linearGradient>
+          <linearGradient id="trgC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a1a2e"/><stop offset="1" stop-color="#4a0d18"/></linearGradient>
+        </defs>
+        <rect x="2" y="34" width="96" height="3" fill="#15151b"/>
+        <path d="M2 34V18h26v16z" fill="url(#trgT)" stroke="#c9a24a" stroke-width=".8"/>
+        <path d="M3 18q3-6 7-4 3-4 7-2 4-2 7 2 2 1 3 4z" fill="#0f0f13"/>
+        <path d="M6 15.5l2-1M13 13.5l2-.7M21 14l1.5.8" stroke="#555" stroke-width=".7"/>
+        <line x1="2" y1="26" x2="28" y2="26" stroke="#c9a24a" stroke-width=".7"/>
+        <rect x="28" y="31" width="4" height="2" fill="#8c8c96"/>
+        <path d="M33 14h16l-1.4-3.5H34.4z" fill="url(#trgC)" stroke="#c9a24a" stroke-width=".6"/>
+        <rect x="33" y="14" width="15" height="20" fill="#2a2a34" stroke="#c9a24a" stroke-width=".8"/>
+        <rect x="36" y="17.5" width="8.5" height="7" rx="1" fill="#f6dc8e" stroke="#c9a24a" stroke-width=".7"/>
+        <line x1="40.2" y1="17.5" x2="40.2" y2="24.5" stroke="#c9a24a" stroke-width=".5"/>
+        <rect x="48" y="19" width="35" height="14" rx="4.5" fill="url(#trgB)" stroke="#c9a24a" stroke-width=".8"/>
+        <path d="M51 21.2h28" stroke="#ffffff40" stroke-width="1.1" stroke-linecap="round"/>
+        <g stroke="#c9a24a" stroke-width="1"><line x1="57" y1="19.3" x2="57" y2="32.7"/><line x1="67" y1="19.3" x2="67" y2="32.7"/><line x1="76" y1="19.3" x2="76" y2="32.7"/></g>
+        <rect x="53" y="14.5" width="7" height="5" rx="2.5" fill="#b8892f" stroke="#7a5a1e" stroke-width=".5"/>
+        <rect x="63" y="12.5" width="9" height="7" rx="3.5" fill="#d3aa55" stroke="#7a5a1e" stroke-width=".5"/>
+        <rect x="66.6" y="9.5" width="1.8" height="3.2" fill="#c9a24a"/>
+        <rect x="83" y="19" width="9" height="14" rx="2" fill="#23232b" stroke="#c9a24a" stroke-width=".8"/>
+        <circle cx="89" cy="26" r="2.6" fill="#15151b" stroke="#c9a24a" stroke-width=".7"/>
+        <rect x="85" y="10.5" width="5.2" height="9" fill="#1d1d24" stroke="#c9a24a" stroke-width=".7"/>
+        <path d="M81.5 4.5h12l-2.7 6.2h-6.6z" fill="#2a2a34" stroke="#c9a24a" stroke-width=".8"/>
+        <rect x="90.5" y="12.5" width="6" height="5.5" rx="1.2" fill="#ffe9a3" stroke="#c9a24a" stroke-width=".8"/>
+        <path d="M92 33l8 10H91z" fill="url(#trgC)" stroke="#c9a24a" stroke-width=".6"/>
+        <path d="M94 36l3 6M96.5 34.5l4 7" stroke="#ffffff55" stroke-width=".6"/>
+        <rect x="77" y="31" width="10" height="5" rx="2" fill="#3a3a46" stroke="#c9a24a" stroke-width=".7"/>
+        <rect x="48" y="33" width="35" height="1.6" fill="#7a5a1e"/>
+        <g class="tw"><circle cx="9" cy="39.8" r="3.45" fill="#1b1b22" stroke="#c9a24a" stroke-width="1.5"/><g stroke="#c9a24a" stroke-width="0.9"><line x1="5.43" y1="39.8" x2="12.57" y2="39.8"/><line x1="6.47563" y1="37.2756" x2="11.5244" y2="42.3244"/><line x1="9" y1="36.23" x2="9" y2="43.37"/><line x1="11.5244" y1="37.2756" x2="6.47563" y2="42.3244"/></g><circle cx="9" cy="39.8" r="1.2" fill="#b8892f"/></g><g class="tw"><circle cx="22" cy="39.8" r="3.45" fill="#1b1b22" stroke="#c9a24a" stroke-width="1.5"/><g stroke="#c9a24a" stroke-width="0.9"><line x1="18.43" y1="39.8" x2="25.57" y2="39.8"/><line x1="19.4756" y1="37.2756" x2="24.5244" y2="42.3244"/><line x1="22" y1="36.23" x2="22" y2="43.37"/><line x1="24.5244" y1="37.2756" x2="19.4756" y2="42.3244"/></g><circle cx="22" cy="39.8" r="1.2" fill="#b8892f"/></g>
+        <g class="tw"><circle cx="55" cy="37" r="6.25" fill="#1b1b22" stroke="#c9a24a" stroke-width="1.5"/><g stroke="#c9a24a" stroke-width="0.9"><line x1="49.05" y1="37" x2="60.95" y2="37"/><line x1="50.7927" y1="32.7927" x2="59.2073" y2="41.2073"/><line x1="55" y1="31.05" x2="55" y2="42.95"/><line x1="59.2073" y1="32.7927" x2="50.7927" y2="41.2073"/></g><circle cx="55" cy="37" r="1.4" fill="#b8892f"/></g><g class="tw"><circle cx="70" cy="37" r="6.25" fill="#1b1b22" stroke="#c9a24a" stroke-width="1.5"/><g stroke="#c9a24a" stroke-width="0.9"><line x1="64.05" y1="37" x2="75.95" y2="37"/><line x1="65.7927" y1="32.7927" x2="74.2073" y2="41.2073"/><line x1="70" y1="31.05" x2="70" y2="42.95"/><line x1="74.2073" y1="32.7927" x2="65.7927" y2="41.2073"/></g><circle cx="70" cy="37" r="1.4" fill="#b8892f"/></g>
+        <g class="tw"><circle cx="80" cy="40" r="3.25" fill="#1b1b22" stroke="#c9a24a" stroke-width="1.5"/><g stroke="#c9a24a" stroke-width="0.9"><line x1="76.6" y1="40" x2="83.4" y2="40"/><line x1="80" y1="36.6" x2="80" y2="43.4"/></g><circle cx="80" cy="40" r="1.2" fill="#b8892f"/></g><g class="tw"><circle cx="89" cy="40" r="3.25" fill="#1b1b22" stroke="#c9a24a" stroke-width="1.5"/><g stroke="#c9a24a" stroke-width="0.9"><line x1="85.6" y1="40" x2="92.4" y2="40"/><line x1="89" y1="36.6" x2="89" y2="43.4"/></g><circle cx="89" cy="40" r="1.2" fill="#b8892f"/></g>
+        <g class="rod"><line x1="55" y1="37" x2="70" y2="37" stroke="#cfcfd6" stroke-width="1.7" stroke-linecap="round"/><circle cx="55" cy="37" r="1.1" fill="#8c8c96"/><circle cx="70" cy="37" r="1.1" fill="#8c8c96"/></g>
+        <line x1="70" y1="37" x2="82" y2="34" stroke="#cfcfd6" stroke-width="1.4" stroke-linecap="round" class="pr"/>
+      </svg></div></div>
     <div id="pmgoal-normal" aria-label="Progreso diario de pomodoros" role="progressbar" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf-normal"></i></div>
   </div>
   <div id="pmhab">
@@ -775,7 +812,7 @@ function importText(txt){
       const mergeExtra=()=>{
         if(nTd){const cur=cleanTodo(rdJ("medieval-todo",{}));for(const k in tdIn){const c=cur[k]=cur[k]||[];tdIn[k].forEach(t=>{if(!c.some(y=>y.t==t.t))c.push(t)})}wr("medieval-todo",cur)}
         if(nPm){const cur=cleanPomo(rdJ("medieval-pomo-hist",{}));for(const k in pmIn)cur[k]=Math.max(cur[k]||0,pmIn[k]);wr("medieval-pomo-hist",cur)}
-        if(eaIn){const cur=rdJ("medieval-intencion",{});["obj","tarea","cuando","donde","id","premio"].forEach(k=>{if(!cur[k]&&typeof eaIn[k]==="string")cur[k]=eaIn[k]});cur.votos=Math.max(+cur.votos||0,+eaIn.votos||0);["pasos","rep","reg"].forEach(k=>{const a=Array.isArray(cur[k])?cur[k]:[],kf=x=>k==="reg"?x.t+"|"+x.d+"|"+x.r:x.t;(Array.isArray(eaIn[k])?eaIn[k]:[]).forEach(x=>{if(x&&typeof x.t==="string"&&!a.some(y=>y&&kf(y)==kf(x)))a.push(x)});cur[k]=a});wr("medieval-intencion",cur)}};
+        if(eaIn){const cur=rdJ("medieval-intencion",{});["obj","tarea","cuando","donde","id","premio"].forEach(k=>{if(!cur[k]&&typeof eaIn[k]==="string")cur[k]=eaIn[k]});cur.votos=Math.max(+cur.votos||0,+eaIn.votos||0);if(eaIn.vd&&typeof eaIn.vd==="object"&&!Array.isArray(eaIn.vd)){const v=cur.vd&&typeof cur.vd==="object"&&!Array.isArray(cur.vd)?cur.vd:{};Object.keys(eaIn.vd).forEach(k=>{if(/^\d{4}-\d{2}-\d{2}$/.test(k))v[k]=Math.max(+v[k]||0,+eaIn.vd[k]||0)});cur.vd=v}["pasos","rep","reg"].forEach(k=>{const a=Array.isArray(cur[k])?cur[k]:[],kf=x=>k==="reg"?x.t+"|"+x.d+"|"+x.r:x.t;(Array.isArray(eaIn[k])?eaIn[k]:[]).forEach(x=>{if(x&&typeof x.t==="string"&&!a.some(y=>y&&kf(y)==kf(x)))a.push(x)});cur[k]=a});wr("medieval-intencion",cur)}};
       const replaceExtra=()=>{if(tdIn)wr("medieval-todo",tdIn);if(pmIn)wr("medieval-pomo-hist",pmIn);if(eaIn)wr("medieval-intencion",eaIn)};
       const mergePl=()=>{[plIn,plIn2].forEach((L,w)=>{if(!L||!L.length)return;const c=plGet(w);L.forEach(x=>{if(!c.some(y=>y.t==x.t&&y.id==x.id))c.push(x)});plSet(c.slice(0,100),w)})};
       const extra=(eaIn?" · objetivo, camino y repasos":"")+(tvIn?" · "+tvIn.length+" enlaces de TV":"")+(nTd?" · "+nTd+" tareas del To-Do":"")+(nPm?" · "+nPm+" días de pomodoros":"")+((plIn?plIn.length:0)+(plIn2?plIn2.length:0)?" · "+((plIn?plIn.length:0)+(plIn2?plIn2.length:0))+" enlaces de playlist":"");
@@ -1451,7 +1488,8 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
 (()=>{
   const $=id=>document.getElementById(id),yt="https://www.youtube.com/embed/";
   const nc="https://www.youtube-nocookie.com/embed/";
-  const vid=i=>yt+i+"?autoplay=1&rel=0",live=c=>yt+"live_stream?channel="+c+"&autoplay=1&rel=0",live2=c=>nc+"live_stream?channel="+c+"&autoplay=1&rel=0";
+  const vid=i=>yt+i+"?autoplay=1&rel=0",live=c=>yt+"live_stream?channel="+c+"&autoplay=1&rel=0",live2=c=>nc+"live_stream?channel="+c+"&autoplay=1&rel=0",
+    cam=q=>"https://www.youtube.com/results?search_query="+encodeURIComponent(q)+"&sp=EgJAAQ%253D%253D";
   // Edita esta lista: [nombre, etiqueta, [fuentes a probar en orden], enlace oficial]. Fuentes vacías = solo se abre el sitio.
   const CH=[
     "Estados Unidos",
@@ -1468,7 +1506,22 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     ["DW News","Alemania · informativo",[vid("LuKwFajn37U"),live("UCknLrEdhRCp1aegoMqRaCZg"),live2("UCknLrEdhRCp1aegoMqRaCZg")],"https://www.dw.com/en/live-tv/channel-english"],
     ["France 24 English","Francia · informativo",[vid("Ap-UM1O9RBU"),live("UCQfwfsi5VrQ8yKZ-UWmAEFg"),live2("UCQfwfsi5VrQ8yKZ-UWmAEFg")],"https://www.france24.com/en/live"],
     ["Euronews English","Europa · informativo",[vid("pykpO5kQJ98"),live("UCSrZ3UV4jOidv8ppoVuvW9Q"),live2("UCSrZ3UV4jOidv8ppoVuvW9Q")],"https://www.euronews.com/live"],
-    ["Bloomberg TV","Economía y mercados",[vid("iEpJwprxDdk"),live("UCIALMKvObZNtJ6AmdCLP7Lg"),live2("UCIALMKvObZNtJ6AmdCLP7Lg")],"https://www.bloomberg.com/live/us"]
+    ["Bloomberg TV","Economía y mercados",[vid("iEpJwprxDdk"),live("UCIALMKvObZNtJ6AmdCLP7Lg"),live2("UCIALMKvObZNtJ6AmdCLP7Lg")],"https://www.bloomberg.com/live/us"],
+    "Ciudades en vivo · cámaras (se abren en YouTube, filtradas por «en vivo»)",
+    ["Tokio · Shibuya","Cruce de Shibuya",[vid("_11BYUkE5Rk")],cam("Shibuya Crossing live camera")],
+    ["Nueva York","Times Square y Manhattan",[],cam("Times Square New York live cam")],
+    ["Buenos Aires","Obelisco y 9 de Julio",[],cam("Buenos Aires live cam Obelisco")],
+    ["Lima","Costa Verde y centro",[],cam("Lima Peru live cam")],
+    ["Madrid","Puerta del Sol y Gran Vía",[],cam("Madrid live cam Puerta del Sol")],
+    ["Londres","Támesis y Big Ben",[],cam("London live cam Big Ben")],
+    ["París","Torre Eiffel",[],cam("Paris live cam Eiffel Tower")],
+    ["Roma","Coliseo y plazas",[],cam("Rome live cam Italy")],
+    ["Venecia","Gran Canal",[],cam("Venice live cam Grand Canal")],
+    ["Dubái","Skyline y Burj Khalifa",[],cam("Dubai live cam skyline")],
+    ["Hong Kong","Puerto Victoria",[],cam("Hong Kong live cam Victoria Harbour")],
+    ["Sídney","Bahía y Ópera",[],cam("Sydney live cam harbour")],
+    ["Las Vegas","Strip",[],cam("Las Vegas Strip live cam")],
+    ["Miami","Playa y bahía",[],cam("Miami live cam")]
   ];
   let custom=[];try{custom=JSON.parse(localStorage.getItem("medieval-tv")||"[]")}catch(e){}
   const save=()=>{try{localStorage.setItem("medieval-tv",JSON.stringify(custom))}catch(e){}};
@@ -1500,7 +1553,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   async function play(sources,name,site,btn){
     try{$("rstop").click()}catch(e){}   // corta la radio para que no se mezclen
     stop();const my=tok;
-    if(!sources.length){st.textContent=name+" no se puede incrustar. Se abrió en una pestaña nueva.";window.open(site,"_blank","noopener");return}
+    if(!sources.length){st.textContent=/youtube\.com\/results/.test(site)?name+": se abrió YouTube con las cámaras en vivo. Si te gusta una, copia su enlace, pégalo abajo y toca «＋ Guardar» para tenerla aquí.":name+" no se puede incrustar. Se abrió en una pestaña nueva.";window.open(site,"_blank","noopener");return}
     if(btn)btn.classList.add("on");
     st.textContent="Cargando "+name+"…";
     const api=await loadAPI();if(my!==tok)return;
@@ -1631,28 +1684,35 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   const plus=n=>{const d=new Date();d.setDate(d.getDate()+n);return key(d)};
   const parse=s=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s);return m?new Date(+m[1],+m[2]-1,+m[3]):new Date()};
   const diff=s=>Math.round((parse(s)-parse(dk()))/864e5),str=(v,n)=>String(v==null?"":v).slice(0,n);
-  const S={obj:"",tarea:"",cuando:"",donde:"",id:"",premio:"",votos:0,pasos:[],rep:[],reg:[]};
+  const S={obj:"",tarea:"",cuando:"",donde:"",id:"",premio:"",votos:0,vd:{},pasos:[],rep:[],reg:[]};
   try{const c=JSON.parse(localStorage.getItem(K)||"null");
     if(c&&typeof c==="object"&&!Array.isArray(c)){
       ["obj","tarea","cuando","donde","id","premio"].forEach(k=>{if(typeof c[k]==="string")S[k]=c[k].slice(0,140)});
       S.votos=Math.max(0,Math.min(99999,Math.round(+c.votos)||0));
+      if(c.vd&&typeof c.vd==="object"&&!Array.isArray(c.vd))Object.keys(c.vd).forEach(k=>{if(DK.test(k))S.vd[k]=Math.max(0,Math.min(999,Math.round(+c.vd[k])||0))});
       if(Array.isArray(c.pasos))S.pasos=c.pasos.slice(0,12).map(p=>({t:str(p&&p.t,120),d:str(p&&p.d,10)})).filter(p=>p.t);
       if(Array.isArray(c.rep))S.rep=c.rep.slice(0,200).map(x=>({t:str(x&&x.t,160),n:Math.max(0,Math.min(3,Math.round(+(x&&x.n))||0)),due:DK.test(x&&x.due)?x.due:plus(1)})).filter(x=>x.t);
       if(Array.isArray(c.reg))S.reg=c.reg.slice(0,30).map(x=>({t:str(x&&x.t,100),d:DK.test(x&&x.d)?x.d:dk(),r:str(x&&x.r,2000),g:str(x&&x.g,1000)})).filter(x=>x.t||x.r||x.g);
     }}catch(e){}
   const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+  // Votos por día (se guardan 90 días) y por semana (lunes a domingo)
+  const vHoy=()=>S.vd[dk()]||0,vSem=()=>{const d=new Date();d.setDate(d.getDate()-((d.getDay()+6)%7));const a=key(d);let n=0;for(const k in S.vd)if(k>=a)n+=S.vd[k];return n};
+  const addVd=()=>{const h=dk();S.vd[h]=(S.vd[h]||0)+1;const lim=plus(-90);Object.keys(S.vd).forEach(k=>{if(k<lim)delete S.vd[k]})};
   const btn=(txt,fn)=>{const b=document.createElement("button");b.type="button";b.textContent=txt;b.onclick=fn;return b};
   // Aviso breve y discreto
   const toast=$("pitoast")||document.body.appendChild(Object.assign(document.createElement("div"),{id:"pitoast"}));
   toast.setAttribute("role","status");let tt=0;
   const tx=btn("✕",()=>{clearTimeout(tt);toast.classList.remove("on")});tx.className="pitx";tx.title="Cerrar mensaje";tx.setAttribute("aria-label","Cerrar mensaje");
-  const say=(m,ms)=>{toast.textContent="";const sp=document.createElement("span");sp.textContent=m;toast.append(sp,tx);toast.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove("on"),ms||7000)};
+  const place=()=>{const tr=$("pmtren");toast.style.top="";toast.style.bottom="";if(!tr)return;
+    const ov=()=>{const a=toast.getBoundingClientRect(),b=tr.getBoundingClientRect();return a.bottom>b.top-14&&a.top<b.bottom+14&&a.right>b.left-14&&a.left<b.right+14};
+    if(!ov())return;toast.style.bottom="auto";toast.style.top="calc(14px + env(safe-area-inset-top,0px))";if(ov()){toast.style.top="";toast.style.bottom=""}};
+  const say=(m,ms)=>{toast.textContent="";const sp=document.createElement("span");sp.textContent=m;toast.append(sp,tx);toast.classList.add("on");place();setTimeout(place,700);clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove("on"),ms||7000)};
   const nextStep=()=>{const t=dk();return S.pasos.find(p=>p.d!==t)};
   function paint(){
     const t=dk(),tot=S.pasos.length,hec=S.pasos.filter(p=>p.d===t).length,sig=nextStep(),meta=S.tarea||S.obj;
     $("pipro").textContent=tot?hec+"/"+tot+" pasos hoy":"";
     $("pisum").textContent=(meta?"Meta de hoy: "+meta:"")+(sig?(meta?" · ":"")+"Ahora: "+sig.t:"");
-    $("pivotos").textContent=S.votos?"🗳 "+S.votos+(S.votos==1?" voto":" votos")+" por tu identidad":"";
+    $("pivotos").textContent=S.votos?"🗳 "+S.votos+(S.votos==1?" voto":" votos")+" por tu identidad · hoy "+vHoy()+" · semana "+vSem():"";
   }
   // Camino: pasos editables
   const L=$("pilist");
@@ -1733,8 +1793,8 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   // Al completar un pomodoro: voto de identidad, premio y recordatorio de recuerdo activo
   const pmc=$("pmc"),num=()=>parseInt((pmc.textContent||"").replace(/\D/g,""),10)||0;let last=num();
   new MutationObserver(()=>{const n=num();
-    if(n>last){S.votos++;save();paint();if(!$("ea-tema").value&&S.tarea)$("ea-tema").value=S.tarea.slice(0,100);
-      say("🗳 "+(S.id?"Otro voto: soy alguien que "+S.id+".":"Pomodoro completado.")+(S.premio?" Ahora te toca: "+S.premio+".":"")+" Respondé las preguntas de recuerdo activo en tu documento Word, sin mirar apuntes.",10000)}
+    if(n>last){S.votos++;addVd();save();paint();if(!$("ea-tema").value&&S.tarea)$("ea-tema").value=S.tarea.slice(0,100);
+      say("🗳 "+(S.id?"Otro voto: soy alguien que "+S.id+".":"Pomodoro completado.")+" (Hoy: "+vHoy()+" · semana: "+vSem()+".)"+(S.premio?" Ahora te toca: "+S.premio+".":"")+" Respondé las preguntas de recuerdo activo en tu documento Word, sin mirar apuntes.",10000)}
     last=n}).observe(pmc,{childList:true,characterData:true,subtree:true});
   // Aviso a 5 minutos del final del enfoque: dejar de estudiar y recordar
   const pmt=$("pmt");let warned=false;
@@ -1807,5 +1867,39 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
 @media(max-width:600px){#pomo.fs #pmgoal-normal{width:min(280px,72vw)!important;height:5px!important;min-height:5px!important;margin-top:8px!important;}}
 </style>
 
+<style id="tren-vapor">
+/* Tren a vapor que avanza sobre la barra de meta diaria y echa humo */
+#pmtrw{--tw:100px;display:block;position:relative;width:100%;height:calc(var(--tw)*.44);margin:0 0 -30px;flex:0 0 100%;pointer-events:none;z-index:2}
+#pmtren{position:absolute;bottom:-1px;left:calc((100% - var(--tw)) * var(--p,0));width:var(--tw);height:calc(var(--tw)*.44);transition:left .6s ease}
+#pmtren svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 1px 1px #0007)}
+#pmtren{--dur:3.4s}#pmtrw.run #pmtren{--dur:1.75s}
+#pmtren .pf{position:absolute;left:calc(87% - 8px);top:calc(10% - 8px);width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 40% 38%,#f4f1e8f2 0%,#cfcabff0 38%,#9c978d99 62%,#9c978d00 76%);opacity:0;animation:trpf var(--dur) linear infinite;animation-delay:calc(var(--dur)*var(--k)/5);will-change:transform,opacity}
+#pmtren .pf:nth-child(1){--k:0;--dx:-70px;--dy:-38px;--s:2.8;background:radial-gradient(circle at 40% 38%,#8d8982f2 0%,#6f6b66dd 40%,#6f6b6699 62%,#6f6b6600 76%)}
+#pmtren .pf:nth-child(2){--k:1;--dx:-58px;--dy:-48px;--s:2.5}
+#pmtren .pf:nth-child(3){--k:2;--dx:-88px;--dy:-34px;--s:3.1}
+#pmtren .pf:nth-child(4){--k:3;--dx:-64px;--dy:-54px;--s:2.6}
+#pmtren .pf:nth-child(5){--k:4;--dx:-78px;--dy:-42px;--s:2.9}
+#pmtren .tw{transform-box:fill-box;transform-origin:center}
+#pmtrw.run .tw{animation:trspin .7s linear infinite}
+#pmtrw.run .rod{animation:trrod .7s linear infinite}
+#pmtrw.run svg{animation:trbob .3s ease-in-out infinite alternate}
+@keyframes trpf{0%{transform:translate(0,0) scale(.3);opacity:0}12%{opacity:.95}45%{transform:translate(calc(var(--dx)*.35),calc(var(--dy)*.62)) scale(calc(var(--s)*.55));opacity:.8}100%{transform:translate(var(--dx),var(--dy)) scale(var(--s));opacity:0}}
+@keyframes trspin{to{transform:rotate(360deg)}}
+@keyframes trrod{0%{transform:translate(0,-3px)}25%{transform:translate(3px,0)}50%{transform:translate(0,3px)}75%{transform:translate(-3px,0)}100%{transform:translate(0,-3px)}}
+@keyframes trbob{from{transform:translateY(0)}to{transform:translateY(-.7px)}}
+@media(max-width:600px){#pmtrw{--tw:80px}}
+#pomo.fs #pmtrw{order:3;flex:0 1 auto;width:min(360px,78vw);margin:clamp(8px,1.8vh,16px) auto calc(-1*clamp(8px,1.8vh,16px))}
+@media(max-width:600px){#pomo.fs #pmtrw{width:min(280px,72vw);margin:8px auto -8px}}
+@media(prefers-reduced-motion:reduce){#pmtrw *{animation:none!important;transition:none!important}}
+</style>
+<script>
+(()=>{const f=document.getElementById("pmgf-normal"),t=document.getElementById("pmtren"),w=document.getElementById("pmtrw"),go=document.getElementById("pmgo");if(!f||!t||!w)return;
+const sync=()=>{const p=parseFloat(f.style.width)||0;t.style.setProperty("--p",Math.max(0,Math.min(1,p/100)))};
+const bar=f.parentElement,pomo=document.getElementById("pomo");
+const fit=()=>{const gap=parseFloat(getComputedStyle(w.parentElement).rowGap)||0,mt=parseFloat(getComputedStyle(bar).marginTop)||0;w.style.marginBottom=-(gap+mt)+"px"};
+fit();addEventListener("resize",fit);if(pomo)new MutationObserver(()=>{fit();requestAnimationFrame(fit)}).observe(pomo,{attributes:true,attributeFilter:["class"]});
+new MutationObserver(sync).observe(f,{attributes:true,attributeFilter:["style"]});sync();
+if(go){const r=()=>w.classList.toggle("run",go.textContent.indexOf("Pausar")>-1);new MutationObserver(r).observe(go,{childList:true,characterData:true,subtree:true});r()}})();
+</script>
 </body>
 </html>
