@@ -362,6 +362,78 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
 #pisum:empty{display:none!important}
 #pitoast{position:fixed;left:50%;bottom:calc(70px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;max-width:min(560px,92vw);padding:12px 18px;background:#0a1228f2;color:#f6ecd2;border:1px solid #c9a24a;border-radius:4px;box-shadow:0 6px 20px #000a;font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;line-height:1.4;text-align:center;display:none;pointer-events:none}
 #pitoast.on{display:block}
+
+/* ---- Ajustes solicitados: objetivo diario editable y estudio activo más ligero ---- */
+#pmhab{max-width:680px;gap:10px;border-top:1px solid #ffffff1c;color:#e8edf8}
+#pmtrig{font-size:14px;color:#dce5f5;line-height:2}
+#pmtrig input,#pmcli{border-bottom:1px solid #8ca5ce;background:#ffffff0c;color:#f4f7ff}
+#pmgoal{display:block;padding:12px 14px;border:1px solid #ffffff20;border-radius:12px;background:linear-gradient(135deg,#ffffff10,#ffffff05);box-shadow:inset 0 1px #ffffff0b}
+.pm-goal-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px;color:#eaf0fb;font-size:13px}
+.pm-goal-head label{font-weight:700}
+#pmgoaln{width:58px;padding:5px 6px!important;border:1px solid #8ca5ce!important;border-radius:8px!important;background:#101d36!important;color:#fff!important;font-size:15px!important}
+#pmgt{margin-left:auto;color:#dbeafe;font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+#pmgb{height:12px;border:0;border-radius:99px;background:#ffffff20;box-shadow:inset 0 1px 2px #0003}
+#pmgf{border-radius:99px;background:linear-gradient(90deg,#75d6bb,#9ae6b4);box-shadow:0 0 12px #75d6bb55}
+#pmgoalhint{margin-top:7px;color:#b8c7df;font:12px 'Cormorant Garamond',serif}
+#pmstr{color:#dce7fb}
+#pmcl{border:1px solid #ffffff20;border-radius:10px;background:#ffffff08}
+#pmlog{color:#c9d8ee}
+#ea{max-width:1000px;padding:22px 20px 20px;background:linear-gradient(145deg,#172642,#101a30);border:1px solid #60789c;border-radius:16px;outline:0;box-shadow:0 12px 32px #0003;font-size:17px}
+#ea h2{font-family:'Cinzel',Georgia,serif;font-size:clamp(22px,3vw,29px);font-weight:700;color:#e8eefb;letter-spacing:.5px}
+#ea h2:before{content:"✦";font-size:15px;color:#9edcc9;margin-right:10px}
+#ea h2:after{content:"✦";font-size:15px;color:#9edcc9;margin-left:10px}
+.ea-lead{color:#c5d3e8;font-size:16px;max-width:70ch;margin-bottom:20px}
+.ea-grid{gap:16px}
+.ea-card{gap:12px;padding:16px;border:1px solid #ffffff18;border-radius:14px;background:linear-gradient(150deg,#ffffff0d,#ffffff05);box-shadow:0 5px 16px #00000012}
+.ea-card h3,.ea-card h4{font-family:'Cinzel',Georgia,serif;color:#bce8dc}
+.ea-card h3{font-size:14px;line-height:1.5}
+.ea-card h4{border-top:1px solid #ffffff18}
+.ea-f>span,.pi-row>span{color:#c6d8f0}
+#ea input,#ea textarea{border:1px solid #ffffff20;border-bottom:2px solid #8fcfbd;background:#0c1629;color:#f4f7ff;border-radius:8px;padding:9px 10px}
+#ea input::placeholder,#ea textarea::placeholder{color:#8fa2bf}
+#ea button{border:1px solid #6b8b9b;border-radius:8px;background:#243751;color:#edf5ff;box-shadow:none;text-shadow:none}
+#ea button:hover{background:#304964}
+#pilist li.now{border-radius:8px;background:#9edcc91a;border-left-color:#9edcc9}
+#ea-due li{border-radius:8px;border-left-color:#9edcc9;background:#9edcc90d;padding:9px}
+#ea-due small,#ea-next,#ea-regl{color:#c0d0e6}
+#ea-reg summary{color:#bce8dc}
+#pivotos{color:#bce8dc}
+@media(max-width:700px){#ea{padding:18px 14px;margin-left:10px;margin-right:10px;border-radius:13px}.ea-card{padding:13px;border-radius:12px}.pm-goal-head{gap:8px}}
+
+
+/* Meta visible también fuera del panel, para que el progreso nunca quede escondido */
+#pmgoal-preview{width:min(100%,620px);box-sizing:border-box;margin:12px auto;padding:12px 14px;border:1px solid #8fcfbd66;border-radius:14px;background:linear-gradient(135deg,#1b2d49,#101a2d);box-shadow:0 8px 22px #0002;color:#f1f7ff}
+.pm-preview-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:9px;font-size:14px}
+.pm-preview-head strong{margin-left:auto;color:#c7f4e5;font-variant-numeric:tabular-nums}
+#pmgoal-open{border:1px solid #8fcfbd88;border-radius:8px;background:#ffffff0c;color:#d9f5eb;padding:6px 10px;font-size:12px}
+#pmgb-preview{height:14px;overflow:hidden;border-radius:99px;background:#ffffff20;box-shadow:inset 0 2px 4px #0004}
+#pmgf-preview{display:block;width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,#62d6b1,#b2f7c8);box-shadow:0 0 18px #75d6bb88;transition:width .35s ease}
+/* Configuración reunida en un panel claro y visual */
+#pmset{display:block;width:min(100%,780px);box-sizing:border-box;margin:14px auto 4px;padding:16px;border:1px solid #8fcfbd66;border-radius:18px;background:linear-gradient(145deg,#1b2d49,#101a2d);box-shadow:0 10px 28px #0003;letter-spacing:normal;text-align:left}
+#pmset[hidden]{display:none}
+.pm-set-title{margin:0 0 14px;color:#c7f4e5;font:700 16px 'Cinzel',Georgia,serif;text-align:center}
+.pm-set-times{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid #ffffff1c}
+.pm-set-times>label{display:flex;align-items:center;gap:7px;padding:9px 11px;border:1px solid #ffffff16;border-radius:11px;background:#ffffff08;color:#e8edf8;font-size:13px}
+#pmset .pm-set-times input[type=number]{width:70px;box-sizing:border-box;border:1px solid #8ca5ce;border-radius:8px;background:#0c1629;color:#fff;text-align:center;padding:7px;font-size:16px}
+#pmset .pm-vol{font-size:13px;color:#d9f5eb;letter-spacing:normal}
+#pmset .pm-vol input{width:110px;accent-color:#8ce0c5}
+#pmgoal{display:block;padding:14px;border:1px solid #8fcfbd55;border-radius:14px;background:linear-gradient(135deg,#9edcc912,#ffffff08);box-shadow:inset 0 1px #ffffff0a}
+.pm-goal-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;color:#f1f7ff;font-size:14px}
+.pm-goal-edit{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.pm-goal-edit span{font-size:12px;color:#b8c7df}
+#pmgoaln{width:86px;box-sizing:border-box;padding:8px 9px!important;border:1px solid #8fcfbd!important;border-radius:10px!important;background:#0c1629!important;color:#fff!important;font-size:18px!important;font-weight:700;text-align:center}
+#pmgoaln:focus{outline:2px solid #9edcc9;outline-offset:2px}
+#pmgt{margin-left:auto;color:#c7f4e5;font-size:14px;font-weight:800;font-variant-numeric:tabular-nums}
+#pmgb{height:18px;overflow:hidden;border:1px solid #ffffff1c;border-radius:99px;background:#ffffff17;box-shadow:inset 0 2px 4px #0004}
+#pmgf{display:block;width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,#62d6b1,#b2f7c8);box-shadow:0 0 18px #75d6bb88;transition:width .35s ease}
+#pmgoalhint{margin-top:9px;color:#c2d3e8;font:13px system-ui,sans-serif}
+.ea-questions-card{align-content:start}
+.ea-question-note{margin:0;color:#c5d3e8;font-size:14px}
+.ea-questions{margin:0;padding-left:24px;display:flex;flex-direction:column;gap:12px;color:#f0f5ff}
+.ea-questions li{padding:10px 12px;border:1px solid #ffffff14;border-left:3px solid #9edcc9;border-radius:9px;background:#9edcc90b;line-height:1.45}
+#ea-copy-questions{justify-self:start;margin-top:4px}
+@media(max-width:600px){#pmset{padding:12px}#pmset .pm-set-times{align-items:stretch}#pmset .pm-set-times>label{justify-content:space-between;flex:1 1 220px}.pm-goal-head{align-items:flex-start}.pm-goal-head #pmgt{width:100%;margin-left:0}.ea-questions{gap:9px}}
+
 </style>
 </head>
 <body>
@@ -457,25 +529,36 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
   <div class="pm-row">
     <div class="pm-modes"><button data-m="0" class="on">Enfoque</button><button data-m="1">Descanso</button><button data-m="2">Largo</button></div>
     <div id="pmt" aria-live="off">25:00</div>
-    <div class="pm-ctl"><button id="pmgo">▶ Iniciar</button><button id="pmrs" title="Reiniciar">↺</button><button id="pmsk" title="Saltar a la siguiente fase (si estás en Enfoque, cuenta como pomodoro hecho)">⏭ Saltar</button><button id="pmcfg">⚙ Tiempo</button><button id="pmeyeb" title="Descanso visual: 20 segundos mirando algo lejano">👁 20 s</button><button id="pmnight" title="Modo noche: más oscuro y cálido">🌙</button><button id="pmfs" title="Agrandar el Pomodoro y ocultar todo lo demás (Esc para salir)">⛶ Enfocar</button></div>
+    <div class="pm-ctl"><button id="pmgo">▶ Iniciar</button><button id="pmrs" title="Reiniciar">↺</button><button id="pmsk" title="Saltar a la siguiente fase (si estás en Enfoque, cuenta como pomodoro hecho)">⏭ Saltar</button><button id="pmcfg" aria-expanded="false" aria-controls="pmset">⚙ Configuración</button><button id="pmeyeb" title="Descanso visual: 20 segundos mirando algo lejano">👁 20 s</button><button id="pmnight" title="Modo noche: más oscuro y cálido">🌙</button><button id="pmfs" title="Agrandar el Pomodoro y ocultar todo lo demás (Esc para salir)">⛶ Enfocar</button></div>
     <div class="pm-cnt"><button id="pmmin" title="Quitar un pomodoro">−</button><span id="pmc" title="Pomodoros completados hoy">🍅 0</span><button id="pmpls" title="Sumar un pomodoro">+</button></div>
+    <div id="pmgoal-preview" aria-label="Progreso diario de pomodoros">
+      <div class="pm-preview-head"><span>🎯 Meta diaria</span><strong id="pmgt-preview">0 / 8</strong><button id="pmgoal-open" type="button">Editar meta</button></div>
+      <div id="pmgb-preview" role="progressbar" aria-label="Progreso diario" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf-preview"></i></div>
+    </div>
     <div id="pmwk" title="Pomodoros completados esta semana (lunes a hoy)"></div>
     <div id="pmeye"></div>
-    <label class="pm-vol" title="Volumen de la voz del Pomodoro y de la bienvenida (0 = silencio)">🔊 Voz <input id="pmvol" type="range" min="0" max="100" step="5" value="50"></label>
   </div>
   <div id="pmhab">
     <div id="pmtrig">Después de <input id="pmtg" maxlength="40" placeholder="tomar mate o café" autocomplete="off" aria-label="Disparador"> estudio <input id="pmwh" maxlength="40" placeholder="mi materia" autocomplete="off" aria-label="Qué estudio"> durante un pomodoro.</div>
-    <div id="pmgoal"><div id="pmgb"><i id="pmgf"></i></div><span id="pmgt"></span></div>
     <div id="pmstr"></div>
     <div id="pisum"></div>
     <div id="pmcl" hidden><label>¿Qué avanzaste? <input id="pmcli" maxlength="140" placeholder="Una línea: qué hiciste o aprendiste" autocomplete="off"></label><span><button id="pmcls" type="button">Guardar</button> <button id="pmclo" type="button">Omitir</button></span></div>
     <ul id="pmlog"></ul>
   </div>
   <div id="pmor"></div>
-  <div id="pmset" hidden>
-    <label>Enfoque <input type="number" id="pm0" min="1" max="180"> min</label>
-    <label>Descanso <input type="number" id="pm1" min="1" max="60"> min</label>
-    <label>Largo <input type="number" id="pm2" min="1" max="90"> min</label>
+  <div id="pmset" hidden aria-label="Configuración del Pomodoro">
+    <h3 class="pm-set-title">⚙ Configuración</h3>
+    <div class="pm-set-times">
+      <label>Enfoque <input type="number" id="pm0" min="1" max="180"> <span>min</span></label>
+      <label>Descanso <input type="number" id="pm1" min="1" max="60"> <span>min</span></label>
+      <label>Descanso largo <input type="number" id="pm2" min="1" max="90"> <span>min</span></label>
+      <label class="pm-vol" title="Volumen de la voz del Pomodoro y de la bienvenida (0 = silencio)">🔊 Voz <input id="pmvol" type="range" min="0" max="100" step="5" value="50"></label>
+    </div>
+    <div id="pmgoal" aria-label="Objetivo diario de pomodoros">
+      <div class="pm-goal-head"><label for="pmgoaln">🎯 Objetivo diario de pomodoros</label><div class="pm-goal-edit"><input id="pmgoaln" type="number" min="1" max="999" step="1" value="8" inputmode="numeric" aria-label="Cantidad objetivo de pomodoros por día"><span>pomodoros / día</span></div><span id="pmgt">0 / 8</span></div>
+      <div id="pmgb" role="progressbar" aria-label="Progreso diario de pomodoros" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf"></i></div>
+      <div id="pmgoalhint">Elegí una meta de 1 a 999 pomodoros por día.</div>
+    </div>
   </div>
   <div id="pmwx"><button class="wxb" type="button"></button><span class="ckt"></span></div>
 </div>
@@ -496,16 +579,24 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
       <label class="pi-row"><span>🎁 Mi premio</span><input id="pi-premio" maxlength="100" placeholder="un café y 5 min de música" autocomplete="off"></label>
       <div class="pi-foot"><button id="pi2m" type="button" title="Regla de los 2 minutos: empieza solo 2 minutos; después decides">⏱ Solo 2 minutos</button><span id="pivotos"></span></div>
     </div>
-    <div class="ea-card">
-      <h3>Recuerdo activo</h3>
-      <label class="ea-f"><span>Tema</span><input id="ea-tema" maxlength="100" placeholder="Límites laterales" autocomplete="off"></label>
-      <label class="ea-f"><span>Explícalo de memoria, con palabras simples</span><textarea id="ea-rec-t" rows="4" maxlength="2000" placeholder="Sin mirar apuntes: ¿qué recuerdas y cómo se lo explicarías a alguien?"></textarea></label>
-      <label class="ea-f"><span>Lo que no me salió (una idea por línea)</span><textarea id="ea-gap" rows="3" maxlength="1000" placeholder="Cada línea se programa para repasar"></textarea></label>
-      <div class="ea-act"><button id="ea-save" class="on" type="button">Guardar y programar repasos</button></div>
-      <h4>Para repasar hoy <b id="ea-n"></b></h4>
-      <ul id="ea-due"></ul>
-      <p id="ea-next"></p>
-      <details id="ea-reg"><summary id="ea-regs">Registro de recuerdos</summary><ul id="ea-regl"></ul></details>
+    <div class="ea-card ea-questions-card">
+      <h3>Recuerdo activo · Preguntas</h3>
+      <p class="ea-question-note">Respondé estas preguntas en un documento Word aparte, sin mirar tus apuntes.</p>
+      <ol class="ea-questions">
+        <li>¿Cuál es la idea principal del tema?</li>
+        <li>¿Cómo la explicarías con tus propias palabras?</li>
+        <li>¿Qué conceptos, definiciones o reglas son imprescindibles?</li>
+        <li>¿Qué pasos seguirías para resolver un problema o aplicar lo aprendido?</li>
+        <li>¿Por qué funciona? ¿Podés justificarlo con un ejemplo?</li>
+        <li>¿Con qué otro tema se relaciona?</li>
+        <li>¿Qué parte te cuesta recordar o podrías confundir?</li>
+        <li>¿Qué pregunta importante podrían hacerte en un examen?</li>
+      </ol>
+      <button id="ea-copy-questions" type="button">⧉ Copiar preguntas para Word</button>
+      <div class="ea-legacy" hidden>
+        <input id="ea-tema"><textarea id="ea-rec-t"></textarea><textarea id="ea-gap"></textarea><button id="ea-save" type="button">Guardar</button>
+        <b id="ea-n"></b><ul id="ea-due"></ul><p id="ea-next"></p><details id="ea-reg"><summary id="ea-regs">Registro</summary><ul id="ea-regl"></ul></details>
+      </div>
     </div>
   </div>
 </section>
@@ -1270,7 +1361,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   const sl=$("pmvol");sl.value=Math.round(vozVol*100);
   sl.oninput=()=>{vozVol=sl.value/100;setVoz();if(window.WEL)window.WEL.volume=vozAmp();try{localStorage.setItem("medieval-voz",String(vozVol))}catch(e){}};
   sl.onchange=()=>{if(vozAmp())voz("ini")};   // al soltar, suena una muestra a ese volumen
-  $("pmcfg").onclick=()=>{const s=$("pmset");s.hidden=!s.hidden};
+  $("pmcfg").onclick=()=>{const s=$("pmset"),b=$("pmcfg");s.hidden=!s.hidden;b.setAttribute("aria-expanded",String(!s.hidden));b.textContent=s.hidden?"⚙ Configuración":"✕ Cerrar configuración";if(!s.hidden)s.scrollIntoView({behavior:"smooth",block:"nearest"})};
   // Modo enfoque: el Pomodoro ocupa toda la pantalla (Esc o el botón para salir)
   const pomo=$("pomo");
   function focusMode(on){
@@ -1595,7 +1686,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   const pmc=$("pmc"),num=()=>parseInt((pmc.textContent||"").replace(/\D/g,""),10)||0;let last=num();
   new MutationObserver(()=>{const n=num();
     if(n>last){S.votos++;save();paint();if(!$("ea-tema").value&&S.tarea)$("ea-tema").value=S.tarea.slice(0,100);
-      say("🗳 "+(S.id?"Otro voto: soy alguien que "+S.id+".":"Pomodoro completado.")+(S.premio?" Ahora te toca: "+S.premio+".":"")+" Anota de memoria lo que recuerdas, abajo.",10000)}
+      say("🗳 "+(S.id?"Otro voto: soy alguien que "+S.id+".":"Pomodoro completado.")+(S.premio?" Ahora te toca: "+S.premio+".":"")+" Respondé las preguntas de recuerdo activo en tu documento Word, sin mirar apuntes.",10000)}
     last=n}).observe(pmc,{childList:true,characterData:true,subtree:true});
   // Aviso a 5 minutos del final del enfoque: dejar de estudiar y recordar
   const pmt=$("pmt");let warned=false;
@@ -1604,12 +1695,48 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     const s=secs(),on=document.querySelector(".pm-modes button.on");
     if(s>300||s<0){warned=false;return}
     if(warned||s===0||!running()||!on||on.dataset.m!=="0"||(+$("pm0").value||25)*60<=300)return;
-    warned=true;say("Quedan 5 minutos: cierra todo y escribe de memoria lo que recuerdas, en papel o en el recuadro de abajo.",10000);
+    warned=true;say("Quedan 5 minutos: cierra todo y respondé las preguntas de recuerdo activo en tu documento Word, sin mirar apuntes.",10000);
   }).observe(pmt,{childList:true,characterData:true,subtree:true});
   // Los pasos y repasos se actualizan al volver a la pestaña (cambio de día)
   document.addEventListener("visibilitychange",()=>{if(!document.hidden){render();renderRep()}});
   render();renderRep();
 })();
 </script>
+
+<script>
+/* Meta diaria editable: admite objetivos de 1 a 999 y conserva la elección en este navegador. */
+(()=> {
+ const $=id=>document.getElementById(id), input=$("pmgoaln"), fill=$("pmgf"), label=$("pmgt"), bar=$("pmgb"), hint=$("pmgoalhint"), count=$("pmc"), previewFill=$("pmgf-preview"), previewLabel=$("pmgt-preview"), previewBar=$("pmgb-preview");
+ if(!input||!fill||!label||!bar||!count)return;
+ const key="medieval-pomo-goal";
+ const parseGoal=()=>{const n=Number.parseInt(input.value,10);return Number.isFinite(n)&&n>=1?Math.min(999,n):8};
+ try{const saved=localStorage.getItem(key);if(saved!==null)input.value=String(Math.max(1,Math.min(999,parseInt(saved,10)||8)))}catch(e){}
+ function update(saveGoal=false,finalize=false){
+   if(finalize){const goal=parseGoal();input.value=String(goal)}
+   const raw=Number.parseInt(input.value,10);
+   const goal=Number.isFinite(raw)&&raw>=1?Math.min(999,raw):parseGoal();
+   const match=(count.textContent||"").match(/\d+/),done=match?Math.max(0,parseInt(match[0],10)):0;
+   const pct=Math.min(100,done/goal*100);
+   fill.style.width=pct+"%";label.textContent=done+" / "+goal;
+   if(previewFill)previewFill.style.width=pct+"%";if(previewLabel)previewLabel.textContent=done+" / "+goal;
+   bar.setAttribute("aria-valuemax",String(goal));bar.setAttribute("aria-valuenow",String(Math.min(done,goal)));if(previewBar){previewBar.setAttribute("aria-valuemax",String(goal));previewBar.setAttribute("aria-valuenow",String(Math.min(done,goal)));}
+   hint.textContent=done>=goal?"¡Objetivo cumplido! Excelente trabajo de hoy.":"Te faltan "+(goal-done)+" pomodoro"+(goal-done===1?"":"s")+" para alcanzar tu objetivo.";
+   if(saveGoal||finalize){try{localStorage.setItem(key,String(goal))}catch(e){}}
+ }
+ const openBtn=$("pmgoal-open");if(openBtn)openBtn.addEventListener("click",()=>{const panel=$("pmset"),btn=$("pmcfg");if(panel&&panel.hidden){panel.hidden=false;if(btn){btn.setAttribute("aria-expanded","true");btn.textContent="✕ Cerrar configuración"}}input.focus();panel&&panel.scrollIntoView({behavior:"smooth",block:"nearest"});});
+ input.addEventListener("input",()=>update(false,false));
+ input.addEventListener("change",()=>update(true,true));
+ input.addEventListener("blur",()=>update(true,true));
+ new MutationObserver(()=>update(false,false)).observe(count,{childList:true,characterData:true,subtree:true});
+ const copyBtn=$("ea-copy-questions");
+ if(copyBtn)copyBtn.addEventListener("click",()=>{
+   const questions=[...document.querySelectorAll(".ea-questions li")].map((li,i)=>(i+1)+". "+li.textContent.trim()).join("\n");
+   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(questions).then(()=>{copyBtn.textContent="✓ Preguntas copiadas";setTimeout(()=>copyBtn.textContent="⧉ Copiar preguntas para Word",1800)}).catch(()=>fallbackCopy(questions))}else fallbackCopy(questions);
+   function fallbackCopy(text){const ta=document.createElement("textarea");ta.value=text;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();try{document.execCommand("copy");copyBtn.textContent="✓ Preguntas copiadas"}catch(e){window.prompt("Copiá estas preguntas:",text)}ta.remove();setTimeout(()=>copyBtn.textContent="⧉ Copiar preguntas para Word",1800)}
+ });
+ update(false,false);
+})();
+</script>
+
 </body>
 </html>
