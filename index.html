@@ -261,6 +261,8 @@ html[data-theme=dark] #tzsel{background:transparent;color:#f2dc96}
 @media(min-width:900px){#tzw{height:32px;border-radius:16px;top:calc(10px + env(safe-area-inset-top,0px));left:78px;padding:0 10px 0 2px}#tzsel{width:124px;height:30px;font-size:13px;padding:0 2px 0 6px}#eshr{font-size:15px;padding-left:8px}}
 @media(max-width:600px){#tzw{left:76px;padding:0 9px 0 2px;max-width:calc(100vw - 86px - 140px)}#tzsel{width:96px;font-size:11px;padding:0 2px 0 5px}#eshr{font-size:12px;padding-left:7px}}
 @media(max-width:400px){#tzw{left:72px;max-width:calc(100vw - 80px - 132px)}#tzsel{width:84px;font-size:10px}#eshr{font-size:11px}}
+#todob{position:fixed;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6}
+@media(min-width:900px){#todob{font-size:19px;padding:14px 30px;border-radius:5px}}
 .td-nav{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 6px}
 .td-nav input[type=date],#tdadd input{font:inherit;font-size:16px;padding:7px 9px;border:1px solid var(--gold);background:#fff8e4;color:#1a1208;border-radius:3px}
 #tdadd input::placeholder{color:#6b5a3a;opacity:1}
@@ -327,6 +329,7 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
   <figure class="frame"><img id="imk" alt="Caballero medieval cabalgando hacia un castillo al amanecer"><figcaption>Hazlo por la leyenda</figcaption></figure>
   <figure class="frame"><img id="imc" alt="Pintura de la Última Cena"><figcaption>La Última Cena</figcaption></figure>
 </div></section>
+<button id="todob" type="button" title="Abre el To-Do dentro del Tablón">To-Do</button>
 <div id="nightv"></div>
 <div id="oracle"><div class="box">
   <div class="ban" id="oban"></div>
@@ -1004,7 +1007,7 @@ document.getElementById("radio").onclick=e=>{if(e.target.id=="radio")e.target.cl
 /* ---- Tablón de noticias (lee news.json, que se renueva a diario) ---- */
 const NSEC=[["items","🌍 Geopolítica"],["politica","⚖️ Política"],["diarias","🗞️ Diarias"],["newsletter","📬 Newsletter"]];
 let NJ=null,NS="items";
-window.__tdBadgeUpd=()=>{const b=document.querySelector("#ntabs [data-td]");if(b)b.textContent="To-Do"+(window.__tdN?" ("+window.__tdN+")":"")};
+window.__tdBadgeUpd=()=>{const t="To-Do"+(window.__tdN?" ("+window.__tdN+")":"");const b=document.querySelector("#ntabs [data-td]");if(b)b.textContent=t;const o=document.getElementById("todob");if(o)o.textContent=t};
 function showNews(){
   const l=document.getElementById("nl"),tb=document.getElementById("ntabs");
   tb.innerHTML="";l.innerHTML="";
@@ -1055,7 +1058,8 @@ async function loadNews(){
     showNews();
   }catch(e){NJ=NJ||{};showNews();if(NS!="todo")l.textContent="No se pudo cargar el tablón. Ábrelo desde GitHub Pages: abierto como archivo local el navegador bloquea la lectura."}
 }
-document.getElementById("newb").onclick=()=>{if(NS=="todo"&&window.__tdOpen)window.__tdOpen();loadNews();document.getElementById("news").classList.add("show")};
+document.getElementById("todob").onclick=()=>{NS="todo";if(window.__tdOpen)window.__tdOpen();loadNews();document.getElementById("news").classList.add("show")};
+document.getElementById("newb").onclick=()=>{if(NS=="todo")NS="items";loadNews();document.getElementById("news").classList.add("show")};
 document.getElementById("nclose").onclick=()=>document.getElementById("news").classList.remove("show");
 document.getElementById("news").onclick=e=>{if(e.target.id=="news")e.target.classList.remove("show")};
 
