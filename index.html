@@ -401,13 +401,13 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
 @media(max-width:700px){#ea{padding:18px 14px;margin-left:10px;margin-right:10px;border-radius:13px}.ea-card{padding:13px;border-radius:12px}.pm-goal-head{gap:8px}}
 
 
-/* Meta visible también fuera del panel, para que el progreso nunca quede escondido */
-#pmgoal-preview{width:min(100%,620px);box-sizing:border-box;margin:12px auto;padding:12px 14px;border:1px solid #8fcfbd66;border-radius:14px;background:linear-gradient(135deg,#1b2d49,#101a2d);box-shadow:0 8px 22px #0002;color:#f1f7ff}
-.pm-preview-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:9px;font-size:14px}
-.pm-preview-head strong{margin-left:auto;color:#c7f4e5;font-variant-numeric:tabular-nums}
-#pmgoal-open{border:1px solid #8fcfbd88;border-radius:8px;background:#ffffff0c;color:#d9f5eb;padding:6px 10px;font-size:12px}
-#pmgb-preview{height:14px;overflow:hidden;border-radius:99px;background:#ffffff20;box-shadow:inset 0 2px 4px #0004}
-#pmgf-preview{display:block;width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,#62d6b1,#b2f7c8);box-shadow:0 0 18px #75d6bb88;transition:width .35s ease}
+/* Vista normal minimalista; en modo Enfocar se recupera el panel de meta diaria */
+#pmgoal-preview{display:none;width:100%;box-sizing:border-box;margin:14px auto 0;padding:0;border:0;background:transparent;box-shadow:none;order:99;flex:0 0 100%;}
+.pm-goal-preview-head{display:none;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;color:#f1f7ff;font-size:14px}.pm-goal-preview-head span{color:#c7f4e5;font-weight:800;font-variant-numeric:tabular-nums}
+#pomo.fs #pmgoal-preview{display:block;width:100%;box-sizing:border-box;margin:14px auto 0;padding:14px;border:1px solid #8fcfbd66;border-radius:14px;background:linear-gradient(135deg,#9edcc912,#ffffff08);box-shadow:inset 0 1px #ffffff0a;order:99;flex:0 0 100%}
+#pomo.fs .pm-goal-preview-head{display:flex}
+#pmgb-preview{height:12px;overflow:hidden;border:1px solid #8fcfbd66;border-radius:99px;background:#ffffff18;box-shadow:inset 0 2px 4px #0004}
+#pmgf-preview{display:block;width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,#62d6b1,#b2f7c8);box-shadow:0 0 14px #75d6bb88;transition:width .35s ease}
 /* Configuración reunida en un panel claro y visual */
 #pmset{display:block;width:min(100%,780px);box-sizing:border-box;margin:14px auto 4px;padding:16px;border:1px solid #8fcfbd66;border-radius:18px;background:linear-gradient(145deg,#1b2d49,#101a2d);box-shadow:0 10px 28px #0003;letter-spacing:normal;text-align:left}
 #pmset[hidden]{display:none}
@@ -434,7 +434,41 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
 #ea-copy-questions{justify-self:start;margin-top:4px}
 @media(max-width:600px){#pmset{padding:12px}#pmset .pm-set-times{align-items:stretch}#pmset .pm-set-times>label{justify-content:space-between;flex:1 1 220px}.pm-goal-head{align-items:flex-start}.pm-goal-head #pmgt{width:100%;margin-left:0}.ea-questions{gap:9px}}
 
+
+/* Ajustes responsive finales para que Enfocar y la meta diaria se acomoden en móvil y escritorio. */
+#pomo.fs .pm-row{width:100%;box-sizing:border-box}
+#pomo.fs #pmgoal-preview{max-width:min(680px,100%);}
+#pomo.fs .pm-goal-preview-head{flex-wrap:wrap}
+@media(max-width:600px){
+  #pomo.fs{padding:58px 12px calc(24px + env(safe-area-inset-bottom,0px));}
+  #pomo.fs .pm-row{gap:14px;width:100%;}
+  #pomo.fs .pm-modes{display:flex;gap:6px;max-width:100%;}
+  #pomo.fs .pm-modes button{min-width:0;padding:8px 10px;font-size:12px;}
+  #pomo.fs #pmt{font-size:clamp(64px,21vw,112px);letter-spacing:0;}
+  #pomo.fs .pm-ctl{width:100%;gap:6px;}
+  #pomo.fs .pm-ctl button{font-size:12px;padding:8px 9px;max-width:100%;}
+  #pomo.fs #pmgoal-preview{padding:12px;margin-top:6px;}
+  #pomo.fs .pm-goal-preview-head{font-size:12px;gap:6px;margin-bottom:8px;}
+  #pomo.fs #pmgb-preview{height:12px;}
+  #pomo.fs #pmwk,#pomo.fs #pmeye{font-size:12px;text-align:center;}
+  #pomo.fs #pmor{max-width:100%;font-size:13px;line-height:1.4;margin-top:10px;}
+}
+@media(min-width:601px) and (max-width:899px){
+  #pomo.fs{padding-left:24px;padding-right:24px;}
+  #pomo.fs #pmt{font-size:clamp(100px,20vw,190px);}
+}
+
 </style>
+
+<style id="fix-pomodoro-progress-final">
+/* Reparación robusta de la barra de meta diaria, especialmente en Enfocar y móvil. */
+#pomo.fs #pmgoal-preview{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;z-index:2;width:100%!important;max-width:680px!important;min-width:0!important;box-sizing:border-box!important;flex:0 0 100%!important;order:99!important;margin:12px auto 0!important;padding:12px 14px!important;border:1px solid #8fcfbd88!important;border-radius:14px!important;background:linear-gradient(135deg,#9edcc91c,#ffffff0a)!important;overflow:visible!important}
+#pomo.fs .pm-goal-preview-head{display:flex!important;visibility:visible!important;justify-content:space-between!important;align-items:center!important;gap:10px!important;margin:0 0 9px!important;color:#f1f7ff!important;font-size:13px!important}
+#pomo.fs #pmgb-preview{display:block!important;visibility:visible!important;width:100%!important;height:14px!important;min-height:14px!important;box-sizing:border-box!important;overflow:hidden!important;border:1px solid #8fcfbd88!important;border-radius:999px!important;background:#ffffff20!important}
+#pomo.fs #pmgf-preview{display:block!important;height:100%!important;min-height:100%!important;width:0%;border-radius:999px!important;background:linear-gradient(90deg,#62d6b1,#b2f7c8)!important;box-shadow:0 0 14px #75d6bb88!important;transition:width .35s ease!important}
+@media(max-width:600px){#pomo.fs #pmgoal-preview{width:100%!important;padding:10px!important;margin-top:8px!important}#pomo.fs .pm-goal-preview-head{font-size:12px!important}#pomo.fs #pmgb-preview{height:13px!important;min-height:13px!important}}
+</style>
+
 </head>
 <body>
 <div id="bg"></div>
@@ -531,12 +565,12 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
     <div id="pmt" aria-live="off">25:00</div>
     <div class="pm-ctl"><button id="pmgo">▶ Iniciar</button><button id="pmrs" title="Reiniciar">↺</button><button id="pmsk" title="Saltar a la siguiente fase (si estás en Enfoque, cuenta como pomodoro hecho)">⏭ Saltar</button><button id="pmcfg" aria-expanded="false" aria-controls="pmset">⚙ Configuración</button><button id="pmeyeb" title="Descanso visual: 20 segundos mirando algo lejano">👁 20 s</button><button id="pmnight" title="Modo noche: más oscuro y cálido">🌙</button><button id="pmfs" title="Agrandar el Pomodoro y ocultar todo lo demás (Esc para salir)">⛶ Enfocar</button></div>
     <div class="pm-cnt"><button id="pmmin" title="Quitar un pomodoro">−</button><span id="pmc" title="Pomodoros completados hoy">🍅 0</span><button id="pmpls" title="Sumar un pomodoro">+</button></div>
-    <div id="pmgoal-preview" aria-label="Progreso diario de pomodoros">
-      <div class="pm-preview-head"><span>🎯 Meta diaria</span><strong id="pmgt-preview">0 / 8</strong><button id="pmgoal-open" type="button">Editar meta</button></div>
-      <div id="pmgb-preview" role="progressbar" aria-label="Progreso diario" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf-preview"></i></div>
-    </div>
     <div id="pmwk" title="Pomodoros completados esta semana (lunes a hoy)"></div>
     <div id="pmeye"></div>
+    <div id="pmgoal-preview" aria-label="Progreso diario de pomodoros">
+      <div class="pm-goal-preview-head"><strong>🎯 META DIARIA</strong><span id="pmgt-preview">0 / 8</span></div>
+      <div id="pmgb-preview" role="progressbar" aria-label="Progreso diario" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf-preview"></i></div>
+    </div>
   </div>
   <div id="pmhab">
     <div id="pmtrig">Después de <input id="pmtg" maxlength="40" placeholder="tomar mate o café" autocomplete="off" aria-label="Disparador"> estudio <input id="pmwh" maxlength="40" placeholder="mi materia" autocomplete="off" aria-label="Qué estudio"> durante un pomodoro.</div>
@@ -1723,11 +1757,16 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
    hint.textContent=done>=goal?"¡Objetivo cumplido! Excelente trabajo de hoy.":"Te faltan "+(goal-done)+" pomodoro"+(goal-done===1?"":"s")+" para alcanzar tu objetivo.";
    if(saveGoal||finalize){try{localStorage.setItem(key,String(goal))}catch(e){}}
  }
- const openBtn=$("pmgoal-open");if(openBtn)openBtn.addEventListener("click",()=>{const panel=$("pmset"),btn=$("pmcfg");if(panel&&panel.hidden){panel.hidden=false;if(btn){btn.setAttribute("aria-expanded","true");btn.textContent="✕ Cerrar configuración"}}input.focus();panel&&panel.scrollIntoView({behavior:"smooth",block:"nearest"});});
+ 
  input.addEventListener("input",()=>update(false,false));
  input.addEventListener("change",()=>update(true,true));
  input.addEventListener("blur",()=>update(true,true));
  new MutationObserver(()=>update(false,false)).observe(count,{childList:true,characterData:true,subtree:true});
+
+ // Cerrar configuración al tocar fuera del panel; no cerrar al interactuar dentro.
+ const settings=$("pmset"), cfgButton=$("pmcfg");
+ function closeSettings(){if(settings&&!settings.hidden){settings.hidden=true;if(cfgButton){cfgButton.setAttribute("aria-expanded","false");cfgButton.textContent="⚙ Configuración"}}}
+ document.addEventListener("pointerdown",e=>{if(settings&&!settings.hidden&&!settings.contains(e.target)&&!cfgButton.contains(e.target))closeSettings();});
  const copyBtn=$("ea-copy-questions");
  if(copyBtn)copyBtn.addEventListener("click",()=>{
    const questions=[...document.querySelectorAll(".ea-questions li")].map((li,i)=>(i+1)+". "+li.textContent.trim()).join("\n");
@@ -1735,6 +1774,12 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
    function fallbackCopy(text){const ta=document.createElement("textarea");ta.value=text;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();try{document.execCommand("copy");copyBtn.textContent="✓ Preguntas copiadas"}catch(e){window.prompt("Copiá estas preguntas:",text)}ta.remove();setTimeout(()=>copyBtn.textContent="⧉ Copiar preguntas para Word",1800)}
  });
  update(false,false);
+ // Synchronize immediately on entering focus mode and after every counter/goal change.
+ const focusBtn=$("pmfs");
+ if(focusBtn)focusBtn.addEventListener("click",()=>{requestAnimationFrame(()=>update(false,false));setTimeout(()=>update(false,false),80)});
+ const previewObserver=new MutationObserver(()=>update(false,false));
+ previewObserver.observe(count,{childList:true,characterData:true,subtree:true});
+ input.addEventListener("input",()=>update(false,false));
 })();
 </script>
 
