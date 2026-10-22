@@ -581,7 +581,7 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
       <div class="pm-goal-preview-head"><strong>🎯 META DIARIA</strong><span id="pmgt-preview">0 / 8</span></div>
       <div id="pmgb-preview" role="progressbar" aria-label="Progreso diario" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf-preview"></i></div>
     </div>
-    <div id="pmtrw" aria-hidden="true"><div id="pmtren"><i class="pf"></i><i class="pf"></i><i class="pf"></i><i class="pf"></i><i class="pf"></i><svg viewBox="0 0 100 44" aria-hidden="true">
+    <div id="pmtrw" aria-hidden="true"><div id="pmposts"></div><div id="pmtren"><i class="pf"></i><i class="pf"></i><i class="pf"></i><i class="pf"></i><i class="pf"></i><svg viewBox="0 0 100 44" aria-hidden="true">
         <defs>
           <linearGradient id="trgB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a6a7a"/><stop offset=".35" stop-color="#383844"/><stop offset="1" stop-color="#16161d"/></linearGradient>
           <linearGradient id="trgT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5e3126"/><stop offset="1" stop-color="#26130f"/></linearGradient>
@@ -619,6 +619,7 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
         <line x1="70" y1="37" x2="82" y2="34" stroke="#cfcfd6" stroke-width="1.4" stroke-linecap="round" class="pr"/>
       </svg></div></div>
     <div id="pmgoal-normal" aria-label="Progreso diario de pomodoros" role="progressbar" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf-normal"></i></div>
+    <div id="pmest"><div id="pmestl"></div><div id="pmestt" role="status"></div></div>
   </div>
   <div id="pmhab">
     <div id="pmtrig">Después de <input id="pmtg" maxlength="40" placeholder="tomar mate o café" autocomplete="off" aria-label="Disparador"> estudio <input id="pmwh" maxlength="40" placeholder="mi materia" autocomplete="off" aria-label="Qué estudio"> durante un pomodoro.</div>
@@ -636,6 +637,11 @@ html[data-theme=dark] .td-nav input[type=date]{color-scheme:dark}
       <label>Descanso largo <input type="number" id="pm2" min="1" max="90"> <span>min</span></label>
       <label class="pm-vol" title="Volumen de la voz del Pomodoro y de la bienvenida (0 = silencio)">🔊 Voz <input id="pmvol" type="range" min="0" max="100" step="5" value="50"></label>
     </div>
+    <details id="pmestcfg" open><summary>🚉 Nombres de las estaciones</summary>
+      <p class="sub">Toca un nombre para cambiarlo; se guarda solo. Cada pomodoro completado lleva el tren a la siguiente estación (la primera es la salida).</p>
+      <div id="pmestlist"></div>
+      <div class="pm-estbtn"><button id="pmestrs" type="button">Restaurar nombres</button></div>
+    </details>
     <div id="pmgoal" aria-label="Objetivo diario de pomodoros">
       <div class="pm-goal-head"><label for="pmgoaln">🎯 Objetivo diario de pomodoros</label><div class="pm-goal-edit"><input id="pmgoaln" type="number" min="1" max="999" step="1" value="8" inputmode="numeric" aria-label="Cantidad objetivo de pomodoros por día"><span>pomodoros / día</span></div><span id="pmgt">0 / 8</span></div>
       <div id="pmgb" role="progressbar" aria-label="Progreso diario de pomodoros" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><i id="pmgf"></i></div>
@@ -1794,7 +1800,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
   const pmc=$("pmc"),num=()=>parseInt((pmc.textContent||"").replace(/\D/g,""),10)||0;let last=num();
   new MutationObserver(()=>{const n=num();
     if(n>last){S.votos++;addVd();save();paint();if(!$("ea-tema").value&&S.tarea)$("ea-tema").value=S.tarea.slice(0,100);
-      say("🗳 "+(S.id?"Otro voto: soy alguien que "+S.id+".":"Pomodoro completado.")+" (Hoy: "+vHoy()+" · semana: "+vSem()+".)"+(S.premio?" Ahora te toca: "+S.premio+".":"")+" Respondé las preguntas de recuerdo activo en tu documento Word, sin mirar apuntes.",10000)}
+      say((window.__estMsg?window.__estMsg():"")+"🗳 "+(S.id?"Otro voto: soy alguien que "+S.id+".":"Pomodoro completado.")+" (Hoy: "+vHoy()+" · semana: "+vSem()+".)"+(S.premio?" Ahora te toca: "+S.premio+".":"")+" Respondé las preguntas de recuerdo activo en tu documento Word, sin mirar apuntes.",10000)}
     last=n}).observe(pmc,{childList:true,characterData:true,subtree:true});
   // Aviso a 5 minutos del final del enfoque: dejar de estudiar y recordar
   const pmt=$("pmt");let warned=false;
@@ -1890,7 +1896,53 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
 @media(max-width:600px){#pmtrw{--tw:80px}}
 #pomo.fs #pmtrw{order:3;flex:0 1 auto;width:min(360px,78vw);margin:clamp(8px,1.8vh,16px) auto calc(-1*clamp(8px,1.8vh,16px))}
 @media(max-width:600px){#pomo.fs #pmtrw{width:min(280px,72vw);margin:8px auto -8px}}
-@media(prefers-reduced-motion:reduce){#pmtrw *{animation:none!important;transition:none!important}}
+@media(prefers-reduced-motion:reduce){#pmtrw *,#pmest *{animation:none!important;transition:none!important}}
+/* Estaciones: cada pomodoro completado = una parada */
+#pmest{--tw:100px;flex:0 0 100%;position:relative;width:100%;pointer-events:none}
+@media(max-width:600px){#pmest{--tw:80px}}
+#pmestl{position:relative;height:8px}
+#pmest.names #pmestl{height:36px}
+#pmest .es{position:absolute;top:0;left:calc(var(--tw) + (100% - var(--tw))*var(--f));width:0;height:0}
+#pmest .es b{position:absolute;left:-1.5px;top:0;width:3px;height:9px;border-radius:1px;background:#8fcfbd80}
+#pmest .es.done b{background:#c9a24a;box-shadow:0 0 5px #c9a24a88}
+#pmest .es.now b{height:12px;background:#f2d98a;animation:trest 1s ease-in-out 3}
+#pmest .es span{display:none;position:absolute;left:0;top:11px;transform:translateX(-50%);white-space:nowrap;font-size:11px;letter-spacing:.02em;color:#f6ecd29a}
+#pmest.names .es span{display:block}
+#pmest.names .es:nth-child(even) span{top:23px}
+#pmest .es.done span{color:#e9c872}
+#pmest .es.now span{color:#fff;font-weight:700}
+#pmest .es:first-child span{transform:translateX(-30%)}
+#pmest .es.end span{transform:translateX(-82%)}
+#pmestt{margin-top:6px;font-size:13px;line-height:1.35;text-align:center;color:#e9c872}
+@keyframes trest{50%{transform:scaleY(1.6);box-shadow:0 0 10px #f2d98a}}
+#pmtrw.stop .tw,#pmtrw.stop .rod,#pmtrw.stop svg{animation-play-state:paused}
+#pomo.fs #pmest{order:3;flex:0 1 auto;width:min(360px,78vw);margin-left:auto;margin-right:auto}
+@media(max-width:600px){#pomo.fs #pmest{width:min(280px,72vw)}#pmest.names .es span{display:none}#pmest.names .es.now span,#pmest.names .es.end span{display:block}#pmest.names #pmestl{height:22px}#pmest.names .es:nth-child(even) span{top:11px}}
+#pitoast{width:max-content}
+/* Postes de luz medievales y faro en cada parada */
+#pmposts{position:absolute;inset:0;pointer-events:none}
+#pmposts .po{position:absolute;bottom:-1px;left:calc(var(--tw) + (100% - var(--tw))*var(--f) + var(--tw)*.07);width:calc(var(--tw)*.13);height:calc(var(--tw)*.3);transform:translateX(-50%)}
+#pmposts .po.fa{width:calc(var(--tw)*.2);height:calc(var(--tw)*.5)}
+#pmposts .po svg{display:block;width:100%;height:100%;overflow:visible}
+#pmposts .gl{opacity:0;transition:opacity .6s}
+#pmposts .po.on .gl{opacity:1;animation:trfl 1.7s ease-in-out infinite alternate}
+#pmposts .lan{fill:#6b5a2e;transition:fill .6s}
+#pmposts .po.on .lan{fill:#ffe9a3}
+#pmposts .bm{opacity:0;fill:#ffe9a3}
+#pmposts .po.on .bm1{animation:trbm 3.2s ease-in-out infinite alternate}
+#pmposts .po.on .bm2{animation:trbm 3.2s ease-in-out infinite alternate-reverse}
+@keyframes trfl{from{opacity:.7}to{opacity:1}}
+@keyframes trbm{from{opacity:0}to{opacity:.38}}
+/* En enfoque la barra mide lo mismo que en la vista normal */
+#pomo.fs #pmgoal-normal,#pomo.fs #pmtrw,#pomo.fs #pmest{width:min(var(--barw,880px),calc(100vw - 30px))!important;max-width:none!important}
+@media(prefers-reduced-motion:reduce){#pmposts *{animation:none!important}}
+#pmestcfg{margin:10px 0;padding:8px 10px;border:1px solid #c9a24a55;border-radius:8px}
+#pmestcfg summary{cursor:pointer;font-weight:700}
+#pmestlist{max-height:230px;overflow:auto;margin:6px 0}
+.pm-estrow{display:flex;align-items:center;gap:8px;margin:4px 0}
+.pm-estrow span{width:28px;text-align:right;color:#e9c872;font-size:14px}
+.pm-estrow input{flex:1;min-width:0;box-sizing:border-box;padding:7px 9px;background:#0a1228;color:#f6ecd2;border:1px solid #c9a24a88;border-radius:6px;font:15px Georgia,serif}
+#pmestcfg .pm-estbtn{display:flex;gap:8px;flex-wrap:wrap}
 </style>
 <script>
 (()=>{const f=document.getElementById("pmgf-normal"),t=document.getElementById("pmtren"),w=document.getElementById("pmtrw"),go=document.getElementById("pmgo");if(!f||!t||!w)return;
@@ -1900,6 +1952,49 @@ const fit=()=>{const gap=parseFloat(getComputedStyle(w.parentElement).rowGap)||0
 fit();addEventListener("resize",fit);if(pomo)new MutationObserver(()=>{fit();requestAnimationFrame(fit)}).observe(pomo,{attributes:true,attributeFilter:["class"]});
 new MutationObserver(sync).observe(f,{attributes:true,attributeFilter:["style"]});sync();
 if(go){const r=()=>w.classList.toggle("run",go.textContent.indexOf("Pausar")>-1);new MutationObserver(r).observe(go,{childList:true,characterData:true,subtree:true});r()}})();
+</script>
+<script>
+(()=>{const $=id=>document.getElementById(id),K="medieval-estaciones";
+const DEF=["Constitución","Hipólito Yrigoyen","Gerli","Lanús","Remedios de Escalada","Banfield","Temperley","Turdera","Llavallol","Luis Guillón","Monte Grande","El Jagüel","Ezeiza","Tristán Suárez","Máximo Paz","Cañuelas","Lobos","Roque Pérez","Del Carril","Cazón"];
+const LAMP='<svg viewBox="0 0 13 30"><circle class="gl" cx="6.5" cy="6.5" r="8.5" fill="#ffd36a" fill-opacity=".22"/><circle class="gl" cx="6.5" cy="6.5" r="5" fill="#ffd36a" fill-opacity=".35"/><path d="M6.5.4L10.6 3H2.4z" fill="#2e2e38" stroke="#c9a24a" stroke-width=".6"/><rect class="lan" x="3.2" y="3" width="6.6" height="7" rx="1" stroke="#c9a24a" stroke-width=".7"/><line x1="6.5" y1="3" x2="6.5" y2="10" stroke="#c9a24a" stroke-width=".4"/><rect x="2.6" y="10" width="7.8" height="1.4" fill="#2e2e38" stroke="#c9a24a" stroke-width=".5"/><rect x="5.7" y="11.4" width="1.6" height="15.8" fill="#2e2e38"/><path d="M6.5 14.5q-4 0-4 3.5" fill="none" stroke="#2e2e38" stroke-width="1"/><path d="M3.4 30l1.3-3.2h3.6L9.6 30z" fill="#2e2e38" stroke="#c9a24a" stroke-width=".5"/></svg>',FARO='<svg viewBox="0 0 20 50"><path class="bm bm1" d="M7 12L-14 6V18z"/><path class="bm bm2" d="M13 12L34 6V18z"/><circle class="gl" cx="10" cy="12" r="9" fill="#ffd36a" fill-opacity=".25"/><path d="M5 48L7 18h6l2 30z" fill="#cfc8b4" stroke="#7a6f55" stroke-width=".7"/><path d="M6.3 26h7.4l-.3 6H6.6z" fill="#8d1427"/><rect x="4.5" y="15.5" width="11" height="2.6" fill="#2e2e38" stroke="#c9a24a" stroke-width=".6"/><rect class="lan" x="7" y="8.5" width="6" height="7" stroke="#c9a24a" stroke-width=".7"/><path d="M6 8.5L10 3l4 5.5z" fill="#8d1427" stroke="#c9a24a" stroke-width=".6"/><line x1="10" y1="3" x2="10" y2=".6" stroke="#c9a24a" stroke-width=".7"/><path d="M8.8 48v-4a1.2 1.2 0 0 1 2.4 0v4z" fill="#2e2e38"/><rect x="3" y="47" width="14" height="3" fill="#5b5b66"/></svg>';
+const est=$("pmest"),row=$("pmestl"),st=$("pmestt"),w=$("pmtrw"),cnt=$("pmc"),gi=$("pmgoaln"),P=$("pmposts"),list=$("pmestlist"),bar=$("pmgoal-normal"),pomo=$("pomo");if(!est||!row||!st||!cnt)return;
+const clean=a=>a.map(x=>String(x).trim().slice(0,40)).filter(Boolean).slice(0,300);
+const rd=()=>{try{const a=JSON.parse(localStorage.getItem(K)||"null");if(Array.isArray(a)){const c=clean(a);if(c.length>1)return c}}catch(e){}return DEF.slice()};
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(L))}catch(e){}};
+let L=rd(),built=-1;
+const goal=()=>{const n=gi?parseInt(gi.value,10):8;return n>=1?Math.min(999,n):8};
+const done=()=>{const m=(cnt.textContent||"").match(/\d+/);return m?+m[0]:0};
+const nm=k=>L[((k%L.length)+L.length)%L.length];
+const tw=()=>parseFloat(getComputedStyle(est).getPropertyValue("--tw"))||100;
+const meas=()=>{if(pomo&&bar&&!pomo.classList.contains("fs")){const x=bar.getBoundingClientRect().width;if(x>100)pomo.style.setProperty("--barw",Math.round(x)+"px")}};
+const fit=()=>{const rg=parseFloat(getComputedStyle(est.parentElement).rowGap)||0;est.style.marginTop=-Math.max(0,rg-1)+"px"};
+function build(){if(!list)return;const g=Math.min(goal(),40);list.textContent="";
+  for(let k=0;k<=g;k++){const r=document.createElement("label"),n=document.createElement("span"),i=document.createElement("input");r.className="pm-estrow";n.textContent=k?k+".":"🚉";
+    i.type="text";i.maxLength=40;i.value=nm(k);i.setAttribute("aria-label",k?"Estación "+k:"Estación de salida");
+    i.addEventListener("input",()=>{while(L.length<=k)L.push(DEF[L.length%DEF.length]);L[k]=i.value.trim()||DEF[k%DEF.length];save();draw(true)});
+    r.append(n,i);list.appendChild(r)}
+  built=g}
+function draw(skip){const g=goal(),d=Math.min(done(),g),step=Math.max(1,Math.ceil(g/30));
+  if(!skip&&built!==Math.min(g,40))build();
+  row.textContent="";const fr=document.createDocumentFragment();
+  for(let k=0;k<=g;k++){if(k%step&&k!==g)continue;const e=document.createElement("i");e.className="es"+(k<=d?" done":"")+(k===d?" now":"")+(k===g?" end":"");e.style.setProperty("--f",k/g);
+    const b=document.createElement("b"),t=document.createElement("span");t.textContent=nm(k);e.append(b,t);fr.appendChild(e)}
+  row.appendChild(fr);est.classList.toggle("names",g<=10);
+  if(P){P.textContent="";const sp=Math.max((est.clientWidth-tw())/g,1),ps=Math.max(step,Math.ceil(24/sp)),pf=document.createDocumentFragment();
+    for(let k=0;k<=g;k++){if(k%ps&&k!==g&&k!==d)continue;const o=document.createElement("i");o.className="po"+(k===g?" fa":"")+(k<=d?" on":"")+(k===d?" now":"");o.style.setProperty("--f",k/g);o.innerHTML=k===g?FARO:LAMP;pf.appendChild(o)}
+    P.appendChild(pf)}
+  st.textContent=d>=g?"🏁 Terminal: "+nm(g)+" · ¡meta cumplida!":"🚉 "+(d?"Última parada: ":"Salida: ")+nm(d)+" · Próxima: "+nm(d+1)+" · faltan "+(g-d);
+  meas();fit()}
+const sched=()=>requestAnimationFrame(()=>draw());
+let last=done();
+new MutationObserver(()=>{const n=done();sched();if(n>last&&w){setTimeout(()=>{w.classList.add("stop");setTimeout(()=>w.classList.remove("stop"),3500)},650)}last=n}).observe(cnt,{childList:true,characterData:true,subtree:true});
+const gt=$("pmgt");if(gt)new MutationObserver(sched).observe(gt,{childList:true,characterData:true,subtree:true});
+if(gi)gi.addEventListener("input",sched);
+addEventListener("resize",sched);addEventListener("load",sched);
+if(pomo)new MutationObserver(()=>{fit();sched()}).observe(pomo,{attributes:true,attributeFilter:["class"]});
+const rs=$("pmestrs");if(rs)rs.onclick=()=>{L=DEF.slice();try{localStorage.removeItem(K)}catch(e){}build();draw(true)};
+window.__estMsg=()=>{const g=goal(),d=done();if(d<=0)return"";return d>=g?"🏁 ¡Terminal "+nm(g)+"! ":"🚉 Parada "+d+"/"+g+": "+nm(d)+". "};
+draw();})();
 </script>
 </body>
 </html>
