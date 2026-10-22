@@ -1816,7 +1816,10 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     }}catch(e){}
   const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
   // Votos por día (se guardan 90 días) y por semana (lunes a domingo)
-  const vHoy=()=>S.vd[dk()]||0,vSem=()=>{const d=new Date();d.setDate(d.getDate()-((d.getDay()+6)%7));const a=key(d);let n=0;for(const k in S.vd)if(k>=a)n+=S.vd[k];return n};
+  // Hoy y semana salen del mismo historial que el contador "Semana" del Pomodoro, así siempre coinciden (y al restar pomodoros también bajan)
+  const pmHist=()=>{try{return JSON.parse(localStorage.getItem("medieval-pomo-hist")||"{}")||{}}catch(e){return{}}};
+  const vHoy=()=>{const h=pmHist(),k=dk();return h[k]!=null?(+h[k]||0):(S.vd[k]||0)};
+  const vSem=()=>{const h=pmHist(),d=new Date();let n=0;for(let i=0;i<=(d.getDay()+6)%7;i++){const x=new Date(d);x.setDate(d.getDate()-i);n+=+h[key(x)]||0}return n};
   const addVd=()=>{const h=dk();S.vd[h]=(S.vd[h]||0)+1;const lim=plus(-90);Object.keys(S.vd).forEach(k=>{if(k<lim)delete S.vd[k]})};
   const btn=(txt,fn)=>{const b=document.createElement("button");b.type="button";b.textContent=txt;b.onclick=fn;return b};
   // Aviso breve y discreto
@@ -1832,7 +1835,7 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     const t=dk(),tot=S.pasos.length,hec=S.pasos.filter(p=>p.d===t).length,sig=nextStep(),meta=S.tarea||S.obj;
     $("pipro").textContent=tot?hec+"/"+tot+" pasos hoy":"";
     $("pisum").textContent=(meta?"Meta de hoy: "+meta:"")+(sig?(meta?" · ":"")+"Ahora: "+sig.t:"");
-    $("pivotos").textContent=S.votos?"🗳 "+S.votos+(S.votos==1?" voto":" votos")+" por tu identidad · hoy "+vHoy()+" · semana "+vSem():"";
+    {const sm=vSem();$("pivotos").textContent=(S.votos||sm)?"🗳 "+sm+(sm==1?" voto":" votos")+" esta semana por tu identidad · hoy "+vHoy():""}
   }
   // Camino: pasos editables
   const L=$("pilist");
@@ -1911,9 +1914,11 @@ try{const v=parseFloat(localStorage.getItem("medieval-voz"));if(v>=0&&v<=1)vozVo
     if(meta||s)say((S.cuando||S.donde?"Cuando "+(S.cuando||"…")+(S.donde?" en "+S.donde:"")+": ":"")+(meta?meta:"")+(s?(meta?" · ":"")+"Paso: "+s.t:""),7000);
   });
   // Al completar un pomodoro: voto de identidad, premio y recordatorio de recuerdo activo
-  const pmc=$("pmc"),num=()=>parseInt((pmc.textContent||"").replace(/\D/g,""),10)||0;let last=num();
+  const pmc=$("pmc"),num=()=>parseInt((pmc.textContent||"").replace(/\D/g,""),10)||0;let last=num(),lastDay=dk();
   new MutationObserver(()=>{const n=num();
-    if(n>last){S.votos++;addVd();save();paint();if(!$("ea-tema").value&&S.tarea)$("ea-tema").value=S.tarea.slice(0,100);
+    if(dk()!==lastDay){lastDay=dk();last=n;paint();return}
+    if(n<last){const dd=last-n,h=dk();S.votos=Math.max(0,S.votos-dd);S.vd[h]=Math.max(0,(S.vd[h]||0)-dd);save();paint()}
+    else if(n>last){S.votos++;addVd();save();paint();if(!$("ea-tema").value&&S.tarea)$("ea-tema").value=S.tarea.slice(0,100);
       say((window.__estMsg?window.__estMsg():"")+"🗳 "+(S.id?"Otro voto: soy alguien que "+S.id+".":"Pomodoro completado.")+" (Hoy: "+vHoy()+" · semana: "+vSem()+".)"+(S.premio?" Ahora te toca: "+S.premio+".":"")+" Respondé las preguntas de recuerdo activo en tu documento Word, sin mirar apuntes.",10000)}
     last=n}).observe(pmc,{childList:true,characterData:true,subtree:true});
   // Aviso a 5 minutos del final del enfoque: dejar de estudiar y recordar
