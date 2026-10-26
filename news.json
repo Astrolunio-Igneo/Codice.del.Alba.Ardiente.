@@ -1,6 +1,13 @@
 {
-  "actualizado": "2026-10-25T22:30:33+00:00",
+  "actualizado": "2026-10-26T04:37:49+00:00",
   "items": [
+    {
+      "titulo": "Russia Is No Threat to America",
+      "resumen": "When you boil down the essence of the alleged Russian military threat to America’s homeland security it amounts to just plain barking idiocy; it’s so out to lunch as to be offensive to even a modicum of human…",
+      "fuente": "Antiwar.com",
+      "url": "https://original.antiwar.com/david_stockman/2026/10/25/russia-is-no-threat-to-america/?utm_source=rss&utm_medium=rss&utm_campaign=russia-is-no-threat-to-america",
+      "fecha": "2026-10-26"
+    },
     {
       "titulo": "Trump Exempts Some Canadian Products From Section 338 Tariffs - But his Illegal Trade War Continues",
       "resumen": "Courts should still strike down the Section 338 tariffs and import bans that remain in place.",
@@ -16,13 +23,6 @@
       "fecha": "2026-10-23"
     },
     {
-      "titulo": "How a Citizen Bought a Kidnapping From Israel’s Spy-for-Hire",
-      "resumen": "On New Year’s Eve in 2023, on the Danish side of the border with Germany, two children stood near their father’s house watching fireworks. The boy was ten, his sister thirteen. A team of masked men in black stormed the…",
-      "fuente": "Antiwar.com",
-      "url": "https://original.antiwar.com/thomas_karat/2026/10/22/the-state-for-hire-how-a-private-citizen-bought-a-kidnapping-from-israels-spy-for-hire-industry/?utm_source=rss&utm_medium=rss&utm_campaign=the-state-for-hire-how-a-private-citizen-bought-a-kidnapping-from-israels-spy-for-hire-industry",
-      "fecha": "2026-10-23"
-    },
-    {
       "titulo": "Iran Says Seven Ships Damaged in Strait of Hormuz in Single Night",
       "resumen": "Iran said that seven vessels attempting to transit the Strait of Hormuz without following Tehran’s protocols were damaged or set on fire overnight. Iranian state television reported the claims on Thursday. The Islamic…",
       "fuente": "Libertarian Institute",
@@ -30,20 +30,20 @@
       "fecha": "2026-10-22"
     },
     {
-      "titulo": "Short Circuit: An inexhaustive weekly compendium of rulings from the federal courts of appeal",
-      "resumen": "Rebellions, rebels without a cause, and military discounts.",
-      "fuente": "Reason",
-      "url": "https://reason.com/volokh/2026/10/23/short-circuit-an-inexhaustive-weekly-compendium-of-rulings-from-the-federal-courts-of-appeal-82/",
-      "fecha": "2026-10-23"
+      "titulo": "How Israel Used AI to Relentlessly Murder Palestinian Journalists and Their Families in Their Homes",
+      "resumen": "Reprinted from Andy Worthington’s website. It’s worse than we thought. In research that I have undertaken over the last few weeks based on information compiled by the Committee to Protect Journalists (CPJ) about…",
+      "fuente": "Antiwar.com",
+      "url": "https://original.antiwar.com/worthington/2026/10/25/how-israel-used-ai-to-relentlessly-murder-palestinian-journalists-and-their-families-in-their-homes/?utm_source=rss&utm_medium=rss&utm_campaign=how-israel-used-ai-to-relentlessly-murder-palestinian-journalists-and-their-families-in-their-homes",
+      "fecha": "2026-10-26"
     }
   ],
   "politica": [
     {
-      "titulo": "Trump: Nicki Minaj has ‘one hell of a beautiful a**’",
-      "resumen": "President Donald Trump complimented rap mogul Nicki Minaj’s body before she gave a speech at a campaign rally in Detroit on Sunday. “By the way, I’ve looked at one hell of a beautiful a** before, Nicki Minaj,” Trump…",
+      "titulo": "Lula is declared winner of Brazil’s election as Bolsonaro rejects results",
+      "resumen": "RIO DE JANEIRO (AP) — Brazil’s President Luiz Inácio Lula da Silva, a vocal critic of U.S. President Donald Trump, was reelected Sunday in a result that provides relief to critics of widening U.S. influence in Latin…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/white-house/4779278/trump-nicki-minaj-beautiful-ass/",
-      "fecha": "2026-10-25"
+      "url": "https://www.washingtonexaminer.com/news/world/4779377/lula-declared-winner-brazil-elections-bolsonaro-rejects/",
+      "fecha": "2026-10-26"
     },
     {
       "titulo": "Canada’s Trump Fixation Fades",
@@ -76,6 +76,14 @@
   ],
   "diarias": [
     {
+      "titulo": "US military says it helped Gulf states export 1.5 billion barrels of oil",
+      "resumen": "US Central Command says more than 3,000 commercial vessels have transited the Strait of Hormuz with its support.",
+      "fuente": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/10/26/us-military-says-it-helped-gulf-states-export-1-5-billion-barrels-of-oil?traffic_source=rss",
+      "fecha": "2026-10-26",
+      "cat": "⚔️ Guerra"
+    },
+    {
       "titulo": "Deeply divided Israel braces for pivotal election",
       "resumen": "After three years of regional war, this is a battle Israel always knew was coming, writes Lucy Williamson.",
       "fuente": "BBC News",
@@ -84,12 +92,12 @@
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Israeli air strike on Gaza City university kills three people",
-      "resumen": "Two Israeli strikes hit students and security guards at the Islamic University in Gaza City.",
-      "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/israeli-air-strike-on-gaza-city-university-kills-three-people?traffic_source=rss",
+      "titulo": "International meeting for peace in Assisi: More than words, concrete action",
+      "resumen": "On the sidelines of the International Meeting for Peace in Assisi, the regional director of the Strategic Initiative for Women in the Horn of Africa, Hala Alkarib, speaks about the importance of turning words into…",
+      "fuente": "Vatican News (EN)",
+      "url": "https://www.vaticannews.va/en/church/news/2026-10/international-meeting-peace-assisi-more-than-words-actions.html",
       "fecha": "2026-10-25",
-      "cat": "⚔️ Guerra"
+      "cat": "⛪ Iglesia católica"
     },
     {
       "titulo": "Sexualidad en el matrimonio: ¿dónde está el límite?",
@@ -100,59 +108,51 @@
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Camboya, la fuerza de la escuela LaValla contra todas las barreras",
-      "resumen": "El centro de educación primaria, gestionado por la Solidaridad Marista del país, a las afueras de la capital, Phnom Penh, es un modelo de acogida y crecimiento. El misionero fray Brian Kinsella señala que todos los…",
-      "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/iglesia/news/2026-10/camboya-la-fuerza-de-la-escuela-lavalla.html",
-      "fecha": "2026-10-25",
-      "cat": "⛪ Iglesia católica"
-    },
-    {
-      "titulo": "Appeals court resists DOJ's bid to immediately segregate 20k California ballots",
-      "resumen": "A federal appeals court appeared unlikely to immediately agree to the Trump administration’s bid to segregate 20,000 California ballots it says are likely noncitizen voters, expressing skepticism at a rare Sunday…",
+      "titulo": "Nicki Minaj tells Trump she’ll support him if he runs again",
+      "resumen": "Nicki Minaj joined President Trump at a campaign rally Sunday and said that she would support him if he chose to run again. “So, President Trump, it is an honor to stand with you every single time, and I will continue…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/regulation/court-battles/6171263-appeals-court-denies-emergency-california-hearing/",
+      "url": "https://thehill.com/blogs/in-the-know/6171497-nicki-minaj-support-trump-michigan-rally-press-secretary/",
+      "fecha": "2026-10-26",
+      "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "Bruce Blakeman calls Kathy Hochul Zohran Mamdani's 'puppet' during New York campaign rally",
+      "resumen": "Bruce Blakeman called Kathy Hochul a \"puppet\" of Zohran Mamdani at a campaign rally, accusing both of failing on crime and illegal immigration.",
+      "fuente": "Fox News",
+      "url": "https://www.foxnews.com/politics/bruce-blakeman-calls-kathy-hochul-zohran-mamdani-puppet-new-york-campaign-rally",
       "fecha": "2026-10-25",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "GOP Mich. Senate hopeful Mike Rogers dodges whether he’s ‘MAGA Republican’",
-      "resumen": "Throughout his campaign, Rogers has worked to carefully thread the needle between courting President Trump's supporters and not scaring off swing voters in Michigan.",
-      "fuente": "NY Post",
-      "url": "https://nypost.com/2026/10/25/us-news/mike-rogers-dodges-whether-hes-maga-republican/",
-      "fecha": "2026-10-25",
-      "cat": "🇺🇸 Política de EE. UU."
-    },
-    {
-      "titulo": "Patricia Bullrich cuestionó a Milei por sus ataques al periodismo: “Se cruzó un límite”",
-      "resumen": "La presidenta del bloque libertario en el Senado respaldó el derecho del mandatario a contestar a las críticas, pero marcó: “Se responde con argumentos”",
+      "titulo": "Javier Milei y sus medidas, en vivo: el Presidente acusó a Lula de querer “robar” las elecciones en Brasil",
+      "resumen": "El minuto a minuto de las decisiones del mandatario, las reacciones de la oposición y las declaraciones de los funcionarios",
       "fuente": "La Nación",
-      "url": "https://www.lanacion.com.ar/politica/patricia-bullrich-cuestiono-a-milei-por-sus-ataques-al-periodismo-se-cruzo-un-limite-nid25102026/",
-      "fecha": "2026-10-25",
+      "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-presidente-acuso-a-lula-de-querer-robar-las-elecciones-en-nid26102026/",
+      "fecha": "2026-10-26",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Libertarios, peronistas y radicales viajaron a Brasil por la segunda vuelta: impresiones de una elección que tiene en vilo a la región",
-      "resumen": "Diputados y senadores argentinos llegaron a Brasilia y San Pablo para seguir de cerca la definición presidencial entre Lula da Silva y Flávio Bolsonaro. El clima de polarización, la disputa voto a voto y el impacto del…",
-      "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/10/25/libertarios-peronistas-y-radicales-viajaron-a-brasil-por-la-segunda-vuelta-impresiones-de-una-eleccion-que-tiene-en-vilo-a-la-region/",
-      "fecha": "2026-10-25",
+      "titulo": "La agenda de Milei: reunión de Gabinete, gira minera por Catamarca y eventos ejecutivos en las provincias para el Gobierno",
+      "resumen": "El Presidente tendrá reuniones en la Casa Rosada y encabezará una gira por el interior para respaldar proyectos mineros, de inversión y actos institucionales junto a su equipo de ministros. Leer más",
+      "fuente": "Perfil",
+      "url": "https://www.perfil.com/noticias/politica/la-agenda-de-milei-reunion-de-gabinete-gira-minera-por-catamarca-y-eventos-ejecutivos-en-las-provincias-para-el-gobierno.phtml",
+      "fecha": "2026-10-26",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Ministro Rafael Belaúnde anuncia una megacárcel modelo Bukele en Perú y asegura que puede estar lista en 10 meses",
-      "resumen": "El proyecto contempla un régimen de encierro con restricciones severas y mayor control de las Fuerzas Armadas en la seguridad exterior de los establecimientos penitenciarios",
-      "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/2026/10/25/ministro-rafael-belaunde-anuncia-una-megacarcel-modelo-nayib-bukele-en-peru-y-asegura-que-puede-construirse-en-10-meses/",
-      "fecha": "2026-10-25",
+      "titulo": "Luis Galarreta sobre delegación de facultades: “Vamos a hacer un uso efectivo y contundente de lo que nos han dado”",
+      "resumen": "El jefe del Gabinete Ministerial, Luis Galarreta, afirmó que el Poder Ejecutivo hará un “uso efectivo y contundente” de la delegación de facultades aprobada por el Senado y promulgada días atrás en materia del Fenómeno…",
+      "fuente": "El Comercio",
+      "url": "https://elcomercio.pe/politica/gobierno/luis-galarreta-sobre-delegacion-de-facultades-vamos-a-hacer-un-uso-efectivo-y-contundente-de-lo-que-nos-han-dado-apuesplan-ultimas-noticia/",
+      "fecha": "2026-10-26",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Senador Gavidia del Buen Gobierno defiende su voto: “La abstención es peor que cometer un error. Es un cálculo político”",
-      "resumen": "Presidente del Congreso, Miguel Torres, firma autógrafa que delega facultades legislativas al Gobierno Partido del Buen Gobierno: senadores que votaron a favor de otorgar las facultades afrontarán medidas disciplinarias…",
-      "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/senador-gavidia-del-buen-gobierno-defiende-su-voto-la-abstencion-es-peor-que-cometer-un-error-es-un-calculo-politico-apuesplan-noticia/",
-      "fecha": "2026-10-25",
+      "titulo": "Luis Galarreta sobre autógrafa de ley de facultades legislativas: “Ya está solucionado con la Fe de erratas”",
+      "resumen": "El presidente del Consejo de Ministros consideró que el error en el documento \"ya está subsanado\" y no requiere una modificación.",
+      "fuente": "La República",
+      "url": "https://larepublica.pe/politica/2026/10/25/luis-galarreta-sobre-autografa-de-ley-de-facultades-legislativas-ya-esta-solucionado-con-la-fe-de-erratas-364750",
+      "fecha": "2026-10-26",
       "cat": "🇵🇪 Política peruana"
     }
   ]
