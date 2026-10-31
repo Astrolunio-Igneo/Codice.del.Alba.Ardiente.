@@ -1,6 +1,13 @@
 {
-  "actualizado": "2026-10-31T05:28:55+00:00",
+  "actualizado": "2026-10-31T14:28:59+00:00",
   "items": [
+    {
+      "titulo": "Please Mr. President: Be A Peace President Like Eisenhower",
+      "resumen": "n October of 2002, the night before the U.S. House voted to go to war in Iraq, my sister Beverly called to tell me a Knoxville television station had conducted a poll and found that 74 percent in its viewing area were…",
+      "fuente": "Ron Paul Institute",
+      "url": "https://ronpaulinstitute.org/please-mr-president-be-a-peace-president-like-eisenhower/",
+      "fecha": "2026-10-31"
+    },
     {
       "titulo": "5th Circuit Judge James Ho Says a Presidentially Declared 'Invasion' Overrides Birthright Citizenship",
       "resumen": "The potential SCOTUS nominee qualifies his longstanding position that the U.S.-born children of unauthorized immigrants are citizens under the 14th Amendment.",
@@ -23,13 +30,6 @@
       "fecha": "2026-10-29"
     },
     {
-      "titulo": "With Midterms Looming, True Cost Of Iran War Explodes…",
-      "resumen": "",
-      "fuente": "Ron Paul Institute",
-      "url": "https://ronpaulinstitute.org/35522-2/",
-      "fecha": "2026-10-29"
-    },
-    {
       "titulo": "Who Put Tariffs in My ($20!) Burrito?",
       "resumen": "Back in August, the American right spent an entire week arguing about burritos. The food fight began when Turning Point USA’s Andrew Kolvet relayed a college student’s complaint that a burrito shouldn’t cost $20…",
       "fuente": "AIER",
@@ -39,32 +39,32 @@
   ],
   "politica": [
     {
-      "titulo": "El Sayed and Stevens feud explodes days before Michigan Senate showdown",
-      "resumen": "Michigan Democratic Senate nominee Abdul el Sayed and Rep. Haley Stevens (D-MI), his former primary opponent, are again sparring over Israel just days before voters decide one of the most closely watched contests of the…",
+      "titulo": "Obama had the Tea Party. Trump has ‘No Kings.’ You know how this story ends",
+      "resumen": "In January 2009, then-President Barack Obama had no sooner assumed office after handily defeating the Republican nominee, John McCain, when opposition to his overreaching agenda galvanized a center-right movement. At…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4786970/el-sayed-stevens-feud-explodes-michigan-senate-showdown/",
+      "url": "https://www.washingtonexaminer.com/op-eds/4786342/no-kings-movement-tea-party-2026-midterm-elections/",
       "fecha": "2026-10-31"
     },
     {
-      "titulo": "10,000 Swing-State Voters Were Asked About Socialism. Here’s What They Said.",
-      "resumen": "Summary A growing number of socialist candidates are running for Congress this year, promising to bring radical changes to Washington, D.C. They’ve embraced a nickname, “The Bloc,” and an ambitious agenda of far-left…",
-      "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/10/30/swing-state-voters-socialism/",
-      "fecha": "2026-10-31"
-    },
-    {
-      "titulo": "A Libertarian Perspective on the 2026 Election",
-      "resumen": "Why we should vote \"Democrat by Default\" for federal offices - with a few rare exceptions. I build on a post by political philosopher Dan Shapiro.",
+      "titulo": "American Cities, Population >50K, Named After Foreign (Excluding British) Political Figures",
+      "resumen": "What American cities, with population over 50,000, are named after foreign political figures, but excluding the many named after British… The post American Cities, Population >50K, Named After Foreign (Excluding…",
       "fuente": "Reason",
-      "url": "https://reason.com/volokh/2026/10/30/a-libertarian-perspective-on-the-2026-election/",
-      "fecha": "2026-10-30"
+      "url": "https://reason.com/volokh/2026/10/31/american-cities-population-50k-named-after-foreign-excluding-british-political-figures/",
+      "fecha": "2026-10-31"
     },
     {
-      "titulo": "California’s Act of Fiscal Self-Sabotage",
-      "resumen": "The ‘billionaire tax’ on the ballot will likely cost the state government more than it raises.",
+      "titulo": "The House Is Restless. It Has Been Before.",
+      "resumen": "Summary PITTSBURGH—In April 1894, a ragged column of unemployed men attempted to come through Pittsburgh on the way to Washington. They called themselves Coxey’s Army. It was a protest march of jobless workers led by…",
+      "fuente": "The Daily Signal",
+      "url": "https://www.dailysignal.com/2026/10/31/the-house-restless-been-before/",
+      "fecha": "2026-10-31"
+    },
+    {
+      "titulo": "Trump and Netanyahu Need to Choose Victory on Iran",
+      "resumen": "A resumed offensive must have a clear goal to justify it.",
       "fuente": "National Review",
-      "url": "https://www.nationalreview.com/2026/10/californias-act-of-fiscal-self-sabotage/",
-      "fecha": "2026-10-30"
+      "url": "https://www.nationalreview.com/2026/10/trump-and-netanyahu-need-to-choose-victory-on-iran/",
+      "fecha": "2026-10-31"
     },
     {
       "titulo": "Introducing The Short Queue",
@@ -76,52 +76,60 @@
   ],
   "diarias": [
     {
-      "titulo": "Mohammed Deif, rare footage and October 7 documents",
-      "resumen": "Rare footage obtained by Al Jazeera offers a look at the life of former Hamas military commander, Mohammed Deif.",
+      "titulo": "Evacuees from Russia-occupied city where residents ate weeds arrive in Ukraine",
+      "resumen": "Residents left the devastated city on Friday following a ceasefire brokered by US First Lady Melania Trump.",
+      "fuente": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+      "fecha": "2026-10-31",
+      "cat": "⚔️ Guerra"
+    },
+    {
+      "titulo": "Israel voted for Israel: Why Gaza wasn’t on the ballot",
+      "resumen": "Despite genocide, regional war and isolation, Israel's election revealed little appetite for political alternatives.",
       "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/mohammed-deif-rare-footage-and-october-7-documents?traffic_source=rss",
+      "url": "https://www.aljazeera.com/news/2026/10/31/israel-voted-for-israel-why-gaza-wasnt-on-the-ballot?traffic_source=rss",
       "fecha": "2026-10-31",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "India news: Oil tanker carrying 27 Indians attacked with limpet mines in Strait of Hormuz",
-      "resumen": "A tanker with a crew of 27 Indians caught fire after being struck by limpet mines near Oman. The attack marks the first known successful use of the explosives in the waterway since the US-Iran war began. DW has more.",
-      "fuente": "DW",
-      "url": "https://www.dw.com/en/india-news-oil-tanker-carrying-27-indians-attacked-with-limpet-mines-in-strait-of-hormuz/live-79814329?maca=en-rss-en-all-1573-rdf",
+      "titulo": "Medjugorje. El obispo Cavina, nuevo visitador apostólico",
+      "resumen": "El Papa aceptó la renuncia del nuncio Cavalli y nombró al obispo emérito de Carpi como nuevo visitador apostólico de carácter especial para la Parroquia de Medjugorje por tiempo indefinido Leer todo &nbsp;",
+      "fuente": "Vatican News",
+      "url": "https://www.vaticannews.va/es/vaticano/news/2026-10/medjugorje-nuncio-cavalli-nombramiento-cavina-visitador.html",
       "fecha": "2026-10-31",
-      "cat": "⚔️ Guerra"
+      "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "From Lisbon to Seoul: Conference examines WYD’s role in building peace",
-      "resumen": "The Embassies of Portugal and the Republic of Korea to the Holy See hold a conference in Rome on preparations for World Youth Day Seoul 2027 and the role of young people in promoting peace and dialogue. Read all &nbsp;",
+      "titulo": "Iran’s supreme leader orders ‘immediate and effective’ response to any threat",
+      "resumen": "Iran's Supreme Leader Mojtaba Khamenei has ordered that any threat from \"enemies\" must be met with an immediate and effective response. ​ Read all &nbsp;",
       "fuente": "Vatican News (EN)",
-      "url": "https://www.vaticannews.va/en/church/news/2026-10/wyd-2027-embassies-portugal-korea-conference.html",
-      "fecha": "2026-10-30",
+      "url": "https://www.vaticannews.va/en/world/news/2026-10/iran-us-war-threats-middle-east-hormuz-economy.html",
+      "fecha": "2026-10-31",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Ideas para vivir el Día de Muertos con niños",
-      "resumen": "El Día de Muertos es una de las celebraciones más vibrantes y entrañables de nuestra cultura, donde la memoria se transforma en fiesta, y el recuerdo en color. Para los niños, esta fecha representa una oportunidad única…",
-      "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/10/30/ideas-para-vivir-el-dia-de-muertos-con-ninos/",
-      "fecha": "2026-10-30",
-      "cat": "⛪ Iglesia católica"
-    },
-    {
-      "titulo": "Judge blocks DOJ from threatening election officials over noncitizen voting claims",
-      "resumen": "A California federal judge Friday ordered the Trump administration to stop threatening election officials with criminal prosecution in its ongoing efforts to crack down on noncitizen voting. U.S. District Judge Trina…",
+      "titulo": "Ricketts leads independent candidate Osborn by 6 points in latest Nebraska Senate poll",
+      "resumen": "Just ahead of Election Day, Sen. Pete Ricketts (R-Neb.) leads his independent challenger Dan Osborn, a new survey of the Nebraska Senate race shows. The New York Times/Siena University poll shows Ricketts leading Osborn…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/regulation/court-battles/6185891-judge-stops-trump-election-threats/",
+      "url": "https://thehill.com/homenews/campaign/6186054-ricketts-osborn-nebraska-senate/",
       "fecha": "2026-10-31",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Trump tears into ‘moron’ Robert De Niro, mulls Hollywood tax credits during Daytona Beach rally",
-      "resumen": "Trump veered into attacking the 83-year-old celebrity while mentioning his own former reality TV show “The Apprentice” at a campaign rally in Daytona Beach, Fla.",
-      "fuente": "NY Post",
-      "url": "https://nypost.com/2026/10/30/us-news/trump-tears-into-moron-robert-de-niro-mulls-hollywood-tax-credits-during-daytona-beach-rally/",
-      "fecha": "2026-10-30",
+      "titulo": "CodePink leader adds muscle to well-funded fight to ban restaurant delicacy",
+      "resumen": "An Oregon-based group poured nearly $475,000 into D.C.'s foie gras ban as part of a strategy to \"storm the nation\" with local ballot campaigns.",
+      "fuente": "Fox News",
+      "url": "https://www.foxnews.com/politics/codepink-leader-adds-muscle-well-funded-fight-ban-restaurant-delicacy",
+      "fecha": "2026-10-31",
       "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "Por qué Lula no rechazó de manera oficial el rol de Argentina en el viaje de Bolsonaro a EEUU y la tesis de guerra fría",
+      "resumen": "Itamaraty investiga el paso del senador brasileño por Puerto Iguazú y convocó a la encargada de negocios para recabar información, pero eligió no profundizar la crisis con la Argentina. Los cancilleres de ambos países…",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/politica/2026/10/31/por-que-lula-no-rechazo-de-manera-oficial-el-rol-de-argentina-en-el-viaje-de-bolsonaro-a-eeuu-y-la-tesis-de-guerra-fria/",
+      "fecha": "2026-10-31",
+      "cat": "🇦🇷 Política argentina"
     },
     {
       "titulo": "Los Milei refuerzan su vínculo con la iglesia evangélica antes de la visita del papa León XIV",
@@ -132,27 +140,19 @@
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Las diferencias del Gobierno con los aliados en Diputados demoran las negociaciones por el Presupuesto 2027",
-      "resumen": "El oficialismo tuvo que ajustar su cronograma y ahora espera lograr la media sanción el 25 de noviembre. Los bloques dialoguistas aseguran que “todo está muy verde” y reclaman respuestas concretas a sus reclamos",
-      "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/10/31/las-diferencias-del-gobierno-con-los-aliados-en-diputados-demoran-las-negociaciones-por-el-presupuesto-2027/",
-      "fecha": "2026-10-31",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "Allison reconoce resultados y afirma que si JNE da credenciales a López Aliaga lo buscará para desearle suerte",
-      "resumen": "Resultados de ONPE al 100%. Francis Allison reconoce que no ganó la Alcaldía de Lima, cuestiona al JNE por la incertidumbre sobre la proclamación y afirma que felicitará a Rafael López Aliaga si recibe las credenciales…",
+      "titulo": "Miguel Torres: “Buen Gobierno es una nebulosa, los veo más pegados a la izquierda” | ENTREVISTA",
+      "resumen": "El presidente del Congreso, Miguel Torres (Fuerza Popular), dijo que cree que puede haber más recortes de gastos en el Parlamento, con el objetivo de “lograr mayores evoluciones” de recursos al Parlamento. Y, en una…",
       "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/onpe-al-100-francis-allison-de-avanza-pais-reconoce-resultados-y-dice-que-si-jne-da-credenciales-a-rafael-lopez-aliaga-de-renovacion-popular-lo-buscara-y-desearle-suerte-alcaldia-e-lima-dapuesplan-noticia/",
+      "url": "https://elcomercio.pe/politica/entrevista-miguel-torres-buen-gobierno-es-una-nebulosa-los-veo-mas-pegados-a-la-izquierda-entrevista-noticia/",
       "fecha": "2026-10-31",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Keiko Fujimori señaló que dos megacárceles tipo el Cecot salvadoreño pueden construirse en el Perú en siete meses",
-      "resumen": "Fujimori sostuvo que dependerá mucho de la \"decisión política y los presupuestos\" para conseguir ese objetivo.",
-      "fuente": "RPP",
-      "url": "https://rpp.pe/politica/gobierno/keiko-fujimori-senalo-que-dos-megacarceles-tipo-el-cecot-salvadoreno-pueden-construirse-en-el-peru-en-siete-meses-noticia-1715295",
-      "fecha": "2026-10-30",
+      "titulo": "Procurador del JNE denuncia a López Aliaga y Carlos Álvarez por expresiones de connotación sexual contra Burneo",
+      "resumen": "Ronald Angulo sostiene que ambos se extralimitaron en sus reproches a decisiones del presidente del jurado.",
+      "fuente": "La República",
+      "url": "https://larepublica.pe/politica/2026/10/31/procurador-del-jne-denuncia-a-lopez-aliaga-y-carlos-alvarez-por-expresiones-de-connotacion-sexual-contra-burneo-hnews-507253",
+      "fecha": "2026-10-31",
       "cat": "🇵🇪 Política peruana"
     }
   ]
