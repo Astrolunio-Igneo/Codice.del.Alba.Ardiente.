@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T15:52:37+00:00",
+  "actualizado": "2026-11-06T21:27:31+00:00",
   "items": [
     {
       "titulo": "Review: Milei's Rise Through the Eyes of One of His Critics",
@@ -23,47 +23,47 @@
       "fecha": "2026-11-05"
     },
     {
+      "titulo": "How the Ukrainian Soviet Socialist Republic Became a Country",
+      "resumen": "The former Soviet administrative unit that emerged as independent Ukraine in 1991 after the fall of the Soviet Union was bounded by the exact borders of the Ukrainian Soviet Socialist Republic (SSR). That is, it…",
+      "fuente": "Ron Paul Institute",
+      "url": "https://ronpaulinstitute.org/how-the-ukrainian-soviet-socialist-republic-became-a-country/",
+      "fecha": "2026-11-05"
+    },
+    {
       "titulo": "Broken Promises: Why the Iran War Could Decide the Midterm Elections",
       "resumen": "There is no sugarcoating the fact that the president’s decision to go to war with Iran undid his progress toward a foreign policy that reflects the priorities of the American people.",
       "fuente": "Cato Recent Op-eds",
       "url": "https://www.cato.org/commentary/broken-promises-why-iran-war-could-decide-midterm-elections",
       "fecha": "2026-11-03"
-    },
-    {
-      "titulo": "Why Milei's Chainsaw Revolution Required Restraint",
-      "resumen": "In December 2023, as the sound of a chainsaw echoed through Buenos Aires, Javier Milei swept into the Casa Rosada, and pro-market Austrian School economists cheered his victory. Nearly three years later, many…",
-      "fuente": "AIER",
-      "url": "https://thedailyeconomy.org/article/why-mileis-chainsaw-revolution-required-restraint/",
-      "fecha": "2026-11-03"
     }
   ],
   "politica": [
     {
-      "titulo": "The Israeli elections prove Netanyahu’s political prowess",
-      "resumen": "Those banking on a loss for Israeli Prime Minister Benjamin Netanyahu in last week’s elections were sorely mistaken. Although neither his bloc nor the opposition has a straightforward path to forming the next…",
+      "titulo": "Trump answers defeat by defiantly naming Stephen Miller chief of staff",
+      "resumen": "Appointing Stephen Miller to replace Susie Wiles as White House chief of staff, President Donald Trump signaled he’ll adopt a combative approach to dealing with the incoming Democratic-controlled Congress. Indeed…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/op-eds/4795296/israeli-elections-prove-benjamin-netanyahu-political-prowess/",
+      "url": "https://www.washingtonexaminer.com/opinion/beltway-confidential/4795782/trump-defeat-stephen-miller-chief-of-staff/",
       "fecha": "2026-11-06"
     },
     {
-      "titulo": "Campus Debate Turns Violent. Now a University of Michigan Student Faces Charges",
-      "resumen": "Washtenaw County prosecutors have authorized criminal charges against the University of Michigan student accused of assaulting conservative activists during a free-speech event on campus. On Sunday, Nov. 1, Liberty…",
-      "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/11/06/university-assault-safety-debate/",
-      "fecha": "2026-11-06"
-    },
-    {
-      "titulo": "Which Way, Democrats?",
-      "resumen": "Some newly elected Democrats are sounding a conciliatory note. Others are calling for immediate reprisals.",
-      "fuente": "Reason",
-      "url": "https://reason.com/2026/11/06/which-way-democrats/",
-      "fecha": "2026-11-06"
-    },
-    {
-      "titulo": "Tuesdays Gone",
-      "resumen": "This year’s election conjures up memories of several similar defeats for the right.",
+      "titulo": "Fear Jon Ossoff",
+      "resumen": "Youthful and good-looking, with a taste for soaring, idealistic rhetoric, he could activate the Democratic reflex to always look for the next JFK.",
       "fuente": "National Review",
-      "url": "https://www.nationalreview.com/2026/11/tuesdays-gone/",
+      "url": "https://www.nationalreview.com/2026/11/fear-jon-ossoff/",
+      "fecha": "2026-11-06"
+    },
+    {
+      "titulo": "Short Circuit: A roundup of recent federal court decisions",
+      "resumen": "Geek therapy, crack felony, and some Scooby Snacks.",
+      "fuente": "Reason",
+      "url": "https://reason.com/volokh/2026/11/06/short-circuit-a-roundup-of-recent-federal-court-decisions-303/",
+      "fecha": "2026-11-06"
+    },
+    {
+      "titulo": "Is the Democrats’ New Majority Coming for Young Staffers?",
+      "resumen": "Summary Every new majority in Congress arrives with a plan. Usually, the plan is about how to make life better for everyday Americans. On Nov. 3, Democrats won both chambers of Congress. Sen. Elissa Slotkin, D-Mich…",
+      "fuente": "The Daily Signal",
+      "url": "https://www.dailysignal.com/2026/11/06/is-the-democrats-new-majority-coming-for-young-staffers/",
       "fecha": "2026-11-06"
     },
     {
@@ -76,82 +76,82 @@
   ],
   "diarias": [
     {
-      "titulo": "Fact check: Three viral Iran war posts debunked",
-      "resumen": "In the wake of the new US attack on Iran, social media is awash with dramatic images and claims about the fighting. DW Fact Check found AI-generated and recycled videos, as well as misleading posts from dubious accounts.",
+      "titulo": "Tankers carrying Russian diesel to the US change course",
+      "resumen": "Despite an ostensible deal between Donald Trump and Vladimir Putin to bring diesel to the US, tankers are reportedly unable to dock due to existing sanctions.",
       "fuente": "DW",
-      "url": "https://www.dw.com/en/fact-check-three-viral-iran-war-posts-debunked/a-79867353?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/tankers-carrying-russian-diesel-to-the-us-change-course/a-79870807?maca=en-rss-en-all-1573-rdf",
       "fecha": "2026-11-06",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "New wave of bomb threats hit European airlines",
-      "resumen": "No link has been established between the threats against the airlines and those against the media outlets.",
-      "fuente": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq62yy064vjpo?at_medium=RSS&at_campaign=rss",
+      "titulo": "Israel closes Hebron’s Ibrahimi Mosque to Palestinians for Jewish holiday",
+      "resumen": "Contested West Bank holy site is reopened exclusively for Israelis, deepening tensions over control of the mosque.",
+      "fuente": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/6/israel-closes-hebrons-ibrahimi-mosque-to-palestinians-for-jewish-holiday?traffic_source=rss",
       "fecha": "2026-11-06",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "¿Qué nos dice la «lucidez terminal» sobre el alma humana?",
-      "resumen": "Los médicos y las familias relatan historias similares: una persona sumida desde hace años en la demencia, que ni siquiera reconoce a sus seres más cercanos, de repente vuelve a la vida. Sonríe, habla con frases…",
+      "titulo": "Fondo Kappa: el Tribunal de Malta condena a indemnizar al IOR con 24,1 millones",
+      "resumen": "La sentencia de primera instancia dictada por el Tribunal Civil condena a las partes demandadas, Optimum Evolution Fund SIF, Optimum Asset Management S.A., Futura Investment Management Limited y Futura Funds SICAV plc…",
+      "fuente": "Vatican News",
+      "url": "https://www.vaticannews.va/es/vaticano/news/2026-11/fondo-kappa-el-tribunal-de-malta-condena-a-indemnizar-al-ior.html",
+      "fecha": "2026-11-06",
+      "cat": "⛪ Iglesia católica"
+    },
+    {
+      "titulo": "Ante la crisis de vocaciones, ¿qué papel tiene la familia?",
+      "resumen": "En la actualidad estamos presenciando una crisis en las vocaciones religiosas. Si comparamos las ordenaciones sacerdotales y el número de personas que ingresaban a la vida consagrada hace unas décadas con las cifras…",
       "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/11/06/que-nos-dice-la-lucidez-terminal-sobre-el-alma-humana/",
+      "url": "https://es.aleteia.org/2026/11/06/ante-la-crisis-de-vocaciones-que-papel-tiene-la-familia/",
       "fecha": "2026-11-06",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Meet the Church in Casavalle, the Montevideo neighbourhood welcoming Pope Leo",
-      "resumen": "Ahead of Pope Leo XIV’s visit to Casavalle, we visit the twelve the Pope will bless and a local priests and a social ministry worker describe how the Church helps families build homes and gives teenagers and adults a…",
-      "fuente": "Vatican News (EN)",
-      "url": "https://www.vaticannews.va/en/church/news/2026-11/pope-leo-to-bless-homes-for-families-in-montevideo-s-casavalle.html",
-      "fecha": "2026-11-06",
-      "cat": "⛪ Iglesia católica"
-    },
-    {
-      "titulo": "Colom rips 'unlawful attack' after Hyde-Smith demands ballot preservation in Mississippi",
-      "resumen": "An attorney for Mississippi Democratic Senate candidate Scott Colom said Republican efforts to separate particular ballots are illegal under state law and should not be followed, according to a letter sent to county…",
-      "fuente": "The Hill",
-      "url": "https://thehill.com/homenews/6204045-mississippi-senate-race-ballot-handling-fight/",
-      "fecha": "2026-11-06",
-      "cat": "🇺🇸 Política de EE. UU."
-    },
-    {
-      "titulo": "Top prosecutor Jason Reding Quiñones, tapped for Russiagate ‘conspiracy’ probe, quits DOJ",
-      "resumen": "The federal prosecutor oversaw a \"grand conspiracy\" probe of ex-Obama admin officials who allegedly pushed claims of collusion between Trump and Russia during the 2016 presidential campaign.",
+      "titulo": "DSA wave storms Congress — and radical comments on 9/11, abolishing police and arresting enemies come into the spotlight",
+      "resumen": "The Democratic Socialists of America notched historic victories on Tuesday, sending a new wave of left-wing lawmakers to Congress and raising eyebrows over their past statements.",
       "fuente": "NY Post",
-      "url": "https://nypost.com/2026/11/06/us-news/jason-reding-quinones-quits-doj-prosecutor-ran-russiagate-conspiracy-probe/",
+      "url": "https://nypost.com/2026/11/06/us-news/dsa-wave-storms-congress-and-radical-comments-on-9-11-abolishing-police-and-arresting-enemies-come-into-the-spotlight/",
       "fecha": "2026-11-06",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "El fiscal Pollicita dijo que no hay pruebas para sostener que Adorni se enriqueció en su paso por el Gobierno",
-      "resumen": "Presentó un dictamen en el que relató que no tiene elementos para rebatir la versión del exjefe de Gabinete, que dijo que tenía el dinero desde antes de llegar a la función pública; con ese argumento, pidió que el caso…",
+      "titulo": "Jeffries calls Miller a 'dangerous xenophobe' after promotion: 'Fire him today'",
+      "resumen": "House Democratic Leader Hakeem Jeffries is sounding off on Stephen Miller, President Trump's pick to replace outgoing White House Chief of Staff Susie Wiles. “Stephen Miller is a dangerous xenophobe and reckless…",
+      "fuente": "The Hill",
+      "url": "https://thehill.com/homenews/administration/6205195-jeffries-blasts-trump-miller-pick/",
+      "fecha": "2026-11-06",
+      "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "RDC: Lula enfrenta una denuncia por presunto abuso de poder político durante la campaña electoral",
+      "resumen": "Eleonora Gosman analizó en Ronda de Corresponsales (RDC) la denuncia electoral contra Lula, el peso de la oposición parlamentaria y el posible impacto institucional de la causa. Leer más",
+      "fuente": "Perfil",
+      "url": "https://perfil.com/mas-perfil/rdc-lula-enfrenta-una-denuncia-por-presunto-abuso-de-poder-politico-durante-la-campana-electoral-aHG2A9X4tsFl",
+      "fecha": "2026-11-06",
+      "cat": "🇦🇷 Política argentina"
+    },
+    {
+      "titulo": "Javier Milei y sus medidas, en vivo: “El espíritu liberal sigue vivo”, dijo el Presidente en la Cumbre Iberoamericana",
+      "resumen": "El minuto a minuto de las decisiones del Presidente, todas las reacciones de la oposición y las declaraciones de los funcionarios",
       "fuente": "La Nación",
-      "url": "https://www.lanacion.com.ar/politica/el-fiscal-pollicita-dijo-que-no-hay-pruebas-para-sostener-que-adorni-se-enriquecio-en-su-paso-por-el-nid06112026/",
+      "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-espiritu-liberal-sigue-vivo-dijo-el-presidente-en-la-cumbre-nid06112026/",
       "fecha": "2026-11-06",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Eduardo Valdés pidió que la reunión política con el papa León XIV muestre una “unidad que se pueda mantener”",
-      "resumen": "La convocatoria del día domingo por la tarde en el Palacio Libertad reunirá al presidente Javier Milei, la vice Victoria Villarruel y referentes de distintos espacios junto al sumo pontífice. El diputado y exembajador…",
-      "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/11/06/eduardo-valdes-pidio-que-la-reunion-politica-con-el-papa-leon-xiv-muestre-una-unidad-que-se-pueda-mantener/",
-      "fecha": "2026-11-06",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "Keiko Fujimori llegó a Tumbes para inspeccionar albergue temporal y hospital de campaña",
-      "resumen": "En su viaje N° 28, la mandataria estará acompañada de los ministros de Salud, Luis Dyer y de Defensa, Rafael Belaunde, el jefe de Indeci, gobernadores regionales y autoridades locales.",
-      "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/2026/11/06/keiko-fujimori-llego-a-tumbes-para-inspeccionar-albergue-temporal-y-hospital-de-campana/",
+      "titulo": "Puno: dirigentes y gremios exigen amnistía para Pedro Castillo durante audiencia de Juntos por el Perú",
+      "resumen": "El senador Jaime Quito respaldó el pedido y recordó que ya hay un proyecto de ley presentado. Entre los asistentes estuvo Roberto Sánchez, jefe de gabinete de asesores de la bancada en el Senado.",
+      "fuente": "La República",
+      "url": "https://larepublica.pe/politica/2026/11/06/puno-dirigentes-y-gremios-exigen-amnistia-para-pedro-castillo-durante-audiencia-de-juntos-por-el-peru-hnews-114156",
       "fecha": "2026-11-06",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Tomás Gálvez dispone cese por límite de edad de Martha Maisch como fiscal suprema provisional",
-      "resumen": "El fiscal de la Nación, Tomás Gálvez, dispuso el cese por límite de edad de Martha Maisch en el cargo de fiscal suprema provisional. Ella actualmente cumple el cargo de miembro titular del pleno del Jurado Nacional de…",
-      "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/actualidad/tomas-galvez-dispone-el-cese-de-martha-maisch-miembro-del-jne-como-fiscal-suprema-provisional-ultimas-noticia/",
+      "titulo": "La desgarradora arenga de Luis Urruti sobre su mamá previo al Universitario vs Sport Boys por Torneo Clausura 2026",
+      "resumen": "‘Tito’ decidió jugar el partido pese al delicado estado de salud de su madre, quien finalmente falleció en Uruguay",
+      "fuente": "Infobae Perú",
+      "url": "https://www.infobae.com/peru/deportes/2026/11/06/la-desgarradora-arenga-de-luis-urruti-sobre-su-mama-previo-al-universitario-vs-sport-boys-por-torneo-clausura-2026/",
       "fecha": "2026-11-06",
       "cat": "🇵🇪 Política peruana"
     }
