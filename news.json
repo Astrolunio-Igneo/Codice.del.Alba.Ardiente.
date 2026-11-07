@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T21:27:31+00:00",
+  "actualizado": "2026-11-07T05:51:00+00:00",
   "items": [
     {
       "titulo": "Review: Milei's Rise Through the Eyes of One of His Critics",
@@ -39,10 +39,24 @@
   ],
   "politica": [
     {
-      "titulo": "Trump answers defeat by defiantly naming Stephen Miller chief of staff",
-      "resumen": "Appointing Stephen Miller to replace Susie Wiles as White House chief of staff, President Donald Trump signaled he’ll adopt a combative approach to dealing with the incoming Democratic-controlled Congress. Indeed…",
+      "titulo": "House GOP Oversight chairman says ‘there’s a lot of questions about Hegseth’",
+      "resumen": "House Oversight Chairman James Comer (R-KY) declined to back Secretary of War Pete Hegseth as an impeachment vote against the secretary looms, saying there are “a lot of questions” about him. The House must vote next…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/opinion/beltway-confidential/4795782/trump-defeat-stephen-miller-chief-of-staff/",
+      "url": "https://www.washingtonexaminer.com/news/house/4796359/james-comer-lot-of-questions-hegseth/",
+      "fecha": "2026-11-07"
+    },
+    {
+      "titulo": "Spoiled Ballots Over ‘Decoy Dan’ Add New Twist to Alaska’s Senate Nail-Biter",
+      "resumen": "As of Friday, at least 90 ballots have been tossed for Alaska voters who marked both U.S. Senate candidates named Dan Sullivan as their first choice, in a race where the top two candidates are separated by fewer than…",
+      "fuente": "The Daily Signal",
+      "url": "https://www.dailysignal.com/2026/11/06/spoiled-ballots-over-decoy-dan-add-new-twist-to-alaskas-senate-nail-biter/",
+      "fecha": "2026-11-06"
+    },
+    {
+      "titulo": "A Major Reform of California's Environmental Regulations Looks Destined for Failure",
+      "resumen": "While votes are still being counted, a majority of voters appear to have said no to a major overhaul of the California Environmental Quality Act.",
+      "fuente": "Reason",
+      "url": "https://reason.com/2026/11/06/a-major-reform-of-californias-environmental-regulations-looks-destined-for-failure/",
       "fecha": "2026-11-06"
     },
     {
@@ -50,20 +64,6 @@
       "resumen": "Youthful and good-looking, with a taste for soaring, idealistic rhetoric, he could activate the Democratic reflex to always look for the next JFK.",
       "fuente": "National Review",
       "url": "https://www.nationalreview.com/2026/11/fear-jon-ossoff/",
-      "fecha": "2026-11-06"
-    },
-    {
-      "titulo": "Short Circuit: A roundup of recent federal court decisions",
-      "resumen": "Geek therapy, crack felony, and some Scooby Snacks.",
-      "fuente": "Reason",
-      "url": "https://reason.com/volokh/2026/11/06/short-circuit-a-roundup-of-recent-federal-court-decisions-303/",
-      "fecha": "2026-11-06"
-    },
-    {
-      "titulo": "Is the Democrats’ New Majority Coming for Young Staffers?",
-      "resumen": "Summary Every new majority in Congress arrives with a plan. Usually, the plan is about how to make life better for everyday Americans. On Nov. 3, Democrats won both chambers of Congress. Sen. Elissa Slotkin, D-Mich…",
-      "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/11/06/is-the-democrats-new-majority-coming-for-young-staffers/",
       "fecha": "2026-11-06"
     },
     {
@@ -76,6 +76,14 @@
   ],
   "diarias": [
     {
+      "titulo": "President Herzog faces key choice as Israel struggles to form government",
+      "resumen": "Eisenkot's bloc and Arab-led parties seek to oust Netanyahu, but failure to form government could leave him in power.",
+      "fuente": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/7/president-herzog-faces-key-choice-as-israel-struggles-to-form-government?traffic_source=rss",
+      "fecha": "2026-11-07",
+      "cat": "⚔️ Guerra"
+    },
+    {
       "titulo": "Tankers carrying Russian diesel to the US change course",
       "resumen": "Despite an ostensible deal between Donald Trump and Vladimir Putin to bring diesel to the US, tankers are reportedly unable to dock due to existing sanctions.",
       "fuente": "DW",
@@ -84,75 +92,67 @@
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Israel closes Hebron’s Ibrahimi Mosque to Palestinians for Jewish holiday",
-      "resumen": "Contested West Bank holy site is reopened exclusively for Israelis, deepening tensions over control of the mosque.",
-      "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/11/6/israel-closes-hebrons-ibrahimi-mosque-to-palestinians-for-jewish-holiday?traffic_source=rss",
-      "fecha": "2026-11-06",
-      "cat": "⚔️ Guerra"
-    },
-    {
-      "titulo": "Fondo Kappa: el Tribunal de Malta condena a indemnizar al IOR con 24,1 millones",
-      "resumen": "La sentencia de primera instancia dictada por el Tribunal Civil condena a las partes demandadas, Optimum Evolution Fund SIF, Optimum Asset Management S.A., Futura Investment Management Limited y Futura Funds SICAV plc…",
+      "titulo": "Patricia Schroeder: El Papa viene para todos, no solamente para los católicos",
+      "resumen": "La coordinadora ejecutiva de Comunicación del viaje apostólico de León XIV a Uruguay destaca el desafío de convocar a toda la sociedad en un país secularizado. Más de un centenar de profesionales y 3.600 voluntarios…",
       "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/vaticano/news/2026-11/fondo-kappa-el-tribunal-de-malta-condena-a-indemnizar-al-ior.html",
-      "fecha": "2026-11-06",
+      "url": "https://www.vaticannews.va/es/iglesia/news/2026-11/patricia-schroeder-comunicacion-viaje-papa-uruguay-audiencias.html",
+      "fecha": "2026-11-07",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Ante la crisis de vocaciones, ¿qué papel tiene la familia?",
-      "resumen": "En la actualidad estamos presenciando una crisis en las vocaciones religiosas. Si comparamos las ordenaciones sacerdotales y el número de personas que ingresaban a la vida consagrada hace unas décadas con las cifras…",
+      "titulo": "León XIV en Uruguay: ¿Cómo evangelizar en una sociedad secularizada?",
+      "resumen": "«Que, al ver cómo nos acercamos a quienes sufren, se pregunten de dónde proviene este amor». Este fue el consejo que León XIV dio al clero y a los religiosos uruguayos, inmersos en una sociedad secularizada, durante un…",
       "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/11/06/ante-la-crisis-de-vocaciones-que-papel-tiene-la-familia/",
-      "fecha": "2026-11-06",
+      "url": "https://es.aleteia.org/2026/11/07/leon-xiv-en-uruguay-como-evangelizar-en-una-sociedad-secularizada/",
+      "fecha": "2026-11-07",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "DSA wave storms Congress — and radical comments on 9/11, abolishing police and arresting enemies come into the spotlight",
-      "resumen": "The Democratic Socialists of America notched historic victories on Tuesday, sending a new wave of left-wing lawmakers to Congress and raising eyebrows over their past statements.",
+      "titulo": "State Dept. offers $20 million reward for information about Iran’s nuke program",
+      "resumen": "Specifically, the US is seeking information about Iranian “nuclear scientists and staff,” “nuclear program-related technologies and capabilities” and “associated organizations and personnel,” according to the…",
       "fuente": "NY Post",
-      "url": "https://nypost.com/2026/11/06/us-news/dsa-wave-storms-congress-and-radical-comments-on-9-11-abolishing-police-and-arresting-enemies-come-into-the-spotlight/",
-      "fecha": "2026-11-06",
+      "url": "https://nypost.com/2026/11/07/us-news/state-dept-offers-20-million-reward-for-information-about-irans-nuke-program/",
+      "fecha": "2026-11-07",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Jeffries calls Miller a 'dangerous xenophobe' after promotion: 'Fire him today'",
-      "resumen": "House Democratic Leader Hakeem Jeffries is sounding off on Stephen Miller, President Trump's pick to replace outgoing White House Chief of Staff Susie Wiles. “Stephen Miller is a dangerous xenophobe and reckless…",
-      "fuente": "The Hill",
-      "url": "https://thehill.com/homenews/administration/6205195-jeffries-blasts-trump-miller-pick/",
-      "fecha": "2026-11-06",
+      "titulo": "DeSantis blasts Washington Post over report he's preparing 2028 presidential bid",
+      "resumen": "Florida Gov. Ron DeSantis accused The Washington Post of fabricating claims he reached out to political consultants about a potential 2028 presidential bid.",
+      "fuente": "Fox News",
+      "url": "https://www.foxnews.com/politics/desantis-blasts-washington-post-report-preparing-2028-presidential-bid",
+      "fecha": "2026-11-07",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "RDC: Lula enfrenta una denuncia por presunto abuso de poder político durante la campaña electoral",
-      "resumen": "Eleonora Gosman analizó en Ronda de Corresponsales (RDC) la denuncia electoral contra Lula, el peso de la oposición parlamentaria y el posible impacto institucional de la causa. Leer más",
+      "titulo": "La fractura silenciosa de La Libertad Avanza y sus consecuencias sobre la agenda legislativa del Gobierno",
+      "resumen": "La exhibición pública de Patricia Bullrich con quince diputados no significa un quiebre, pero sí una advertencia calculada en un espacio donde la distribución de lugares en las listas en 2027 se perfila como el…",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/politica/2026/11/07/la-fractura-silenciosa-de-la-libertad-avanza-y-sus-consecuencias-sobre-la-agenda-legislativa-del-gobierno/",
+      "fecha": "2026-11-07",
+      "cat": "🇦🇷 Política argentina"
+    },
+    {
+      "titulo": "Encuesta sobre el fútbol argentino: Chiqui Tapia cuestionado, los peores presidentes y qué clubes son los más beneficiados",
+      "resumen": "Un sondeo nacional evaluó a los dirigentes argentinos. Rechazo a la conducción de la AFA y apoyo a quienes los desafían. Cuál es la entidad que atraviesa su peor momento futbolístico según los hinchas. Leer más",
       "fuente": "Perfil",
-      "url": "https://perfil.com/mas-perfil/rdc-lula-enfrenta-una-denuncia-por-presunto-abuso-de-poder-politico-durante-la-campana-electoral-aHG2A9X4tsFl",
-      "fecha": "2026-11-06",
+      "url": "https://perfil.com/deportes/encuesta-sobre-el-futbol-argentino-chiqui-tapia-cuestionado-los-peores-presidentes-y-que-clubes-son-los-mas-beneficiados-aAL9i3M8NWXO",
+      "fecha": "2026-11-07",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Javier Milei y sus medidas, en vivo: “El espíritu liberal sigue vivo”, dijo el Presidente en la Cumbre Iberoamericana",
-      "resumen": "El minuto a minuto de las decisiones del Presidente, todas las reacciones de la oposición y las declaraciones de los funcionarios",
-      "fuente": "La Nación",
-      "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-espiritu-liberal-sigue-vivo-dijo-el-presidente-en-la-cumbre-nid06112026/",
-      "fecha": "2026-11-06",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "Puno: dirigentes y gremios exigen amnistía para Pedro Castillo durante audiencia de Juntos por el Perú",
-      "resumen": "El senador Jaime Quito respaldó el pedido y recordó que ya hay un proyecto de ley presentado. Entre los asistentes estuvo Roberto Sánchez, jefe de gabinete de asesores de la bancada en el Senado.",
+      "titulo": "Jaime Bayly: “Los políticos peruanos, sean de izquierda o de derecha, siempre encuentran la manera de decepcionarte”",
+      "resumen": "En esta entrevista exclusiva, Jaime Bayly reflexiona sobre su trayectoria literaria, su relación con Vargas Llosa y la situación política en Perú, al tiempo que destaca el poder como un narcótico adictivo. \"Los…",
       "fuente": "La República",
-      "url": "https://larepublica.pe/politica/2026/11/06/puno-dirigentes-y-gremios-exigen-amnistia-para-pedro-castillo-durante-audiencia-de-juntos-por-el-peru-hnews-114156",
-      "fecha": "2026-11-06",
+      "url": "https://larepublica.pe/politica/2026/02/14/jaime-bayly-los-politicos-peruanos-sean-de-izquierda-o-de-derecha-siempre-encuentran-la-manera-de-decepcionarte-hnews-1110858",
+      "fecha": "2026-11-07",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "La desgarradora arenga de Luis Urruti sobre su mamá previo al Universitario vs Sport Boys por Torneo Clausura 2026",
-      "resumen": "‘Tito’ decidió jugar el partido pese al delicado estado de salud de su madre, quien finalmente falleció en Uruguay",
+      "titulo": "Quién es Jeanette Alonzo, la posible alcaldesa de Lima ante el impedimento de reelección de Rafael López Aliaga: perfil y hoja de vida",
+      "resumen": "La postulación ante el Jurado Nacional de Elecciones la incorpora a la fórmula municipal encabezada por Rafael López Aliaga para los comicios regionales y municipales de 2026, tras los cambios producidos en la nómina…",
       "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/deportes/2026/11/06/la-desgarradora-arenga-de-luis-urruti-sobre-su-mama-previo-al-universitario-vs-sport-boys-por-torneo-clausura-2026/",
-      "fecha": "2026-11-06",
+      "url": "https://www.infobae.com/peru/2026/11/07/quien-es-jeanette-alonzo-la-posible-alcaldesa-de-lima-ante-el-impedimento-de-reeleccion-de-rafael-lopez-aliaga-perfil-y-hoja-de-vida/",
+      "fecha": "2026-11-07",
       "cat": "🇵🇪 Política peruana"
     }
   ]
