@@ -1,18 +1,25 @@
 {
-  "actualizado": "2026-11-10T02:40:48+00:00",
+  "actualizado": "2026-11-10T12:31:54+00:00",
   "items": [
+    {
+      "titulo": "An Absurdist's Exile in Buenos Aires: Witold Gombrowicz's Argentine Years",
+      "resumen": "Outsider Everywhere follows the Polish author's 24 years in Argentina.",
+      "fuente": "Reason",
+      "url": "https://reason.com/2026/11/10/an-absurdists-exile-in-buenos-aires/",
+      "fecha": "2026-11-10"
+    },
+    {
+      "titulo": "Trump Renews Designation of Nicaragua as an ‘Extraordinary Threat’",
+      "resumen": "On November 3, President Trump signed an executive order declaring a “national emergency.” The “emergency” is due to “the unusual and extraordinary threat to the national security and foreign policy of the United States…",
+      "fuente": "Antiwar.com",
+      "url": "https://original.antiwar.com/john_perry/2026/11/09/trump-renews-designation-of-nicaragua-as-an-extraordinary-threat/?utm_source=rss&utm_medium=rss&utm_campaign=trump-renews-designation-of-nicaragua-as-an-extraordinary-threat",
+      "fecha": "2026-11-10"
+    },
     {
       "titulo": "Iran Hits Back After Rubio Labels Tehran’s Demands ‘Outrageous and Ridiculous’",
       "resumen": "The Iranian Foreign Ministry spokesman argued it was reasonable for Tehran to require Washington to lift the US blockade and remove sanctions before peace negotiations resume. The statement followed Secretary of State…",
       "fuente": "Libertarian Institute",
       "url": "https://libertarianinstitute.org/news/iran-hits-back-after-rubio-labels-tehrans-demands-outrageous-and-ridiculous/?utm_source=rss&utm_medium=rss&utm_campaign=iran-hits-back-after-rubio-labels-tehrans-demands-outrageous-and-ridiculous",
-      "fecha": "2026-11-09"
-    },
-    {
-      "titulo": "Yes, the Midterms Were About the Iran War",
-      "resumen": "New polling shows that voters were animated by opposition to the war—and want more congressional oversight.",
-      "fuente": "Reason",
-      "url": "https://reason.com/2026/11/09/yes-the-midterms-were-about-the-iran-war/",
       "fecha": "2026-11-09"
     },
     {
@@ -28,21 +35,28 @@
       "fuente": "AIER",
       "url": "https://thedailyeconomy.org/article/voters-hated-tariffs-here-are-the-receipts/",
       "fecha": "2026-11-09"
-    },
-    {
-      "titulo": "Democrats, Please Take Note: Peace Is Good Politics",
-      "resumen": "Voters across the United States were loud and clear on Tuesday in their historic drubbing of Trumpism. The election was a decisive rejection of Trump’s war on Iran and its staggering costs at home. While savoring their…",
-      "fuente": "Antiwar.com",
-      "url": "https://original.antiwar.com/jeffrey_sachs/2026/11/08/democrats-please-take-note-peace-is-good-politics/?utm_source=rss&utm_medium=rss&utm_campaign=democrats-please-take-note-peace-is-good-politics",
-      "fecha": "2026-11-09"
     }
   ],
   "politica": [
     {
-      "titulo": "Trump DOJ shores up anti-abortion groups’ support amid bid to salvage $1.8 billion Planned Parenthood lawsuit",
-      "resumen": "The Trump administration is moving to preserve a potentially seismic financial case against the nation’s largest facilitator of abortions, Planned Parenthood, as Republicans’ midterm collapse threatens to dismantle a…",
+      "titulo": "Today in Supreme Court History: November 10, 1975",
+      "resumen": "11/10/1975: Buckley v. Valeo argued. The post Today in Supreme Court History: November 10, 1975 appeared first on Reason Magazine.",
+      "fuente": "Reason",
+      "url": "https://reason.com/volokh/2026/11/10/today-in-supreme-court-history-november-10-1975-8/",
+      "fecha": "2026-11-10"
+    },
+    {
+      "titulo": "Why everyone should have seen the blue wave coming (and why they didn’t)",
+      "resumen": "Last week’s midterm elections produced stunning Democratic victories across the country, but maybe they shouldn’t have been such a surprise. The congressional map in both houses appeared to favor Republicans, but it was…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/justice/4797638/doj-anti-abortion-groups-planned-parenthood-lawsuit/",
+      "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4798102/why-everyone-should-have-seen-blue-wave-coming/",
+      "fecha": "2026-11-10"
+    },
+    {
+      "titulo": "The Next Era",
+      "resumen": "Last week’s election was likely the opening bell of a major fight over the future of the political right.",
+      "fuente": "Law & Liberty",
+      "url": "https://lawliberty.org/the-next-era/",
       "fecha": "2026-11-10"
     },
     {
@@ -53,105 +67,91 @@
       "fecha": "2026-11-10"
     },
     {
-      "titulo": "Andrew McCarthy on the Hegseth Impeachment",
-      "resumen": "A prominent conservative legal commentator explains why Hegseth should be convicted on at least some of the charges.",
-      "fuente": "Reason",
-      "url": "https://reason.com/volokh/2026/11/09/andy-mccarthy-on-the-hegseth-impeachment/",
-      "fecha": "2026-11-09"
-    },
-    {
       "titulo": "The Jewish Vote Moves Toward the GOP",
       "resumen": "As a group, American Jews rejected Democrats’ most radical class ever.",
       "fuente": "National Review",
       "url": "https://www.nationalreview.com/2026/11/the-jewish-vote-moves-toward-the-gop/",
       "fecha": "2026-11-09"
-    },
-    {
-      "titulo": "The Irish Question After Burke",
-      "resumen": "Nineteenth-century Ireland blended sectarian strife with sophisticated debate about representative government.",
-      "fuente": "Law & Liberty",
-      "url": "https://lawliberty.org/book-review/the-irish-question-after-burke/",
-      "fecha": "2026-11-09"
     }
   ],
   "diarias": [
     {
-      "titulo": "Israel’s Shin Bet finds no evidence of foreign election interference",
-      "resumen": "Israel's internal security service has found no evidence of foreign interference in last month’s election.",
-      "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/israels-shin-bet-finds-no-evidence-of-foreign-election-interference?traffic_source=rss",
-      "fecha": "2026-11-10",
-      "cat": "⚔️ Guerra"
-    },
-    {
-      "titulo": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
-      "resumen": "Kyiv, Washington and Moscow are all sending delegation to the United Arab Emirates for the first trilateral talks since February.",
+      "titulo": "Israel's new parliament to be sworn in as leaders compete to form government",
+      "resumen": "Benjamin Netanyahu's main political rival, Gadi Eisenkot, has first chance to build a new government and oust the prime minister.",
       "fuente": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/crd939lpzjp9o?at_medium=RSS&at_campaign=rss",
       "fecha": "2026-11-10",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Pope Leo urges Argentinians to proclaim Christ with joy",
-      "resumen": "Pope Leo XIV concludes his second day in Argentina by greeting the faithful gathered outside the Apostolic Nunciature in Buenos Aires, encouraging them to welcome Christ's call to proclaim the Good News with joy. Read…",
+      "titulo": "GCC agrees to set up advanced military command headquarters in Kuwait",
+      "resumen": "Gulf leaders emphasised the need to strengthen defence coordination to confront present and future regional challenges.",
+      "fuente": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/10/gcc-agrees-to-set-up-advanced-military-command-headquarters-in-kuwait?traffic_source=rss",
+      "fecha": "2026-11-10",
+      "cat": "⚔️ Guerra"
+    },
+    {
+      "titulo": "Mi nombre es Marta Torres y vivo en el Cottolengo",
+      "resumen": "\"He aprendido a conocer a Dios en profundidad a través de las personas que me han acompañado\" Leer todo &nbsp;",
+      "fuente": "Vatican News",
+      "url": "https://www.vaticannews.va/es/iglesia/news/2026-11/mi-nombre-es-marta-torres-y-vivo-en-el-cottolengo.html",
+      "fecha": "2026-11-10",
+      "cat": "⛪ Iglesia católica"
+    },
+    {
+      "titulo": "Pope urges International Catholic Migration Commission to care for displaced children",
+      "resumen": "In a video message to participants in the International Catholic Commission for Migration’s Plenary Meeting, Pope Leo XIV encourages them to continue welcoming, protecting, promoting, and integrating migrants and…",
       "fuente": "Vatican News (EN)",
-      "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-xiv-nunciature-goodnight-greeting-highlights-day-two.html",
+      "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-international-catholic-migration-commission-refugees.html",
       "fecha": "2026-11-10",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "En la Catedral de Buenos Aires, León XIV honró la memoria de Francisco",
-      "resumen": "Esta fue la última aparición pública del Papa León XIV en su segundo día en Argentina: el 9 de noviembre de 2026, visitó la Catedral de la Santísima Trinidad en Buenos Aires, la misma catedral que su predecesor, el Papa…",
-      "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/11/10/en-la-catedral-de-buenos-aires-leon-xiv-honro-la-memoria-de-francisco/",
-      "fecha": "2026-11-09",
-      "cat": "⛪ Iglesia católica"
-    },
-    {
-      "titulo": "Ex-Dem Senate leader asks California Supreme Court to block Gavin Newsom’s death row commutations",
-      "resumen": "The former Democratic state Senate leader says Newsom’s move to spare all 548 condemned inmates was a “political ploy” intended to fuel his 2028 ambitions.",
-      "fuente": "NY Post",
-      "url": "https://nypost.com/2026/11/09/us-news/ex-senate-leader-asks-court-to-halt-gavin-newsoms-death-row-relief/",
-      "fecha": "2026-11-09",
-      "cat": "🇺🇸 Política de EE. UU."
-    },
-    {
-      "titulo": "Returning to Washington, Republicans vent anger, frustrations after midterm drubbing",
-      "resumen": "Republicans returned to Washington on Monday following an election rout that saw them lose both chambers of Congress for the final two years of President Trump’s time in office. Their mood matched their fortunes. The…",
+      "titulo": "Live updates: Hegseth holds rare briefing to confront impeachment threat; GOP leadership races loom",
+      "resumen": "Defense Secretary Pete Hegseth will speak to reporters Tuesday morning as he faces mounting impeachment pressure. The remarks, marking the first Pentagon press conference in about six months, come a day after Rep…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/the-120/6209621-gop-midterm-loss-reckoning/",
+      "url": "https://thehill.com/homenews/administration/6209586-live-updates-trump-hegseth-impeachment-iran-war-midterms-gop-leadership-elections/",
       "fecha": "2026-11-10",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Por fin, una voz legitimada",
-      "resumen": "En un país donde la crueldad y la violencia discursiva bajan desde el vértice del poder, León XIV volvió a poner en circulación palabras dormidas: dignidad, concordia, bien común. La pregunta es quién va a recogerlas…",
-      "fuente": "Perfil",
-      "url": "https://perfil.com/columnistas/por-fin-una-voz-legitimada-akCHs2N8MnJB",
+      "titulo": "House set to vote to impeach Hegseth. And, SCOTUS allows border wall work to proceed",
+      "resumen": "The House could vote to impeach Hegseth, but removing him from office will be tough. And, SCOTUS ruled that a federal judge did not have the authority to halt border wall construction.",
+      "fuente": "NPR",
+      "url": "https://www.npr.org/2026/11/10/g-s1-152777/up-first-newsletter-pete-hegseth-impeachment-trump-iran-nvidia-border-wall-texas",
       "fecha": "2026-11-10",
-      "cat": "🇦🇷 Política argentina"
+      "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Figueroa se desmarcó de sus pares patagónicos y fijó las elecciones en Neuquén para el 14 de febrero de 2027",
-      "resumen": "Neuquén se encamina a inaugurar el calendario electoral de 2027 . Después de varias semanas de especulaciones sobre la fecha de los comicios, el gobernador Rolando Figueroa firmó este lunes el decreto 1860/2026 , que…",
+      "titulo": "Argentina va al Tribunal del Mar para frenar Sea Lion en Malvinas: los argumentos contra el Reino Unido",
+      "resumen": "Este martes comenzaron las audiencias en el organismo internacional. Cómo es el proceso, los cuatro pedidos del Gobierno y los tres escenarios posibles",
       "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/11/10/figueroa-se-desmarco-de-sus-pares-patagonicos-y-fijo-las-elecciones-en-neuquen-para-el-14-de-febrero-de-2027/",
+      "url": "https://www.infobae.com/politica/2026/11/10/argentina-va-al-tribunal-del-mar-para-frenar-sea-lion-en-malvinas-los-argumentos-contra-el-reino-unido/",
       "fecha": "2026-11-10",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "INPE remueve del cargo a director del penal de Barbadillo",
-      "resumen": "La medida se da luego de que se revalara en un reportaje que la hija del funcionario fue contratada como personal técnico en la bancada de Juntos por el Perú en el Congreso.",
-      "fuente": "RPP",
-      "url": "https://rpp.pe/politica/gobierno/inpe-remueve-del-cargo-a-director-del-penal-de-barbadillo-noticia-1716916",
-      "fecha": "2026-11-09",
+      "titulo": "Misa de León XIV: polémica por el sector VIP con famosos, catering y lugares privilegiados",
+      "resumen": "Pampita, Valeria Mazza, Yanina Latorre y dirigentes políticos tuvieron lugares cercanos al altar, con comida y protección del sol, mientras miles de fieles y voluntarios esperaban a la intemperie. Crece el malestar en…",
+      "fuente": "Perfil",
+      "url": "https://perfil.com/politica/misa-de-leon-xiv-polemica-por-el-sector-vip-con-famosos-catering-y-lugares-privilegiados-aXqNO4V9upQZ",
+      "fecha": "2026-11-10",
+      "cat": "🇦🇷 Política argentina"
+    },
+    {
+      "titulo": "Mapa del recorrido del papamóvil en Lima y Callao: las avenidas que León XIV pasará rumbo a Palacio de Gobierno",
+      "resumen": "El cambio al papamóvil se realizará en la basílica de María Auxiliadora, desde donde el pontífice podrá tener contacto con los fieles apostados en las calles",
+      "fuente": "Infobae Perú",
+      "url": "https://www.infobae.com/peru/2026/11/10/mapa-del-recorrido-del-papamovil-en-lima-y-callao-las-avenidas-que-leon-xiv-pasara-rumbo-a-palacio-de-gobierno/",
+      "fecha": "2026-11-10",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Director de penal de Barbadillo es removido del cargo tras contrato de su hija en despacho de diputada de Juntos por el Perú",
-      "resumen": "El director del penal de Barbadillo, Calixto Lucero Rodríguez, será separado del cargo, luego de que se revelara que su hija Yulissa Lucero Chujutalli, fuera contratada en el despacho de la diputada Azucena Isla Rojas…",
+      "titulo": "Y ahora,¡a inventar un sistema electoral!",
+      "resumen": "El Jurado Nacional de Elecciones (JNE), presidido por Roberto Burneo, terminaría por declarar alcaldesa de Lima a una respetable señora, Jeanette Alonzo, por quien nadie votó para que ocupara ese cargo. Antes, el JNE…",
       "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/pedro-castillo-director-de-penal-de-barbadillo-separado-tras-contrato-de-su-hija-con-juntos-por-el-peru-en-el-congreso-anuncia-ministro-de-justicia-noticia/",
+      "url": "https://elcomercio.pe/opinion/columnistas/y-ahoraa-inventar-un-sistema-electoral-por-juan-paredes-castro-noticia/",
       "fecha": "2026-11-10",
       "cat": "🇵🇪 Política peruana"
     }
