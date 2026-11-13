@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-13T12:06:36+00:00",
+  "actualizado": "2026-11-13T19:35:35+00:00",
   "items": [
     {
-      "titulo": "Review: An Epic Poem About Man vs. the State",
-      "resumen": "In El Gaucho Martín Fierro, the protagonist suffers through military conscription.",
+      "titulo": "The Chinese Connection",
+      "resumen": "Plus: Brooklyn building collapses, Iranian hackers get serious, and more...",
       "fuente": "Reason",
-      "url": "https://reason.com/2026/11/13/el-gaucho-martin-fierro/",
+      "url": "https://reason.com/2026/11/13/the-chinese-connection/",
       "fecha": "2026-11-13"
     },
     {
@@ -39,10 +39,17 @@
   ],
   "politica": [
     {
-      "titulo": "Huge GOP election losses spur debates about populist economics",
-      "resumen": "Top Republicans have joined a battle over the populism that the Republican Party has embraced under President Donald Trump following Democrats’ overwhelming midterm victory. The party’s decisive disadvantage on the…",
+      "titulo": "Pence says midterm election results ‘not just a rout; it was a reckoning’ over Iran, tariffs, corruption, and more",
+      "resumen": "EXCLUSIVE — Former Vice President Mike Pence offered a pointed assessment of Republicans’ midterm losses, arguing the party’s embrace of President Donald Trump’s populist agenda, from tariffs to its approach to foreign…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/premium/4800486/huge-gop-eleciton-losses-spur-debate-populist-economics/",
+      "url": "https://www.washingtonexaminer.com/news/white-house/4801962/mike-pence-midterm-election-results-iran-war-tariffs-corruption/",
+      "fecha": "2026-11-13"
+    },
+    {
+      "titulo": "Go Big on Reconciliation, Congress",
+      "resumen": "Summary Democrats are on track to flip nine Senate seats and will take the House by a massive margin. Lame-duck Republicans have about six weeks before losing power for the foreseeable future. Now is the time for…",
+      "fuente": "The Daily Signal",
+      "url": "https://www.dailysignal.com/2026/11/13/reconciliation-congress/",
       "fecha": "2026-11-13"
     },
     {
@@ -60,13 +67,6 @@
       "fecha": "2026-11-13"
     },
     {
-      "titulo": "Frank LaRose: What Did Ohio’s Lone Republican Winner Do Right?",
-      "resumen": "Summary Ohio was not spared last week’s blue wave. Yet Secretary of State Frank LaRose managed to pull off a win for his race as state auditor, even as his predecessor and other statewide Republicans lost their races…",
-      "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/11/12/frank-larose-lone-republican-winner/",
-      "fecha": "2026-11-12"
-    },
-    {
       "titulo": "The Next Era",
       "resumen": "Last week’s election was likely the opening bell of a major fight over the future of the political right.",
       "fuente": "Law & Liberty",
@@ -76,50 +76,50 @@
   ],
   "diarias": [
     {
-      "titulo": "Iran threatens unlimited response over Strait of Hormuz after US attack",
-      "resumen": "Iran’s Islamic Revolutionary Guard Corps says it destroyed a US early-warning radar in Bahrain.",
+      "titulo": "Israel bars supplies needed to treat six-year-old Gaza burn victim",
+      "resumen": "Six-year-old burns victim Masa is one of the patients in Gaza whose recovery is under threat due to Israeli restrictions",
       "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-reported-resul-serdar-iran-basij?traffic_source=rss",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/israel-bars-supplies-needed-to-treat-six-year-old-gaza-burn-victim?traffic_source=rss",
       "fecha": "2026-11-13",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Ukraine updates: Second car bomb to hit Russia in two days",
-      "resumen": "A second car bomb in two days exploded in Moscow, targeting an exiled Ukrainian political aide, according to Russian media. Meanwhile, Ukraine and Russia exchanged deadly strikes overnight. DW has more.",
-      "fuente": "DW",
-      "url": "https://www.dw.com/en/ukraine-updates-second-car-bomb-to-hit-russia-in-two-days/live-79937459?maca=en-rss-en-all-1573-rdf",
+      "titulo": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
+      "resumen": "The fact the question of European security now features in discussions is viewed in Moscow as a victory, BBC Russia Editor Steve Rosenberg says.",
+      "fuente": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq39glwprknjo?at_medium=RSS&at_campaign=rss",
       "fecha": "2026-11-13",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "En un minuto: la séptima jornada de León XIV en América Latina",
-      "resumen": "Las imágenes exclusivas de Vatican Media que recogen las citas del Papa en Perú durante el séptimo día de su viaje apostólico por tres países sudamericanos Leer todo &nbsp;",
+      "titulo": "La promesa cumplida de León XIV en Santa Cruz",
+      "resumen": "El Papa celebrará la misa este sábado por la mañana en Santa Cruz, un pequeño y aislado pueblo de los Andes, en la diócesis de Chiclayo. Antes de partir de Perú hacia Roma en 2023, había planeado regresar a esta…",
       "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/vaticano/news/2026-11/en-un-minuto-la-septima-jornada-de-leon-xiv-en-america-latina.html",
+      "url": "https://www.vaticannews.va/es/iglesia/news/2026-11/santa-cruz-chiclayo-espera-leon-xiv-misa-14-nov-26.html",
       "fecha": "2026-11-13",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "¿Seguir la voluntad de Dios es renunciar a los propios sueños? La respuesta de León XIV a los jóvenes",
-      "resumen": "“¿Qué esperas de la vida?” Esta fue la pregunta que León XIV planteó durante una vigilia de oración con 60.000 jóvenes peruanos en el Estadio Nacional de Lima la noche del 12 de noviembre. Según las autoridades, otros…",
+      "titulo": "En las estepas de Kazajistán, la Iglesia evangeliza de otra manera",
+      "resumen": "Con unos 120 000 fieles, lo que representa aproximadamente el 1 % de la población según las estimaciones proporcionadas, la Iglesia católica en Kazajistán es una pequeña comunidad en el corazón de un inmenso país de…",
       "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/11/13/seguir-la-voluntad-de-dios-es-renunciar-a-los-propios-suenos-la-respuesta-de-leon-xiv-a-los-jovenes/",
+      "url": "https://es.aleteia.org/2026/11/13/en-las-estepas-de-kazajistan-la-iglesia-evangeliza-de-otra-manera/",
       "fecha": "2026-11-13",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "A seven-decade presidential election trend predicts Democrats will win in 2028",
-      "resumen": "Based on the historical pattern of the open-seat phenomenon where the incumbent's party loses seven of eight such races since World War II, current trends suggest a Democrat will win the 2028 presidential election…",
-      "fuente": "The Hill",
-      "url": "https://thehill.com/opinion/campaign/6216659-presidential-open-seat-history/",
+      "titulo": "Spencer Pratt reveals his biggest mistake in campaign for mayor of Los Angeles",
+      "resumen": "The former reality TV star and failed mayoral candidate took a swipe at the city's left-wing politics during an impromptu interview.",
+      "fuente": "NY Post",
+      "url": "https://nypost.com/2026/11/13/us-news/spencer-pratt-says-he-should-have-run-as-a-communist-for-la-mayor/",
       "fecha": "2026-11-13",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Sen Bernie Sanders supports Chris Van Hollen's bid to challenge Schumer for Senate Democratic leader post",
-      "resumen": "Sen. Bernie Sanders is backing Sen. Chris Van Hollen for the role of Senate Democratic leader, as Van Hollen challenges Sen. Chuck Schumer for the role.",
-      "fuente": "Fox News",
-      "url": "https://www.foxnews.com/politics/sen-bernie-sanders-supports-chris-van-hollen-bid-challenge-schumer-senate-democratic-leader-post",
+      "titulo": "Supreme Court will decide if Trump’s asylum restrictions are legal",
+      "resumen": "The Supreme Court announced Friday it will hear the Trump administration’s case to revive the president’s asylum restrictions at the southern border, issued on Inauguration Day and since ruled illegal by lower courts…",
+      "fuente": "The Hill",
+      "url": "https://thehill.com/regulation/court-battles/6219384-supreme-court-trump-asylum-restrictions/",
       "fecha": "2026-11-13",
       "cat": "🇺🇸 Política de EE. UU."
     },
@@ -132,26 +132,26 @@
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "El director de Fundación Faro planteó cómo sostener las reformas más allá de Milei: “Un cambio cultural”",
-      "resumen": "Martín Krause analizó los desafíos del programa económico del Gobierno, la necesidad de reducir impuestos, avanzar con una reforma laboral y transformar el sistema educativo",
+      "titulo": "“Hay que acelerar”: el Gobierno presiona a los gobernadores para suspender las PASO y define el calendario electoral",
+      "resumen": "El receso legislativo se acerca y el oficialismo intensifica las charlas con los mandatarios provinciales para avanzar en la reforma política y el Presupuesto. El próximo viaje clave de dos operadores en el que estarán…",
       "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/11/13/el-director-de-fundacion-faro-planteo-como-sostener-las-reformas-mas-alla-de-milei-un-cambio-cultural/",
+      "url": "https://www.infobae.com/politica/2026/11/13/hay-que-acelerar-el-gobierno-presiona-a-los-gobernadores-para-suspender-las-paso-y-define-el-calendario-electoral/",
       "fecha": "2026-11-13",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Las aguas siguen movidas en Buen Gobierno: Abren proceso a Juver Flores y expulsan a Jorge Gavidia",
-      "resumen": "Roberto Sánchez busca la prescripción mientras llega la instalación de su juicio oral: los detalles de su recurso Keiko Fujimori y el papa León XIV: ¿De qué conversaron en Palacio de Gobierno? ¿Y por qué invitaron a…",
-      "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/buen-gobierno-abre-proceso-disciplinario-a-juver-flores-y-expulsa-a-jorge-gavidia-por-romper-acuerdo-del-partido-noticia/",
+      "titulo": "Presidente del TC pide al Senado iniciar proceso de elección de nuevos magistrados",
+      "resumen": "Los mandatos de seis tribunos vencen en mayo de 2027, aunque continuarían en funciones hasta que la Cámara Alta nombre a sus reemplazos",
+      "fuente": "Infobae Perú",
+      "url": "https://www.infobae.com/peru/2026/11/13/presidente-del-tc-pide-al-senado-iniciar-proceso-de-eleccion-de-nuevos-magistrados/",
       "fecha": "2026-11-13",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Efemérides hoy 13 de noviembre en Perú: El día que une acontecimientos importantes con Alberto Fujimori y el Papa León XIV",
-      "resumen": "La fecha reúne el origen de la devoción al Señor de los Milagros, la Constitución de 1860, hallazgos en Paracas, elecciones limeñas y la asonada militar de 1992",
-      "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/2026/11/13/efemerides-hoy-13-de-noviembre-en-peru-el-dia-que-une-acontecimientos-importantes-con-alberto-fujimori-y-el-papa-leon-xiv/",
+      "titulo": "Luis Dyer: comitiva del ministro de Salud sufre accidente de tránsito en Amazonas",
+      "resumen": "La comitiva del ministro de Salud, Luis Dyer, sufrió un accidente de tránsito a las 9:00 a.m. este viernes 13 de noviembre en la región Amazonas. El suceso ocurrió mientras el equipo realizaba el trayecto en el tramo…",
+      "fuente": "El Comercio",
+      "url": "https://elcomercio.pe/politica/actualidad/luis-dyer-comitiva-del-ministro-de-salud-sufre-accidente-de-transito-en-amazonas-ultimas-noticia/",
       "fecha": "2026-11-13",
       "cat": "🇵🇪 Política peruana"
     }
