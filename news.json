@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-14T00:51:33+00:00",
+  "actualizado": "2026-11-14T11:23:58+00:00",
   "items": [
     {
-      "titulo": "The Chinese Connection",
-      "resumen": "Plus: Brooklyn building collapses, Iranian hackers get serious, and more...",
+      "titulo": "Javier Milei's Pack of Giant Libertarian Dogs",
+      "resumen": "How English mastiffs embody libertarian ideals",
       "fuente": "Reason",
-      "url": "https://reason.com/2026/11/13/the-chinese-connection/",
-      "fecha": "2026-11-13"
+      "url": "https://reason.com/2026/11/14/argentina-goes-to-the-dogs/",
+      "fecha": "2026-11-14"
     },
     {
       "titulo": "Turkey, Iraq and Pakistan Resist US Push to Restrict Trade With Iran",
@@ -39,18 +39,25 @@
   ],
   "politica": [
     {
-      "titulo": "Rubio buoys conservative spirits after midterm rout: ‘Great things that last are built in decades, not election cycles’",
-      "resumen": "Secretary of State Marco Rubio took a break from his diplomatic schedule Friday to deliver the Barbara K. Olson Memorial Lecture at the Federalist Society’s National Lawyers Convention, where he put to rest rumors that…",
+      "titulo": "Could Huang’s affairs jeopardize America’s global economic dominance?",
+      "resumen": "I didn’t panic when, after a single day of post-election ebullience, the stock market saw a sweeping, AI-fueled tech sell-off. I didn’t panic when voters across the midterm elections decided, in 40 of 41 local ballot…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/white-house/4803550/rubio-buoys-conservative-spirits-federalist-society-speech/",
+      "url": "https://www.washingtonexaminer.com/premium/4800368/huang-affair-jeopardize-america-global-economic-dominance/",
       "fecha": "2026-11-14"
     },
     {
-      "titulo": "Georgia Democrats Choose New Slate of Leaders While Medicaid Expansion Introduces New Hurdles",
-      "resumen": "Summary While the next legislative session in the state House hasn’t yet started, Democrats are already gearing up for it by picking the next slate of leaders. At the same time, there is much hope that the state will…",
+      "titulo": "Israel’s Arab Parties Face a Difficult Bargain",
+      "resumen": "The country’s Arab voters made history. Now comes the hard part.",
+      "fuente": "National Review",
+      "url": "https://www.nationalreview.com/article/israel-s-arab-parties-face-a-difficult-bargain",
+      "fecha": "2026-11-14"
+    },
+    {
+      "titulo": "The Media Defines ‘Hardliners’ on the Right, Never Left",
+      "resumen": "Stephen Miller’s appointment as White House chief of staff came with one very routine adjective: “hardliner.” To elitist media operatives, that is defined as “anyone who dramatically disagrees with us.” Take this Nov. 7…",
       "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/11/13/democrats-house-speaker-medicaid/",
-      "fecha": "2026-11-13"
+      "url": "https://www.dailysignal.com/2026/11/14/media-defines-hardliners/",
+      "fecha": "2026-11-14"
     },
     {
       "titulo": "D.C. Rejects Robotaxis To Protect Jobs",
@@ -60,71 +67,72 @@
       "fecha": "2026-11-13"
     },
     {
-      "titulo": "Did Payments by Huang’s Nvidia Influence Trump’s Policy on Chip Exports to China?",
-      "resumen": "While correlation doesn’t necessarily mean causation, there is an undeniable correlation between Nvidia’s payments and Trump’s loosening of export restrictions.",
-      "fuente": "National Review",
-      "url": "https://www.nationalreview.com/article/did-payments-by-huang-s-nvidia-influence-trump-s-policy-on-chip-exports-to-china",
-      "fecha": "2026-11-13"
-    },
-    {
-      "titulo": "The Next Era",
-      "resumen": "Last week’s election was likely the opening bell of a major fight over the future of the political right.",
-      "fuente": "Law & Liberty",
-      "url": "https://lawliberty.org/the-next-era/",
-      "fecha": "2026-11-10"
+      "titulo": "Colombia’s new president brings country back into Trump’s orbit, with some difficulties",
+      "resumen": "Newly elected Colombian President Abelardo Gabriel de la Espriella is eager to retake his country’s position as the U.S.’s foremost partner in Latin America, but the road isn’t easy. Colombia has long been considered…",
+      "fuente": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/in_focus/4796177/colombia-new-president-back-into-trump-orbit/",
+      "fecha": "2026-11-14"
     }
   ],
   "diarias": [
     {
-      "titulo": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
-      "resumen": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
-      "fuente": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&at_campaign=rss",
-      "fecha": "2026-11-14",
-      "cat": "⚔️ Guerra"
-    },
-    {
-      "titulo": "Iran war live: Fighting grips Yemen as Qatar, Turkiye sign defence deal",
-      "resumen": "Doha, Ankara agreement pledges joint action against external attacks as fighting in Yemen displaces civilians.",
+      "titulo": "Ukraine, Russia race to build military satellite networks as war rages on",
+      "resumen": "Kyiv seeks to break reliance on Starlink as Moscow develops its own satellite constellation for military communications.",
       "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/14/iran-war-live-fighting-grips-yemen-as-qatar-turkiye-sign-defence-deal?traffic_source=rss",
+      "url": "https://www.aljazeera.com/news/2026/11/14/ukraine-russia-race-to-build-military-satellite-networks-as-war-rages-on?traffic_source=rss",
       "fecha": "2026-11-14",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Universidad Católica en Chiclayo: El Papa recibe testimonios de fe y sacrificio",
-      "resumen": "Durante el encuentro en la Universidad Católica Santo Toribio de Mogrovejo en Chiclayo, León XIV escuchó la historia de María de los Ángeles, profesora quien considera su título más importante el de \"madre de Agustín\"…",
-      "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/iglesia/news/2026-11/papa-viaje-apostolico-peru-encuentro-mundo-universitario-chiclay.html",
+      "titulo": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+      "resumen": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
+      "fuente": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
       "fecha": "2026-11-14",
-      "cat": "⛪ Iglesia católica"
+      "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Pope in Peru: Search for truth in universities becomes service to humanity",
-      "resumen": "Visiting the Catholic University of Saint Turibius of Mogrovejo in Chiclayo, Peru, Pope Leo says universities must foster an encounter between faith and reason, and between religion and science, through dialogue and…",
+      "titulo": "Leidy Rimaycuna: Pope Leo XIV is close to his people",
+      "resumen": "The sister of Monsignor Edgard Rimaycuna Inga, the Pope’s personal secretary, tells Vatican News what Pope Leo XIV’s return to Chiclayo means to her family and highlights his closeness to those most in need and the…",
       "fuente": "Vatican News (EN)",
-      "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-the-search-for-truth-must-become-service-for-humanity.html",
+      "url": "https://www.vaticannews.va/en/church/news/2026-11/sister-edgar-rimaycuna-pope-leo-xiv-secretary-interview.html",
       "fecha": "2026-11-14",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Hegseth directs Pentagon CFO to transform military pay systems",
-      "resumen": "Welcome to The Hill's Defense & NatSec newsletter {beacon} Defense &National Security Defense &National Security The Big Story Hegseth directs Pentagon CFO to transform military pay systems Defense Secretary Pete…",
-      "fuente": "The Hill",
-      "url": "https://thehill.com/newsletters/defense-national-security/6220214-hegseth-directs-pentagon-cfo-to-transform-military-pay-systems/",
+      "titulo": "En un minuto: la octava jornada de León XIV en América Latina",
+      "resumen": "Las imágenes exclusivas de Vatican Media que recogen las citas del Papa en Perú durante el octavo día de su viaje apostólico por tres países sudamericanos, con su regreso a Chiclayo, la diócesis donde fue obispo durante…",
+      "fuente": "Vatican News",
+      "url": "https://www.vaticannews.va/es/vaticano/news/2026-11/en-un-minuto-la-octava-jornada-de-leon-xiv-en-america-latina.html",
+      "fecha": "2026-11-14",
+      "cat": "⛪ Iglesia católica"
+    },
+    {
+      "titulo": "Inside the House GOP strategy to capitalize on Democrats' warring factions in the new Congress",
+      "resumen": "Tom Emmer says House Republicans will use committee hearings and floor votes to hold Democrats accountable as the GOP shifts to minority status.",
+      "fuente": "Fox News",
+      "url": "https://www.foxnews.com/politics/inside-house-gop-strategy-capitalize-democrats-warring-factions-new-congress",
       "fecha": "2026-11-14",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "DHS head Markwayne Mullin says there is not a threat to the U.S. amid FAA ground stop",
-      "resumen": "Department of Homeland Security Secretary Markwayne Mullin spoke to at the White House on Friday afternoon after the FAA issues a total ground stop. NPR was there for the briefing.",
+      "titulo": "Hegseth's failed impeachment was a warning to Democrats. Where will they go from here?",
+      "resumen": "Democrats have been given a huge opportunity with majorities in both the House and Senate — but the balance of priorities, timing, messaging and discipline are all going to be major tests.",
       "fuente": "NPR",
-      "url": "https://www.npr.org/2026/11/13/nx-s1-6040418/dhs-head-markwayne-mullin-says-there-is-not-a-threat-to-the-u-s-amid-faa-ground-stop",
-      "fecha": "2026-11-13",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test",
+      "fecha": "2026-11-14",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Javier Milei y sus medidas, en vivo: “Lo único que le faltaba al país eran reglas claras”, dijo el Presidente ante empresas",
+      "titulo": "Se fue el Papa, volvió la interna del poder",
+      "resumen": "El Gobierno expuso sin vueltas las tensiones entre el círculo de Olivos y Patricia Bullrich. Y quedó a la vista el contraste frente al clima generado por la visita de León XIV. La disputa supera por intensidad y…",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/opinion/2026/11/14/se-fue-el-papa-volvio-la-interna-del-poder/",
+      "fecha": "2026-11-14",
+      "cat": "🇦🇷 Política argentina"
+    },
+    {
+      "titulo": "Javier Milei: “Lo único que le faltaba al país eran reglas claras”",
       "resumen": "El minuto a minuto de las decisiones del Presidente, las reacciones de la oposición y las declaraciones de los funcionarios",
       "fuente": "La Nación",
       "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-lo-unico-que-le-faltaba-al-pais-eran-reglas-claras-dijo-el-nid13112026/",
@@ -132,26 +140,18 @@
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "El senador Diego Valenzuela habló de la relación entre Milei y Bullrich y descartó una interna: “Se complementan”",
-      "resumen": "En diálogo con Infobae al Regreso, el legislador analizó las aspiraciones presidenciales de la exministra, explicó los matices dentro del oficialismo y destacó el papel del Presidente en la conducción del proyecto…",
-      "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/11/13/el-senador-diego-valenzuela-hablo-de-la-relacion-entre-milei-y-bullrich-y-descarto-una-interna-se-complementan/",
-      "fecha": "2026-11-13",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "Congreso reduce su presupuesto para 2027 en casi S/450 millones",
-      "resumen": "La Comisión Directiva del Congreso aprobó por unanimidad reducir en casi S/450 millones el presupuesto legislativo para 2027. Los titulares de ambas cámaras propondrán destinar esos recursos a enfrentar el fenómeno El…",
-      "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/congreso/congreso-reduce-su-presupuesto-para-2027-en-casi-s450-millones-ultimas-noticia/",
+      "titulo": "A qué hora juega Universitario vs Alianza Lima HOY: partido por final ida del Torneo Clausura de Liga Femenina 2026",
+      "resumen": "‘Cremas’ e ‘íntimas’ se citan por quinta vez en el curso en el inicio de una serie que podría definir al campeón nacional. Para evitarlo, las conducidas por José Letelier deben replicar su última actuación en Ate",
+      "fuente": "Infobae Perú",
+      "url": "https://www.infobae.com/peru/deportes/2026/11/14/a-que-hora-juega-universitario-vs-alianza-lima-hoy-partido-monumental-final-ida-torneo-clausura-liga-femenina-2026/",
       "fecha": "2026-11-14",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Alineaciones de Perú vs Bolivia HOY: equipos titulares del partido amistoso por fecha FIFA 2026",
-      "resumen": "Mano Menezes presentará una alineación renovada ante la ‘verde’, que llegó a Lima con varios futbolistas menores de 21 años",
-      "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/deportes/2026/11/13/alineaciones-peru-vs-bolivia-equipos-titulares-partido-amistoso-fecha-fifa-2026/",
+      "titulo": "Top ten del Congreso: Lo bueno, lo malo y lo feo de la era bicameral en sus primeros 100 días",
+      "resumen": "En sus primeros 100 días, la nueva era bicameral estuvo marcada por entrampamientos, disidencias y casos de ética parlamentaria.",
+      "fuente": "El Comercio",
+      "url": "https://elcomercio.pe/politica/top-ten-del-congreso-lo-bueno-lo-malo-y-lo-feo-de-la-era-bicameral-en-sus-primeros-100-dias-senado-diputados-noticia/",
       "fecha": "2026-11-14",
       "cat": "🇵🇪 Política peruana"
     }
