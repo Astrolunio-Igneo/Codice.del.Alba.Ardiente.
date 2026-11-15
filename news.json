@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T23:51:19+00:00",
+  "actualizado": "2026-11-15T06:18:02+00:00",
   "items": [
     {
       "titulo": "Supreme Court Will Review Case Challenging Donald Trump's \"Invasion\" Executive Order",
@@ -39,6 +39,13 @@
   ],
   "politica": [
     {
+      "titulo": "Nationwide ground stop spills into partisan politics",
+      "resumen": "The nationwide ground stop issued by the Federal Aviation Administration on Friday afternoon spilled into partisan politics throughout Saturday. Multiple Democratic lawmakers took aim at the Trump administration after…",
+      "fuente": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/policy/infrastructure/4804068/nationwide-ground-stop-partisan-politics/",
+      "fecha": "2026-11-15"
+    },
+    {
       "titulo": "Border Search of Immigration Lawyer's Phone Was Likely Unconstitutional Retaliation for Lawyer's Speech",
       "resumen": "From Judge Allison Burroughs (D. Mass.) Friday in Lattarulo v. Mullin: Andrew Lattarulo is an immigration lawyer and part owner… The post Border Search of Immigration Lawyer's Phone Was Likely Unconstitutional…",
       "fuente": "Reason",
@@ -53,13 +60,6 @@
       "fecha": "2026-11-14"
     },
     {
-      "titulo": "Trump says DC residents will receive 50% discount at completed Potomac golf course",
-      "resumen": "President Donald Trump trashed the current state of the East Potomac Golf Links golf course on Saturday afternoon before announcing that residents of the broader Washington, D.C., area will play at the renovated version…",
-      "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/white-house/4804018/trump-dc-residents-50-percent-discount-golf-course/",
-      "fecha": "2026-11-14"
-    },
-    {
       "titulo": "Israel’s Arab Parties Face a Difficult Bargain",
       "resumen": "The country’s Arab voters made history. Now comes the hard part.",
       "fuente": "National Review",
@@ -67,14 +67,22 @@
       "fecha": "2026-11-14"
     },
     {
-      "titulo": "GOP’s Election Defeat Opens Door for DeSantis",
-      "resumen": "Republicans’ dismal showing in 2026 has made their 2028 presidential primary much more interesting. It has long seemed likely the 2028 GOP presidential nomination would be decided by President Donald Trump. He has…",
-      "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/11/14/election-defeat-door-desantis/",
-      "fecha": "2026-11-14"
+      "titulo": "Mamdani says he and Trump made deal over SNAP rule affecting small businesses nationwide",
+      "resumen": "New York City Mayor Zohran Mamdani said Friday he and President Donald Trump brokered a deal on new SNAP requirements that would affect small businesses nationwide. “I have spoken to President Trump and [Agriculture…",
+      "fuente": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/news/white-house/4804056/mamdani-trump-deal-snap-rule-nyc-small-businesses/",
+      "fecha": "2026-11-15"
     }
   ],
   "diarias": [
+    {
+      "titulo": "Monkey attacks woman inside residential complex in India",
+      "resumen": "A woman was attacked and repeatedly bitten by a monkey at a residential apartment complex in India’s Gujarat state.",
+      "fuente": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/monkey-attacks-woman-inside-residential-complex-in-india?traffic_source=rss",
+      "fecha": "2026-11-15",
+      "cat": "⚔️ Guerra"
+    },
     {
       "titulo": "How telecoms upgrade work sparked US flight chaos",
       "resumen": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
@@ -84,75 +92,67 @@
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Netanyahu says only a unity government can guarantee Israel’s security",
-      "resumen": "Eisenkot, in charge of forming a government, dismisses the appeal as ‘tricks’ as talks and a Knesset speaker vote loom.",
-      "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security?traffic_source=rss",
-      "fecha": "2026-11-14",
-      "cat": "⚔️ Guerra"
-    },
-    {
-      "titulo": "“La mayor pobreza es no conocer a Cristo”, subraya un misionero en Cusco, tierra visitada por el Papa",
-      "resumen": "Superior general de los Misioneros Siervos de los Pobres, el padre Walter Corsini coincidió en varias ocasiones con León XIV en Roma, en la época en que éste era Prior General de los Agustinos (2001-2013). Repasa para…",
-      "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/11/14/la-mayor-pobreza-es-no-conocer-a-cristo-subraya-un-misionero-en-cusco-tierra-visitada-por-el-papa/",
-      "fecha": "2026-11-14",
-      "cat": "⛪ Iglesia católica"
-    },
-    {
-      "titulo": "León XIV en Santa Cruz: Sigan transmitiendo la fe a sus hijos, abran el corazón al Señor",
-      "resumen": "En el Santuario de Santo Toribio de Mogrobejo, el Papa en su encuentro con la comunidad de fieles, afirmó que un pastor se reconoce también en “las distancias físicas y existenciales”, al tiempo que reveló haber…",
+      "titulo": "Mensaje del Episcopado chileno: Vencer a la intolerancia a través de Cristo",
+      "resumen": "Con un llamado al pueblo de Dios a ser «artesanos de esperanza y constructores del bien común» concluyó la 134° Asamblea Plenaria de la Conferencia Episcopal de Chile que se realizó este viernes 13 de noviembre. Leer…",
       "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/papa/news/2026-11/leon-viaje-peru-santa-cruz-toribio-mogrobejo-encuentro-fieles.html",
-      "fecha": "2026-11-14",
+      "url": "https://www.vaticannews.va/es/iglesia/news/2026-11/mensaje-del-episcopado-chileno-vencer-a-la-intolerancia.html",
+      "fecha": "2026-11-15",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "NYC socialists hatch 2028 White House push for AOC — and plot to topple top New York Dems",
-      "resumen": "The NYC chapter of the Democratic Socialists of America passed a slew of resolutions at a closed-door Midtown convention Saturday, including one urging Rep. Alexandria Ocasio-Cortez to run for president in 2028 and…",
-      "fuente": "NY Post",
-      "url": "https://nypost.com/2026/11/14/us-news/nycs-dsa-chapter-votes-to-target-replacing-hochul-and-other-establishment-dems-push-aoc-for-president/",
+      "titulo": "Pope Leo in Zaña: Continue passing on the faith to your children",
+      "resumen": "At the Shrine of Saint Turibius of Mogrovejo, during his meeting with the local community of faithful, Pope Leo notes that a shepherd is also recognized by the “physical and existential distances” he is willing to…",
+      "fuente": "Vatican News (EN)",
+      "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-in-zana-continue-passing-on-the-faith-to-your-children.html",
+      "fecha": "2026-11-15",
+      "cat": "⛪ Iglesia católica"
+    },
+    {
+      "titulo": "Judge temporarily blocks Trump from moving ahead on Washington public golf course redevelopment",
+      "resumen": "A federal judge on Saturday ordered a two-week delay to any work at a historic Washington public golf course not far from the White House.",
+      "fuente": "NPR",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6041152/judge-trump-golf-course-blocks",
       "fecha": "2026-11-14",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Federalist Society's celebrations mix with shock over Democratic sweep",
-      "resumen": "Two years ago, a champagne cork went flying on the Federalist Society convention stage as panelists toasted recent Supreme Court wins. A celebratory mood was still on display at this year’s annual gathering of the…",
+      "titulo": "SpaceX catches Starship for first time, drawing praise in Washington",
+      "resumen": "SpaceX’s Starship aircraft successfully touched back down at a South Texas launch site Saturday afternoon — marking a historic milestone in the aerospace giant's effort to build reusable rockets. The 170-foot-long…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/policy/6220956-federalist-society-convention-midterm-shock/",
-      "fecha": "2026-11-14",
+      "url": "https://thehill.com/policy/technology/6221123-spacex-starship-historic-landing-lawmakers-react/",
+      "fecha": "2026-11-15",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Las tres crisis simultáneas que asedian al Gobierno",
-      "resumen": "Disipada la euforia papal, afloran números preocupantes de la economía y se agrava el desorden político libertario; León XIV trazó un contraste con el discurso moral de Milei, en medio de un alza del pesimismo social",
-      "fuente": "La Nación",
-      "url": "https://www.lanacion.com.ar/politica/las-tres-crisis-simultaneas-que-asedian-al-gobierno-nid14112026/",
-      "fecha": "2026-11-14",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "La Libertad Avanza ya tiene candidato definido en Misiones para frenar la reelección de Hugo Passalacqua",
-      "resumen": "Adrián Núñez, presidente del partido a nivel provincial, anunció que peleará por la gobernación en 2027. “Quiero cambiar la historia de mi provincia después de más de 20 años de los mismos de siempre”, afirmó.",
+      "titulo": "El próximo fenómeno político que ve el Gobierno y el ultimátum de Milei a sus funcionarios",
+      "resumen": "La movilización de millones de fieles y el discurso social del papa León XIV abrieron la posibilidad de nuevos reclamos en medio de fuertes compromisos presupuestarios. Javier Milei bajó línea a su Gabinete y se bajaron…",
       "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/11/14/la-libertad-avanza-ya-tiene-candidato-definido-en-misiones-para-frenar-la-reeleccion-de-hugo-passalacqua/",
-      "fecha": "2026-11-14",
+      "url": "https://www.infobae.com/politica/2026/11/15/el-proximo-fenomeno-politico-que-ve-el-gobierno-y-el-ultimatum-de-milei-a-sus-funcionarios/",
+      "fecha": "2026-11-15",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Top ten del Congreso: Lo bueno, lo malo y lo feo de la era bicameral en sus primeros 100 días",
-      "resumen": "En sus primeros 100 días, la nueva era bicameral estuvo marcada por entrampamientos, disidencias y casos de ética parlamentaria.",
-      "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/top-ten-del-congreso-lo-bueno-lo-malo-y-lo-feo-de-la-era-bicameral-en-sus-primeros-100-dias-senado-diputados-noticia/",
-      "fecha": "2026-11-14",
+      "titulo": "El Gobierno eliminó el pago adicional de 30% al uso del GNC en los colectivos y reavivó la guerra por los subsidios",
+      "resumen": "Reemplazó el “incentivo” por una tarifa que calcula; la medida oficial se da en medio de causas penales cruzadas, $6500 millones retenidos y $12 millones por mes de compensación por cada unidad que circula",
+      "fuente": "La Nación",
+      "url": "https://www.lanacion.com.ar/economia/el-gobierno-elimino-el-pago-adicional-de-30-al-uso-del-gnc-en-los-colectivos-y-reavivo-la-guerra-por-nid15112026/",
+      "fecha": "2026-11-15",
+      "cat": "🇦🇷 Política argentina"
+    },
+    {
+      "titulo": "Jaime Bayly: “Los políticos peruanos, sean de izquierda o de derecha, siempre encuentran la manera de decepcionarte”",
+      "resumen": "En esta entrevista exclusiva, Jaime Bayly reflexiona sobre su trayectoria literaria, su relación con Vargas Llosa y la situación política en Perú, al tiempo que destaca el poder como un narcótico adictivo. \"Los…",
+      "fuente": "La República",
+      "url": "https://larepublica.pe/politica/2026/02/14/jaime-bayly-los-politicos-peruanos-sean-de-izquierda-o-de-derecha-siempre-encuentran-la-manera-de-decepcionarte-hnews-1110858",
+      "fecha": "2026-11-15",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Universitario vs Alianza Lima: día, hora y canal TV de la final vuelta del Torneo Clausura de la Liga Femenina 2026",
-      "resumen": "Las ‘leonas’ obtuvieron una ventaja tras imponerse 3-1 en el partido de ida, disputado en el estadio Monumental, y buscarán consagrarse campeonas nacionales en Matute. Conoce todos los detalles de esta definición",
+      "titulo": "Natalie Vértiz se luce con Antonela Roccuzzo en exclusivo viaje a Cusco: “Qué lujo poder conocerte”",
+      "resumen": "La conductora peruana coincidió con la empresaria argentina en una agenda privada que incluyó Machu Picchu, Maras, Moray y una ofrenda a la Pachamama.",
       "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/deportes/2026/11/14/universitario-vs-alianza-lima-dia-hora-y-canal-tv-de-la-final-vuelta-del-torneo-clausura-de-la-liga-femenina-2026/",
-      "fecha": "2026-11-14",
+      "url": "https://www.infobae.com/peru/2026/11/15/natalie-vertiz-se-luce-con-antonela-roccuzzo-en-exclusivo-viaje-a-cusco-que-lujo-poder-conocerte/",
+      "fecha": "2026-11-15",
       "cat": "🇵🇪 Política peruana"
     }
   ]
