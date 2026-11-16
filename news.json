@@ -1,11 +1,32 @@
 {
-  "actualizado": "2026-11-16T06:16:46+00:00",
+  "actualizado": "2026-11-16T18:24:44+00:00",
   "items": [
     {
-      "titulo": "Rubio Rewrote Intelligence About Jensen Huang’s Affair",
-      "resumen": "Secretary of State Marco Rubio rewrote a CIA intelligence memo to strengthen the conclusions that NVIDIA’s CEO Jensen Huang was engaged in an affair with a Chinese spy. Last week, Huang publicly admitted to the affair…",
+      "titulo": "How the War Made Journalism Harder in Iran",
+      "resumen": "The authorities are cracking down on Iranians who interact with foreign media.",
+      "fuente": "Reason",
+      "url": "https://reason.com/2026/11/16/how-the-war-made-journalism-harder-in-iran/",
+      "fecha": "2026-11-16"
+    },
+    {
+      "titulo": "What Comes Next for the United States in the Middle East?",
+      "resumen": "There are a number of things that we know to be true about the currently relatively quiet war between the United States and Israel against Iran. First, the calm is reflective of the fact that the US was unable to…",
+      "fuente": "Ron Paul Institute",
+      "url": "https://ronpaulinstitute.org/what-comes-next-for-the-united-states-in-the-middle-east/",
+      "fecha": "2026-11-16"
+    },
+    {
+      "titulo": "Kalingrad, the World’s Most Dangerous Flashpoint",
+      "resumen": "When U.S. policymakers and members of the western news media cite possible flashpoints around the world that could trigger a catastrophic war, places such as the Taiwan Strait, the Demilitarized Zone (DMZ) between North…",
       "fuente": "Libertarian Institute",
-      "url": "https://libertarianinstitute.org/news/rubio-rewrote-intelligence-about-jensen-huangs-affair/?utm_source=rss&utm_medium=rss&utm_campaign=rubio-rewrote-intelligence-about-jensen-huangs-affair",
+      "url": "https://libertarianinstitute.org/articles/kalingrad-the-worlds-most-dangerous-flashpoint/?utm_source=rss&utm_medium=rss&utm_campaign=kalingrad-the-worlds-most-dangerous-flashpoint",
+      "fecha": "2026-11-16"
+    },
+    {
+      "titulo": "Progress Is Not Inevitable. Neither Is Despair",
+      "resumen": "Recently, writing in these pages, Joakim Book argued that progress has stalled . If you were born in the United States any time after the Second World War, you likely have a skewed view of history. Your individual life…",
+      "fuente": "AIER",
+      "url": "https://thedailyeconomy.org/article/progress-is-not-inevitable-neither-is-despair/",
       "fecha": "2026-11-16"
     },
     {
@@ -14,114 +35,101 @@
       "fuente": "Antiwar.com",
       "url": "https://original.antiwar.com/ramzy-baroud/2026/11/15/the-beginning-of-the-end-israel-at-the-heart-of-americas-political-civil-war/?utm_source=rss&utm_medium=rss&utm_campaign=the-beginning-of-the-end-israel-at-the-heart-of-americas-political-civil-war",
       "fecha": "2026-11-16"
-    },
-    {
-      "titulo": "Milei Campaigned on Dollarizing Argentina. As President, He Stopped Talking About It.",
-      "resumen": "Why did dollarization disappear from Javier Milei's agenda?",
-      "fuente": "Reason",
-      "url": "https://reason.com/2026/11/15/mileis-legacy-depends-on-dollarization/",
-      "fecha": "2026-11-15"
-    },
-    {
-      "titulo": "Iran Microwaves Babies! Rep Joe Wilson Concocts Bizarre Justification For Iran War",
-      "resumen": "This is a new one, and quite insane in terms of pro-war propaganda coming from elected officials… South Carolina Rep. Joe Wilson (R) has bizarrely claimed that Iranians have been putting babies in microwaves. This was…",
-      "fuente": "Ron Paul Institute",
-      "url": "https://ronpaulinstitute.org/iran-microwaves-babies-rep-joe-wilson-concocts-bizarre-justification-for-iran-war/",
-      "fecha": "2026-11-14"
-    },
-    {
-      "titulo": "Trump Tells Advisers He Won’t Escalate War Against Iran Unless Provoked By Iran, Houthis",
-      "resumen": "Sources said that President Donald Trump has informed his senior advisers that he does not plan to escalate attacks on Iran unless provoked by the Islamic Republic or Ansar Allah – the Houthis – in Yemen. Reuters…",
-      "fuente": "Libertarian Institute",
-      "url": "https://libertarianinstitute.org/news/trump-tells-advisers-he-wont-escalate-war-against-iran-unless-provoked-by-iran-houthis/?utm_source=rss&utm_medium=rss&utm_campaign=trump-tells-advisers-he-wont-escalate-war-against-iran-unless-provoked-by-iran-houthis",
-      "fecha": "2026-11-16"
     }
   ],
   "politica": [
     {
-      "titulo": "Resolution backing AOC 2028 presidential run passes at NYC Democratic Socialists of America meeting",
-      "resumen": "The New York City chapter of the Democratic Socialists of America passed a resolution on Saturday urging Rep. Alexandria Ocasio-Cortez (D-NY) to run for president in the 2028 presidential election. “AOC and New York…",
+      "titulo": "Fed is modeling how the AI boom could change the economy",
+      "resumen": "Federal Reserve Chairman Kevin Warsh said Monday that the Fed is developing models for how artificial intelligence might shape the labor market in the coming years. Warsh, speaking at the Productivity and Jobs Task…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/campaigns/presidential/4804331/resolution-aoc-2028-run-passes-nyc-democratic-socialists-meeting/",
+      "url": "https://www.washingtonexaminer.com/policy/technology/4804823/federal-reserve-modeling-how-ai-boom-could-change-economy/",
       "fecha": "2026-11-16"
     },
     {
-      "titulo": "Trump Moves to Expose Secret Chinese Funding for US Colleges",
-      "resumen": "Under Secretary of State for Public Diplomacy Sarah Rogers is fighting for Americans to have the right to know which foreign adversaries are funding universities. On Oct. 1, the Trump administration was poised to…",
+      "titulo": "Trump ‘Would Not Mind’ Seeing CEO Who Had Affair with Alleged Chinese Spy Reinstated",
+      "resumen": "President Donald Trump said he “would certainly not mind” seeing former Nvidia CEO Jensen Huang reinstated. Huang stepped down on Thursday after reports that he had an affair with an alleged Chinese spy who is a former…",
       "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/11/15/trump-moves-to-expose-secret-chinese-funding-for-us-colleges/",
+      "url": "https://www.dailysignal.com/2026/11/16/trump-would-not-mind-seeing-ceo-who-had-affair-with-alleged-chinese-spy-reinstated/",
       "fecha": "2026-11-16"
     },
     {
-      "titulo": "Democrats Have the Electoral College in Their Sights",
-      "resumen": "Will the National Popular Vote Interstate Compact soon cross the 270-vote threshold?",
-      "fuente": "National Review",
-      "url": "https://www.nationalreview.com/article/democrats-have-the-electoral-college-in-their-sights",
-      "fecha": "2026-11-15"
-    },
-    {
-      "titulo": "The Legal Battle Over Who Gets To Show Their Genitals at a Nude Spa Takes an Unexpected Turn",
-      "resumen": "Olympus Spa found itself in hot water with Washington state because it turned away a customer with male genitalia. As the spa appeals to the Supreme Court, the government is having second thoughts.",
+      "titulo": "The Feds Own a $1 Billion Stake in the Military Contractor Being Blamed for the Air Traffic Meltdown",
+      "resumen": "The Pentagon invested $1 billion in L3Harris in January, and the federal government now holds stock in the company. That may complicate the calls for accountability.",
       "fuente": "Reason",
-      "url": "https://reason.com/2026/11/15/the-legal-battle-over-who-gets-to-show-their-genitals-at-a-nude-spa-takes-an-unexpected-turn/",
-      "fecha": "2026-11-15"
+      "url": "https://reason.com/2026/11/16/the-feds-own-a-1-billion-stake-in-the-military-contractor-being-blamed-for-the-air-traffic-meltdown/",
+      "fecha": "2026-11-16"
     },
     {
-      "titulo": "Midterm Silver Lining: Voters Crush ‘Racist Nation’ Claims",
-      "resumen": "Summary “DEI is back,” Rep. Ro Khanna, D-Calif., declared after Democrats dominated the midterms. These words are as touchingly antiquated as an anti-Vietnam War protest in 1985. Khanna also missed the only silver…",
-      "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/11/15/midterm-silver-lining-voters-crush-racist-nation-claims/",
-      "fecha": "2026-11-15"
+      "titulo": "Economic Populism Lost, Again",
+      "resumen": "Voters again rejected the price-hiking agenda that both parties have spent a decade selling them.",
+      "fuente": "Cato Recent Op-eds",
+      "url": "https://www.cato.org/commentary/economic-populism-lost-again",
+      "fecha": "2026-11-16"
+    },
+    {
+      "titulo": "We Need a Better GOP",
+      "resumen": "Every party elite reaches its point of exhaustion, and that’s where the Trump establishment is now.",
+      "fuente": "National Review",
+      "url": "https://www.nationalreview.com/article/we-need-a-better-gop",
+      "fecha": "2026-11-16"
     }
   ],
   "diarias": [
     {
-      "titulo": "Iraqi armed group denies involvement in oil smuggling, calls probe a ‘lie’",
-      "resumen": "Iran-aligned Kataib Hezbollah says the group is subjected to 'blackmail' to force disarmament amid US pressure on Iraq.",
+      "titulo": "Israeli court upholds detention of Palestinian land activist Ghassan Najjar",
+      "resumen": "Occupied West Bank land defender is set to remain in detention until at least February 26 next year.",
       "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/11/16/iraqi-armed-group-denies-involvement-in-oil-smuggling-calls-probe-a-lie?traffic_source=rss",
+      "url": "https://www.aljazeera.com/news/2026/11/16/israeli-court-upholds-detention-of-palestinian-land-activist-ghassan-najjar?traffic_source=rss",
       "fecha": "2026-11-16",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Australian MP 'full of gratitude' upon leaving hospital after alleged car attack",
-      "resumen": "The MP lost both of her legs after the alleged attack outside her electorate office four weeks ago.",
-      "fuente": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmpqr9j81888o?at_medium=RSS&at_campaign=rss",
+      "titulo": "Iran's growing exodus of young talent",
+      "resumen": "Conflict and uncertainty are driving more and more educated young Iranians to consider leaving the country.",
+      "fuente": "DW",
+      "url": "https://www.dw.com/en/iran-s-growing-exodus-of-young-talent/a-79960368?maca=en-rss-en-all-1573-rdf",
       "fecha": "2026-11-16",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "León XIV, explorador de los contrastes de Perú",
-      "resumen": "Tras una salida matutina bajo una lluvia inusual en Chiclayo, ciudad que por lo general tiene un clima muy seco, el Papa llegó a Cusco, antigua capital del Imperio inca, donde se había reunido una multitud inmensa…",
-      "fuente": "Aleteia",
-      "url": "https://es.aleteia.org/2026/11/16/leon-xiv-explorador-de-los-contrastes-de-peru/",
+      "titulo": "León XIV se despide de Perú: «Me han recordado que la Iglesia es una familia»",
+      "resumen": "Una multitudinaria misa antecedió las palabras de despedida del Papa León XIV en Perú este 16 de noviembre, durante su última actividad pontificia en la nación andina que se convirtió en su segundo hogar durante más de…",
+      "fuente": "Vatican News",
+      "url": "https://www.vaticannews.va/es/papa/news/2026-11/leon-se-despide-de-peru-han-recordado-que-la-iglesia-es-famila.html",
       "fecha": "2026-11-16",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Pope: Anything that harms the dignity of life destroys the beauty of earth",
-      "resumen": "While celebrating Mass in Pucallpa, a city in the Peruvian Amazon, Pope Leo XIV emphasized the close connection between caring for life and caring for the earth, deplored the devastation of the Amazon basin and the…",
+      "titulo": "Pope to Peru: 'No words can express gratitude for graces of this visit'",
+      "resumen": "At the conclusion of the Mass in Lima, Pope Leo XIV expresses the depths of his gratitude for the graces of his Apostolic Journey to Peru, saying he \"came to proclaim Christ to you, and I leave with the witness of the…",
       "fuente": "Vatican News (EN)",
-      "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-mass-pucallpa-environment-amazon-caring-life-creation-peru.html",
-      "fecha": "2026-11-15",
+      "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-to-peru-words-canno-express-my-gratitude-graces-of-visit.html",
+      "fecha": "2026-11-16",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Blanche says 'incoming freshmen' Democrats calling to probe Trump are 'acting like prosecutors'",
-      "resumen": "Attorney General Todd Blanche on Sunday blasted \"incoming freshmen\" Democrats elected following the 2026 midterm elections for \"acting like prosecutors\" in joining lawmakers' calls to open investigations into President…",
+      "titulo": "What to know about Howard Lutnick and Scott Bessent feud",
+      "resumen": "Commerce Secretary Howard Lutnick is facing pressure due to his approach to AI chip export controls as a national security scandal swirls around the tech company Nvidia, including from another member of President…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/homenews/administration/6221872-todd-blanche-freshmen-democrats-acting-like-prosecutors/",
+      "url": "https://thehill.com/homenews/administration/6223104-lutnick-bessent-ai-chip-clash/",
       "fecha": "2026-11-16",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "White House calls DC policies 'insanity' after 19-year-old gunman gets probation in shooting",
-      "resumen": "A 19-year-old who prosecutors said fired more than 20 rounds into a D.C. neighborhood got probation, prompting the White House to slam the city's crime policies.",
-      "fuente": "Fox News",
-      "url": "https://www.foxnews.com/politics/white-house-calls-dc-policies-insanity-after-19-year-old-gunman-gets-probation-shooting",
-      "fecha": "2026-11-15",
+      "titulo": "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
+      "resumen": "Countries are meeting in Geneva to negotiate rules on weapons that can select and kill targets without human intervention. But with the U.S., Russia and Israel resisting legally binding controls, campaigners fear the…",
+      "fuente": "NPR",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6042548/un-killer-robots-ai-weapons-drones",
+      "fecha": "2026-11-16",
       "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "Javier Milei y sus medidas, en vivo: Luis Caputo: “Entramos a 2027 más fortalecidos que nunca, más calmo de lo que muchos predicen”",
+      "resumen": "El minuto a minuto de las decisiones del Presidente, las reacciones de la oposición y las declaraciones de los funcionario",
+      "fuente": "La Nación",
+      "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-kicillof-acuso-al-presidente-de-adulterar-la-historia-nid16112026/",
+      "fecha": "2026-11-16",
+      "cat": "🇦🇷 Política argentina"
     },
     {
       "titulo": "Senado: semana de definiciones entre las PASO y una eventual sesión por discapacidad",
@@ -132,26 +140,18 @@
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Javier Milei y sus medidas, en vivo: Kicillof acusó al Presidente de “adulterar la historia”",
-      "resumen": "El minuto a minuto de las decisiones del Presidente, las reacciones de la oposición y las declaraciones de los funcionarios",
-      "fuente": "La Nación",
-      "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-kicillof-acuso-al-presidente-de-adulterar-la-historia-nid16112026/",
-      "fecha": "2026-11-16",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "Jaime Bayly: “Los políticos peruanos, sean de izquierda o de derecha, siempre encuentran la manera de decepcionarte”",
-      "resumen": "En esta entrevista exclusiva, Jaime Bayly reflexiona sobre su trayectoria literaria, su relación con Vargas Llosa y la situación política en Perú, al tiempo que destaca el poder como un narcótico adictivo. \"Los…",
+      "titulo": "Keiko Fujimori se reunió dos veces con el hijo del ministro de Salud en Palacio: una durante la visita del papa León XIV",
+      "resumen": "La primera reunión con la presidenta Fujimori fue el 17 de octubre por más de dos horas junto con el jefe de gabinete, Enrique Vásquez, y luego el 13 de noviembre con otros ministros en el Despacho Presidencial.",
       "fuente": "La República",
-      "url": "https://larepublica.pe/politica/2026/02/14/jaime-bayly-los-politicos-peruanos-sean-de-izquierda-o-de-derecha-siempre-encuentran-la-manera-de-decepcionarte-hnews-1110858",
+      "url": "https://larepublica.pe/politica/2026/11/16/keiko-fujimori-se-reunio-con-allan-dyer-hijo-del-ministro-de-salud-en-palacio-de-gobierno-hnews-356320",
       "fecha": "2026-11-16",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "La ilusión de Jostin Alarcón tras el último partido de Sport Boys en la Liga 1 2026: “Hay que defenderlo a muerte”",
-      "resumen": "El volante rosado fue la figura del empate 3-3 ante Comerciantes Unidos en Cutervo, en el cierre del Torneo Clausura 2026. Con contrato vigente hasta 2027, el futbolista expresó su total compromiso con la institución de…",
-      "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/deportes/2026/11/16/la-ilusion-de-jostin-alarcon-tras-el-ultimo-partido-de-sport-boys-en-la-liga-1-2026-hay-que-defenderlo-a-muerte/",
+      "titulo": "Las aguas siguen movidas en Buen Gobierno: Abren proceso a Juver Flores y expulsan a Jorge Gavidia",
+      "resumen": "Roberto Sánchez busca la prescripción mientras llega la instalación de su juicio oral: los detalles de su recurso Keiko Fujimori y el papa León XIV: ¿De qué conversaron en Palacio de Gobierno? ¿Y por qué invitaron a…",
+      "fuente": "El Comercio",
+      "url": "https://elcomercio.pe/politica/buen-gobierno-abre-proceso-disciplinario-a-juver-flores-y-expulsa-a-jorge-gavidia-por-romper-acuerdo-del-partido-noticia/",
       "fecha": "2026-11-16",
       "cat": "🇵🇪 Política peruana"
     }
