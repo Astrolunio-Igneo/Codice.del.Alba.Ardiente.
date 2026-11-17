@@ -1,11 +1,18 @@
 {
-  "actualizado": "2026-11-16T18:24:44+00:00",
+  "actualizado": "2026-11-17T02:53:29+00:00",
   "items": [
     {
-      "titulo": "How the War Made Journalism Harder in Iran",
-      "resumen": "The authorities are cracking down on Iranians who interact with foreign media.",
+      "titulo": "Trump's New Chip Export Rule Targets China but Exempts TikTok's Parent Company",
+      "resumen": "The Commerce Department is expanding its licensing regime for advanced semiconductors, even though earlier export controls have largely failed to stop diversion.",
       "fuente": "Reason",
-      "url": "https://reason.com/2026/11/16/how-the-war-made-journalism-harder-in-iran/",
+      "url": "https://reason.com/2026/11/16/trumps-new-chip-export-rule-targets-china-but-exempts-tiktoks-parent-company/",
+      "fecha": "2026-11-16"
+    },
+    {
+      "titulo": "Pakistan Says It’s Waiting for US Response to Iranian Proposal",
+      "resumen": "Pakistani Foreign Minister Ishaq Dar said that Islamabad was waiting for a US response to the latest Iranian proposal. Multiple countries in the region are attempting to rekindle diplomacy between the US and Iran to…",
+      "fuente": "Libertarian Institute",
+      "url": "https://libertarianinstitute.org/news/pakistan-says-its-waiting-for-us-response-to-iranian-proposal/?utm_source=rss&utm_medium=rss&utm_campaign=pakistan-says-its-waiting-for-us-response-to-iranian-proposal",
       "fecha": "2026-11-16"
     },
     {
@@ -13,13 +20,6 @@
       "resumen": "There are a number of things that we know to be true about the currently relatively quiet war between the United States and Israel against Iran. First, the calm is reflective of the fact that the US was unable to…",
       "fuente": "Ron Paul Institute",
       "url": "https://ronpaulinstitute.org/what-comes-next-for-the-united-states-in-the-middle-east/",
-      "fecha": "2026-11-16"
-    },
-    {
-      "titulo": "Kalingrad, the World’s Most Dangerous Flashpoint",
-      "resumen": "When U.S. policymakers and members of the western news media cite possible flashpoints around the world that could trigger a catastrophic war, places such as the Taiwan Strait, the Demilitarized Zone (DMZ) between North…",
-      "fuente": "Libertarian Institute",
-      "url": "https://libertarianinstitute.org/articles/kalingrad-the-worlds-most-dangerous-flashpoint/?utm_source=rss&utm_medium=rss&utm_campaign=kalingrad-the-worlds-most-dangerous-flashpoint",
       "fecha": "2026-11-16"
     },
     {
@@ -39,120 +39,120 @@
   ],
   "politica": [
     {
-      "titulo": "Fed is modeling how the AI boom could change the economy",
-      "resumen": "Federal Reserve Chairman Kevin Warsh said Monday that the Fed is developing models for how artificial intelligence might shape the labor market in the coming years. Warsh, speaking at the Productivity and Jobs Task…",
+      "titulo": "Vance hits back at ‘neoconservatives’ advocating ‘forever’ war with Iran",
+      "resumen": "Vice President JD Vance blasted “neoconservatives” who have criticized the Trump administration’s negotiations with Iran, alleging the bloc is pushing for a “forever” war with Tehran, something Vance said is precisely…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/policy/technology/4804823/federal-reserve-modeling-how-ai-boom-could-change-economy/",
-      "fecha": "2026-11-16"
+      "url": "https://www.washingtonexaminer.com/news/white-house/4805575/vance-neoconservatives-forever-war-iran/",
+      "fecha": "2026-11-17"
     },
     {
-      "titulo": "Trump ‘Would Not Mind’ Seeing CEO Who Had Affair with Alleged Chinese Spy Reinstated",
-      "resumen": "President Donald Trump said he “would certainly not mind” seeing former Nvidia CEO Jensen Huang reinstated. Huang stepped down on Thursday after reports that he had an affair with an alleged Chinese spy who is a former…",
+      "titulo": "Newly Elected Democrats Signal Opposition to Bathroom Laws & Return of Race-Based Programs, DEI",
+      "resumen": "As newly elected Democrat leaders prepare to take office in 2027, Americans should watch closely what follows because it may not be what they voted for at all. The guiding principle for public officials is…",
       "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/11/16/trump-would-not-mind-seeing-ceo-who-had-affair-with-alleged-chinese-spy-reinstated/",
+      "url": "https://www.dailysignal.com/2026/11/16/newly-elected-democrats-signal-opposition-bathroom-laws-democrat/",
       "fecha": "2026-11-16"
     },
     {
-      "titulo": "The Feds Own a $1 Billion Stake in the Military Contractor Being Blamed for the Air Traffic Meltdown",
-      "resumen": "The Pentagon invested $1 billion in L3Harris in January, and the federal government now holds stock in the company. That may complicate the calls for accountability.",
+      "titulo": "Why Is America's Air Traffic Control so Broken?",
+      "resumen": "Plus: SpaceX's historic Starship catch landing, the Nvidia scandal, and D.C.'s crackdown on self-driving taxis.",
       "fuente": "Reason",
-      "url": "https://reason.com/2026/11/16/the-feds-own-a-1-billion-stake-in-the-military-contractor-being-blamed-for-the-air-traffic-meltdown/",
+      "url": "https://reason.com/podcast/2026/11/16/why-is-americas-air-traffic-control-so-broken/",
       "fecha": "2026-11-16"
     },
     {
-      "titulo": "Economic Populism Lost, Again",
-      "resumen": "Voters again rejected the price-hiking agenda that both parties have spent a decade selling them.",
-      "fuente": "Cato Recent Op-eds",
-      "url": "https://www.cato.org/commentary/economic-populism-lost-again",
-      "fecha": "2026-11-16"
-    },
-    {
-      "titulo": "We Need a Better GOP",
-      "resumen": "Every party elite reaches its point of exhaustion, and that’s where the Trump establishment is now.",
+      "titulo": "What If Democrats Don’t Succumb to Disarray?",
+      "resumen": "Even with the left’s infighting, the GOP should not discount the possibility that a lasting majority party could be forged.",
       "fuente": "National Review",
-      "url": "https://www.nationalreview.com/article/we-need-a-better-gop",
+      "url": "https://www.nationalreview.com/article/what-if-democrats-don-t-succumb-to-disarray",
       "fecha": "2026-11-16"
+    },
+    {
+      "titulo": "DOJ official invokes 2020 Lindsey Graham case amid Democrats’ subpoena threats",
+      "resumen": "A top official in the Justice Department is warning Democratic lawmakers that their recent oversight threats may not be fully shielded from criminal subpoenas, pointing to a Supreme Court dispute involving the late Sen…",
+      "fuente": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/news/justice/4804796/doj-lindsey-graham-case-democrat-subpoena-threats/",
+      "fecha": "2026-11-17"
     }
   ],
   "diarias": [
     {
-      "titulo": "Israeli court upholds detention of Palestinian land activist Ghassan Najjar",
-      "resumen": "Occupied West Bank land defender is set to remain in detention until at least February 26 next year.",
-      "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/11/16/israeli-court-upholds-detention-of-palestinian-land-activist-ghassan-najjar?traffic_source=rss",
-      "fecha": "2026-11-16",
-      "cat": "⚔️ Guerra"
-    },
-    {
-      "titulo": "Iran's growing exodus of young talent",
-      "resumen": "Conflict and uncertainty are driving more and more educated young Iranians to consider leaving the country.",
+      "titulo": "Ukraine: Russian strikes hit bridges in Kyiv, mayor says",
+      "resumen": "Kyiv's mayor said Russian forces have hit bridges on the Dnipro River. Ukraine launched a massive attack on Russia earlier on Monday, hitting the Crimean Bridge. DW has the latest.",
       "fuente": "DW",
-      "url": "https://www.dw.com/en/iran-s-growing-exodus-of-young-talent/a-79960368?maca=en-rss-en-all-1573-rdf",
-      "fecha": "2026-11-16",
+      "url": "https://www.dw.com/en/ukraine-russian-strikes-hit-bridges-in-kyiv-mayor-says/live-79964446?maca=en-rss-en-all-1573-rdf",
+      "fecha": "2026-11-17",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "León XIV se despide de Perú: «Me han recordado que la Iglesia es una familia»",
-      "resumen": "Una multitudinaria misa antecedió las palabras de despedida del Papa León XIV en Perú este 16 de noviembre, durante su última actividad pontificia en la nación andina que se convirtió en su segundo hogar durante más de…",
+      "titulo": "Yemeni army reports 661 attacks on Houthis as group advances towards Aden",
+      "resumen": "Yemen's army reports 173 Houthi fighters killed or wounded as government forces reposition to defend Aden.",
+      "fuente": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/17/yemen-army-reports-661-attacks-on-houthis-amid-houthi-push-towards-aden?traffic_source=rss",
+      "fecha": "2026-11-17",
+      "cat": "⚔️ Guerra"
+    },
+    {
+      "titulo": "En un minuto: la undécima y última jornada de León XIV en Latinoamérica",
+      "resumen": "Las imágenes exclusivas de Vatican Media que recogen las citas del Papa en Perú durante la jornada final de su viaje apostólico por tres países sudamericanos Leer todo &nbsp;",
       "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/papa/news/2026-11/leon-se-despide-de-peru-han-recordado-que-la-iglesia-es-famila.html",
+      "url": "https://www.vaticannews.va/es/vaticano/news/2026-11/en-un-minuto-la-undecima-y-ultima-jornada-de-leon-xiv-en-latino.html",
       "fecha": "2026-11-16",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Pope to Peru: 'No words can express gratitude for graces of this visit'",
-      "resumen": "At the conclusion of the Mass in Lima, Pope Leo XIV expresses the depths of his gratitude for the graces of his Apostolic Journey to Peru, saying he \"came to proclaim Christ to you, and I leave with the witness of the…",
+      "titulo": "Control tower to Pope Leo: Airport communications with the Pope in Latin America",
+      "resumen": "From November 6 to 16, 2026, Pope Leo XIV visited Uruguay, Argentina, and Peru. This video brings together greetings from some of the control towers at the airports Pope Leo XIV flew through during his Apostolic…",
       "fuente": "Vatican News (EN)",
-      "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-to-peru-words-canno-express-my-gratitude-graces-of-visit.html",
+      "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-control-tower-planes-greetings-uruguay-argentina-peru.html",
       "fecha": "2026-11-16",
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "What to know about Howard Lutnick and Scott Bessent feud",
-      "resumen": "Commerce Secretary Howard Lutnick is facing pressure due to his approach to AI chip export controls as a national security scandal swirls around the tech company Nvidia, including from another member of President…",
+      "titulo": "Biden library nears site decision as fundraising trails ambitions: report",
+      "resumen": "Joe Biden’s presidential library foundation is reportedly nearing a Delaware site decision after securing multimillion-dollar donations in 2026.",
+      "fuente": "Fox News",
+      "url": "https://www.foxnews.com/politics/biden-library-nears-site-decision-fundraising-trails-ambitions-report",
+      "fecha": "2026-11-16",
+      "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "Senate GOP unveils nearly $1.1T defense appropriations bill",
+      "resumen": "Senate Republicans on Monday unveiled a nearly $1.1 trillion defense appropriations bill for fiscal year 2027, which includes tens of billions in funding for programs initially part of the Pentagon’s $350 billion…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/homenews/administration/6223104-lutnick-bessent-ai-chip-clash/",
-      "fecha": "2026-11-16",
+      "url": "https://thehill.com/homenews/senate/6224030-senate-gop-defense-appropriations-bill/",
+      "fecha": "2026-11-17",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
-      "resumen": "Countries are meeting in Geneva to negotiate rules on weapons that can select and kill targets without human intervention. But with the U.S., Russia and Israel resisting legally binding controls, campaigners fear the…",
-      "fuente": "NPR",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6042548/un-killer-robots-ai-weapons-drones",
-      "fecha": "2026-11-16",
-      "cat": "🇺🇸 Política de EE. UU."
-    },
-    {
-      "titulo": "Javier Milei y sus medidas, en vivo: Luis Caputo: “Entramos a 2027 más fortalecidos que nunca, más calmo de lo que muchos predicen”",
-      "resumen": "El minuto a minuto de las decisiones del Presidente, las reacciones de la oposición y las declaraciones de los funcionario",
+      "titulo": "“Se terminó la mentira del Estado en la Argentina”, dijo Javier Milei ante empresarios en el CICyP",
+      "resumen": "El minuto a minuto de las decisiones del jefe de Estado, las reacciones de la oposición y las declaraciones de los funcionario",
       "fuente": "La Nación",
       "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-kicillof-acuso-al-presidente-de-adulterar-la-historia-nid16112026/",
-      "fecha": "2026-11-16",
+      "fecha": "2026-11-17",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Senado: semana de definiciones entre las PASO y una eventual sesión por discapacidad",
-      "resumen": "La Casa Rosada apuró una reunión de comisión para este martes. Ahora está obligada a conseguir mañana las firmas para llevar el tema al recinto. Misterio en rúbricas clave. Para el jueves se espera, además de la ley que…",
+      "titulo": "Milei dijo que el riesgo país sube por el miedo a \"Orcolandia\" y afirmó: \"Los argentinos no van a votar hacia el pasado\"",
+      "resumen": "El Presidente expuso en la cena del CICyP y se refirió en duros términos al peronismo, a quien culpó por las últimas subas del índice que mide la confiabilidad de la Argentina para los mercados. Además, volvió a hablar…",
       "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/11/16/senado-semana-de-definiciones-entre-las-paso-y-una-eventual-sesion-por-discapacidad/",
-      "fecha": "2026-11-16",
+      "url": "https://www.infobae.com/politica/2026/11/17/milei-dijo-que-el-riesgo-pais-sube-por-el-miedo-a-orcolandia-y-afirmo-los-argentinos-no-van-a-votar-hacia-el-pasado/",
+      "fecha": "2026-11-17",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Keiko Fujimori se reunió dos veces con el hijo del ministro de Salud en Palacio: una durante la visita del papa León XIV",
-      "resumen": "La primera reunión con la presidenta Fujimori fue el 17 de octubre por más de dos horas junto con el jefe de gabinete, Enrique Vásquez, y luego el 13 de noviembre con otros ministros en el Despacho Presidencial.",
-      "fuente": "La República",
-      "url": "https://larepublica.pe/politica/2026/11/16/keiko-fujimori-se-reunio-con-allan-dyer-hijo-del-ministro-de-salud-en-palacio-de-gobierno-hnews-356320",
-      "fecha": "2026-11-16",
+      "titulo": "Rafael López Aliaga desconoce fallo del JNE que le impide volver a la alcaldía de Lima: “Existe un veto contra mí y el partido”",
+      "resumen": "El líder de Renovación Popular encabezó un pronunciamiento acompañado de diputados, senadores y alcaldes electos de su agrupación política",
+      "fuente": "Infobae Perú",
+      "url": "https://www.infobae.com/peru/2026/11/16/rafael-lopez-aliaga-desconoce-fallo-del-jne-que-le-impide-volver-a-la-alcaldia-de-lima-existe-un-veto-contra-mi-y-el-partido/",
+      "fecha": "2026-11-17",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Las aguas siguen movidas en Buen Gobierno: Abren proceso a Juver Flores y expulsan a Jorge Gavidia",
-      "resumen": "Roberto Sánchez busca la prescripción mientras llega la instalación de su juicio oral: los detalles de su recurso Keiko Fujimori y el papa León XIV: ¿De qué conversaron en Palacio de Gobierno? ¿Y por qué invitaron a…",
-      "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/buen-gobierno-abre-proceso-disciplinario-a-juver-flores-y-expulsa-a-jorge-gavidia-por-romper-acuerdo-del-partido-noticia/",
-      "fecha": "2026-11-16",
+      "titulo": "López Aliaga señala al JNE de impulsar un veto contra Renovación Popular y califica el proceso de “dictadura electoral”",
+      "resumen": "El dirigente cuestionó las decisiones de las autoridades electorales y sostuvo que la legislación respalda la permanencia de su agrupación en la Alcaldía de Lima. Durante su pronunciamiento, también lanzó acusaciones…",
+      "fuente": "La República",
+      "url": "https://larepublica.pe/politica/2026/11/16/rafael-lopez-aliaga-senala-al-jne-de-impulsar-un-veto-contra-renovacion-popular-y-califica-el-proceso-de-dictadura-electoral-hnews-1006848",
+      "fecha": "2026-11-17",
       "cat": "🇵🇪 Política peruana"
     }
   ]
