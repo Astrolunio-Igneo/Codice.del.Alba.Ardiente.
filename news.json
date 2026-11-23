@@ -1,6 +1,13 @@
 {
-  "actualizado": "2026-11-22T16:13:01+00:00",
+  "actualizado": "2026-11-23T00:47:31+00:00",
   "items": [
+    {
+      "titulo": "Trump Says Agreement with Iran Must Be Permanent",
+      "resumen": "President Donald Trump says any agreement with Iran must be permanent. “What I’m doing is I’m going to make it so that if we have an incompetent president in four years or 15 years or 20 years, I’m going to make a deal…",
+      "fuente": "Libertarian Institute",
+      "url": "https://libertarianinstitute.org/news/trump-says-agreement-with-iran-must-be-permanent/?utm_source=rss&utm_medium=rss&utm_campaign=trump-says-agreement-with-iran-must-be-permanent",
+      "fecha": "2026-11-22"
+    },
     {
       "titulo": "Rents, Internet Speeds, and Airfares: 3 Deregulation Success Stories From Milei's Argentina",
       "resumen": "Javier Milei is showing the world how deregulation can slash prices and improve services.",
@@ -14,13 +21,6 @@
       "fuente": "Ron Paul Institute",
       "url": "https://ronpaulinstitute.org/colin-powells-chief-of-staff-cia-does-covert-operations-in-accordance-with-what-pays-the-most-ukraine-a-cash-cow/",
       "fecha": "2026-11-21"
-    },
-    {
-      "titulo": "Down With Every War!",
-      "resumen": "I’d like to say a word about a deceased friend. I don’t remember how I met Murray Polner, but we were both academics on Long Island at the time. Our politics were not aligned. But we got along great. We decided to work…",
-      "fuente": "Libertarian Institute",
-      "url": "https://libertarianinstitute.org/articles/down-with-every-war/?utm_source=rss&utm_medium=rss&utm_campaign=down-with-every-war",
-      "fecha": "2026-11-20"
     },
     {
       "titulo": "Gal Gadot’s Tears and Israel’s Human Shields",
@@ -39,17 +39,17 @@
   ],
   "politica": [
     {
-      "titulo": "Zelensky renews pressure on US to provide patriot missiles after latest Russian drone strike",
-      "resumen": "Ukrainian president Volodymyr Zelensky is calling for the United States to send patriot missiles to his country after the latest barrage of Russian airstrike attacks. Zelensky’s call comes just weeks after the State…",
+      "titulo": "Jeffries previews Democrats’ five opening moves",
+      "resumen": "Rep. Hakeem Jeffries (D-NY) outlined five key legislative priorities for Democrats as they prepare to take control of Congress in January. “We’re going to work incredibly hard to deliver on our promises to the American…",
       "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/world/4811591/zelensky-pressure-us-patriot-missiles-russian-strike/",
-      "fecha": "2026-11-22"
+      "url": "https://www.washingtonexaminer.com/news/house/4811757/jeffries-previews-democrats-opening-moves/",
+      "fecha": "2026-11-23"
     },
     {
-      "titulo": "5 Ways Trump Can Protect His Accomplishments Against a Messy Democrat Congress",
-      "resumen": "It’s been two weeks since Democrats swept the midterm elections and already they’re fighting among themselves. Sens. Chris Van Hollen and Bernie Sanders have been putting Majority Leader Chuck Schumer on notice, while…",
+      "titulo": "Can States Ban America’s Most Popular Rifle? Supreme Court to Hear Landmark Case Dec. 2",
+      "resumen": "The Supreme Court will soon take up a case that could undo bans on AR-15-style rifles in nearly a dozen states. Several newly elected Democrats campaigned on enacting a federal ban, so the timing of the case raises the…",
       "fuente": "The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/11/22/5-ways-trump-can-protect-his-accomplishments-against-democrat-congress/",
+      "url": "https://www.dailysignal.com/2026/11/22/states-ban-americas-rifle-supreme-court-landmark-case/",
       "fecha": "2026-11-22"
     },
     {
@@ -76,20 +76,28 @@
   ],
   "diarias": [
     {
-      "titulo": "Explosion on Russian ship at Libya port likely caused by drone attack, officials say",
-      "resumen": "Libya's eastern rival government says it is working with Russia to investigate the incident.",
-      "fuente": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+      "titulo": "Iran war live: Tankers set ablaze in Hormuz as IRGC warns of unrest threat",
+      "resumen": "Iran's navy claims tankers contravening its rules were set ablaze, while the IRGC said 'enemies' sought to stoke unrest.",
+      "fuente": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/22/iran-war-live-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat?traffic_source=rss",
       "fecha": "2026-11-22",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank",
-      "resumen": "Israeli opposition leader Gadi Eisenkot has condemned a recent series of arson attacks in the occupied West Bank as \"Jewish terrorism.\" Israeli authorities have opened an investigation into the incidents.",
-      "fuente": "DW",
-      "url": "https://www.dw.com/en/israel-s-eisenkot-condemns-jewish-terrorism-in-west-bank/a-80013861?maca=en-rss-en-all-1573-rdf",
+      "titulo": "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
+      "resumen": "The BBC's Sarah Rainsford reports from the scene of a collapsed residential building in Ukraine's Kyiv region.",
+      "fuente": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o?at_medium=RSS&at_campaign=rss",
       "fecha": "2026-11-22",
       "cat": "⚔️ Guerra"
+    },
+    {
+      "titulo": "El día que la Basílica de San Pedro albergó su primer Concilio",
+      "resumen": "Esta mañana del 8 de diciembre, día de la Inmaculada Concepción, lluvias torrenciales hacen que las calles de Roma sean apenas transitables. Sin embargo, antes de que despunten las frías luces del día, un febril…",
+      "fuente": "Aleteia",
+      "url": "https://es.aleteia.org/2026/11/22/el-dia-que-la-basilica-de-san-pedro-albergo-su-primer-concilio/",
+      "fecha": "2026-11-22",
+      "cat": "⛪ Iglesia católica"
     },
     {
       "titulo": "EU and Panama reject draft deal at UN climate talks, putting agreement in doubt",
@@ -100,58 +108,50 @@
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "El Papa en el almuerzo con los pobres: «Hoy todos somos familia»",
-      "resumen": "León XIV llega al Aula Pablo VI después de la oración del Ángelus en la plaza de San Pedro. Lo esperan para el almuerzo, como es tradición en la Jornada Mundial de los Pobres, celebrada el pasado domingo, familias…",
-      "fuente": "Vatican News",
-      "url": "https://www.vaticannews.va/es/papa/news/2026-11/el-papa-en-el-almuerzo-con-los-pobres-hoy-todos-somos-familia.html",
+      "titulo": "California forging new alliance with previously unthinkable state: ‘Massive one-two punch’",
+      "resumen": "California’s governor-elect says years of clashes between the states could give way to cooperation after Texas turned blue, calling the potential alliance a “massive one-two punch.”",
+      "fuente": "NY Post",
+      "url": "https://nypost.com/2026/11/22/us-news/xavier-becerra-eyes-partnership-with-texas-after-democrats-midterm-victories/",
       "fecha": "2026-11-22",
-      "cat": "⛪ Iglesia católica"
+      "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Army will proceed with lead azide detonation despite indefinite pause",
-      "resumen": "The U.S. Army is planning to proceed with its detonation of lead azide despite a federal court ordering an indefinite pause by invoking the emergency munitions and explosives exclusion, according to new court filings…",
+      "titulo": "Mamdani releases 84,000 more 9/11 records",
+      "resumen": "New York City Mayor Zohran Mamdani released 84,000 more records pertaining to the attacks on Sept. 11, 2001 following a previous release that showed city leaders lied about air quality. “After the horrific terror…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/regulation/court-battles/6235838-army-plans-lead-azide-detonation/",
+      "url": "https://thehill.com/homenews/state-watch/6236426-zohran-mamdani-releases-new-911-records/",
       "fecha": "2026-11-22",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "Progressives unveil $25 minimum wage push to solve affordability crisis despite economist inflation warning",
-      "resumen": "House Democrats push a $25 minimum wage to fight the affordability crisis, but Heritage economist E.J. Antoni warns it could raise costs and unemployment.",
-      "fuente": "Fox News",
-      "url": "https://www.foxnews.com/politics/progressives-unveil-25-minimum-wage-push-solve-affordability-crisis-despite-economist-inflation-warning",
-      "fecha": "2026-11-22",
-      "cat": "🇺🇸 Política de EE. UU."
+      "titulo": "Nuevos desafíos, con la palabra oficialista devaluada",
+      "resumen": "El Gobierno debe enfrentar una multiplicidad de retos sin el principal capital que lo sostuvo hasta 2026: la capacidad de aportar una cuota de tranquilidad y de recrear expectativas económicas",
+      "fuente": "La Nación",
+      "url": "https://www.lanacion.com.ar/politica/nuevos-desafios-con-la-palabra-oficialista-devaluada-nid22112026/",
+      "fecha": "2026-11-23",
+      "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Juan Manuel Urtubey tomó distancia de una posible candidatura de CFK: “Es hacerle el juego al Gobierno”",
-      "resumen": "El exgobernador de Salta dijo que “hay que salir de la lógica hiperpersonalista“ y, pese a que resaltó la figura y la importancia de la expresidenta, recordó que “no va a poder protagonizar” a raíz de su condena…",
+      "titulo": "El debut de Santilli en el Senado: más de 1.200 preguntas y el orden como eje de su informe de gestión",
+      "resumen": "El jefe de Gabinete se presentará este miércoles por primera vez en el Congreso para rendir cuentas bajo mandato constitucional. El equipo con el que trabaja y la línea ordenadora",
       "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/11/22/juan-manuel-urtubey-tomo-distancia-de-una-posible-candidatura-de-cfk-es-hacerle-el-juego-al-gobierno/",
+      "url": "https://www.infobae.com/politica/2026/11/22/el-debut-de-santilli-en-el-senado-mas-de-1200-preguntas-y-el-orden-como-eje-de-su-informe-de-gestion/",
       "fecha": "2026-11-22",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "“¿De qué nuevas inversiones hablan?”: Juan Manuel Urtubey puso en duda el RIGI y aseguró que beneficia a “los amigos de turno”",
-      "resumen": "El dirigente salteño aseguró que los proyectos aprobados en su provincia \"ya estaban cuando yo era gobernador\". También apuntó contra el Gobierno por la suspensión de las PASO.",
-      "fuente": "Clarín",
-      "url": "https://www.clarin.com/politica/nuevas-inversiones-hablan-juan-manuel-urtubey-puso-duda-rigi-aseguro-beneficia-amigos-turno_0_sQXWSuNvGJ.html",
-      "fecha": "2026-11-22",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "Alianza Lima vs Universitario EN VIVO HOY: minuto a minuto del partido por final vuelta del Torneo Clausura de Liga Femenina 2026",
-      "resumen": "Los elencos conducidos por José Letelier y Carlos Véliz se citan en el Alejandro Villanueva en un duelo crucial para ambas escuadras. Las ‘íntimas’ están obligadas a vencer por más de dos tantos para forzar una nueva…",
+      "titulo": "Alianza Lima 2-0 Atlético Atenea EN VIVO: punto a punto del partido por fecha 6 de la Liga Peruana de Vóley 2026-27",
+      "resumen": "Se juega el tercer set. Las ‘íntimas’ arrancaron mejor, llevándose los dos primeros parciales. Sigue las incidencias del vibrante cotejo",
       "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/2026/11/22/alianza-lima-vs-universitario-en-vivo-hoy-minuto-a-minuto-partido-matute-final-vuelta-torneo-clausura-liga-femenina-2026-goles-resumen-resultado-campeon/",
-      "fecha": "2026-11-22",
+      "url": "https://www.infobae.com/peru/deportes/2026/11/22/alianza-lima-vs-atletico-atenea-en-vivo-hoy-punto-a-punto-partido-fecha-6-liga-peruana-de-voley-2026-2027-resumen-resultado/",
+      "fecha": "2026-11-23",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Diputado Christian Aranda señala que hay un malestar “que se siente en Renovación Popular por el desempeño del canciller”",
-      "resumen": "El diputado de Renovación Popular Christian Aranda reveló que transmitió a Arturo Alegría, vocero alterno de Fuerza Popular, el malestar de su bancada por el desempeño del canciller. En declaraciones a RPP Noticias, el…",
+      "titulo": "Jeanette, alcaldesa accidental, una crónica de Fernando Vivas sobre Alonzo, virtual segunda regidora de RP",
+      "resumen": "Jeanette Alonzo, candidata a segunda regidora de Renovación Popular a Lima, será alcaldesa y su líder Rafael López Aliaga será su teniente alcalde. Confusión en la bóveda celeste.",
       "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/diputado-christian-aranda-senala-que-hay-un-malestar-que-se-siente-en-renovacion-popular-por-el-desempeno-del-canciller-ultimas-noticia/",
+      "url": "https://elcomercio.pe/politica/janette-alonzo-alcaldesa-accidental-una-cronica-de-fernando-vivas-sobre-la-virtual-segunda-regidora-de-renovacion-popular-alcaldia-de-lima-apuesplan-noticia/",
       "fecha": "2026-11-22",
       "cat": "🇵🇪 Política peruana"
     }
