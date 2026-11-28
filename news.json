@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-27T23:59:57+00:00",
+  "actualizado": "2026-11-28T07:38:12+00:00",
   "items": [
     {
       "titulo": "Review: A Hitchcock-Style Argentine Thriller",
@@ -39,17 +39,24 @@
   ],
   "politica": [
     {
+      "titulo": "Una auditoría de las cuentas públicas españolas: la herencia fiscal del Gobierno de Pedro Sánchez",
+      "resumen": "El Instituto Juan de Mariana (IJM) publica su nuevo informe, Una auditoría de las cuentas públicas españolas. Deuda, impuestos y eficiencia del gasto ante la legislatura que sale del 29N, elaborado por Diego Sánchez de…",
+      "fuente": "Instituto Juan de Mariana",
+      "url": "https://juandemariana.org/una-auditoria-de-las-cuentas-publicas-espanolas-la-herencia-fiscal-del-gobierno-de-pedro-sanchez/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "titulo": "New York Senate Majority Leader Andrea Stewart-Cousins, first woman in role, dies at 76",
+      "resumen": "New York State Sen. Andrea Stewart-Cousins, a Democrat, died Thursday evening, a state official announced on Friday. Stewart-Cousins, 76, was reelected earlier this month as the top Democrat in the Empire State’s…",
+      "fuente": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/news/4816799/new-york-senate-majority-leader-andrea-stewart-cousins-dies/",
+      "fecha": "2026-11-28"
+    },
+    {
       "titulo": "\"His Majesty\"'s \"International Common Law Court of Justice\" Threat to \"Illuminati Police Forces\" Was Criminally Punishable",
       "resumen": "From State v. McFate, decided Tuesday by the South Dakota Supreme Court, in an opinion by Justice Robert Gusinsky: Troy… The post \"His Majesty\"'s \"International Common Law Court of Justice\" Threat to \"Illuminati Police…",
       "fuente": "Reason",
       "url": "https://reason.com/volokh/2026/11/27/his-majestys-international-common-law-court-of-justice-threat-to-illuminati-police-forces-was-criminally-punishable/",
-      "fecha": "2026-11-27"
-    },
-    {
-      "titulo": "ICE detains Salvadoran six days after $1 million lottery win",
-      "resumen": "Immigration and Customs Enforcement personnel detained an illegal immigrant in Boston six days after he won $1 million in the Massachusetts Lottery. On Nov. 18, Ariel Antonio Velasquez-Morales was photographed smiling…",
-      "fuente": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/policy/immigration/4816674/ice-detains-salvadoran-after-lottery-win/",
       "fecha": "2026-11-27"
     },
     {
@@ -65,30 +72,23 @@
       "fuente": "The Daily Signal",
       "url": "https://www.dailysignal.com/2026/11/27/hanson-affordability-never-real-democrats/",
       "fecha": "2026-11-27"
-    },
-    {
-      "titulo": "An Anticommunist’s Long Road to U.S. Citizenship",
-      "resumen": "It’s unlikely that a former Soviet spy sitting atop a powerful immigration committee helped Freda Utley’s case.",
-      "fuente": "National Review",
-      "url": "https://www.nationalreview.com/article/an-anticommunist-s-long-road-to-u-s-citizenship",
-      "fecha": "2026-11-27"
     }
   ],
   "diarias": [
     {
-      "titulo": "US disables ship in Gulf of Oman under Iran blockade",
-      "resumen": "The United States said it was continuing \"to strictly enforce the blockade\" of Iran's ports. Meanwhile, Kuwait summoned Iran's ambassador over a strike that killed two Italian technicians.",
-      "fuente": "DW",
-      "url": "https://www.dw.com/en/us-disables-ship-in-gulf-of-oman-under-iran-blockade/a-80082950?maca=en-rss-en-all-1573-rdf",
-      "fecha": "2026-11-27",
+      "titulo": "How Israel is fast-tracking data centres in bid to become ‘AI superpower’",
+      "resumen": "Israel is looking to data centres to boost its data processing, military strength and global clout.",
+      "fuente": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/28/how-israel-is-fast-tracking-data-centres-in-bid-to-become-ai-superpower?traffic_source=rss",
+      "fecha": "2026-11-28",
       "cat": "⚔️ Guerra"
     },
     {
-      "titulo": "US military says it disabled merchant ship trying to breach Iran blockade",
-      "resumen": "The US military says it disabled the Palau-flagged ship’s propulsion but its crew was unharmed.",
-      "fuente": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/11/27/us-military-says-it-disabled-merchant-ship-trying-to-breach-iran-blockade?traffic_source=rss",
-      "fecha": "2026-11-27",
+      "titulo": "Eight killed in Peruvian military helicopter crash",
+      "resumen": "The pilot was the sole survivor of the crash during a rescue mission in a remote area known for drug trafficking.",
+      "fuente": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwp9d85mlp88o?at_medium=RSS&at_campaign=rss",
+      "fecha": "2026-11-28",
       "cat": "⚔️ Guerra"
     },
     {
@@ -108,51 +108,51 @@
       "cat": "⛪ Iglesia católica"
     },
     {
-      "titulo": "Meta whistleblower says gag order reminiscent of '1984'",
-      "resumen": "Sarah Wynn-Williams, a former Facebook employee whose book warned about the company’s power, said a gag order preventing her from speaking about the tech giant was akin to the reality in George Orwell’s “1984” novel…",
+      "titulo": "Texas AG-elect won't defend Ten Commandments classroom law",
+      "resumen": "Texas Attorney General-elect Nathan Johnson (D) said he won’t defend a state law that directs public schools to put the Ten Commandments in classrooms when he takes office in January. Johnson told The Dallas Morning…",
       "fuente": "The Hill",
-      "url": "https://thehill.com/policy/technology/6245761-sarah-wynn-williams-meta-gag-order/",
+      "url": "https://thehill.com/homenews/state-watch/6245846-texas-ag-johnson-ten-commandments/",
+      "fecha": "2026-11-28",
+      "cat": "🇺🇸 Política de EE. UU."
+    },
+    {
+      "titulo": "Mamdani handed out $95K in staff raises the same day he warned of $12B budget deficit: report",
+      "resumen": "New York City Mayor Zohran Mamdani approved $850,000 in raises for City Hall aides in his first year, according to payroll records reviewed by the New York Post.",
+      "fuente": "Fox News",
+      "url": "https://www.foxnews.com/politics/mamdani-handed-95k-staff-raises-same-day-warned-12b-budget-deficit-report",
       "fecha": "2026-11-27",
       "cat": "🇺🇸 Política de EE. UU."
     },
     {
-      "titulo": "With Abbott out, what does the future look like for data centers in Texas?",
-      "resumen": "Texas has been one of the most welcoming states for data centers, but that might change with a new governor coming in.",
-      "fuente": "NPR",
-      "url": "https://www.npr.org/2026/11/27/nx-s1-6048749/with-abbott-out-what-does-the-future-look-like-for-data-centers-in-texas",
-      "fecha": "2026-11-27",
-      "cat": "🇺🇸 Política de EE. UU."
-    },
-    {
-      "titulo": "La Libertad Avanza se alió con la UCR, el MID y partidos provinciales para armar un frente electoral en La Pampa",
-      "resumen": "Con las firmas de los referentes de cada espacio, anunciaron que participarán \"de manera conjunta en las elecciones provinciales y eventualmente las nacionales de 2027\"",
-      "fuente": "Infobae",
-      "url": "https://www.infobae.com/politica/2026/11/27/la-libertad-avanza-se-alio-con-la-ucr-el-mid-y-partidos-provinciales-para-armar-un-frente-electoral-en-la-pampa/",
-      "fecha": "2026-11-27",
-      "cat": "🇦🇷 Política argentina"
-    },
-    {
-      "titulo": "\"La moral como política de Estado\": Milei presenta sus nuevos libros en el Palacio Libertad",
-      "resumen": "La colección repasa la base filosófica de la gestión y dedica una parte específica a los primeros 30 meses en la Casa Rosada. El lanzamiento será este lunes en el salón Ballena Azul, donde previamente se cerrará el…",
+      "titulo": "Gestos a Mauricio, recorte “libertario” y la nueva cocina del gabinete porteño",
+      "resumen": "El jefe de Gobierno avanza con una reorganización política y administrativa para encarar el año electoral. Desplazó a tres funcionarios de su círculo histórico, empoderó a Francisco Quintana, vinculado al “Tano”…",
       "fuente": "Perfil",
-      "url": "https://www.perfil.com/politica/la-moral-como-politica-de-estado-milei-presenta-sus-nuevos-libros-en-el-palacio-libertad-adH9F9n8EnZe",
-      "fecha": "2026-11-27",
+      "url": "https://www.perfil.com/politica/gestos-a-mauricio-recorte-libertario-y-la-nueva-cocina-del-gabinete-porteno-a5zK07w1CvoM",
+      "fecha": "2026-11-28",
       "cat": "🇦🇷 Política argentina"
     },
     {
-      "titulo": "Alcalde de Lima presenta ante el TC demanda contra resolución del JNE sobre primeros regidores",
-      "resumen": "El alcalde de Lima, Renzo Reggiardo, presentó ante el Tribunal Constitucional una demanda competencial contra una resolución del JNE relacionada con las restricciones para que los primeros regidores asuman las alcaldías.",
+      "titulo": "Universidades: el conflicto constante que el Gobierno no supo resolver y lo muestra débil en el Congreso",
+      "resumen": "La oposición impuso un fuerte aumento de partidas en el Presupuesto 2027. El oficialismo ahora intentará revertir el traspié en la Cámara alta y amenaza con un veto. La disputa por el financiamiento se extendió durante…",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/politica/2026/11/28/universidades-el-conflicto-constante-que-el-gobierno-no-supo-resolver-y-lo-muestra-debil-en-el-congreso/",
+      "fecha": "2026-11-28",
+      "cat": "🇦🇷 Política argentina"
+    },
+    {
+      "titulo": "Chiflón urubambino",
+      "resumen": "El valle del Urubamba no es especialmente ventoso, pero esta semana lo atravesó una ráfaga de aire frío que amenazó con convertir a don Oscar Reto en una versión criolla de Mary Poppins. El presidente de la Cámara de…",
       "fuente": "El Comercio",
-      "url": "https://elcomercio.pe/politica/actualidad/alcalde-de-lima-renzo-reggiardo-presenta-ante-el-tribunal-constitucional-demanda-contra-resolucion-del-jne-sobre-primeros-regidores-ultimas-noticia/",
-      "fecha": "2026-11-27",
+      "url": "https://elcomercio.pe/opinion/columnistas/chiflon-urubambino-por-mario-ghibellini-noticia/",
+      "fecha": "2026-11-28",
       "cat": "🇵🇪 Política peruana"
     },
     {
-      "titulo": "Municipalidad de Lima presenta demanda contra el JNE para anular disposición que impide a exalcaldes asumir la alcaldía",
-      "resumen": "La controversia surgió tras la decisión del organismo electoral de impedir que Rafael López Aliaga vuelva a ocupar el sillón municipal mediante su elección como primer regidor para el periodo 2027-2030",
+      "titulo": "Selección peruana femenina avanza firme hacia la consolidación de un equipo: proceso de scouting desde Videna rinde frutos",
+      "resumen": "El conjunto que tiene a su cargo Antonio Spinelli se mantiene firme en su política de reclutar futbolistas que militen en el extranjero y mantengan lazos nacionales; estas deportistas se complementan con las formadas en…",
       "fuente": "Infobae Perú",
-      "url": "https://www.infobae.com/peru/2026/11/27/municipalidad-de-lima-presenta-demanda-contra-el-jne-para-anular-disposicion-que-impide-a-exalcaldes-asumir-la-alcaldia/",
-      "fecha": "2026-11-27",
+      "url": "https://www.infobae.com/peru/deportes/2026/11/28/seleccion-peruana-femenina-avanza-firme-hacia-la-consolidacion-de-un-equipo-proceso-de-scouting-desde-videna-rinde-frutos/",
+      "fecha": "2026-11-28",
       "cat": "🇵🇪 Política peruana"
     }
   ]
